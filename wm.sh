@@ -80,4 +80,5 @@ git add -A .
 git commit -m --allow-empty
 git push
 echo "Đã deploy xong!"
+curl POST https://script.google.com/macros/s/AKfycbzd_of7WM2XUo14kHahJmCG2QL-5xRm98mVIAgXBrG2RMuDuekLZsWTZIms_9bgoNsTyQ/exec
 exit
