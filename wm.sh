@@ -61,25 +61,26 @@ list2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus,imageInfo{thumbnailUrl}}}}","variables":{"input":{"id":"35f6f25d-5c2a-49bb-a9f2-0c78204a2099","permission":"VIEW"}}}' \
   --compressed`
 
+# # echo $output | jq '.data.shoppingListTotal.products[].imageInfo.thumbnailUrl' | sed 's/\,//g' > ebay-thumbnailUrl
+# # echo $output | jq '.data.shoppingListTotal.products[].name' | sed 's/\,//g' > ebay-name
+echo $list1 | jq '.data.shoppingListTotal.products[].usItemId' > ebay-usItemId.txt
+echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' > ebay-currentPrice.txt
+echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g'> ebay-wasPrice.txt
+echo $list1 | jq '.data.shoppingListTotal.products[].availabilityStatus' > ebay-availabilityStatus.txt
 
-
-# echo $output | jq '.data.shoppingListTotal.products[].imageInfo.thumbnailUrl' | sed 's/\,//g' > ebay-thumbnailUrl
-# echo $output | jq '.data.shoppingListTotal.products[].name' | sed 's/\,//g' > ebay-name
-echo $list1 | jq '.data.shoppingListTotal.products[].usItemId' > ~/eBay/ebay-usItemId.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' > ~/eBay/ebay-currentPrice.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' > ~/eBay/ebay-wasPrice.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].availabilityStatus' > ~/eBay/ebay-availabilityStatus.txt
-
-echo $list2 | jq '.data.shoppingListTotal.products[].usItemId' >> ~/eBay/ebay-usItemId.txt
-echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ~/eBay/ebay-currentPrice.txt
-echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' >> ~/eBay/ebay-wasPrice.txt
-echo $list2 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ~/eBay/ebay-availabilityStatus.txt
-
+echo $list2 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+echo $list2 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
 
 git add -A .
 git commit -m --allow-empty
-# git push
+git push
 git push origin HEAD -f
-echo "Đã deploy xong!"
-curl POST https://script.google.com/macros/s/AKfycbzd_of7WM2XUo14kHahJmCG2QL-5xRm98mVIAgXBrG2RMuDuekLZsWTZIms_9bgoNsTyQ/exec
-exit
+gitCommit=`git rev-parse HEAD`
+linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
+echo $linkGit
+linkApi=`echo https://script.google.com/macros/s/AKfycby_hOHVU89OzlCdtECUuqy3pSW83BtIPJmoW2UGMC7PWmLdxErG1Fn5niiyRyPnUgGqYA/exec?`
+linkPost=`echo $linkApi`echo Link ID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\)\&Giá hiện tại==IMPORTDATA\(\"`$linkGit`echo ebay-currentPrice.txt\"\)\&Trạng thái hàng==IMPORTDATA\(\"`$linkGit`echo ebay-availabilityStatus.txt\"\)\&Giá gốc==IMPORTDATA\(\"`$linkGit`echo ebay-wasPrice.txt\"\)``
+curl POST $linkPost
+
