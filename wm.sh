@@ -61,6 +61,13 @@ list2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus,imageInfo{thumbnailUrl}}}}","variables":{"input":{"id":"35f6f25d-5c2a-49bb-a9f2-0c78204a2099","permission":"VIEW"}}}' \
   --compressed`
 
+if [[ $list1 =~ "blocked" ]]
+then
+  echo "Lỗi rồi!"
+  exit
+fi
+
+
 # echo $output | jq '.data.shoppingListTotal.products[].imageInfo.thumbnailUrl' | sed 's/\,//g' > ebay-thumbnailUrl
 # echo $output | jq '.data.shoppingListTotal.products[].name' | sed 's/\,//g' > ebay-name
 echo $list1 | jq '.data.shoppingListTotal.products[].usItemId' > ebay-usItemId.txt
