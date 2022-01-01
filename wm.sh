@@ -1,7 +1,7 @@
 #!/bin/bash
   # --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus,imageInfo{thumbnailUrl}}}}","variables":{"input":{"id":"5235469c-9c94-4bc9-96cc-e0f44ade3b9e","permission":"VIEW"}}}' \
 
-list1=`curl -i 'https://www.walmart.com/orchestra/home/graphql' \
+list1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
   -H 'x-o-platform: rweb' \
@@ -32,7 +32,12 @@ list1=`curl -i 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"5235469c-9c94-4bc9-96cc-e0f44ade3b9e","permission":"VIEW"}}}' \
   --compressed`
 
-list2=`curl -i 'https://www.walmart.com/orchestra/home/graphql' \
+echo $list1 | jq '.data.shoppingListTotal.products[].usItemId' > ebay-usItemId.txt
+echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' > ebay-currentPrice.txt
+echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g'> ebay-wasPrice.txt
+echo $list1 | jq '.data.shoppingListTotal.products[].availabilityStatus' > ebay-availabilityStatus.txt
+
+list2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
   -H 'x-o-platform: rweb' \
@@ -62,7 +67,7 @@ list2=`curl -i 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"35f6f25d-5c2a-49bb-a9f2-0c78204a2099","permission":"VIEW"}}}' \
   --compressed`
 
-list3=`curl -i 'https://www.walmart.com/orchestra/home/graphql' \
+list3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
   -H 'x-o-platform: rweb' \
@@ -101,20 +106,20 @@ fi
 
 # echo $output | jq '.data.shoppingListTotal.products[].imageInfo.thumbnailUrl' | sed 's/\,//g' > ebay-thumbnailUrl
 # echo $output | jq '.data.shoppingListTotal.products[].name' | sed 's/\,//g' > ebay-name
-echo $list1 | jq '.data.shoppingListTotal.products[].usItemId' > ebay-usItemId.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' > ebay-currentPrice.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g'> ebay-wasPrice.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].availabilityStatus' > ebay-availabilityStatus.txt
+# echo $list1 | jq '.data.shoppingListTotal.products[].usItemId' > ebay-usItemId.txt
+# echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' > ebay-currentPrice.txt
+# echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g'> ebay-wasPrice.txt
+# echo $list1 | jq '.data.shoppingListTotal.products[].availabilityStatus' > ebay-availabilityStatus.txt
 
 echo $list2 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
 echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
 echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
 echo $list2 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
 
-# echo $list3 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
-# echo $list3 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-# echo $list3 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-# echo $list3 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+echo $list3 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+echo $list3 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+echo $list3 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+echo $list3 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
 
 git add -A .
 git commit -m --allow-empty
