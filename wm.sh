@@ -61,35 +61,35 @@ list2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"35f6f25d-5c2a-49bb-a9f2-0c78204a2099","permission":"VIEW"}}}' \
   --compressed`
 
-# list3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
-#   -H 'authority: www.walmart.com' \
-#   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
-#   -H 'x-o-platform: rweb' \
-#   -H 'dnt: 1' \
-#   -H 'x-o-correlation-id: GXeAU7LQidNgZ1VdBU6c5RdFinx2rlrmzcdc' \
-#   -H 'device_profile_ref_id: LlDy6XxmkLbb-fmOqyGUoK6NnHex3B5W_2Zu' \
-#   -H 'x-latency-trace: 1' \
-#   -H 'wm_mp: true' \
-#   -H 'x-o-market: us' \
-#   -H 'x-o-platform-version: main-253-ebbb47' \
-#   -H 'x-o-gql-query: query shoppingListTotal' \
-#   -H 'x-apollo-operation-name: shoppingListTotal' \
-#   -H 'sec-ch-ua-platform: "macOS"' \
-#   -H 'sec-ch-ua-mobile: ?0' \
-#   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
-#   -H 'x-o-segment: oaoh' \
-#   -H 'content-type: application/json' \
-#   -H 'accept: application/json' \
-#   -H 'x-enable-server-timing: 1' \
-#   -H 'x-o-ccm: server' \
-#   -H 'wm_qos.correlation_id: GXeAU7LQidNgZ1VdBU6c5RdFinx2rlrmzcdc' \
-#   -H 'origin: https://www.walmart.com' \
-#   -H 'sec-fetch-site: same-origin' \
-#   -H 'sec-fetch-mode: cors' \
-#   -H 'sec-fetch-dest: empty' \
-#   -H 'accept-language: vi' \
-#   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"caf523c1-f70a-4d38-aa12-029147e94b16","permission":"VIEW"}}}' \
-#   --compressed`
+list3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+  -H 'authority: www.walmart.com' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
+  -H 'x-o-platform: rweb' \
+  -H 'dnt: 1' \
+  -H 'x-o-correlation-id: GXeAU7LQidNgZ1VdBU6c5RdFinx2rlrmzcdc' \
+  -H 'device_profile_ref_id: LlDy6XxmkLbb-fmOqyGUoK6NnHex3B5W_2Zu' \
+  -H 'x-latency-trace: 1' \
+  -H 'wm_mp: true' \
+  -H 'x-o-market: us' \
+  -H 'x-o-platform-version: main-253-ebbb47' \
+  -H 'x-o-gql-query: query shoppingListTotal' \
+  -H 'x-apollo-operation-name: shoppingListTotal' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'x-o-segment: oaoh' \
+  -H 'content-type: application/json' \
+  -H 'accept: application/json' \
+  -H 'x-enable-server-timing: 1' \
+  -H 'x-o-ccm: server' \
+  -H 'wm_qos.correlation_id: GXeAU7LQidNgZ1VdBU6c5RdFinx2rlrmzcdc' \
+  -H 'origin: https://www.walmart.com' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'accept-language: vi' \
+  --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"caf523c1-f70a-4d38-aa12-029147e94b16","permission":"VIEW"}}}' \
+  --compressed`
 
 if [[ $list1 =~ "blocked" || $list2 =~ "blocked" || $list3 =~ "blocked" ]]
 then
