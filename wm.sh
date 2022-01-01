@@ -92,7 +92,7 @@ list3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"caf523c1-f70a-4d38-aa12-029147e94b16","permission":"VIEW"}}}' \
   --compressed`
 
-if [[ $list1 =~ "blocked" ]]
+if [[ $list1 =~ "blocked" || $list2 =~ "blocked" ]]
 then
   echo "Lỗi rồi!"
   exit
