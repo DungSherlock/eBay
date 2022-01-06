@@ -35,6 +35,11 @@ curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   echo $curl1 | jq '.data.guestOrder.id' > track-OrderID.txt
   echo $curl1 | jq '.data.guestOrder.customer.email' > track-email.txt
 
-  echo $curl1 | jq '.data.guestOrder.groups_2101[0].status.statusType' > track-status.txt
+  echo $curl1 | jq '.data.guestOrder.groups_2101[].status.message.parts[].text' > track-status.txt
   echo $curl1 | jq '.data.guestOrder.groups_2101[].deliveryAddress.fullName' > track-fullName.txt
   echo $curl1 | jq '.data.guestOrder.groups_2101[].deliveryAddress.address.addressString' > track-address.txt
+
+  echo $curl1 | jq '.data.guestOrder.groups_2101[].items[].product.name' > track-productName.txt
+  echo $curl1 | jq '.data.guestOrder.groups_2101[].items[].product.usItemId' > track-usItemId.txt
+  echo $curl1 | jq '.data.guestOrder.groups_2101[].items[].priceInfo.linePrice.value' > track-priceValue.txt
+
