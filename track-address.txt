@@ -1,2 +1,8 @@
 "517 N Stephen St, Clark Fork, 83811, ID 10470"
 "517 N Stephen St, Clark Fork, 83811, ID 10470"
+"309 Osage Ave, Hiawatha, 66434, KS 95677"
+"309 Osage Ave, Hiawatha, 66434, KS 95677"
+"309 Osage Ave, Hiawatha, 66434, KS 95677"
+null
+"2225 Eastlawn St, Lorain, 44052, OH 48183"
+"2225 Eastlawn St, Lorain, 44052, OH 48183"

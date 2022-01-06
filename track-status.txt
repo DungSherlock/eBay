@@ -1,2 +1,8 @@
 "Canceled today"
 "Canceled today"
+"Delayed, arrives by Sat, Jan 08"
+"Arrives by Thu, Jan 20"
+"Canceled"
+"Canceled"
+"Cancellation requested on Jan 05"
+"Arrives by Thu, Jan 20"
