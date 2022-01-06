@@ -47,5 +47,5 @@ curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   gitCommit=`git rev-parse HEAD`
   linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
   linkApi=`echo https://script.google.com/macros/s/AKfycbxTUZPtaHbpL6Sdf4PXWLmCg1PcRotJWSyJQ-cKMC9AxPb-du0q4h3mmFAICVNeGp8GNQ/exec?`
-  linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-usItemId.txt\"\)\&Giá==IMPORTDATA\(\"`$linkGit`echo track-priceValue.txt\"\)\&Tên==IMPORTDATA\(\"`$linkGit`echo track-fullName.txt\"\)\&Địa chỉ==IMPORTDATA\(\"`$linkGit`echo track-address.txt\"\&Status==IMPORTDATA\(\"`$linkGit`echo track-status.txt\)`
+  linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-usItemId.txt\"\)\&Giá==IMPORTDATA\(\"`$linkGit`echo track-priceValue.txt\"\)\&Tên==IMPORTDATA\(\"`$linkGit`echo track-fullName.txt\"\)\&Địa chỉ==IMPORTDATA\(\"`$linkGit`echo track-address.txt\"\)\&Status==IMPORTDATA\(\"`$linkGit`echo track-status.txt\)`
   echo $linkPost
