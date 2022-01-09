@@ -1,5 +1,6 @@
-"517 N Stephen St, Clark Fork, 83811, ID 10470"
-"517 N Stephen St, Clark Fork, 83811, ID 10470"
+null
+"1470 Timber Valley Dr, Eagle Pass, 78852, TX 34114"
+"1470 Timber Valley Dr, Eagle Pass, 78852, TX 34114"
 "309 Osage Ave, Hiawatha, 66434, KS 95677"
 "309 Osage Ave, Hiawatha, 66434, KS 95677"
 "309 Osage Ave, Hiawatha, 66434, KS 95677"
