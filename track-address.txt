@@ -1,12 +1,3 @@
 null
 "1470 Timber Valley Dr, Eagle Pass, 78852, TX 34114"
 "1470 Timber Valley Dr, Eagle Pass, 78852, TX 34114"
-"309 Osage Ave, Hiawatha, 66434, KS 95677"
-"309 Osage Ave, Hiawatha, 66434, KS 95677"
-"309 Osage Ave, Hiawatha, 66434, KS 95677"
-null
-"2225 Eastlawn St, Lorain, 44052, OH 48183"
-"2225 Eastlawn St, Lorain, 44052, OH 48183"
-null
-"1470 Timber Valley Dr, Eagle Pass, 78852, TX 34114"
-"1470 Timber Valley Dr, Eagle Pass, 78852, TX 34114"
