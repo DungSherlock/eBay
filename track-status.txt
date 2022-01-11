@@ -1,3 +1,4 @@
+
 "Canceled"
 "Arrives by Wed, Jan 19"
 "Canceled"
@@ -7,11 +8,3 @@
 "Arrives by Fri, Jan 28"
 "Canceled today"
 "Canceled today"
-"Arrives by Thu, Jan 13"
-"Arrives by Fri, Jan 14"
-"Arrives by Fri, Jan 21"
-"Arrives by Tue, Jan 11"
-"Arrives by Wed, Jan 12"
-"Arrives by Fri, Jan 28"
-"Arrives by Wed, Jan 12"
-"Arrives by Tue, Jan 18"
