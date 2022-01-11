@@ -1,11 +1,13 @@
 #!/bin/bash
-  echo 'Item ID' > track-usItemId.txt
-  echo 'Giá' > track-priceValue.txt
-  echo 'Tên' > track-fullName.txt
-  echo 'Địa chỉ' > track-address.txt
-  echo 'Status' > track-status.txt
-  echo 'Tracking Number' > track-number.txt
-  echo 'Tracking URL' >> track-url.txt
+  : > track-usItemId.txt
+  : > track-priceValue.txt
+  : > track-fullName.txt
+  : > track-address.txt
+  : > track-status.txt
+  : > track-number.txt
+  : > track-url.txt
+
+
 curl2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
