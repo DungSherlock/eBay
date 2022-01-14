@@ -40,5 +40,5 @@ echo $curl1 | jq '.data.guestOrder.groups_2101[].deliveryAddress.address.address
 echo $curl1 | jq '.data.guestOrder.groups_2101[].status.message.parts[].text'
 echo $curl1 | jq '.data.guestOrder.groups_2101[].shipment.trackingNumber'
 echo $curl1 | jq '.data.guestOrder.groups_2101[].shipment.trackingUrl'
-declare -p $test | sed -n "s,.*\[\([^]]*\)\]=\"226026281\".*,\1,p"
+declare -A $test
 # echo ${test[226026281]}
