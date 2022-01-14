@@ -51,7 +51,7 @@ done
 echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].status.message.parts[].text' >> track-status.txt
@@ -100,7 +100,7 @@ done
 echo $curl2 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl2 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].status.message.parts[].text' >> track-status.txt
@@ -149,7 +149,7 @@ done
 echo $curl3 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl3 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].status.message.parts[].text' >> track-status.txt
@@ -198,7 +198,7 @@ done
 echo $curl4 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl4 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].status.message.parts[].text' >> track-status.txt
@@ -247,7 +247,7 @@ done
 echo $curl5 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl5 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].status.message.parts[].text' >> track-status.txt
@@ -296,7 +296,7 @@ done
 echo $curl6 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl6 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].status.message.parts[].text' >> track-status.txt
@@ -345,7 +345,7 @@ done
 echo $curl7 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl7 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].status.message.parts[].text' >> track-status.txt
@@ -394,7 +394,7 @@ done
 echo $curl8 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl8 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].status.message.parts[].text' >> track-status.txt
@@ -443,7 +443,7 @@ done
 echo $curl9 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl9 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].status.message.parts[].text' >> track-status.txt
@@ -492,7 +492,7 @@ done
 echo $curl10 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl10 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].status.message.parts[].text' >> track-status.txt
@@ -541,7 +541,7 @@ done
 echo $curl11 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl11 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].status.message.parts[].text' >> track-status.txt
@@ -590,7 +590,7 @@ done
 echo $curl12 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl12 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].status.message.parts[].text' >> track-status.txt
@@ -639,7 +639,7 @@ done
 echo $curl13 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl13 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].status.message.parts[].text' >> track-status.txt
@@ -688,7 +688,7 @@ done
 echo $curl14 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl14 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].status.message.parts[].text' >> track-status.txt
@@ -737,7 +737,7 @@ done
 echo $curl15 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl15 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].status.message.parts[].text' >> track-status.txt
@@ -786,7 +786,7 @@ done
 echo $curl16 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl16 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl16 | jq '.data.guestOrder.groups_2101['$index16'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl16 | jq '.data.guestOrder.groups_2101['$index16'.items[].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl16 | jq '.data.guestOrder.groups_2101['$index16'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
 echo $curl16 | jq '.data.guestOrder.groups_2101['$index16'].deliveryAddress.fullName' >> track-fullName.txt
 echo $curl16 | jq '.data.guestOrder.groups_2101['$index16'].deliveryAddress.address.addressString' >> track-address.txt
 echo $curl16 | jq '.data.guestOrder.groups_2101['$index16'].status.message.parts[].text' >> track-status.txt
