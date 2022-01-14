@@ -1,8 +1,6 @@
 null
 "https://www.walmart.com/tracking?order_id=2870121688143&tracking_id=288624035035"
 "https://www.walmart.com/tracking?order_id=9870079690440&tracking_id=557342190980&package_id=00000040270018291143"
-"https://www.walmart.com/tracking?order_id=8870027170734&tracking_id=D10012899881023&package_id=55525931795492216314"
-"https://www.walmart.com/tracking?order_id=8870027170735&tracking_id=C12132248154117&package_id=00022081030943485999"
 "https://www.walmart.com/tracking?order_id=2870136316842&tracking_id=288664011513"
 "https://www.walmart.com/tracking?order_id=2870120882456&tracking_id=C11809231405771&package_id=00000070490151440531"
 null
