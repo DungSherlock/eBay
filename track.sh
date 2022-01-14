@@ -43,20 +43,24 @@ curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"226026281"' ]]; then
-    index1=`echo $i`
+  if [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"226026281"' ]]; then
+    indexOrder1=`echo $i`
+    indexItem1=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"226026281"' ]]; then
+    indexOrder1=`echo $i`
+    indexItem1=`echo 1`
   fi
 done
 
 echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].status.message.parts[].text' >> track-status.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].shipment.trackingNumber' >> track-number.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$index1'].shipment.trackingUrl' >> track-url.txt
+echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].product.usItemId' >> track-usItemId.txt
+echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].status.message.parts[].text' >> track-status.txt
+echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingNumber' >> track-number.txt
+echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingUrl' >> track-url.txt
 
 curl2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -92,20 +96,24 @@ curl2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"137359681"' ]]; then
-    index2=`echo $i`
+  if [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"137359681"' ]]; then
+    indexOrder2=`echo $i`
+    indexItem2=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"137359681"' ]]; then
+    indexOrder2=`echo $i`
+    indexItem2=`echo 1`
   fi
 done
 
 echo $curl2 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl2 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].status.message.parts[].text' >> track-status.txt
-echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].shipment.trackingNumber' >> track-number.txt
-echo $curl2 | jq '.data.guestOrder.groups_2101['$index2'].shipment.trackingUrl' >> track-url.txt
+echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].items['$indexItem2'].product.usItemId' >> track-usItemId.txt
+echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].items['$indexItem2'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].status.message.parts[].text' >> track-status.txt
+echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].shipment.trackingNumber' >> track-number.txt
+echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].shipment.trackingUrl' >> track-url.txt
 
 curl3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -141,22 +149,79 @@ curl3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"129706644"' ]]; then
-    index3=`echo $i`
+  if [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
+    indexOrder3=`echo $i`
+    indexItem3=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"129706644"' ]]; then
+    indexOrder3=`echo $i`
+    indexItem3=`echo 1`
   fi
 done
 
 echo $curl3 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl3 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].status.message.parts[].text' >> track-status.txt
-echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].shipment.trackingNumber' >> track-number.txt
-echo $curl3 | jq '.data.guestOrder.groups_2101['$index3'].shipment.trackingUrl' >> track-url.txt
+echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].items['$indexItem3'].product.usItemId' >> track-usItemId.txt
+echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].items['$indexItem3'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].status.message.parts[].text' >> track-status.txt
+echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].shipment.trackingNumber' >> track-number.txt
+echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].shipment.trackingUrl' >> track-url.txt
 
 curl4=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+  -H 'authority: www.walmart.com' \
+  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
+  -H 'x-o-platform: rweb' \
+  -H 'dnt: 1' \
+  -H 'x-o-correlation-id: wrvYiSFTlAmd8j7a8DDmpuyOpCN_heAnwM3v' \
+  -H 'device_profile_ref_id: _s1F3NO8Y2JjaBUKPDcY4iFDWiIl9CyqiJjf' \
+  -H 'x-latency-trace: 1' \
+  -H 'wm_mp: true' \
+  -H 'x-o-market: us' \
+  -H 'x-o-platform-version: main-253-ebbb47' \
+  -H 'x-o-gql-query: query getGuestOrder' \
+  -H 'wm_page_url: https://www.walmart.com/orders' \
+  -H 'x-apollo-operation-name: getGuestOrder' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 Edg/96.0.1054.62' \
+  -H 'x-o-segment: oaoh' \
+  -H 'content-type: application/json' \
+  -H 'accept: application/json' \
+  -H 'x-enable-server-timing: 1' \
+  -H 'x-o-ccm: server' \
+  -H 'wm_qos.correlation_id: wrvYiSFTlAmd8j7a8DDmpuyOpCN_heAnwM3v' \
+  -H 'origin: https://www.walmart.com' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://www.walmart.com/orders' \
+  -H 'accept-language: vi' \
+  --data-raw $'{"query":"query getGuestOrder($orderId:ID\u0021 $emailAddress:String\u0021){guestOrder(input:{id:$orderId emailAddress:$emailAddress}){...OrderFieldsFragment}}fragment cancelReason on OrderCancelReason{__typename subReasonCode subDescription}fragment priceDetailFragment on OrderPriceDetailRow{label value displayValue info{title message}rowInfo{...orderPriceDetailRowInfo}}fragment orderPriceDetailRowInfo on OrderPriceDetailRowInfo{title message{...textFragment}}fragment price on Price{displayValue value}fragment variants on MapEntry{name value}fragment OrderAddOn on OrderAddOn{lineId uniqueLineId productInfo{name usItemId offerId}quantityString quantityLabel type fulfillmentInstructions{...textFragment}actions{manageProtectionPlan{...orderActionFragment}cancel}priceInfo{linePrice{...price}}quantity isActive}fragment orderDonationDetails on OrderDonationDetails{message{...textFragment}emailReceipt emailReceiptToken status{...textFragment}errorStatus}fragment orderLineItem on OrderLineItem{id uniqueId actions{contactSeller cancel addToCart configureCake reviewItem resendEGiftCardToken protectionPlan{...orderActionFragment}manageProtectionPlan{...orderActionFragment}}isGift digitalDeliveryMessage quantity quantityString quantityLabel isSubstitutionSelected fulfilledItems{id quantityString priceInfo{itemPrice{value}}product{usItemId name}}isReturnable returnEligibilityMessage product{name usItemId imageInfo{thumbnailUrl}canonicalUrl offerId sellerId sellerName hasSellerBadge seller{sellerId name}orderLimit orderMinLimit weightIncrement salesUnit salesUnitType isSubstitutionEligible isAlcohol}reshop{reshopMessage isShippingAvailable minPromiseDate maxPromiseDate}selectedVariants{...variants}variantAdditionalInfo{parts{text nativeAction}}priceInfo{priceDisplayCodes{showItemPrice priceDisplayCondition finalCostByWeight}itemPrice{...price}linePrice{...price}unitPrice{...price}preDiscountedLinePrice{...price}additionalLines{name value}}discounts{label labelText{...textFragment}}itemReviewed activationCodes{label code}protectionPlanMessage{...textFragment}showSeller isShippedByWalmart seller{id name isPro}digitalDeliveryPhoneNumber addOns{...OrderAddOn}multiboxBundleId}fragment DriverFragment on Driver{id firstName photoUrl}fragment OrderGroupFragment on OrderGroup{driver{...DriverFragment}deliveryDate fulfillmentType status{...OrderGroupStatusFragment}showSeller isShippedByWalmart seller{...SellerFragment}id itemCount items{...LiteLineItemFragment}pickupPerson{firstName lastName email}accessPointId shipment{...ShipmentFragment}returnEligibilityMessage actions{...OrderGroupActionsFragment}recipientEmailAddress digitalDelivery{...DigitalDeliveryFragment}tireInstallationReservation{status extraText}}fragment OrderGroupStatusFragment on OrderGroupStatus{statusType showStatusTracker statusTracker{status label isCurrent}message{...textFragment}subtext subMessage{...textFragment}notice helpCenterText{...textFragment}}fragment textFragment on Text{parts{bold url text nativeAction lineBreak}}fragment LiteLineItemFragment on OrderLineItem{id quantity product{name usItemId imageInfo{thumbnailUrl}offerId isAlcohol}priceInfo{linePrice{...price}}}fragment SellerFragment on GroupSeller{id name isPro}fragment DigitalDeliveryFragment on DigitalDelivery{title name instructions{...textFragment}}fragment ShipmentFragment on Shipment{id trackingNumber isExternalTracking trackingUrl proofOfDelivery{photoUrl photoPreviewUrl showPreview}}fragment OrderGroupActionsFragment on OrderGroupActions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson editTip tip cancel enableTip{...orderActionFragment}enableEdit{...orderActionFragment}rescheduleTireInstall{...orderActionFragment}cancelTireInstall{...orderActionFragment}help viewCancellationDetails{...cancellationDetailsActionFragment}}fragment cancellationDetailsActionFragment on CancellationDetailsAction{label heading text{...textFragment}}fragment ODPGroupCategoryFragment on OrderCategory{type name subtext returnMessage substitutionsBanner{...textFragment}showExtendedSubstitutions actions{substitutions{message label type}nilPickReshop{message action{text url}}returnDetails viewCancellationDetails{...cancellationDetailsActionFragment}trackOnInHomeApp}banner{...textFragment}accordionState items{...orderLineItem}substitutions{...orderLineItem fulfilledItems{...orderLineItem}}returnInfo{...returnInfoFragment}}fragment ODPGroupFragment on OrderGroup{id fulfillmentType deliveryMessage deliveryAddress{fullName firstName lastName address{...addressFragment}}deliveryInstructions{text type typeText}deliveryPreferences{text{...textFragment}cta{...orderActionFragment}}editSubstitutionsCutOff status{statusType showStatusTracker message{...textFragment}notice helpCenterText{...textFragment}}itemCount isCategorized categories{...ODPGroupCategoryFragment}seller{id name isPro}shipment{id trackingNumber}actions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson tip cancel help enableTip{...orderActionFragment}enableEdit{...orderActionFragment}viewCancellationDetails{...cancellationDetailsActionFragment}enableInHome{...orderActionFragment}createGiftReceipt}cutOffTimestamp isEditSubstitutionsEligible isInHome giftDetails{recipientAddress{fullName}recipientEmail senderName giftMessage}donationDetails{...orderDonationDetails}}fragment returnInfoFragment on ReturnInfo{returnOrderId type refundPriceDetails{__typename...refundPriceDetailsFragment}refundMessage tierRefundMessage paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}}actions{__typename generate scheduleOrModifyPickup{text url}reschedulePickup editPickupContact}shippingLabelUrl qrCodeImageUrl carriers{__typename id name}pickupCarrier pickupContact{nameAndAddress{fullName firstName lastName address{addressString city state postalCode addressLineOne addressLineTwo country}}phone}pickupConfirmationNumber bannerMessage{...textFragment}}fragment refundPriceDetailsFragment on RefundPriceDetails{subTotal{__typename...orderPriceDetailRowFragment}fees{__typename...orderPriceDetailRowFragment}discounts{__typename...orderPriceDetailRowFragment}taxTotal{__typename...orderPriceDetailRowFragment}grandTotal{__typename...orderPriceDetailRowFragment}}fragment orderPriceDetailRowFragment on OrderPriceDetailRow{label displayValue value info{__typename title message}}fragment addressFragment on OrderAddress{addressString addressLineOne addressLineTwo state postalCode city}fragment ODPPickupInfo on OrderGroup{pickupInstructions pickupPerson{...person}alternatePickupPerson{...person}store{id name address{...addressFragment}}}fragment person on OrderPickupPerson{firstName lastName email}fragment ODPTippingInfo on OrderGroup{addTipMessage{...textFragment}driver{...DriverFragment}tipping{min{...price}max{...price}suggested{...price}preselected}subtotal{...price}}fragment orderActionFragment on Action{text url}fragment orderCustomer on OrderCustomer{id firstName lastName email isGuest isEmailRegistered}fragment OrderFieldsFragment on Order{__typename id version type customer{...orderCustomer}displayId idBarcodeImageUrl(barWidth:3 barHeight:100) isFuelPurchase title shortTitle timezone tippableGroup{...OrderGroupFragment}amendableGroup{id changeSlotIterationsLeft cutOffTimestamp fulfillmentType deliveryAddress{fullName firstName lastName address{addressString addressLineOne addressLineTwo state postalCode city country}}isAmendInProgress}substitutionsBanner{heading subheading longSubheading}groups_2101{__typename...OrderGroupFragment...ODPGroupFragment...ODPPickupInfo...ODPTippingInfo}multiboxBundles{...orderLineItem}itemCancelReasons{__typename...cancelReason}groupCancelReasons{__typename...cancelReason}priceDetails{__typename subTotal{__typename...priceDetailFragment}taxTotal{__typename...priceDetailFragment}grandTotal{__typename...priceDetailFragment}authorizationAmount{__typename...priceDetailFragment}fees{__typename...priceDetailFragment}discounts{__typename...priceDetailFragment}minimumThreshold{__typename...price}belowMinimumFee{__typename...priceDetailFragment}driverTip{__typename...priceDetailFragment}donations{__typename...priceDetailFragment}}paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}actions{connectToCapitalOne{...orderActionFragment}visitAffirm{...orderActionFragment}}}actions{__typename return pendingReturn cancel startReturn{...orderActionFragment}reorder}banners{...textFragment}}","variables":{"orderId":"6362106329171","emailAddress":"parrot_heads@yahoo.com"}}' \
+  --compressed`
+ 
+for (( i=0; i<=4; i++ ))
+do
+  if [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10752553"' ]]; then
+    indexOrder4=`echo $i`
+    indexItem4=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"10752553"' ]]; then
+    indexOrder4=`echo $i`
+    indexItem4=`echo 1`
+  fi
+done
+
+echo $curl4 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl4 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].items['$indexItem4'].product.usItemId' >> track-usItemId.txt
+echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].items['$indexItem4'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].status.message.parts[].text' >> track-status.txt
+echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].shipment.trackingNumber' >> track-number.txt
+echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].shipment.trackingUrl' >> track-url.txt
+
+curl5=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -190,22 +255,26 @@ curl4=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"19524988"' ]]; then
-    index4=`echo $i`
+  if [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"19524988"' ]]; then
+    indexOrder5=`echo $i`
+    indexItem5=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"19524988"' ]]; then
+    indexOrder5=`echo $i`
+    indexItem5=`echo 1`
   fi
 done
 
-echo $curl4 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl4 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].status.message.parts[].text' >> track-status.txt
-echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].shipment.trackingNumber' >> track-number.txt
-echo $curl4 | jq '.data.guestOrder.groups_2101['$index4'].shipment.trackingUrl' >> track-url.txt
+echo $curl5 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl5 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].items['$indexItem5'].product.usItemId' >> track-usItemId.txt
+echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].items['$indexItem5'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].status.message.parts[].text' >> track-status.txt
+echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].shipment.trackingNumber' >> track-number.txt
+echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].shipment.trackingUrl' >> track-url.txt
 
-curl5=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl6=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -239,22 +308,26 @@ curl5=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"755361385"' ]]; then
-    index5=`echo $i`
+  if [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
+    indexOrder6=`echo $i`
+    indexItem6=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755361385"' ]]; then
+    indexOrder6=`echo $i`
+    indexItem6=`echo 1`
   fi
 done
 
-echo $curl5 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl5 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].status.message.parts[].text' >> track-status.txt
-echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].shipment.trackingNumber' >> track-number.txt
-echo $curl5 | jq '.data.guestOrder.groups_2101['$index5'].shipment.trackingUrl' >> track-url.txt
+echo $curl6 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl6 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].items['$indexItem6'].product.usItemId' >> track-usItemId.txt
+echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].items['$indexItem6'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].status.message.parts[].text' >> track-status.txt
+echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].shipment.trackingNumber' >> track-number.txt
+echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].shipment.trackingUrl' >> track-url.txt
 
-curl6=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl7=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -288,22 +361,26 @@ curl6=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"755361385"' ]]; then
-    index6=`echo $i`
+  if [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
+    indexOrder7=`echo $i`
+    indexItem7=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755361385"' ]]; then
+    indexOrder7=`echo $i`
+    indexItem7=`echo 1`
   fi
 done
 
-echo $curl6 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl6 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].status.message.parts[].text' >> track-status.txt
-echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].shipment.trackingNumber' >> track-number.txt
-echo $curl6 | jq '.data.guestOrder.groups_2101['$index6'].shipment.trackingUrl' >> track-url.txt
+echo $curl7 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl7 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].items['$indexItem7'].product.usItemId' >> track-usItemId.txt
+echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].items['$indexItem7'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].status.message.parts[].text' >> track-status.txt
+echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].shipment.trackingNumber' >> track-number.txt
+echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].shipment.trackingUrl' >> track-url.txt
 
-curl7=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl8=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -337,22 +414,26 @@ curl7=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"689830322"' ]]; then
-    index7=`echo $i`
+  if [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"689830322"' ]]; then
+    indexOrder8=`echo $i`
+    indexItem8=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"689830322"' ]]; then
+    indexOrder8=`echo $i`
+    indexItem8=`echo 1`
   fi
 done
 
-echo $curl7 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl7 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].status.message.parts[].text' >> track-status.txt
-echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].shipment.trackingNumber' >> track-number.txt
-echo $curl7 | jq '.data.guestOrder.groups_2101['$index7'].shipment.trackingUrl' >> track-url.txt
+echo $curl8 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl8 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].items['$indexItem8'].product.usItemId' >> track-usItemId.txt
+echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].items['$indexItem8'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].status.message.parts[].text' >> track-status.txt
+echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].shipment.trackingNumber' >> track-number.txt
+echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].shipment.trackingUrl' >> track-url.txt
 
-curl8=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl9=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -386,22 +467,26 @@ curl8=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"121639349"' ]]; then
-    index8=`echo $i`
+  if [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"121639349"' ]]; then
+    indexOrder9=`echo $i`
+    indexItem9=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"121639349"' ]]; then
+    indexOrder9=`echo $i`
+    indexItem9=`echo 1`
   fi
 done
 
-echo $curl8 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl8 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].status.message.parts[].text' >> track-status.txt
-echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].shipment.trackingNumber' >> track-number.txt
-echo $curl8 | jq '.data.guestOrder.groups_2101['$index8'].shipment.trackingUrl' >> track-url.txt
+echo $curl9 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl9 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].items['$indexItem9'].product.usItemId' >> track-usItemId.txt
+echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].items['$indexItem9'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].status.message.parts[].text' >> track-status.txt
+echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].shipment.trackingNumber' >> track-number.txt
+echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].shipment.trackingUrl' >> track-url.txt
 
-curl9=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl10=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -435,22 +520,26 @@ curl9=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"378936130"' ]]; then
-    index9=`echo $i`
+  if [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"378936130"' ]]; then
+    indexOrder10=`echo $i`
+    indexItem10=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"378936130"' ]]; then
+    indexOrder10=`echo $i`
+    indexItem10=`echo 1`
   fi
 done
 
-echo $curl9 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl9 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].status.message.parts[].text' >> track-status.txt
-echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].shipment.trackingNumber' >> track-number.txt
-echo $curl9 | jq '.data.guestOrder.groups_2101['$index9'].shipment.trackingUrl' >> track-url.txt
+echo $curl10 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl10 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].items['$indexItem10'].product.usItemId' >> track-usItemId.txt
+echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].items['$indexItem10'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].status.message.parts[].text' >> track-status.txt
+echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].shipment.trackingNumber' >> track-number.txt
+echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].shipment.trackingUrl' >> track-url.txt
 
-curl10=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl11=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -484,22 +573,26 @@ curl10=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"50109305"' ]]; then
-    index10=`echo $i`
+  if [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50109305"' ]]; then
+    indexOrder11=`echo $i`
+    indexItem11=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"50109305"' ]]; then
+    indexOrder11=`echo $i`
+    indexItem11=`echo 1`
   fi
 done
 
-echo $curl10 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl10 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].status.message.parts[].text' >> track-status.txt
-echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].shipment.trackingNumber' >> track-number.txt
-echo $curl10 | jq '.data.guestOrder.groups_2101['$index10'].shipment.trackingUrl' >> track-url.txt
+echo $curl11 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl11 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].items['$indexItem11'].product.usItemId' >> track-usItemId.txt
+echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].items['$indexItem11'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].status.message.parts[].text' >> track-status.txt
+echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].shipment.trackingNumber' >> track-number.txt
+echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].shipment.trackingUrl' >> track-url.txt
 
-curl11=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl12=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -533,22 +626,26 @@ curl11=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"480863972"' ]]; then
-    index11=`echo $i`
+  if [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"480863972"' ]]; then
+    indexOrder12=`echo $i`
+    indexItem12=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"480863972"' ]]; then
+    indexOrder12=`echo $i`
+    indexItem12=`echo 1`
   fi
 done
 
-echo $curl11 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl11 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].status.message.parts[].text' >> track-status.txt
-echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].shipment.trackingNumber' >> track-number.txt
-echo $curl11 | jq '.data.guestOrder.groups_2101['$index11'].shipment.trackingUrl' >> track-url.txt
+echo $curl12 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl12 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].items['$indexItem12'].product.usItemId' >> track-usItemId.txt
+echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].items['$indexItem12'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].status.message.parts[].text' >> track-status.txt
+echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].shipment.trackingNumber' >> track-number.txt
+echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].shipment.trackingUrl' >> track-url.txt
 
-curl12=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl13=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -582,22 +679,26 @@ curl12=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"251382558"' ]]; then
-    index12=`echo $i`
+  if [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
+    indexOrder13=`echo $i`
+    indexItem13=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"251382558"' ]]; then
+    indexOrder13=`echo $i`
+    indexItem13=`echo 1`
   fi
 done
 
-echo $curl12 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl12 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].status.message.parts[].text' >> track-status.txt
-echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].shipment.trackingNumber' >> track-number.txt
-echo $curl12 | jq '.data.guestOrder.groups_2101['$index12'].shipment.trackingUrl' >> track-url.txt
+echo $curl13 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl13 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].items['$indexItem13'].product.usItemId' >> track-usItemId.txt
+echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].items['$indexItem13'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].status.message.parts[].text' >> track-status.txt
+echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].shipment.trackingNumber' >> track-number.txt
+echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].shipment.trackingUrl' >> track-url.txt
 
-curl13=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl14=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -631,22 +732,26 @@ curl13=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"969841770"' ]]; then
-    index13=`echo $i`
+  if [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"969841770"' ]]; then
+    indexOrder14=`echo $i`
+    indexItem14=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"969841770"' ]]; then
+    indexOrder14=`echo $i`
+    indexItem14=`echo 1`
   fi
 done
 
-echo $curl13 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl13 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].status.message.parts[].text' >> track-status.txt
-echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].shipment.trackingNumber' >> track-number.txt
-echo $curl13 | jq '.data.guestOrder.groups_2101['$index13'].shipment.trackingUrl' >> track-url.txt
+echo $curl14 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl14 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].items['$indexItem14'].product.usItemId' >> track-usItemId.txt
+echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].items['$indexItem14'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].status.message.parts[].text' >> track-status.txt
+echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].shipment.trackingNumber' >> track-number.txt
+echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].shipment.trackingUrl' >> track-url.txt
 
-curl14=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl15=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -680,22 +785,26 @@ curl14=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"38444962"' ]]; then
-    index14=`echo $i`
+  if [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"38444962"' ]]; then
+    indexOrder15=`echo $i`
+    indexItem15=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"38444962"' ]]; then
+    indexOrder15=`echo $i`
+    indexItem15=`echo 1`
   fi
 done
 
-echo $curl14 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl14 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].status.message.parts[].text' >> track-status.txt
-echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].shipment.trackingNumber' >> track-number.txt
-echo $curl14 | jq '.data.guestOrder.groups_2101['$index14'].shipment.trackingUrl' >> track-url.txt
+echo $curl15 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl15 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].items['$indexItem15'].product.usItemId' >> track-usItemId.txt
+echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].items['$indexItem15'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].status.message.parts[].text' >> track-status.txt
+echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].shipment.trackingNumber' >> track-number.txt
+echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].shipment.trackingUrl' >> track-url.txt
 
-curl15=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+curl16=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -729,20 +838,25 @@ curl15=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[].product.usItemId'` == '"251382558"' ]]; then
-    index15=`echo $i`
+  if [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
+    indexOrder16=`echo $i`
+    indexItem16=`echo 0`
+  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"251382558"' ]]; then
+    indexOrder16=`echo $i`
+    indexItem16=`echo 1`
   fi
 done
 
-echo $curl15 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl15 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].items[].product.usItemId' >> track-usItemId.txt
-echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].items[].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].status.message.parts[].text' >> track-status.txt
-echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].shipment.trackingNumber' >> track-number.txt
-echo $curl15 | jq '.data.guestOrder.groups_2101['$index15'].shipment.trackingUrl' >> track-url.txt
+echo $curl16 | jq '.data.guestOrder.id' >> track-OrderID.txt
+echo $curl16 | jq '.data.guestOrder.customer.email' >> track-email.txt
+echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].items['$indexItem16'].product.usItemId' >> track-usItemId.txt
+echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].items['$indexItem16'].priceInfo.linePrice.value' >> track-priceValue.txt
+echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].deliveryAddress.fullName' >> track-fullName.txt
+echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].deliveryAddress.address.addressString' >> track-address.txt
+echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].status.message.parts[].text' >> track-status.txt
+echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].shipment.trackingNumber' >> track-number.txt
+echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].shipment.trackingUrl' >> track-url.txt
+
 
 git add -A .
 git commit -m --allow-empty

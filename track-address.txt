@@ -1,6 +1,7 @@
 "1460 Washington Ave, Apt 6A, Bronx, NY 10456"
 "1815 138th Street Ct E, Tacoma, 98445, WA 30277"
 "12204 bluefield st, spring hill, 34609-2903, FL 94806"
+"14580 NW Hunters Dr, Beaverton, OR 97006"
 "22 Road 1499, La Plata, 87418, NM 33131"
 "11548 W 95th St, Overland Park, 66214, KS 90502"
 "110 E Tulsa Spavinaw, Spavinaw, 74366, OK 61068"
