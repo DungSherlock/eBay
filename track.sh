@@ -8,6 +8,7 @@
 : > track-url.txt
 : > track-OrderID.txt
 : > track-email.txt
+
 curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
