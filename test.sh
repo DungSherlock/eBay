@@ -33,7 +33,7 @@ curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
 for (( i=0; i<=4; i++ ))
 do
   if [[ $curl1 =~ "error" ]]; then
-    echo "Lỗi rồi!"
+    echo "Lỗi email số 1"
     break
   elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"226026281"' ]]; then
     indexOrder1=`echo $i`
@@ -42,16 +42,16 @@ do
     indexOrder1=`echo $i`
     indexItem1=`echo 1`
   fi
+  echo "lỗi"
+  # echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
+  # echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
+  # echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].product.usItemId' >> track-usItemId.txt
+  # echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].priceInfo.linePrice.value' >> track-priceValue.txt
+  # echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.fullName' >> track-fullName.txt
+  # echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.address.addressString' >> track-address.txt
+  # echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].status.message.parts[].text' >> track-status.txt
+  # echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingNumber' >> track-number.txt
+  # echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingUrl' >> track-url.txt
 done
 
-# echo $indexOrder1
-# echo $indexItem1
-# echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
-# echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
-# echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].product.usItemId' >> track-usItemId.txt
-# echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].priceInfo.linePrice.value' >> track-priceValue.txt
-# echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.fullName' >> track-fullName.txt
-# echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.address.addressString' >> track-address.txt
-# echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].status.message.parts[].text' >> track-status.txt
-# echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingNumber' >> track-number.txt
-# echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingUrl' >> track-url.txt
+echo "ham tiep"
