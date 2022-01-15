@@ -43,7 +43,7 @@ curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl1 =~ "error" ]]; then
+  if [[ $curl1 =~ "error"  || $curl1 =~ "blocked" ]]; then
     echo "Lỗi email số 1"
     break
   elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
@@ -55,7 +55,7 @@ do
   fi
 done
 
-if [[ $indexOrdercurl != "error" ]]; then
+if [[ $indexOrder1 != "error" ]]; then
 echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].product.usItemId' >> track-usItemId.txt
@@ -101,7 +101,7 @@ curl2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl2 =~ "error" ]]; then
+  if [[ $curl2 =~ "error"  || $curl2 =~ "blocked" ]]; then
     echo "Lỗi email số 2"
     break
   elif [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"226026281"' ]]; then
@@ -113,7 +113,7 @@ do
   fi
 done
 
-if [[ $indexOrderSTT != "error" ]]; then
+if [[ $indexOrder2 != "error" ]]; then
 echo $curl2 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl2 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].items['$indexItem2'].product.usItemId' >> track-usItemId.txt
@@ -159,7 +159,7 @@ curl3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl3 =~ "error" ]]; then
+  if [[ $curl3 =~ "error"  || $curl3 =~ "blocked" ]]; then
     echo "Lỗi email số 3"
     break
   elif [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"137359681"' ]]; then
@@ -171,7 +171,7 @@ do
   fi
 done
 
-if [[ $indexOrder1 != "error" ]]; then
+if [[ $indexOrder3 != "error" ]]; then
 echo $curl3 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl3 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].items['$indexItem3'].product.usItemId' >> track-usItemId.txt
@@ -217,7 +217,7 @@ curl4=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl4 =~ "error" ]]; then
+  if [[ $curl4 =~ "error"  || $curl4 =~ "blocked" ]]; then
     echo "Lỗi email số 4"
     break
   elif [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"918843213"' ]]; then
@@ -229,7 +229,7 @@ do
   fi
 done
 
-if [[ $indexOrder2 != "error" ]]; then
+if [[ $indexOrder4 != "error" ]]; then
 echo $curl4 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl4 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].items['$indexItem4'].product.usItemId' >> track-usItemId.txt
@@ -275,7 +275,7 @@ curl5=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl5 =~ "error" ]]; then
+  if [[ $curl5 =~ "error"  || $curl5 =~ "blocked" ]]; then
     echo "Lỗi email số 5"
     break
   elif [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
@@ -287,7 +287,7 @@ do
   fi
 done
 
-if [[ $indexOrder3 != "error" ]]; then
+if [[ $indexOrder5 != "error" ]]; then
 echo $curl5 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl5 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].items['$indexItem5'].product.usItemId' >> track-usItemId.txt
@@ -333,7 +333,7 @@ curl6=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl6 =~ "error" ]]; then
+  if [[ $curl6 =~ "error"  || $curl6 =~ "blocked" ]]; then
     echo "Lỗi email số 6"
     break
   elif [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
@@ -345,7 +345,7 @@ do
   fi
 done
 
-if [[ $indexOrder4 != "error" ]]; then
+if [[ $indexOrder6 != "error" ]]; then
 echo $curl6 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl6 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].items['$indexItem6'].product.usItemId' >> track-usItemId.txt
@@ -391,7 +391,7 @@ curl7=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl7 =~ "error" ]]; then
+  if [[ $curl7 =~ "error"  || $curl7 =~ "blocked" ]]; then
     echo "Lỗi email số 7"
     break
   elif [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10752553"' ]]; then
@@ -403,7 +403,7 @@ do
   fi
 done
 
-if [[ $indexOrder5 != "error" ]]; then
+if [[ $indexOrder7 != "error" ]]; then
 echo $curl7 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl7 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].items['$indexItem7'].product.usItemId' >> track-usItemId.txt
@@ -449,7 +449,7 @@ curl8=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl8 =~ "error" ]]; then
+  if [[ $curl8 =~ "error"  || $curl8 =~ "blocked" ]]; then
     echo "Lỗi email số 8"
     break
   elif [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
@@ -461,7 +461,7 @@ do
   fi
 done
 
-if [[ $indexOrder6 != "error" ]]; then
+if [[ $indexOrder8 != "error" ]]; then
 echo $curl8 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl8 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].items['$indexItem8'].product.usItemId' >> track-usItemId.txt
@@ -507,7 +507,7 @@ curl9=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl9 =~ "error" ]]; then
+  if [[ $curl9 =~ "error"  || $curl9 =~ "blocked" ]]; then
     echo "Lỗi email số 9"
     break
   elif [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"766799843"' ]]; then
@@ -519,7 +519,7 @@ do
   fi
 done
 
-if [[ $indexOrder7 != "error" ]]; then
+if [[ $indexOrder9 != "error" ]]; then
 echo $curl9 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl9 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].items['$indexItem9'].product.usItemId' >> track-usItemId.txt
@@ -565,7 +565,7 @@ curl10=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl10 =~ "error" ]]; then
+  if [[ $curl10 =~ "error"  || $curl10 =~ "blocked" ]]; then
     echo "Lỗi email số 10"
     break
   elif [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10752553"' ]]; then
@@ -577,7 +577,7 @@ do
   fi
 done
 
-if [[ $indexOrder8 != "error" ]]; then
+if [[ $indexOrder10 != "error" ]]; then
 echo $curl10 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl10 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].items['$indexItem10'].product.usItemId' >> track-usItemId.txt
@@ -623,7 +623,7 @@ curl11=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl11 =~ "error" ]]; then
+  if [[ $curl11 =~ "error"  || $curl11 =~ "blocked" ]]; then
     echo "Lỗi email số 11"
     break
   elif [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"6371940"' ]]; then
@@ -635,7 +635,7 @@ do
   fi
 done
 
-if [[ $indexOrder9 != "error" ]]; then
+if [[ $indexOrder11 != "error" ]]; then
 echo $curl11 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl11 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].items['$indexItem11'].product.usItemId' >> track-usItemId.txt
@@ -681,7 +681,7 @@ curl12=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl12 =~ "error" ]]; then
+  if [[ $curl12 =~ "error"  || $curl12 =~ "blocked" ]]; then
     echo "Lỗi email số 12"
     break
   elif [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"337077643"' ]]; then
@@ -693,7 +693,7 @@ do
   fi
 done
 
-if [[ $indexOrder10 != "error" ]]; then
+if [[ $indexOrder12 != "error" ]]; then
 echo $curl12 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl12 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].items['$indexItem12'].product.usItemId' >> track-usItemId.txt
@@ -739,7 +739,7 @@ curl13=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl13 =~ "error" ]]; then
+  if [[ $curl13 =~ "error"  || $curl13 =~ "blocked" ]]; then
     echo "Lỗi email số 13"
     break
   elif [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
@@ -751,7 +751,7 @@ do
   fi
 done
 
-if [[ $indexOrder11 != "error" ]]; then
+if [[ $indexOrder13 != "error" ]]; then
 echo $curl13 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl13 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].items['$indexItem13'].product.usItemId' >> track-usItemId.txt
@@ -797,7 +797,7 @@ curl14=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl14 =~ "error" ]]; then
+  if [[ $curl14 =~ "error"  || $curl14 =~ "blocked" ]]; then
     echo "Lỗi email số 14"
     break
   elif [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"249900363"' ]]; then
@@ -809,7 +809,7 @@ do
   fi
 done
 
-if [[ $indexOrder12 != "error" ]]; then
+if [[ $indexOrder14 != "error" ]]; then
 echo $curl14 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl14 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].items['$indexItem14'].product.usItemId' >> track-usItemId.txt
@@ -855,7 +855,7 @@ curl15=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl15 =~ "error" ]]; then
+  if [[ $curl15 =~ "error"  || $curl15 =~ "blocked" ]]; then
     echo "Lỗi email số 15"
     break
   elif [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"55234301"' ]]; then
@@ -867,7 +867,7 @@ do
   fi
 done
 
-if [[ $indexOrder13 != "error" ]]; then
+if [[ $indexOrder15 != "error" ]]; then
 echo $curl15 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl15 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].items['$indexItem15'].product.usItemId' >> track-usItemId.txt
@@ -913,7 +913,7 @@ curl16=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl16 =~ "error" ]]; then
+  if [[ $curl16 =~ "error"  || $curl16 =~ "blocked" ]]; then
     echo "Lỗi email số 16"
     break
   elif [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"137359681"' ]]; then
@@ -925,7 +925,7 @@ do
   fi
 done
 
-if [[ $indexOrder14 != "error" ]]; then
+if [[ $indexOrder16 != "error" ]]; then
 echo $curl16 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl16 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].items['$indexItem16'].product.usItemId' >> track-usItemId.txt
@@ -971,7 +971,7 @@ curl17=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl17 =~ "error" ]]; then
+  if [[ $curl17 =~ "error"  || $curl17 =~ "blocked" ]]; then
     echo "Lỗi email số 17"
     break
   elif [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"874080200"' ]]; then
@@ -983,7 +983,7 @@ do
   fi
 done
 
-if [[ $indexOrder15 != "error" ]]; then
+if [[ $indexOrder17 != "error" ]]; then
 echo $curl17 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl17 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl17 | jq '.data.guestOrder.groups_2101['$indexOrder17'].items['$indexItem17'].product.usItemId' >> track-usItemId.txt
@@ -1029,7 +1029,7 @@ curl18=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl18 =~ "error" ]]; then
+  if [[ $curl18 =~ "error"  || $curl18 =~ "blocked" ]]; then
     echo "Lỗi email số 18"
     break
   elif [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54297033"' ]]; then
@@ -1041,7 +1041,7 @@ do
   fi
 done
 
-if [[ $indexOrder16 != "error" ]]; then
+if [[ $indexOrder18 != "error" ]]; then
 echo $curl18 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl18 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl18 | jq '.data.guestOrder.groups_2101['$indexOrder18'].items['$indexItem18'].product.usItemId' >> track-usItemId.txt
@@ -1087,7 +1087,7 @@ curl19=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl19 =~ "error" ]]; then
+  if [[ $curl19 =~ "error"  || $curl19 =~ "blocked" ]]; then
     echo "Lỗi email số 19"
     break
   elif [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"19524988"' ]]; then
@@ -1099,7 +1099,7 @@ do
   fi
 done
 
-if [[ $indexOrder17 != "error" ]]; then
+if [[ $indexOrder19 != "error" ]]; then
 echo $curl19 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl19 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl19 | jq '.data.guestOrder.groups_2101['$indexOrder19'].items['$indexItem19'].product.usItemId' >> track-usItemId.txt
@@ -1145,7 +1145,7 @@ curl20=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl20 =~ "error" ]]; then
+  if [[ $curl20 =~ "error"  || $curl20 =~ "blocked" ]]; then
     echo "Lỗi email số 20"
     break
   elif [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"874080200"' ]]; then
@@ -1157,7 +1157,7 @@ do
   fi
 done
 
-if [[ $indexOrder18 != "error" ]]; then
+if [[ $indexOrder20 != "error" ]]; then
 echo $curl20 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl20 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl20 | jq '.data.guestOrder.groups_2101['$indexOrder20'].items['$indexItem20'].product.usItemId' >> track-usItemId.txt
@@ -1203,7 +1203,7 @@ curl21=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl21 =~ "error" ]]; then
+  if [[ $curl21 =~ "error"  || $curl21 =~ "blocked" ]]; then
     echo "Lỗi email số 21"
     break
   elif [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"35702152"' ]]; then
@@ -1215,7 +1215,7 @@ do
   fi
 done
 
-if [[ $indexOrder19 != "error" ]]; then
+if [[ $indexOrder21 != "error" ]]; then
 echo $curl21 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl21 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl21 | jq '.data.guestOrder.groups_2101['$indexOrder21'].items['$indexItem21'].product.usItemId' >> track-usItemId.txt
@@ -1261,7 +1261,7 @@ curl22=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl22 =~ "error" ]]; then
+  if [[ $curl22 =~ "error"  || $curl22 =~ "blocked" ]]; then
     echo "Lỗi email số 22"
     break
   elif [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
@@ -1273,7 +1273,7 @@ do
   fi
 done
 
-if [[ $indexOrder20 != "error" ]]; then
+if [[ $indexOrder22 != "error" ]]; then
 echo $curl22 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl22 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl22 | jq '.data.guestOrder.groups_2101['$indexOrder22'].items['$indexItem22'].product.usItemId' >> track-usItemId.txt
@@ -1319,7 +1319,7 @@ curl23=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl23 =~ "error" ]]; then
+  if [[ $curl23 =~ "error"  || $curl23 =~ "blocked" ]]; then
     echo "Lỗi email số 23"
     break
   elif [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
@@ -1331,7 +1331,7 @@ do
   fi
 done
 
-if [[ $indexOrder21 != "error" ]]; then
+if [[ $indexOrder23 != "error" ]]; then
 echo $curl23 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl23 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl23 | jq '.data.guestOrder.groups_2101['$indexOrder23'].items['$indexItem23'].product.usItemId' >> track-usItemId.txt
@@ -1377,7 +1377,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"641220610"' ]]; then
@@ -1389,7 +1389,7 @@ do
   fi
 done
 
-if [[ $indexOrder22 != "error" ]]; then
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1435,7 +1435,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"325768579"' ]]; then
@@ -1447,7 +1447,7 @@ do
   fi
 done
 
-if [[ $indexOrder23 != "error" ]]; then
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1493,7 +1493,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"713811084"' ]]; then
@@ -1551,7 +1551,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"520367700"' ]]; then
@@ -1609,7 +1609,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"171122882"' ]]; then
@@ -1667,7 +1667,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
@@ -1725,7 +1725,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"240828726"' ]]; then
@@ -1783,7 +1783,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"488588268"' ]]; then
@@ -1841,7 +1841,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"477200308"' ]]; then
@@ -1899,7 +1899,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"628834581"' ]]; then
@@ -1957,7 +1957,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"988607514"' ]]; then
@@ -2015,7 +2015,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"641220610"' ]]; then
@@ -2073,7 +2073,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
@@ -2131,7 +2131,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"749228471"' ]]; then
@@ -2189,7 +2189,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50753941"' ]]; then
@@ -2247,7 +2247,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"38444962"' ]]; then
@@ -2305,7 +2305,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
@@ -2363,7 +2363,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"240828726"' ]]; then
@@ -2421,7 +2421,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"674470775"' ]]; then
@@ -2479,7 +2479,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"265176340"' ]]; then
@@ -2537,7 +2537,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"227338487"' ]]; then
@@ -2595,7 +2595,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10771204"' ]]; then
@@ -2653,7 +2653,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"526913580"' ]]; then
@@ -2711,7 +2711,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129990153"' ]]; then
@@ -2769,7 +2769,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"121639349"' ]]; then
@@ -2827,7 +2827,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
@@ -2885,7 +2885,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
@@ -2943,7 +2943,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755857661"' ]]; then
@@ -3001,7 +3001,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"514290555"' ]]; then
@@ -3059,7 +3059,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"318995418"' ]]; then
@@ -3117,7 +3117,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
@@ -3175,7 +3175,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"713811084"' ]]; then
@@ -3233,7 +3233,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
@@ -3291,7 +3291,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"504678442"' ]]; then
@@ -3349,7 +3349,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"3084"' ]]; then
@@ -3407,7 +3407,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"395854693"' ]]; then
@@ -3465,7 +3465,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"504678442"' ]]; then
@@ -3523,7 +3523,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"520367700"' ]]; then
@@ -3581,7 +3581,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"514290555"' ]]; then
@@ -3639,7 +3639,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
@@ -3697,7 +3697,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"45465229"' ]]; then
@@ -3755,7 +3755,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
@@ -3813,7 +3813,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50753947"' ]]; then
@@ -3871,7 +3871,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"337077643"' ]]; then
@@ -3929,7 +3929,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
@@ -3987,7 +3987,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"399596583"' ]]; then
@@ -4045,7 +4045,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
@@ -4103,7 +4103,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"689830322"' ]]; then
@@ -4161,7 +4161,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"121639349"' ]]; then
@@ -4219,7 +4219,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"378936130"' ]]; then
@@ -4277,7 +4277,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50109305"' ]]; then
@@ -4335,7 +4335,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"480863972"' ]]; then
@@ -4393,7 +4393,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
@@ -4451,7 +4451,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"969841770"' ]]; then
@@ -4509,7 +4509,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"38444962"' ]]; then
@@ -4567,7 +4567,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
@@ -4625,7 +4625,7 @@ curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
  
 for (( i=0; i<=4; i++ ))
 do
-  if [[ $curl =~ "error" ]]; then
+  if [[ $curl =~ "error"  || $curl =~ "blocked" ]]; then
     echo "Lỗi email số "
     break
   elif [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
