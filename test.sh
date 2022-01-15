@@ -1,3 +1,14 @@
+#!/bin/bash
+: > track-usItemId.txt
+: > track-priceValue.txt
+: > track-fullName.txt
+: > track-address.txt
+: > track-status.txt
+: > track-number.txt
+: > track-url.txt
+: > track-OrderID.txt
+: > track-email.txt
+
 curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
@@ -31,29 +42,33 @@ curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --compressed`
  
 for (( i=0; i<=4; i++ ))
-do
-  if [[ $curl1 =~ "error" || $curl1 =~ "blocked" ]]; then
-    echo "Lỗi email số 1"
+  do
+  if [[ $curl1 =~ "error" ]]; then
+    echo "Sai thông tin đăng nhập-Record số 1"
+    error=`echo error`
     break
-  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
-    indexOrder1=`echo $i`
-    indexItem1=`echo 0`
-  elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"129706644"' ]]; then
-    indexOrder1=`echo $i`
-    indexItem1=`echo 1`
+  elif [[ $curl1 =~ "blocked" ]]; then
+    echo "Lỗi blocked-Record số 1"
+    error=`echo error`
+    break
+  else
+    for (( j=0; j<=4; j++))
+    do
+      if [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"129706644z"' ]]; then
+        echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
+        echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        item1=`echo ngon`
+        echo $i
+        echo $j
+        break
+      fi
+    done
   fi
 done
-
-if [[ $indexOrdercurl != "error" ]]; then
-echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
-echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].product.usItemId' >> track-usItemId.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].priceInfo.linePrice.value' >> track-priceValue.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.fullName' >> track-fullName.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.address.addressString' >> track-address.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].status.message.parts[].text' >> track-status.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingNumber' >> track-number.txt
-echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingUrl' >> track-url.txt
-fi
-
-echo "chay tiep"
