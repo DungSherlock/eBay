@@ -5,7 +5,7 @@
 "Delivered on Jan 12"
 "Canceled on Jan 14"
 "Delivered on Jan 07"
-"Delayed, arrives by Mon, Jan 17"
+"Delayed, check back for updates"
 "Arrives by Sun, Jan 16"
 "Arrives today"
 "Arrives by Tue, Jan 18"
