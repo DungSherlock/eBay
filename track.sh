@@ -8,7 +8,6 @@
 : > track-url.txt
 : > track-OrderID.txt
 : > track-email.txt
-
 curl1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
@@ -45,7 +44,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl1 =~ "error"  || $curl1 =~ "blocked" ]]; then
     echo "Lỗi email số 1"
-    indexOrder1=`error`
+    indexOrder1=`echo error`
     break
   elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
     indexOrder1=`echo $i`
@@ -104,7 +103,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl2 =~ "error"  || $curl2 =~ "blocked" ]]; then
     echo "Lỗi email số 2"
-    indexOrder2=`error`
+    indexOrder2=`echo error`
     break
   elif [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"226026281"' ]]; then
     indexOrder2=`echo $i`
@@ -163,7 +162,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl3 =~ "error"  || $curl3 =~ "blocked" ]]; then
     echo "Lỗi email số 3"
-    indexOrder3=`error`
+    indexOrder3=`echo error`
     break
   elif [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"137359681"' ]]; then
     indexOrder3=`echo $i`
@@ -222,7 +221,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl4 =~ "error"  || $curl4 =~ "blocked" ]]; then
     echo "Lỗi email số 4"
-    indexOrder4=`error`
+    indexOrder4=`echo error`
     break
   elif [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"918843213"' ]]; then
     indexOrder4=`echo $i`
@@ -281,7 +280,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl5 =~ "error"  || $curl5 =~ "blocked" ]]; then
     echo "Lỗi email số 5"
-    indexOrder5=`error`
+    indexOrder5=`echo error`
     break
   elif [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
     indexOrder5=`echo $i`
@@ -340,7 +339,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl6 =~ "error"  || $curl6 =~ "blocked" ]]; then
     echo "Lỗi email số 6"
-    indexOrder6=`error`
+    indexOrder6=`echo error`
     break
   elif [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder6=`echo $i`
@@ -399,7 +398,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl7 =~ "error"  || $curl7 =~ "blocked" ]]; then
     echo "Lỗi email số 7"
-    indexOrder7=`error`
+    indexOrder7=`echo error`
     break
   elif [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10752553"' ]]; then
     indexOrder7=`echo $i`
@@ -458,7 +457,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl8 =~ "error"  || $curl8 =~ "blocked" ]]; then
     echo "Lỗi email số 8"
-    indexOrder8=`error`
+    indexOrder8=`echo error`
     break
   elif [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
     indexOrder8=`echo $i`
@@ -517,7 +516,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl9 =~ "error"  || $curl9 =~ "blocked" ]]; then
     echo "Lỗi email số 9"
-    indexOrder9=`error`
+    indexOrder9=`echo error`
     break
   elif [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"766799843"' ]]; then
     indexOrder9=`echo $i`
@@ -576,7 +575,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl10 =~ "error"  || $curl10 =~ "blocked" ]]; then
     echo "Lỗi email số 10"
-    indexOrder10=`error`
+    indexOrder10=`echo error`
     break
   elif [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10752553"' ]]; then
     indexOrder10=`echo $i`
@@ -635,7 +634,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl11 =~ "error"  || $curl11 =~ "blocked" ]]; then
     echo "Lỗi email số 11"
-    indexOrder11=`error`
+    indexOrder11=`echo error`
     break
   elif [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"6371940"' ]]; then
     indexOrder11=`echo $i`
@@ -694,7 +693,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl12 =~ "error"  || $curl12 =~ "blocked" ]]; then
     echo "Lỗi email số 12"
-    indexOrder12=`error`
+    indexOrder12=`echo error`
     break
   elif [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"337077643"' ]]; then
     indexOrder12=`echo $i`
@@ -753,7 +752,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl13 =~ "error"  || $curl13 =~ "blocked" ]]; then
     echo "Lỗi email số 13"
-    indexOrder13=`error`
+    indexOrder13=`echo error`
     break
   elif [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder13=`echo $i`
@@ -812,7 +811,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl14 =~ "error"  || $curl14 =~ "blocked" ]]; then
     echo "Lỗi email số 14"
-    indexOrder14=`error`
+    indexOrder14=`echo error`
     break
   elif [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"249900363"' ]]; then
     indexOrder14=`echo $i`
@@ -871,7 +870,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl15 =~ "error"  || $curl15 =~ "blocked" ]]; then
     echo "Lỗi email số 15"
-    indexOrder15=`error`
+    indexOrder15=`echo error`
     break
   elif [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"55234301"' ]]; then
     indexOrder15=`echo $i`
@@ -930,7 +929,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl16 =~ "error"  || $curl16 =~ "blocked" ]]; then
     echo "Lỗi email số 16"
-    indexOrder16=`error`
+    indexOrder16=`echo error`
     break
   elif [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"137359681"' ]]; then
     indexOrder16=`echo $i`
@@ -989,7 +988,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl17 =~ "error"  || $curl17 =~ "blocked" ]]; then
     echo "Lỗi email số 17"
-    indexOrder17=`error`
+    indexOrder17=`echo error`
     break
   elif [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"874080200"' ]]; then
     indexOrder17=`echo $i`
@@ -1048,7 +1047,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl18 =~ "error"  || $curl18 =~ "blocked" ]]; then
     echo "Lỗi email số 18"
-    indexOrder18=`error`
+    indexOrder18=`echo error`
     break
   elif [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54297033"' ]]; then
     indexOrder18=`echo $i`
@@ -1107,7 +1106,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl19 =~ "error"  || $curl19 =~ "blocked" ]]; then
     echo "Lỗi email số 19"
-    indexOrder19=`error`
+    indexOrder19=`echo error`
     break
   elif [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"19524988"' ]]; then
     indexOrder19=`echo $i`
@@ -1166,7 +1165,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl20 =~ "error"  || $curl20 =~ "blocked" ]]; then
     echo "Lỗi email số 20"
-    indexOrder20=`error`
+    indexOrder20=`echo error`
     break
   elif [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"874080200"' ]]; then
     indexOrder20=`echo $i`
@@ -1225,7 +1224,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl21 =~ "error"  || $curl21 =~ "blocked" ]]; then
     echo "Lỗi email số 21"
-    indexOrder21=`error`
+    indexOrder21=`echo error`
     break
   elif [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"35702152"' ]]; then
     indexOrder21=`echo $i`
@@ -1284,7 +1283,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl22 =~ "error"  || $curl22 =~ "blocked" ]]; then
     echo "Lỗi email số 22"
-    indexOrder22=`error`
+    indexOrder22=`echo error`
     break
   elif [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
     indexOrder22=`echo $i`
@@ -1343,7 +1342,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl23 =~ "error"  || $curl23 =~ "blocked" ]]; then
     echo "Lỗi email số 23"
-    indexOrder23=`error`
+    indexOrder23=`echo error`
     break
   elif [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
     indexOrder23=`echo $i`
@@ -1402,7 +1401,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl24 =~ "error"  || $curl24 =~ "blocked" ]]; then
     echo "Lỗi email số 24"
-    indexOrder24=`error`
+    indexOrder24=`echo error`
     break
   elif [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"641220610"' ]]; then
     indexOrder24=`echo $i`
@@ -1461,7 +1460,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl25 =~ "error"  || $curl25 =~ "blocked" ]]; then
     echo "Lỗi email số 25"
-    indexOrder25=`error`
+    indexOrder25=`echo error`
     break
   elif [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"325768579"' ]]; then
     indexOrder25=`echo $i`
@@ -1520,7 +1519,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl26 =~ "error"  || $curl26 =~ "blocked" ]]; then
     echo "Lỗi email số 26"
-    indexOrder26=`error`
+    indexOrder26=`echo error`
     break
   elif [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"713811084"' ]]; then
     indexOrder26=`echo $i`
@@ -1579,7 +1578,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl27 =~ "error"  || $curl27 =~ "blocked" ]]; then
     echo "Lỗi email số 27"
-    indexOrder27=`error`
+    indexOrder27=`echo error`
     break
   elif [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"520367700"' ]]; then
     indexOrder27=`echo $i`
@@ -1638,7 +1637,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl28 =~ "error"  || $curl28 =~ "blocked" ]]; then
     echo "Lỗi email số 28"
-    indexOrder28=`error`
+    indexOrder28=`echo error`
     break
   elif [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"171122882"' ]]; then
     indexOrder28=`echo $i`
@@ -1697,7 +1696,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl29 =~ "error"  || $curl29 =~ "blocked" ]]; then
     echo "Lỗi email số 29"
-    indexOrder29=`error`
+    indexOrder29=`echo error`
     break
   elif [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder29=`echo $i`
@@ -1756,7 +1755,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl30 =~ "error"  || $curl30 =~ "blocked" ]]; then
     echo "Lỗi email số 30"
-    indexOrder30=`error`
+    indexOrder30=`echo error`
     break
   elif [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"240828726"' ]]; then
     indexOrder30=`echo $i`
@@ -1815,7 +1814,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl31 =~ "error"  || $curl31 =~ "blocked" ]]; then
     echo "Lỗi email số 31"
-    indexOrder31=`error`
+    indexOrder31=`echo error`
     break
   elif [[ `echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"488588268"' ]]; then
     indexOrder31=`echo $i`
@@ -1874,7 +1873,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl32 =~ "error"  || $curl32 =~ "blocked" ]]; then
     echo "Lỗi email số 32"
-    indexOrder32=`error`
+    indexOrder32=`echo error`
     break
   elif [[ `echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"477200308"' ]]; then
     indexOrder32=`echo $i`
@@ -1933,7 +1932,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl33 =~ "error"  || $curl33 =~ "blocked" ]]; then
     echo "Lỗi email số 33"
-    indexOrder33=`error`
+    indexOrder33=`echo error`
     break
   elif [[ `echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"628834581"' ]]; then
     indexOrder33=`echo $i`
@@ -1992,7 +1991,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl34 =~ "error"  || $curl34 =~ "blocked" ]]; then
     echo "Lỗi email số 34"
-    indexOrder34=`error`
+    indexOrder34=`echo error`
     break
   elif [[ `echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"988607514"' ]]; then
     indexOrder34=`echo $i`
@@ -2051,7 +2050,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl35 =~ "error"  || $curl35 =~ "blocked" ]]; then
     echo "Lỗi email số 35"
-    indexOrder35=`error`
+    indexOrder35=`echo error`
     break
   elif [[ `echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"641220610"' ]]; then
     indexOrder35=`echo $i`
@@ -2110,7 +2109,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl36 =~ "error"  || $curl36 =~ "blocked" ]]; then
     echo "Lỗi email số 36"
-    indexOrder36=`error`
+    indexOrder36=`echo error`
     break
   elif [[ `echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder36=`echo $i`
@@ -2169,7 +2168,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl37 =~ "error"  || $curl37 =~ "blocked" ]]; then
     echo "Lỗi email số 37"
-    indexOrder37=`error`
+    indexOrder37=`echo error`
     break
   elif [[ `echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"749228471"' ]]; then
     indexOrder37=`echo $i`
@@ -2228,7 +2227,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl38 =~ "error"  || $curl38 =~ "blocked" ]]; then
     echo "Lỗi email số 38"
-    indexOrder38=`error`
+    indexOrder38=`echo error`
     break
   elif [[ `echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50753941"' ]]; then
     indexOrder38=`echo $i`
@@ -2287,7 +2286,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl39 =~ "error"  || $curl39 =~ "blocked" ]]; then
     echo "Lỗi email số 39"
-    indexOrder39=`error`
+    indexOrder39=`echo error`
     break
   elif [[ `echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"38444962"' ]]; then
     indexOrder39=`echo $i`
@@ -2346,7 +2345,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl40 =~ "error"  || $curl40 =~ "blocked" ]]; then
     echo "Lỗi email số 40"
-    indexOrder40=`error`
+    indexOrder40=`echo error`
     break
   elif [[ `echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
     indexOrder40=`echo $i`
@@ -2405,7 +2404,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl41 =~ "error"  || $curl41 =~ "blocked" ]]; then
     echo "Lỗi email số 41"
-    indexOrder41=`error`
+    indexOrder41=`echo error`
     break
   elif [[ `echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"240828726"' ]]; then
     indexOrder41=`echo $i`
@@ -2464,7 +2463,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl42 =~ "error"  || $curl42 =~ "blocked" ]]; then
     echo "Lỗi email số 42"
-    indexOrder42=`error`
+    indexOrder42=`echo error`
     break
   elif [[ `echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"674470775"' ]]; then
     indexOrder42=`echo $i`
@@ -2523,7 +2522,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl43 =~ "error"  || $curl43 =~ "blocked" ]]; then
     echo "Lỗi email số 43"
-    indexOrder43=`error`
+    indexOrder43=`echo error`
     break
   elif [[ `echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"265176340"' ]]; then
     indexOrder43=`echo $i`
@@ -2582,7 +2581,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl44 =~ "error"  || $curl44 =~ "blocked" ]]; then
     echo "Lỗi email số 44"
-    indexOrder44=`error`
+    indexOrder44=`echo error`
     break
   elif [[ `echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"227338487"' ]]; then
     indexOrder44=`echo $i`
@@ -2641,7 +2640,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl45 =~ "error"  || $curl45 =~ "blocked" ]]; then
     echo "Lỗi email số 45"
-    indexOrder45=`error`
+    indexOrder45=`echo error`
     break
   elif [[ `echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10771204"' ]]; then
     indexOrder45=`echo $i`
@@ -2700,7 +2699,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl46 =~ "error"  || $curl46 =~ "blocked" ]]; then
     echo "Lỗi email số 46"
-    indexOrder46=`error`
+    indexOrder46=`echo error`
     break
   elif [[ `echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"526913580"' ]]; then
     indexOrder46=`echo $i`
@@ -2759,7 +2758,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl47 =~ "error"  || $curl47 =~ "blocked" ]]; then
     echo "Lỗi email số 47"
-    indexOrder47=`error`
+    indexOrder47=`echo error`
     break
   elif [[ `echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129990153"' ]]; then
     indexOrder47=`echo $i`
@@ -2818,7 +2817,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl48 =~ "error"  || $curl48 =~ "blocked" ]]; then
     echo "Lỗi email số 48"
-    indexOrder48=`error`
+    indexOrder48=`echo error`
     break
   elif [[ `echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"121639349"' ]]; then
     indexOrder48=`echo $i`
@@ -2877,7 +2876,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl49 =~ "error"  || $curl49 =~ "blocked" ]]; then
     echo "Lỗi email số 49"
-    indexOrder49=`error`
+    indexOrder49=`echo error`
     break
   elif [[ `echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder49=`echo $i`
@@ -2936,7 +2935,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl50 =~ "error"  || $curl50 =~ "blocked" ]]; then
     echo "Lỗi email số 50"
-    indexOrder50=`error`
+    indexOrder50=`echo error`
     break
   elif [[ `echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder50=`echo $i`
@@ -2995,7 +2994,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl51 =~ "error"  || $curl51 =~ "blocked" ]]; then
     echo "Lỗi email số 51"
-    indexOrder51=`error`
+    indexOrder51=`echo error`
     break
   elif [[ `echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755857661"' ]]; then
     indexOrder51=`echo $i`
@@ -3054,7 +3053,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl52 =~ "error"  || $curl52 =~ "blocked" ]]; then
     echo "Lỗi email số 52"
-    indexOrder52=`error`
+    indexOrder52=`echo error`
     break
   elif [[ `echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"514290555"' ]]; then
     indexOrder52=`echo $i`
@@ -3113,7 +3112,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl53 =~ "error"  || $curl53 =~ "blocked" ]]; then
     echo "Lỗi email số 53"
-    indexOrder53=`error`
+    indexOrder53=`echo error`
     break
   elif [[ `echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"318995418"' ]]; then
     indexOrder53=`echo $i`
@@ -3172,7 +3171,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl54 =~ "error"  || $curl54 =~ "blocked" ]]; then
     echo "Lỗi email số 54"
-    indexOrder54=`error`
+    indexOrder54=`echo error`
     break
   elif [[ `echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
     indexOrder54=`echo $i`
@@ -3231,7 +3230,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl55 =~ "error"  || $curl55 =~ "blocked" ]]; then
     echo "Lỗi email số 55"
-    indexOrder55=`error`
+    indexOrder55=`echo error`
     break
   elif [[ `echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"713811084"' ]]; then
     indexOrder55=`echo $i`
@@ -3290,7 +3289,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl56 =~ "error"  || $curl56 =~ "blocked" ]]; then
     echo "Lỗi email số 56"
-    indexOrder56=`error`
+    indexOrder56=`echo error`
     break
   elif [[ `echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder56=`echo $i`
@@ -3349,7 +3348,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl57 =~ "error"  || $curl57 =~ "blocked" ]]; then
     echo "Lỗi email số 57"
-    indexOrder57=`error`
+    indexOrder57=`echo error`
     break
   elif [[ `echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"504678442"' ]]; then
     indexOrder57=`echo $i`
@@ -3408,7 +3407,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl58 =~ "error"  || $curl58 =~ "blocked" ]]; then
     echo "Lỗi email số 58"
-    indexOrder58=`error`
+    indexOrder58=`echo error`
     break
   elif [[ `echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"3084"' ]]; then
     indexOrder58=`echo $i`
@@ -3467,7 +3466,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl59 =~ "error"  || $curl59 =~ "blocked" ]]; then
     echo "Lỗi email số 59"
-    indexOrder59=`error`
+    indexOrder59=`echo error`
     break
   elif [[ `echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"395854693"' ]]; then
     indexOrder59=`echo $i`
@@ -3526,7 +3525,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl60 =~ "error"  || $curl60 =~ "blocked" ]]; then
     echo "Lỗi email số 60"
-    indexOrder60=`error`
+    indexOrder60=`echo error`
     break
   elif [[ `echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"504678442"' ]]; then
     indexOrder60=`echo $i`
@@ -3585,7 +3584,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl61 =~ "error"  || $curl61 =~ "blocked" ]]; then
     echo "Lỗi email số 61"
-    indexOrder61=`error`
+    indexOrder61=`echo error`
     break
   elif [[ `echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"520367700"' ]]; then
     indexOrder61=`echo $i`
@@ -3644,7 +3643,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl62 =~ "error"  || $curl62 =~ "blocked" ]]; then
     echo "Lỗi email số 62"
-    indexOrder62=`error`
+    indexOrder62=`echo error`
     break
   elif [[ `echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"514290555"' ]]; then
     indexOrder62=`echo $i`
@@ -3703,7 +3702,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl63 =~ "error"  || $curl63 =~ "blocked" ]]; then
     echo "Lỗi email số 63"
-    indexOrder63=`error`
+    indexOrder63=`echo error`
     break
   elif [[ `echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
     indexOrder63=`echo $i`
@@ -3762,7 +3761,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl64 =~ "error"  || $curl64 =~ "blocked" ]]; then
     echo "Lỗi email số 64"
-    indexOrder64=`error`
+    indexOrder64=`echo error`
     break
   elif [[ `echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"45465229"' ]]; then
     indexOrder64=`echo $i`
@@ -3821,7 +3820,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl65 =~ "error"  || $curl65 =~ "blocked" ]]; then
     echo "Lỗi email số 65"
-    indexOrder65=`error`
+    indexOrder65=`echo error`
     break
   elif [[ `echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder65=`echo $i`
@@ -3880,7 +3879,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl66 =~ "error"  || $curl66 =~ "blocked" ]]; then
     echo "Lỗi email số 66"
-    indexOrder66=`error`
+    indexOrder66=`echo error`
     break
   elif [[ `echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50753947"' ]]; then
     indexOrder66=`echo $i`
@@ -3939,7 +3938,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl67 =~ "error"  || $curl67 =~ "blocked" ]]; then
     echo "Lỗi email số 67"
-    indexOrder67=`error`
+    indexOrder67=`echo error`
     break
   elif [[ `echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"337077643"' ]]; then
     indexOrder67=`echo $i`
@@ -3998,7 +3997,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl68 =~ "error"  || $curl68 =~ "blocked" ]]; then
     echo "Lỗi email số 68"
-    indexOrder68=`error`
+    indexOrder68=`echo error`
     break
   elif [[ `echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder68=`echo $i`
@@ -4057,7 +4056,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl69 =~ "error"  || $curl69 =~ "blocked" ]]; then
     echo "Lỗi email số 69"
-    indexOrder69=`error`
+    indexOrder69=`echo error`
     break
   elif [[ `echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"399596583"' ]]; then
     indexOrder69=`echo $i`
@@ -4116,7 +4115,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl70 =~ "error"  || $curl70 =~ "blocked" ]]; then
     echo "Lỗi email số 70"
-    indexOrder70=`error`
+    indexOrder70=`echo error`
     break
   elif [[ `echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder70=`echo $i`
@@ -4175,7 +4174,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl71 =~ "error"  || $curl71 =~ "blocked" ]]; then
     echo "Lỗi email số 71"
-    indexOrder71=`error`
+    indexOrder71=`echo error`
     break
   elif [[ `echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"689830322"' ]]; then
     indexOrder71=`echo $i`
@@ -4234,7 +4233,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl72 =~ "error"  || $curl72 =~ "blocked" ]]; then
     echo "Lỗi email số 72"
-    indexOrder72=`error`
+    indexOrder72=`echo error`
     break
   elif [[ `echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"121639349"' ]]; then
     indexOrder72=`echo $i`
@@ -4293,7 +4292,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl73 =~ "error"  || $curl73 =~ "blocked" ]]; then
     echo "Lỗi email số 73"
-    indexOrder73=`error`
+    indexOrder73=`echo error`
     break
   elif [[ `echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"378936130"' ]]; then
     indexOrder73=`echo $i`
@@ -4352,7 +4351,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl74 =~ "error"  || $curl74 =~ "blocked" ]]; then
     echo "Lỗi email số 74"
-    indexOrder74=`error`
+    indexOrder74=`echo error`
     break
   elif [[ `echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50109305"' ]]; then
     indexOrder74=`echo $i`
@@ -4411,7 +4410,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl75 =~ "error"  || $curl75 =~ "blocked" ]]; then
     echo "Lỗi email số 75"
-    indexOrder75=`error`
+    indexOrder75=`echo error`
     break
   elif [[ `echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"480863972"' ]]; then
     indexOrder75=`echo $i`
@@ -4470,7 +4469,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl76 =~ "error"  || $curl76 =~ "blocked" ]]; then
     echo "Lỗi email số 76"
-    indexOrder76=`error`
+    indexOrder76=`echo error`
     break
   elif [[ `echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder76=`echo $i`
@@ -4529,7 +4528,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl77 =~ "error"  || $curl77 =~ "blocked" ]]; then
     echo "Lỗi email số 77"
-    indexOrder77=`error`
+    indexOrder77=`echo error`
     break
   elif [[ `echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"969841770"' ]]; then
     indexOrder77=`echo $i`
@@ -4588,7 +4587,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl78 =~ "error"  || $curl78 =~ "blocked" ]]; then
     echo "Lỗi email số 78"
-    indexOrder78=`error`
+    indexOrder78=`echo error`
     break
   elif [[ `echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"38444962"' ]]; then
     indexOrder78=`echo $i`
@@ -4647,7 +4646,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl79 =~ "error"  || $curl79 =~ "blocked" ]]; then
     echo "Lỗi email số 79"
-    indexOrder79=`error`
+    indexOrder79=`echo error`
     break
   elif [[ `echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder79=`echo $i`
@@ -4706,7 +4705,7 @@ for (( i=0; i<=4; i++ ))
 do
   if [[ $curl80 =~ "error"  || $curl80 =~ "blocked" ]]; then
     echo "Lỗi email số 80"
-    indexOrder80=`error`
+    indexOrder80=`echo error`
     break
   elif [[ `echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
     indexOrder80=`echo $i`
