@@ -50,15 +50,19 @@ do
   elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
     indexOrder1=`echo $i`
     indexItem1=`echo 0`
+    break
   elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"129706644"' ]]; then
     indexOrder1=`echo $i`
     indexItem1=`echo 1`
+    break
   elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"129706644"' ]]; then
     indexOrder1=`echo $i`
     indexItem1=`echo 2`
+    break
   elif [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"129706644"' ]]; then
     indexOrder1=`echo $i`
     indexItem1=`echo 3`
+    break
   fi
 done
 
@@ -115,15 +119,19 @@ do
   elif [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"226026281"' ]]; then
     indexOrder2=`echo $i`
     indexItem2=`echo 0`
+    break
   elif [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"226026281"' ]]; then
     indexOrder2=`echo $i`
     indexItem2=`echo 1`
+    break
   elif [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"226026281"' ]]; then
     indexOrder2=`echo $i`
     indexItem2=`echo 2`
+    break
   elif [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"226026281"' ]]; then
     indexOrder2=`echo $i`
     indexItem2=`echo 3`
+    break
   fi
 done
 
@@ -180,15 +188,19 @@ do
   elif [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"137359681"' ]]; then
     indexOrder3=`echo $i`
     indexItem3=`echo 0`
+    break
   elif [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"137359681"' ]]; then
     indexOrder3=`echo $i`
     indexItem3=`echo 1`
+    break
   elif [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"137359681"' ]]; then
     indexOrder3=`echo $i`
     indexItem3=`echo 2`
+    break
   elif [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"137359681"' ]]; then
     indexOrder3=`echo $i`
     indexItem3=`echo 3`
+    break
   fi
 done
 
@@ -245,15 +257,19 @@ do
   elif [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"918843213"' ]]; then
     indexOrder4=`echo $i`
     indexItem4=`echo 0`
+    break
   elif [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"918843213"' ]]; then
     indexOrder4=`echo $i`
     indexItem4=`echo 1`
+    break
   elif [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"918843213"' ]]; then
     indexOrder4=`echo $i`
     indexItem4=`echo 2`
+    break
   elif [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"918843213"' ]]; then
     indexOrder4=`echo $i`
     indexItem4=`echo 3`
+    break
   fi
 done
 
@@ -310,15 +326,19 @@ do
   elif [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
     indexOrder5=`echo $i`
     indexItem5=`echo 0`
+    break
   elif [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"129706644"' ]]; then
     indexOrder5=`echo $i`
     indexItem5=`echo 1`
+    break
   elif [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"129706644"' ]]; then
     indexOrder5=`echo $i`
     indexItem5=`echo 2`
+    break
   elif [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"129706644"' ]]; then
     indexOrder5=`echo $i`
     indexItem5=`echo 3`
+    break
   fi
 done
 
@@ -375,15 +395,19 @@ do
   elif [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder6=`echo $i`
     indexItem6=`echo 0`
+    break
   elif [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755361385"' ]]; then
     indexOrder6=`echo $i`
     indexItem6=`echo 1`
+    break
   elif [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"755361385"' ]]; then
     indexOrder6=`echo $i`
     indexItem6=`echo 2`
+    break
   elif [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"755361385"' ]]; then
     indexOrder6=`echo $i`
     indexItem6=`echo 3`
+    break
   fi
 done
 
@@ -440,15 +464,19 @@ do
   elif [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10752553"' ]]; then
     indexOrder7=`echo $i`
     indexItem7=`echo 0`
+    break
   elif [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"10752553"' ]]; then
     indexOrder7=`echo $i`
     indexItem7=`echo 1`
+    break
   elif [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"10752553"' ]]; then
     indexOrder7=`echo $i`
     indexItem7=`echo 2`
+    break
   elif [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"10752553"' ]]; then
     indexOrder7=`echo $i`
     indexItem7=`echo 3`
+    break
   fi
 done
 
@@ -505,15 +533,19 @@ do
   elif [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129706644"' ]]; then
     indexOrder8=`echo $i`
     indexItem8=`echo 0`
+    break
   elif [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"129706644"' ]]; then
     indexOrder8=`echo $i`
     indexItem8=`echo 1`
+    break
   elif [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"129706644"' ]]; then
     indexOrder8=`echo $i`
     indexItem8=`echo 2`
+    break
   elif [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"129706644"' ]]; then
     indexOrder8=`echo $i`
     indexItem8=`echo 3`
+    break
   fi
 done
 
@@ -570,15 +602,19 @@ do
   elif [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"766799843"' ]]; then
     indexOrder9=`echo $i`
     indexItem9=`echo 0`
+    break
   elif [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"766799843"' ]]; then
     indexOrder9=`echo $i`
     indexItem9=`echo 1`
+    break
   elif [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"766799843"' ]]; then
     indexOrder9=`echo $i`
     indexItem9=`echo 2`
+    break
   elif [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"766799843"' ]]; then
     indexOrder9=`echo $i`
     indexItem9=`echo 3`
+    break
   fi
 done
 
@@ -635,15 +671,19 @@ do
   elif [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10752553"' ]]; then
     indexOrder10=`echo $i`
     indexItem10=`echo 0`
+    break
   elif [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"10752553"' ]]; then
     indexOrder10=`echo $i`
     indexItem10=`echo 1`
+    break
   elif [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"10752553"' ]]; then
     indexOrder10=`echo $i`
     indexItem10=`echo 2`
+    break
   elif [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"10752553"' ]]; then
     indexOrder10=`echo $i`
     indexItem10=`echo 3`
+    break
   fi
 done
 
@@ -700,15 +740,19 @@ do
   elif [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"6371940"' ]]; then
     indexOrder11=`echo $i`
     indexItem11=`echo 0`
+    break
   elif [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"6371940"' ]]; then
     indexOrder11=`echo $i`
     indexItem11=`echo 1`
+    break
   elif [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"6371940"' ]]; then
     indexOrder11=`echo $i`
     indexItem11=`echo 2`
+    break
   elif [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"6371940"' ]]; then
     indexOrder11=`echo $i`
     indexItem11=`echo 3`
+    break
   fi
 done
 
@@ -765,15 +809,19 @@ do
   elif [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"337077643"' ]]; then
     indexOrder12=`echo $i`
     indexItem12=`echo 0`
+    break
   elif [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"337077643"' ]]; then
     indexOrder12=`echo $i`
     indexItem12=`echo 1`
+    break
   elif [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"337077643"' ]]; then
     indexOrder12=`echo $i`
     indexItem12=`echo 2`
+    break
   elif [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"337077643"' ]]; then
     indexOrder12=`echo $i`
     indexItem12=`echo 3`
+    break
   fi
 done
 
@@ -830,15 +878,19 @@ do
   elif [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder13=`echo $i`
     indexItem13=`echo 0`
+    break
   elif [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755361385"' ]]; then
     indexOrder13=`echo $i`
     indexItem13=`echo 1`
+    break
   elif [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"755361385"' ]]; then
     indexOrder13=`echo $i`
     indexItem13=`echo 2`
+    break
   elif [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"755361385"' ]]; then
     indexOrder13=`echo $i`
     indexItem13=`echo 3`
+    break
   fi
 done
 
@@ -895,15 +947,19 @@ do
   elif [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"249900363"' ]]; then
     indexOrder14=`echo $i`
     indexItem14=`echo 0`
+    break
   elif [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"249900363"' ]]; then
     indexOrder14=`echo $i`
     indexItem14=`echo 1`
+    break
   elif [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"249900363"' ]]; then
     indexOrder14=`echo $i`
     indexItem14=`echo 2`
+    break
   elif [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"249900363"' ]]; then
     indexOrder14=`echo $i`
     indexItem14=`echo 3`
+    break
   fi
 done
 
@@ -960,15 +1016,19 @@ do
   elif [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"55234301"' ]]; then
     indexOrder15=`echo $i`
     indexItem15=`echo 0`
+    break
   elif [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"55234301"' ]]; then
     indexOrder15=`echo $i`
     indexItem15=`echo 1`
+    break
   elif [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"55234301"' ]]; then
     indexOrder15=`echo $i`
     indexItem15=`echo 2`
+    break
   elif [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"55234301"' ]]; then
     indexOrder15=`echo $i`
     indexItem15=`echo 3`
+    break
   fi
 done
 
@@ -1025,15 +1085,19 @@ do
   elif [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"137359681"' ]]; then
     indexOrder16=`echo $i`
     indexItem16=`echo 0`
+    break
   elif [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"137359681"' ]]; then
     indexOrder16=`echo $i`
     indexItem16=`echo 1`
+    break
   elif [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"137359681"' ]]; then
     indexOrder16=`echo $i`
     indexItem16=`echo 2`
+    break
   elif [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"137359681"' ]]; then
     indexOrder16=`echo $i`
     indexItem16=`echo 3`
+    break
   fi
 done
 
@@ -1090,15 +1154,19 @@ do
   elif [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"874080200"' ]]; then
     indexOrder17=`echo $i`
     indexItem17=`echo 0`
+    break
   elif [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"874080200"' ]]; then
     indexOrder17=`echo $i`
     indexItem17=`echo 1`
+    break
   elif [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"874080200"' ]]; then
     indexOrder17=`echo $i`
     indexItem17=`echo 2`
+    break
   elif [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"874080200"' ]]; then
     indexOrder17=`echo $i`
     indexItem17=`echo 3`
+    break
   fi
 done
 
@@ -1155,15 +1223,19 @@ do
   elif [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54297033"' ]]; then
     indexOrder18=`echo $i`
     indexItem18=`echo 0`
+    break
   elif [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"54297033"' ]]; then
     indexOrder18=`echo $i`
     indexItem18=`echo 1`
+    break
   elif [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"54297033"' ]]; then
     indexOrder18=`echo $i`
     indexItem18=`echo 2`
+    break
   elif [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"54297033"' ]]; then
     indexOrder18=`echo $i`
     indexItem18=`echo 3`
+    break
   fi
 done
 
@@ -1220,15 +1292,19 @@ do
   elif [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"19524988"' ]]; then
     indexOrder19=`echo $i`
     indexItem19=`echo 0`
+    break
   elif [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"19524988"' ]]; then
     indexOrder19=`echo $i`
     indexItem19=`echo 1`
+    break
   elif [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"19524988"' ]]; then
     indexOrder19=`echo $i`
     indexItem19=`echo 2`
+    break
   elif [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"19524988"' ]]; then
     indexOrder19=`echo $i`
     indexItem19=`echo 3`
+    break
   fi
 done
 
@@ -1285,15 +1361,19 @@ do
   elif [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"874080200"' ]]; then
     indexOrder20=`echo $i`
     indexItem20=`echo 0`
+    break
   elif [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"874080200"' ]]; then
     indexOrder20=`echo $i`
     indexItem20=`echo 1`
+    break
   elif [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"874080200"' ]]; then
     indexOrder20=`echo $i`
     indexItem20=`echo 2`
+    break
   elif [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"874080200"' ]]; then
     indexOrder20=`echo $i`
     indexItem20=`echo 3`
+    break
   fi
 done
 
@@ -1350,15 +1430,19 @@ do
   elif [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"35702152"' ]]; then
     indexOrder21=`echo $i`
     indexItem21=`echo 0`
+    break
   elif [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"35702152"' ]]; then
     indexOrder21=`echo $i`
     indexItem21=`echo 1`
+    break
   elif [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"35702152"' ]]; then
     indexOrder21=`echo $i`
     indexItem21=`echo 2`
+    break
   elif [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"35702152"' ]]; then
     indexOrder21=`echo $i`
     indexItem21=`echo 3`
+    break
   fi
 done
 
@@ -1415,15 +1499,19 @@ do
   elif [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
     indexOrder22=`echo $i`
     indexItem22=`echo 0`
+    break
   elif [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"217281734"' ]]; then
     indexOrder22=`echo $i`
     indexItem22=`echo 1`
+    break
   elif [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"217281734"' ]]; then
     indexOrder22=`echo $i`
     indexItem22=`echo 2`
+    break
   elif [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"217281734"' ]]; then
     indexOrder22=`echo $i`
     indexItem22=`echo 3`
+    break
   fi
 done
 
@@ -1480,15 +1568,19 @@ do
   elif [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
     indexOrder23=`echo $i`
     indexItem23=`echo 0`
+    break
   elif [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"54315959"' ]]; then
     indexOrder23=`echo $i`
     indexItem23=`echo 1`
+    break
   elif [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"54315959"' ]]; then
     indexOrder23=`echo $i`
     indexItem23=`echo 2`
+    break
   elif [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"54315959"' ]]; then
     indexOrder23=`echo $i`
     indexItem23=`echo 3`
+    break
   fi
 done
 
@@ -1545,15 +1637,19 @@ do
   elif [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"641220610"' ]]; then
     indexOrder24=`echo $i`
     indexItem24=`echo 0`
+    break
   elif [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"641220610"' ]]; then
     indexOrder24=`echo $i`
     indexItem24=`echo 1`
+    break
   elif [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"641220610"' ]]; then
     indexOrder24=`echo $i`
     indexItem24=`echo 2`
+    break
   elif [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"641220610"' ]]; then
     indexOrder24=`echo $i`
     indexItem24=`echo 3`
+    break
   fi
 done
 
@@ -1610,15 +1706,19 @@ do
   elif [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"325768579"' ]]; then
     indexOrder25=`echo $i`
     indexItem25=`echo 0`
+    break
   elif [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"325768579"' ]]; then
     indexOrder25=`echo $i`
     indexItem25=`echo 1`
+    break
   elif [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"325768579"' ]]; then
     indexOrder25=`echo $i`
     indexItem25=`echo 2`
+    break
   elif [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"325768579"' ]]; then
     indexOrder25=`echo $i`
     indexItem25=`echo 3`
+    break
   fi
 done
 
@@ -1675,15 +1775,19 @@ do
   elif [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"713811084"' ]]; then
     indexOrder26=`echo $i`
     indexItem26=`echo 0`
+    break
   elif [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"713811084"' ]]; then
     indexOrder26=`echo $i`
     indexItem26=`echo 1`
+    break
   elif [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"713811084"' ]]; then
     indexOrder26=`echo $i`
     indexItem26=`echo 2`
+    break
   elif [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"713811084"' ]]; then
     indexOrder26=`echo $i`
     indexItem26=`echo 3`
+    break
   fi
 done
 
@@ -1740,15 +1844,19 @@ do
   elif [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"520367700"' ]]; then
     indexOrder27=`echo $i`
     indexItem27=`echo 0`
+    break
   elif [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"520367700"' ]]; then
     indexOrder27=`echo $i`
     indexItem27=`echo 1`
+    break
   elif [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"520367700"' ]]; then
     indexOrder27=`echo $i`
     indexItem27=`echo 2`
+    break
   elif [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"520367700"' ]]; then
     indexOrder27=`echo $i`
     indexItem27=`echo 3`
+    break
   fi
 done
 
@@ -1805,15 +1913,19 @@ do
   elif [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"171122882"' ]]; then
     indexOrder28=`echo $i`
     indexItem28=`echo 0`
+    break
   elif [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"171122882"' ]]; then
     indexOrder28=`echo $i`
     indexItem28=`echo 1`
+    break
   elif [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"171122882"' ]]; then
     indexOrder28=`echo $i`
     indexItem28=`echo 2`
+    break
   elif [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"171122882"' ]]; then
     indexOrder28=`echo $i`
     indexItem28=`echo 3`
+    break
   fi
 done
 
@@ -1870,15 +1982,19 @@ do
   elif [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder29=`echo $i`
     indexItem29=`echo 0`
+    break
   elif [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"251382558"' ]]; then
     indexOrder29=`echo $i`
     indexItem29=`echo 1`
+    break
   elif [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"251382558"' ]]; then
     indexOrder29=`echo $i`
     indexItem29=`echo 2`
+    break
   elif [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"251382558"' ]]; then
     indexOrder29=`echo $i`
     indexItem29=`echo 3`
+    break
   fi
 done
 
@@ -1935,15 +2051,19 @@ do
   elif [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"240828726"' ]]; then
     indexOrder30=`echo $i`
     indexItem30=`echo 0`
+    break
   elif [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"240828726"' ]]; then
     indexOrder30=`echo $i`
     indexItem30=`echo 1`
+    break
   elif [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"240828726"' ]]; then
     indexOrder30=`echo $i`
     indexItem30=`echo 2`
+    break
   elif [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"240828726"' ]]; then
     indexOrder30=`echo $i`
     indexItem30=`echo 3`
+    break
   fi
 done
 
@@ -2000,15 +2120,19 @@ do
   elif [[ `echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"488588268"' ]]; then
     indexOrder31=`echo $i`
     indexItem31=`echo 0`
+    break
   elif [[ `echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"488588268"' ]]; then
     indexOrder31=`echo $i`
     indexItem31=`echo 1`
+    break
   elif [[ `echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"488588268"' ]]; then
     indexOrder31=`echo $i`
     indexItem31=`echo 2`
+    break
   elif [[ `echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"488588268"' ]]; then
     indexOrder31=`echo $i`
     indexItem31=`echo 3`
+    break
   fi
 done
 
@@ -2065,15 +2189,19 @@ do
   elif [[ `echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"477200308"' ]]; then
     indexOrder32=`echo $i`
     indexItem32=`echo 0`
+    break
   elif [[ `echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"477200308"' ]]; then
     indexOrder32=`echo $i`
     indexItem32=`echo 1`
+    break
   elif [[ `echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"477200308"' ]]; then
     indexOrder32=`echo $i`
     indexItem32=`echo 2`
+    break
   elif [[ `echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"477200308"' ]]; then
     indexOrder32=`echo $i`
     indexItem32=`echo 3`
+    break
   fi
 done
 
@@ -2130,15 +2258,19 @@ do
   elif [[ `echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"628834581"' ]]; then
     indexOrder33=`echo $i`
     indexItem33=`echo 0`
+    break
   elif [[ `echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"628834581"' ]]; then
     indexOrder33=`echo $i`
     indexItem33=`echo 1`
+    break
   elif [[ `echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"628834581"' ]]; then
     indexOrder33=`echo $i`
     indexItem33=`echo 2`
+    break
   elif [[ `echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"628834581"' ]]; then
     indexOrder33=`echo $i`
     indexItem33=`echo 3`
+    break
   fi
 done
 
@@ -2195,15 +2327,19 @@ do
   elif [[ `echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"988607514"' ]]; then
     indexOrder34=`echo $i`
     indexItem34=`echo 0`
+    break
   elif [[ `echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"988607514"' ]]; then
     indexOrder34=`echo $i`
     indexItem34=`echo 1`
+    break
   elif [[ `echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"988607514"' ]]; then
     indexOrder34=`echo $i`
     indexItem34=`echo 2`
+    break
   elif [[ `echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"988607514"' ]]; then
     indexOrder34=`echo $i`
     indexItem34=`echo 3`
+    break
   fi
 done
 
@@ -2260,15 +2396,19 @@ do
   elif [[ `echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"641220610"' ]]; then
     indexOrder35=`echo $i`
     indexItem35=`echo 0`
+    break
   elif [[ `echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"641220610"' ]]; then
     indexOrder35=`echo $i`
     indexItem35=`echo 1`
+    break
   elif [[ `echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"641220610"' ]]; then
     indexOrder35=`echo $i`
     indexItem35=`echo 2`
+    break
   elif [[ `echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"641220610"' ]]; then
     indexOrder35=`echo $i`
     indexItem35=`echo 3`
+    break
   fi
 done
 
@@ -2325,15 +2465,19 @@ do
   elif [[ `echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder36=`echo $i`
     indexItem36=`echo 0`
+    break
   elif [[ `echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755361385"' ]]; then
     indexOrder36=`echo $i`
     indexItem36=`echo 1`
+    break
   elif [[ `echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"755361385"' ]]; then
     indexOrder36=`echo $i`
     indexItem36=`echo 2`
+    break
   elif [[ `echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"755361385"' ]]; then
     indexOrder36=`echo $i`
     indexItem36=`echo 3`
+    break
   fi
 done
 
@@ -2390,15 +2534,19 @@ do
   elif [[ `echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"749228471"' ]]; then
     indexOrder37=`echo $i`
     indexItem37=`echo 0`
+    break
   elif [[ `echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"749228471"' ]]; then
     indexOrder37=`echo $i`
     indexItem37=`echo 1`
+    break
   elif [[ `echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"749228471"' ]]; then
     indexOrder37=`echo $i`
     indexItem37=`echo 2`
+    break
   elif [[ `echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"749228471"' ]]; then
     indexOrder37=`echo $i`
     indexItem37=`echo 3`
+    break
   fi
 done
 
@@ -2455,15 +2603,19 @@ do
   elif [[ `echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50753941"' ]]; then
     indexOrder38=`echo $i`
     indexItem38=`echo 0`
+    break
   elif [[ `echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"50753941"' ]]; then
     indexOrder38=`echo $i`
     indexItem38=`echo 1`
+    break
   elif [[ `echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"50753941"' ]]; then
     indexOrder38=`echo $i`
     indexItem38=`echo 2`
+    break
   elif [[ `echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"50753941"' ]]; then
     indexOrder38=`echo $i`
     indexItem38=`echo 3`
+    break
   fi
 done
 
@@ -2520,15 +2672,19 @@ do
   elif [[ `echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"38444962"' ]]; then
     indexOrder39=`echo $i`
     indexItem39=`echo 0`
+    break
   elif [[ `echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"38444962"' ]]; then
     indexOrder39=`echo $i`
     indexItem39=`echo 1`
+    break
   elif [[ `echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"38444962"' ]]; then
     indexOrder39=`echo $i`
     indexItem39=`echo 2`
+    break
   elif [[ `echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"38444962"' ]]; then
     indexOrder39=`echo $i`
     indexItem39=`echo 3`
+    break
   fi
 done
 
@@ -2585,15 +2741,19 @@ do
   elif [[ `echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
     indexOrder40=`echo $i`
     indexItem40=`echo 0`
+    break
   elif [[ `echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"54315959"' ]]; then
     indexOrder40=`echo $i`
     indexItem40=`echo 1`
+    break
   elif [[ `echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"54315959"' ]]; then
     indexOrder40=`echo $i`
     indexItem40=`echo 2`
+    break
   elif [[ `echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"54315959"' ]]; then
     indexOrder40=`echo $i`
     indexItem40=`echo 3`
+    break
   fi
 done
 
@@ -2650,15 +2810,19 @@ do
   elif [[ `echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"240828726"' ]]; then
     indexOrder41=`echo $i`
     indexItem41=`echo 0`
+    break
   elif [[ `echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"240828726"' ]]; then
     indexOrder41=`echo $i`
     indexItem41=`echo 1`
+    break
   elif [[ `echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"240828726"' ]]; then
     indexOrder41=`echo $i`
     indexItem41=`echo 2`
+    break
   elif [[ `echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"240828726"' ]]; then
     indexOrder41=`echo $i`
     indexItem41=`echo 3`
+    break
   fi
 done
 
@@ -2715,15 +2879,19 @@ do
   elif [[ `echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"674470775"' ]]; then
     indexOrder42=`echo $i`
     indexItem42=`echo 0`
+    break
   elif [[ `echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"674470775"' ]]; then
     indexOrder42=`echo $i`
     indexItem42=`echo 1`
+    break
   elif [[ `echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"674470775"' ]]; then
     indexOrder42=`echo $i`
     indexItem42=`echo 2`
+    break
   elif [[ `echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"674470775"' ]]; then
     indexOrder42=`echo $i`
     indexItem42=`echo 3`
+    break
   fi
 done
 
@@ -2780,15 +2948,19 @@ do
   elif [[ `echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"265176340"' ]]; then
     indexOrder43=`echo $i`
     indexItem43=`echo 0`
+    break
   elif [[ `echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"265176340"' ]]; then
     indexOrder43=`echo $i`
     indexItem43=`echo 1`
+    break
   elif [[ `echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"265176340"' ]]; then
     indexOrder43=`echo $i`
     indexItem43=`echo 2`
+    break
   elif [[ `echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"265176340"' ]]; then
     indexOrder43=`echo $i`
     indexItem43=`echo 3`
+    break
   fi
 done
 
@@ -2845,15 +3017,19 @@ do
   elif [[ `echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"227338487"' ]]; then
     indexOrder44=`echo $i`
     indexItem44=`echo 0`
+    break
   elif [[ `echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"227338487"' ]]; then
     indexOrder44=`echo $i`
     indexItem44=`echo 1`
+    break
   elif [[ `echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"227338487"' ]]; then
     indexOrder44=`echo $i`
     indexItem44=`echo 2`
+    break
   elif [[ `echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"227338487"' ]]; then
     indexOrder44=`echo $i`
     indexItem44=`echo 3`
+    break
   fi
 done
 
@@ -2910,15 +3086,19 @@ do
   elif [[ `echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"10771204"' ]]; then
     indexOrder45=`echo $i`
     indexItem45=`echo 0`
+    break
   elif [[ `echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"10771204"' ]]; then
     indexOrder45=`echo $i`
     indexItem45=`echo 1`
+    break
   elif [[ `echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"10771204"' ]]; then
     indexOrder45=`echo $i`
     indexItem45=`echo 2`
+    break
   elif [[ `echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"10771204"' ]]; then
     indexOrder45=`echo $i`
     indexItem45=`echo 3`
+    break
   fi
 done
 
@@ -2975,15 +3155,19 @@ do
   elif [[ `echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"526913580"' ]]; then
     indexOrder46=`echo $i`
     indexItem46=`echo 0`
+    break
   elif [[ `echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"526913580"' ]]; then
     indexOrder46=`echo $i`
     indexItem46=`echo 1`
+    break
   elif [[ `echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"526913580"' ]]; then
     indexOrder46=`echo $i`
     indexItem46=`echo 2`
+    break
   elif [[ `echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"526913580"' ]]; then
     indexOrder46=`echo $i`
     indexItem46=`echo 3`
+    break
   fi
 done
 
@@ -3040,15 +3224,19 @@ do
   elif [[ `echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"129990153"' ]]; then
     indexOrder47=`echo $i`
     indexItem47=`echo 0`
+    break
   elif [[ `echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"129990153"' ]]; then
     indexOrder47=`echo $i`
     indexItem47=`echo 1`
+    break
   elif [[ `echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"129990153"' ]]; then
     indexOrder47=`echo $i`
     indexItem47=`echo 2`
+    break
   elif [[ `echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"129990153"' ]]; then
     indexOrder47=`echo $i`
     indexItem47=`echo 3`
+    break
   fi
 done
 
@@ -3105,15 +3293,19 @@ do
   elif [[ `echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"121639349"' ]]; then
     indexOrder48=`echo $i`
     indexItem48=`echo 0`
+    break
   elif [[ `echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"121639349"' ]]; then
     indexOrder48=`echo $i`
     indexItem48=`echo 1`
+    break
   elif [[ `echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"121639349"' ]]; then
     indexOrder48=`echo $i`
     indexItem48=`echo 2`
+    break
   elif [[ `echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"121639349"' ]]; then
     indexOrder48=`echo $i`
     indexItem48=`echo 3`
+    break
   fi
 done
 
@@ -3170,15 +3362,19 @@ do
   elif [[ `echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder49=`echo $i`
     indexItem49=`echo 0`
+    break
   elif [[ `echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755361385"' ]]; then
     indexOrder49=`echo $i`
     indexItem49=`echo 1`
+    break
   elif [[ `echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"755361385"' ]]; then
     indexOrder49=`echo $i`
     indexItem49=`echo 2`
+    break
   elif [[ `echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"755361385"' ]]; then
     indexOrder49=`echo $i`
     indexItem49=`echo 3`
+    break
   fi
 done
 
@@ -3235,15 +3431,19 @@ do
   elif [[ `echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder50=`echo $i`
     indexItem50=`echo 0`
+    break
   elif [[ `echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"251382558"' ]]; then
     indexOrder50=`echo $i`
     indexItem50=`echo 1`
+    break
   elif [[ `echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"251382558"' ]]; then
     indexOrder50=`echo $i`
     indexItem50=`echo 2`
+    break
   elif [[ `echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"251382558"' ]]; then
     indexOrder50=`echo $i`
     indexItem50=`echo 3`
+    break
   fi
 done
 
@@ -3300,15 +3500,19 @@ do
   elif [[ `echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755857661"' ]]; then
     indexOrder51=`echo $i`
     indexItem51=`echo 0`
+    break
   elif [[ `echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755857661"' ]]; then
     indexOrder51=`echo $i`
     indexItem51=`echo 1`
+    break
   elif [[ `echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"755857661"' ]]; then
     indexOrder51=`echo $i`
     indexItem51=`echo 2`
+    break
   elif [[ `echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"755857661"' ]]; then
     indexOrder51=`echo $i`
     indexItem51=`echo 3`
+    break
   fi
 done
 
@@ -3365,15 +3569,19 @@ do
   elif [[ `echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"514290555"' ]]; then
     indexOrder52=`echo $i`
     indexItem52=`echo 0`
+    break
   elif [[ `echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"514290555"' ]]; then
     indexOrder52=`echo $i`
     indexItem52=`echo 1`
+    break
   elif [[ `echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"514290555"' ]]; then
     indexOrder52=`echo $i`
     indexItem52=`echo 2`
+    break
   elif [[ `echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"514290555"' ]]; then
     indexOrder52=`echo $i`
     indexItem52=`echo 3`
+    break
   fi
 done
 
@@ -3430,15 +3638,19 @@ do
   elif [[ `echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"318995418"' ]]; then
     indexOrder53=`echo $i`
     indexItem53=`echo 0`
+    break
   elif [[ `echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"318995418"' ]]; then
     indexOrder53=`echo $i`
     indexItem53=`echo 1`
+    break
   elif [[ `echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"318995418"' ]]; then
     indexOrder53=`echo $i`
     indexItem53=`echo 2`
+    break
   elif [[ `echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"318995418"' ]]; then
     indexOrder53=`echo $i`
     indexItem53=`echo 3`
+    break
   fi
 done
 
@@ -3495,15 +3707,19 @@ do
   elif [[ `echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
     indexOrder54=`echo $i`
     indexItem54=`echo 0`
+    break
   elif [[ `echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"217281734"' ]]; then
     indexOrder54=`echo $i`
     indexItem54=`echo 1`
+    break
   elif [[ `echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"217281734"' ]]; then
     indexOrder54=`echo $i`
     indexItem54=`echo 2`
+    break
   elif [[ `echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"217281734"' ]]; then
     indexOrder54=`echo $i`
     indexItem54=`echo 3`
+    break
   fi
 done
 
@@ -3560,15 +3776,19 @@ do
   elif [[ `echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"713811084"' ]]; then
     indexOrder55=`echo $i`
     indexItem55=`echo 0`
+    break
   elif [[ `echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"713811084"' ]]; then
     indexOrder55=`echo $i`
     indexItem55=`echo 1`
+    break
   elif [[ `echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"713811084"' ]]; then
     indexOrder55=`echo $i`
     indexItem55=`echo 2`
+    break
   elif [[ `echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"713811084"' ]]; then
     indexOrder55=`echo $i`
     indexItem55=`echo 3`
+    break
   fi
 done
 
@@ -3625,15 +3845,19 @@ do
   elif [[ `echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder56=`echo $i`
     indexItem56=`echo 0`
+    break
   elif [[ `echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"251382558"' ]]; then
     indexOrder56=`echo $i`
     indexItem56=`echo 1`
+    break
   elif [[ `echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"251382558"' ]]; then
     indexOrder56=`echo $i`
     indexItem56=`echo 2`
+    break
   elif [[ `echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"251382558"' ]]; then
     indexOrder56=`echo $i`
     indexItem56=`echo 3`
+    break
   fi
 done
 
@@ -3690,15 +3914,19 @@ do
   elif [[ `echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"504678442"' ]]; then
     indexOrder57=`echo $i`
     indexItem57=`echo 0`
+    break
   elif [[ `echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"504678442"' ]]; then
     indexOrder57=`echo $i`
     indexItem57=`echo 1`
+    break
   elif [[ `echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"504678442"' ]]; then
     indexOrder57=`echo $i`
     indexItem57=`echo 2`
+    break
   elif [[ `echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"504678442"' ]]; then
     indexOrder57=`echo $i`
     indexItem57=`echo 3`
+    break
   fi
 done
 
@@ -3755,15 +3983,19 @@ do
   elif [[ `echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"3084"' ]]; then
     indexOrder58=`echo $i`
     indexItem58=`echo 0`
+    break
   elif [[ `echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"3084"' ]]; then
     indexOrder58=`echo $i`
     indexItem58=`echo 1`
+    break
   elif [[ `echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"3084"' ]]; then
     indexOrder58=`echo $i`
     indexItem58=`echo 2`
+    break
   elif [[ `echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"3084"' ]]; then
     indexOrder58=`echo $i`
     indexItem58=`echo 3`
+    break
   fi
 done
 
@@ -3820,15 +4052,19 @@ do
   elif [[ `echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"395854693"' ]]; then
     indexOrder59=`echo $i`
     indexItem59=`echo 0`
+    break
   elif [[ `echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"395854693"' ]]; then
     indexOrder59=`echo $i`
     indexItem59=`echo 1`
+    break
   elif [[ `echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"395854693"' ]]; then
     indexOrder59=`echo $i`
     indexItem59=`echo 2`
+    break
   elif [[ `echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"395854693"' ]]; then
     indexOrder59=`echo $i`
     indexItem59=`echo 3`
+    break
   fi
 done
 
@@ -3885,15 +4121,19 @@ do
   elif [[ `echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"504678442"' ]]; then
     indexOrder60=`echo $i`
     indexItem60=`echo 0`
+    break
   elif [[ `echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"504678442"' ]]; then
     indexOrder60=`echo $i`
     indexItem60=`echo 1`
+    break
   elif [[ `echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"504678442"' ]]; then
     indexOrder60=`echo $i`
     indexItem60=`echo 2`
+    break
   elif [[ `echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"504678442"' ]]; then
     indexOrder60=`echo $i`
     indexItem60=`echo 3`
+    break
   fi
 done
 
@@ -3950,15 +4190,19 @@ do
   elif [[ `echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"520367700"' ]]; then
     indexOrder61=`echo $i`
     indexItem61=`echo 0`
+    break
   elif [[ `echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"520367700"' ]]; then
     indexOrder61=`echo $i`
     indexItem61=`echo 1`
+    break
   elif [[ `echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"520367700"' ]]; then
     indexOrder61=`echo $i`
     indexItem61=`echo 2`
+    break
   elif [[ `echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"520367700"' ]]; then
     indexOrder61=`echo $i`
     indexItem61=`echo 3`
+    break
   fi
 done
 
@@ -4015,15 +4259,19 @@ do
   elif [[ `echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"514290555"' ]]; then
     indexOrder62=`echo $i`
     indexItem62=`echo 0`
+    break
   elif [[ `echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"514290555"' ]]; then
     indexOrder62=`echo $i`
     indexItem62=`echo 1`
+    break
   elif [[ `echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"514290555"' ]]; then
     indexOrder62=`echo $i`
     indexItem62=`echo 2`
+    break
   elif [[ `echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"514290555"' ]]; then
     indexOrder62=`echo $i`
     indexItem62=`echo 3`
+    break
   fi
 done
 
@@ -4080,15 +4328,19 @@ do
   elif [[ `echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"217281734"' ]]; then
     indexOrder63=`echo $i`
     indexItem63=`echo 0`
+    break
   elif [[ `echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"217281734"' ]]; then
     indexOrder63=`echo $i`
     indexItem63=`echo 1`
+    break
   elif [[ `echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"217281734"' ]]; then
     indexOrder63=`echo $i`
     indexItem63=`echo 2`
+    break
   elif [[ `echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"217281734"' ]]; then
     indexOrder63=`echo $i`
     indexItem63=`echo 3`
+    break
   fi
 done
 
@@ -4145,15 +4397,19 @@ do
   elif [[ `echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"45465229"' ]]; then
     indexOrder64=`echo $i`
     indexItem64=`echo 0`
+    break
   elif [[ `echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"45465229"' ]]; then
     indexOrder64=`echo $i`
     indexItem64=`echo 1`
+    break
   elif [[ `echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"45465229"' ]]; then
     indexOrder64=`echo $i`
     indexItem64=`echo 2`
+    break
   elif [[ `echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"45465229"' ]]; then
     indexOrder64=`echo $i`
     indexItem64=`echo 3`
+    break
   fi
 done
 
@@ -4210,15 +4466,19 @@ do
   elif [[ `echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder65=`echo $i`
     indexItem65=`echo 0`
+    break
   elif [[ `echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"251382558"' ]]; then
     indexOrder65=`echo $i`
     indexItem65=`echo 1`
+    break
   elif [[ `echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"251382558"' ]]; then
     indexOrder65=`echo $i`
     indexItem65=`echo 2`
+    break
   elif [[ `echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"251382558"' ]]; then
     indexOrder65=`echo $i`
     indexItem65=`echo 3`
+    break
   fi
 done
 
@@ -4275,15 +4535,19 @@ do
   elif [[ `echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50753947"' ]]; then
     indexOrder66=`echo $i`
     indexItem66=`echo 0`
+    break
   elif [[ `echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"50753947"' ]]; then
     indexOrder66=`echo $i`
     indexItem66=`echo 1`
+    break
   elif [[ `echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"50753947"' ]]; then
     indexOrder66=`echo $i`
     indexItem66=`echo 2`
+    break
   elif [[ `echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"50753947"' ]]; then
     indexOrder66=`echo $i`
     indexItem66=`echo 3`
+    break
   fi
 done
 
@@ -4340,15 +4604,19 @@ do
   elif [[ `echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"337077643"' ]]; then
     indexOrder67=`echo $i`
     indexItem67=`echo 0`
+    break
   elif [[ `echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"337077643"' ]]; then
     indexOrder67=`echo $i`
     indexItem67=`echo 1`
+    break
   elif [[ `echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"337077643"' ]]; then
     indexOrder67=`echo $i`
     indexItem67=`echo 2`
+    break
   elif [[ `echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"337077643"' ]]; then
     indexOrder67=`echo $i`
     indexItem67=`echo 3`
+    break
   fi
 done
 
@@ -4405,15 +4673,19 @@ do
   elif [[ `echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder68=`echo $i`
     indexItem68=`echo 0`
+    break
   elif [[ `echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755361385"' ]]; then
     indexOrder68=`echo $i`
     indexItem68=`echo 1`
+    break
   elif [[ `echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"755361385"' ]]; then
     indexOrder68=`echo $i`
     indexItem68=`echo 2`
+    break
   elif [[ `echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"755361385"' ]]; then
     indexOrder68=`echo $i`
     indexItem68=`echo 3`
+    break
   fi
 done
 
@@ -4470,15 +4742,19 @@ do
   elif [[ `echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"399596583"' ]]; then
     indexOrder69=`echo $i`
     indexItem69=`echo 0`
+    break
   elif [[ `echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"399596583"' ]]; then
     indexOrder69=`echo $i`
     indexItem69=`echo 1`
+    break
   elif [[ `echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"399596583"' ]]; then
     indexOrder69=`echo $i`
     indexItem69=`echo 2`
+    break
   elif [[ `echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"399596583"' ]]; then
     indexOrder69=`echo $i`
     indexItem69=`echo 3`
+    break
   fi
 done
 
@@ -4535,15 +4811,19 @@ do
   elif [[ `echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"755361385"' ]]; then
     indexOrder70=`echo $i`
     indexItem70=`echo 0`
+    break
   elif [[ `echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"755361385"' ]]; then
     indexOrder70=`echo $i`
     indexItem70=`echo 1`
+    break
   elif [[ `echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"755361385"' ]]; then
     indexOrder70=`echo $i`
     indexItem70=`echo 2`
+    break
   elif [[ `echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"755361385"' ]]; then
     indexOrder70=`echo $i`
     indexItem70=`echo 3`
+    break
   fi
 done
 
@@ -4600,15 +4880,19 @@ do
   elif [[ `echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"689830322"' ]]; then
     indexOrder71=`echo $i`
     indexItem71=`echo 0`
+    break
   elif [[ `echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"689830322"' ]]; then
     indexOrder71=`echo $i`
     indexItem71=`echo 1`
+    break
   elif [[ `echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"689830322"' ]]; then
     indexOrder71=`echo $i`
     indexItem71=`echo 2`
+    break
   elif [[ `echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"689830322"' ]]; then
     indexOrder71=`echo $i`
     indexItem71=`echo 3`
+    break
   fi
 done
 
@@ -4665,15 +4949,19 @@ do
   elif [[ `echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"121639349"' ]]; then
     indexOrder72=`echo $i`
     indexItem72=`echo 0`
+    break
   elif [[ `echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"121639349"' ]]; then
     indexOrder72=`echo $i`
     indexItem72=`echo 1`
+    break
   elif [[ `echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"121639349"' ]]; then
     indexOrder72=`echo $i`
     indexItem72=`echo 2`
+    break
   elif [[ `echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"121639349"' ]]; then
     indexOrder72=`echo $i`
     indexItem72=`echo 3`
+    break
   fi
 done
 
@@ -4730,15 +5018,19 @@ do
   elif [[ `echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"378936130"' ]]; then
     indexOrder73=`echo $i`
     indexItem73=`echo 0`
+    break
   elif [[ `echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"378936130"' ]]; then
     indexOrder73=`echo $i`
     indexItem73=`echo 1`
+    break
   elif [[ `echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"378936130"' ]]; then
     indexOrder73=`echo $i`
     indexItem73=`echo 2`
+    break
   elif [[ `echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"378936130"' ]]; then
     indexOrder73=`echo $i`
     indexItem73=`echo 3`
+    break
   fi
 done
 
@@ -4795,15 +5087,19 @@ do
   elif [[ `echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"50109305"' ]]; then
     indexOrder74=`echo $i`
     indexItem74=`echo 0`
+    break
   elif [[ `echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"50109305"' ]]; then
     indexOrder74=`echo $i`
     indexItem74=`echo 1`
+    break
   elif [[ `echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"50109305"' ]]; then
     indexOrder74=`echo $i`
     indexItem74=`echo 2`
+    break
   elif [[ `echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"50109305"' ]]; then
     indexOrder74=`echo $i`
     indexItem74=`echo 3`
+    break
   fi
 done
 
@@ -4860,15 +5156,19 @@ do
   elif [[ `echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"480863972"' ]]; then
     indexOrder75=`echo $i`
     indexItem75=`echo 0`
+    break
   elif [[ `echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"480863972"' ]]; then
     indexOrder75=`echo $i`
     indexItem75=`echo 1`
+    break
   elif [[ `echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"480863972"' ]]; then
     indexOrder75=`echo $i`
     indexItem75=`echo 2`
+    break
   elif [[ `echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"480863972"' ]]; then
     indexOrder75=`echo $i`
     indexItem75=`echo 3`
+    break
   fi
 done
 
@@ -4925,15 +5225,19 @@ do
   elif [[ `echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder76=`echo $i`
     indexItem76=`echo 0`
+    break
   elif [[ `echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"251382558"' ]]; then
     indexOrder76=`echo $i`
     indexItem76=`echo 1`
+    break
   elif [[ `echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"251382558"' ]]; then
     indexOrder76=`echo $i`
     indexItem76=`echo 2`
+    break
   elif [[ `echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"251382558"' ]]; then
     indexOrder76=`echo $i`
     indexItem76=`echo 3`
+    break
   fi
 done
 
@@ -4990,15 +5294,19 @@ do
   elif [[ `echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"969841770"' ]]; then
     indexOrder77=`echo $i`
     indexItem77=`echo 0`
+    break
   elif [[ `echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"969841770"' ]]; then
     indexOrder77=`echo $i`
     indexItem77=`echo 1`
+    break
   elif [[ `echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"969841770"' ]]; then
     indexOrder77=`echo $i`
     indexItem77=`echo 2`
+    break
   elif [[ `echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"969841770"' ]]; then
     indexOrder77=`echo $i`
     indexItem77=`echo 3`
+    break
   fi
 done
 
@@ -5055,15 +5363,19 @@ do
   elif [[ `echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"38444962"' ]]; then
     indexOrder78=`echo $i`
     indexItem78=`echo 0`
+    break
   elif [[ `echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"38444962"' ]]; then
     indexOrder78=`echo $i`
     indexItem78=`echo 1`
+    break
   elif [[ `echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"38444962"' ]]; then
     indexOrder78=`echo $i`
     indexItem78=`echo 2`
+    break
   elif [[ `echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"38444962"' ]]; then
     indexOrder78=`echo $i`
     indexItem78=`echo 3`
+    break
   fi
 done
 
@@ -5120,15 +5432,19 @@ do
   elif [[ `echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"251382558"' ]]; then
     indexOrder79=`echo $i`
     indexItem79=`echo 0`
+    break
   elif [[ `echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"251382558"' ]]; then
     indexOrder79=`echo $i`
     indexItem79=`echo 1`
+    break
   elif [[ `echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"251382558"' ]]; then
     indexOrder79=`echo $i`
     indexItem79=`echo 2`
+    break
   elif [[ `echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"251382558"' ]]; then
     indexOrder79=`echo $i`
     indexItem79=`echo 3`
+    break
   fi
 done
 
@@ -5185,15 +5501,19 @@ do
   elif [[ `echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[0].product.usItemId'` == '"54315959"' ]]; then
     indexOrder80=`echo $i`
     indexItem80=`echo 0`
+    break
   elif [[ `echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[1].product.usItemId'` == '"54315959"' ]]; then
     indexOrder80=`echo $i`
     indexItem80=`echo 1`
+    break
   elif [[ `echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[2].product.usItemId'` == '"54315959"' ]]; then
     indexOrder80=`echo $i`
     indexItem80=`echo 2`
+    break
   elif [[ `echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].items[3].product.usItemId'` == '"54315959"' ]]; then
     indexOrder80=`echo $i`
     indexItem80=`echo 3`
+    break
   fi
 done
 
