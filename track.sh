@@ -53,7 +53,9 @@ do
     indexOrder1=`echo $i`
     indexItem1=`echo 1`
   fi
+done
 
+if [[ $indexOrdercurl != "error" ]]; then
 echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].items['$indexItem1'].product.usItemId' >> track-usItemId.txt
@@ -63,7 +65,7 @@ echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].deliveryAddress.a
 echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].status.message.parts[].text' >> track-status.txt
 echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingNumber' >> track-number.txt
 echo $curl1 | jq '.data.guestOrder.groups_2101['$indexOrder1'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -109,7 +111,9 @@ do
     indexOrder2=`echo $i`
     indexItem2=`echo 1`
   fi
+done
 
+if [[ $indexOrderSTT != "error" ]]; then
 echo $curl2 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl2 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].items['$indexItem2'].product.usItemId' >> track-usItemId.txt
@@ -119,7 +123,7 @@ echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].deliveryAddress.a
 echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].status.message.parts[].text' >> track-status.txt
 echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].shipment.trackingNumber' >> track-number.txt
 echo $curl2 | jq '.data.guestOrder.groups_2101['$indexOrder2'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -165,7 +169,9 @@ do
     indexOrder3=`echo $i`
     indexItem3=`echo 1`
   fi
+done
 
+if [[ $indexOrder1 != "error" ]]; then
 echo $curl3 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl3 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].items['$indexItem3'].product.usItemId' >> track-usItemId.txt
@@ -175,7 +181,7 @@ echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].deliveryAddress.a
 echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].status.message.parts[].text' >> track-status.txt
 echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].shipment.trackingNumber' >> track-number.txt
 echo $curl3 | jq '.data.guestOrder.groups_2101['$indexOrder3'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl4=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -221,7 +227,9 @@ do
     indexOrder4=`echo $i`
     indexItem4=`echo 1`
   fi
+done
 
+if [[ $indexOrder2 != "error" ]]; then
 echo $curl4 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl4 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].items['$indexItem4'].product.usItemId' >> track-usItemId.txt
@@ -231,7 +239,7 @@ echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].deliveryAddress.a
 echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].status.message.parts[].text' >> track-status.txt
 echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].shipment.trackingNumber' >> track-number.txt
 echo $curl4 | jq '.data.guestOrder.groups_2101['$indexOrder4'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl5=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -277,7 +285,9 @@ do
     indexOrder5=`echo $i`
     indexItem5=`echo 1`
   fi
+done
 
+if [[ $indexOrder3 != "error" ]]; then
 echo $curl5 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl5 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].items['$indexItem5'].product.usItemId' >> track-usItemId.txt
@@ -287,7 +297,7 @@ echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].deliveryAddress.a
 echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].status.message.parts[].text' >> track-status.txt
 echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].shipment.trackingNumber' >> track-number.txt
 echo $curl5 | jq '.data.guestOrder.groups_2101['$indexOrder5'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl6=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -333,7 +343,9 @@ do
     indexOrder6=`echo $i`
     indexItem6=`echo 1`
   fi
+done
 
+if [[ $indexOrder4 != "error" ]]; then
 echo $curl6 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl6 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].items['$indexItem6'].product.usItemId' >> track-usItemId.txt
@@ -343,7 +355,7 @@ echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].deliveryAddress.a
 echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].status.message.parts[].text' >> track-status.txt
 echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].shipment.trackingNumber' >> track-number.txt
 echo $curl6 | jq '.data.guestOrder.groups_2101['$indexOrder6'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl7=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -389,7 +401,9 @@ do
     indexOrder7=`echo $i`
     indexItem7=`echo 1`
   fi
+done
 
+if [[ $indexOrder5 != "error" ]]; then
 echo $curl7 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl7 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].items['$indexItem7'].product.usItemId' >> track-usItemId.txt
@@ -399,7 +413,7 @@ echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].deliveryAddress.a
 echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].status.message.parts[].text' >> track-status.txt
 echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].shipment.trackingNumber' >> track-number.txt
 echo $curl7 | jq '.data.guestOrder.groups_2101['$indexOrder7'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl8=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -445,7 +459,9 @@ do
     indexOrder8=`echo $i`
     indexItem8=`echo 1`
   fi
+done
 
+if [[ $indexOrder6 != "error" ]]; then
 echo $curl8 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl8 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].items['$indexItem8'].product.usItemId' >> track-usItemId.txt
@@ -455,7 +471,7 @@ echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].deliveryAddress.a
 echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].status.message.parts[].text' >> track-status.txt
 echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].shipment.trackingNumber' >> track-number.txt
 echo $curl8 | jq '.data.guestOrder.groups_2101['$indexOrder8'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl9=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -501,7 +517,9 @@ do
     indexOrder9=`echo $i`
     indexItem9=`echo 1`
   fi
+done
 
+if [[ $indexOrder7 != "error" ]]; then
 echo $curl9 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl9 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].items['$indexItem9'].product.usItemId' >> track-usItemId.txt
@@ -511,7 +529,7 @@ echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].deliveryAddress.a
 echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].status.message.parts[].text' >> track-status.txt
 echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].shipment.trackingNumber' >> track-number.txt
 echo $curl9 | jq '.data.guestOrder.groups_2101['$indexOrder9'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl10=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -557,7 +575,9 @@ do
     indexOrder10=`echo $i`
     indexItem10=`echo 1`
   fi
+done
 
+if [[ $indexOrder8 != "error" ]]; then
 echo $curl10 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl10 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].items['$indexItem10'].product.usItemId' >> track-usItemId.txt
@@ -567,7 +587,7 @@ echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].deliveryAddress
 echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].status.message.parts[].text' >> track-status.txt
 echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].shipment.trackingNumber' >> track-number.txt
 echo $curl10 | jq '.data.guestOrder.groups_2101['$indexOrder10'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl11=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -613,7 +633,9 @@ do
     indexOrder11=`echo $i`
     indexItem11=`echo 1`
   fi
+done
 
+if [[ $indexOrder9 != "error" ]]; then
 echo $curl11 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl11 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].items['$indexItem11'].product.usItemId' >> track-usItemId.txt
@@ -623,7 +645,7 @@ echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].deliveryAddress
 echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].status.message.parts[].text' >> track-status.txt
 echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].shipment.trackingNumber' >> track-number.txt
 echo $curl11 | jq '.data.guestOrder.groups_2101['$indexOrder11'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl12=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -669,7 +691,9 @@ do
     indexOrder12=`echo $i`
     indexItem12=`echo 1`
   fi
+done
 
+if [[ $indexOrder10 != "error" ]]; then
 echo $curl12 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl12 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].items['$indexItem12'].product.usItemId' >> track-usItemId.txt
@@ -679,7 +703,7 @@ echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].deliveryAddress
 echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].status.message.parts[].text' >> track-status.txt
 echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].shipment.trackingNumber' >> track-number.txt
 echo $curl12 | jq '.data.guestOrder.groups_2101['$indexOrder12'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl13=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -725,7 +749,9 @@ do
     indexOrder13=`echo $i`
     indexItem13=`echo 1`
   fi
+done
 
+if [[ $indexOrder11 != "error" ]]; then
 echo $curl13 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl13 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].items['$indexItem13'].product.usItemId' >> track-usItemId.txt
@@ -735,7 +761,7 @@ echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].deliveryAddress
 echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].status.message.parts[].text' >> track-status.txt
 echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].shipment.trackingNumber' >> track-number.txt
 echo $curl13 | jq '.data.guestOrder.groups_2101['$indexOrder13'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl14=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -781,7 +807,9 @@ do
     indexOrder14=`echo $i`
     indexItem14=`echo 1`
   fi
+done
 
+if [[ $indexOrder12 != "error" ]]; then
 echo $curl14 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl14 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].items['$indexItem14'].product.usItemId' >> track-usItemId.txt
@@ -791,7 +819,7 @@ echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].deliveryAddress
 echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].status.message.parts[].text' >> track-status.txt
 echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].shipment.trackingNumber' >> track-number.txt
 echo $curl14 | jq '.data.guestOrder.groups_2101['$indexOrder14'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl15=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -837,7 +865,9 @@ do
     indexOrder15=`echo $i`
     indexItem15=`echo 1`
   fi
+done
 
+if [[ $indexOrder13 != "error" ]]; then
 echo $curl15 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl15 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].items['$indexItem15'].product.usItemId' >> track-usItemId.txt
@@ -847,7 +877,7 @@ echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].deliveryAddress
 echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].status.message.parts[].text' >> track-status.txt
 echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].shipment.trackingNumber' >> track-number.txt
 echo $curl15 | jq '.data.guestOrder.groups_2101['$indexOrder15'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl16=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -893,7 +923,9 @@ do
     indexOrder16=`echo $i`
     indexItem16=`echo 1`
   fi
+done
 
+if [[ $indexOrder14 != "error" ]]; then
 echo $curl16 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl16 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].items['$indexItem16'].product.usItemId' >> track-usItemId.txt
@@ -903,7 +935,7 @@ echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].deliveryAddress
 echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].status.message.parts[].text' >> track-status.txt
 echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].shipment.trackingNumber' >> track-number.txt
 echo $curl16 | jq '.data.guestOrder.groups_2101['$indexOrder16'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl17=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -949,7 +981,9 @@ do
     indexOrder17=`echo $i`
     indexItem17=`echo 1`
   fi
+done
 
+if [[ $indexOrder15 != "error" ]]; then
 echo $curl17 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl17 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl17 | jq '.data.guestOrder.groups_2101['$indexOrder17'].items['$indexItem17'].product.usItemId' >> track-usItemId.txt
@@ -959,7 +993,7 @@ echo $curl17 | jq '.data.guestOrder.groups_2101['$indexOrder17'].deliveryAddress
 echo $curl17 | jq '.data.guestOrder.groups_2101['$indexOrder17'].status.message.parts[].text' >> track-status.txt
 echo $curl17 | jq '.data.guestOrder.groups_2101['$indexOrder17'].shipment.trackingNumber' >> track-number.txt
 echo $curl17 | jq '.data.guestOrder.groups_2101['$indexOrder17'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl18=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1005,7 +1039,9 @@ do
     indexOrder18=`echo $i`
     indexItem18=`echo 1`
   fi
+done
 
+if [[ $indexOrder16 != "error" ]]; then
 echo $curl18 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl18 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl18 | jq '.data.guestOrder.groups_2101['$indexOrder18'].items['$indexItem18'].product.usItemId' >> track-usItemId.txt
@@ -1015,7 +1051,7 @@ echo $curl18 | jq '.data.guestOrder.groups_2101['$indexOrder18'].deliveryAddress
 echo $curl18 | jq '.data.guestOrder.groups_2101['$indexOrder18'].status.message.parts[].text' >> track-status.txt
 echo $curl18 | jq '.data.guestOrder.groups_2101['$indexOrder18'].shipment.trackingNumber' >> track-number.txt
 echo $curl18 | jq '.data.guestOrder.groups_2101['$indexOrder18'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl19=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1061,7 +1097,9 @@ do
     indexOrder19=`echo $i`
     indexItem19=`echo 1`
   fi
+done
 
+if [[ $indexOrder17 != "error" ]]; then
 echo $curl19 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl19 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl19 | jq '.data.guestOrder.groups_2101['$indexOrder19'].items['$indexItem19'].product.usItemId' >> track-usItemId.txt
@@ -1071,7 +1109,7 @@ echo $curl19 | jq '.data.guestOrder.groups_2101['$indexOrder19'].deliveryAddress
 echo $curl19 | jq '.data.guestOrder.groups_2101['$indexOrder19'].status.message.parts[].text' >> track-status.txt
 echo $curl19 | jq '.data.guestOrder.groups_2101['$indexOrder19'].shipment.trackingNumber' >> track-number.txt
 echo $curl19 | jq '.data.guestOrder.groups_2101['$indexOrder19'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl20=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1117,7 +1155,9 @@ do
     indexOrder20=`echo $i`
     indexItem20=`echo 1`
   fi
+done
 
+if [[ $indexOrder18 != "error" ]]; then
 echo $curl20 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl20 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl20 | jq '.data.guestOrder.groups_2101['$indexOrder20'].items['$indexItem20'].product.usItemId' >> track-usItemId.txt
@@ -1127,7 +1167,7 @@ echo $curl20 | jq '.data.guestOrder.groups_2101['$indexOrder20'].deliveryAddress
 echo $curl20 | jq '.data.guestOrder.groups_2101['$indexOrder20'].status.message.parts[].text' >> track-status.txt
 echo $curl20 | jq '.data.guestOrder.groups_2101['$indexOrder20'].shipment.trackingNumber' >> track-number.txt
 echo $curl20 | jq '.data.guestOrder.groups_2101['$indexOrder20'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl21=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1173,7 +1213,9 @@ do
     indexOrder21=`echo $i`
     indexItem21=`echo 1`
   fi
+done
 
+if [[ $indexOrder19 != "error" ]]; then
 echo $curl21 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl21 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl21 | jq '.data.guestOrder.groups_2101['$indexOrder21'].items['$indexItem21'].product.usItemId' >> track-usItemId.txt
@@ -1183,7 +1225,7 @@ echo $curl21 | jq '.data.guestOrder.groups_2101['$indexOrder21'].deliveryAddress
 echo $curl21 | jq '.data.guestOrder.groups_2101['$indexOrder21'].status.message.parts[].text' >> track-status.txt
 echo $curl21 | jq '.data.guestOrder.groups_2101['$indexOrder21'].shipment.trackingNumber' >> track-number.txt
 echo $curl21 | jq '.data.guestOrder.groups_2101['$indexOrder21'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl22=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1229,7 +1271,9 @@ do
     indexOrder22=`echo $i`
     indexItem22=`echo 1`
   fi
+done
 
+if [[ $indexOrder20 != "error" ]]; then
 echo $curl22 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl22 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl22 | jq '.data.guestOrder.groups_2101['$indexOrder22'].items['$indexItem22'].product.usItemId' >> track-usItemId.txt
@@ -1239,7 +1283,7 @@ echo $curl22 | jq '.data.guestOrder.groups_2101['$indexOrder22'].deliveryAddress
 echo $curl22 | jq '.data.guestOrder.groups_2101['$indexOrder22'].status.message.parts[].text' >> track-status.txt
 echo $curl22 | jq '.data.guestOrder.groups_2101['$indexOrder22'].shipment.trackingNumber' >> track-number.txt
 echo $curl22 | jq '.data.guestOrder.groups_2101['$indexOrder22'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl23=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1285,7 +1329,9 @@ do
     indexOrder23=`echo $i`
     indexItem23=`echo 1`
   fi
+done
 
+if [[ $indexOrder21 != "error" ]]; then
 echo $curl23 | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl23 | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl23 | jq '.data.guestOrder.groups_2101['$indexOrder23'].items['$indexItem23'].product.usItemId' >> track-usItemId.txt
@@ -1295,7 +1341,7 @@ echo $curl23 | jq '.data.guestOrder.groups_2101['$indexOrder23'].deliveryAddress
 echo $curl23 | jq '.data.guestOrder.groups_2101['$indexOrder23'].status.message.parts[].text' >> track-status.txt
 echo $curl23 | jq '.data.guestOrder.groups_2101['$indexOrder23'].shipment.trackingNumber' >> track-number.txt
 echo $curl23 | jq '.data.guestOrder.groups_2101['$indexOrder23'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1341,7 +1387,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder22 != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1351,7 +1399,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1397,7 +1445,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder23 != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1407,7 +1457,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1453,7 +1503,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1463,7 +1515,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1509,7 +1561,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1519,7 +1573,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1565,7 +1619,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1575,7 +1631,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1621,7 +1677,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1631,7 +1689,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1677,7 +1735,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1687,7 +1747,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1733,7 +1793,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1743,7 +1805,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1789,7 +1851,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1799,7 +1863,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1845,7 +1909,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1855,7 +1921,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1901,7 +1967,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1911,7 +1979,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -1957,7 +2025,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -1967,7 +2037,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2013,7 +2083,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2023,7 +2095,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2069,7 +2141,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2079,7 +2153,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2125,7 +2199,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2135,7 +2211,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2181,7 +2257,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2191,7 +2269,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2237,7 +2315,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2247,7 +2327,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2293,7 +2373,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2303,7 +2385,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2349,7 +2431,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2359,7 +2443,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2405,7 +2489,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2415,7 +2501,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2461,7 +2547,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2471,7 +2559,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2517,7 +2605,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2527,7 +2617,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2573,7 +2663,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2583,7 +2675,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2629,7 +2721,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2639,7 +2733,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2685,7 +2779,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2695,7 +2791,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2741,7 +2837,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2751,7 +2849,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2797,7 +2895,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2807,7 +2907,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2853,7 +2953,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2863,7 +2965,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2909,7 +3011,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2919,7 +3023,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -2965,7 +3069,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -2975,7 +3081,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3021,7 +3127,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3031,7 +3139,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3077,7 +3185,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3087,7 +3197,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3133,7 +3243,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3143,7 +3255,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3189,7 +3301,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3199,7 +3313,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3245,7 +3359,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3255,7 +3371,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3301,7 +3417,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3311,7 +3429,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3357,7 +3475,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3367,7 +3487,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3413,7 +3533,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3423,7 +3545,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3469,7 +3591,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3479,7 +3603,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3525,7 +3649,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3535,7 +3661,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3581,7 +3707,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3591,7 +3719,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3637,7 +3765,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3647,7 +3777,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3693,7 +3823,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3703,7 +3835,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3749,7 +3881,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3759,7 +3893,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3805,7 +3939,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3815,7 +3951,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3861,7 +3997,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3871,7 +4009,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3917,7 +4055,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3927,7 +4067,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -3973,7 +4113,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -3983,7 +4125,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4029,7 +4171,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4039,7 +4183,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4085,7 +4229,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4095,7 +4241,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4141,7 +4287,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4151,7 +4299,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4197,7 +4345,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4207,7 +4357,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4253,7 +4403,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4263,7 +4415,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4309,7 +4461,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4319,7 +4473,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4365,7 +4519,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4375,7 +4531,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4421,7 +4577,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4431,7 +4589,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 curl=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -4477,7 +4635,9 @@ do
     indexOrder=`echo $i`
     indexItem=`echo 1`
   fi
+done
 
+if [[ $indexOrder != "error" ]]; then
 echo $curl | jq '.data.guestOrder.id' >> track-OrderID.txt
 echo $curl | jq '.data.guestOrder.customer.email' >> track-email.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].items['$indexItem'].product.usItemId' >> track-usItemId.txt
@@ -4487,7 +4647,7 @@ echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].deliveryAddress.add
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].status.message.parts[].text' >> track-status.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingNumber' >> track-number.txt
 echo $curl | jq '.data.guestOrder.groups_2101['$indexOrder'].shipment.trackingUrl' >> track-url.txt
-done
+fi
 
 
 git add -A .
