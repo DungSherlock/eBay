@@ -45,11 +45,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl1 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 1"
-    error=`echo error`
     break
   elif [[ $curl1 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 1"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -64,7 +62,6 @@ for (( i=0; i<=4; i++ ))
         echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item1=`echo ngon`
         echo "1"
         break
       fi
@@ -108,11 +105,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl2 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 2"
-    error=`echo error`
     break
   elif [[ $curl2 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 2"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -127,7 +122,6 @@ for (( i=0; i<=4; i++ ))
         echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item2=`echo ngon`
         echo "2"
         break
       fi
@@ -171,11 +165,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl3 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 3"
-    error=`echo error`
     break
   elif [[ $curl3 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 3"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -190,7 +182,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item3=`echo ngon`
+        echo "3"
         break
       fi
     done
@@ -233,11 +225,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl4 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 4"
-    error=`echo error`
     break
   elif [[ $curl4 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 4"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -252,7 +242,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item4=`echo ngon`
+        echo "4"
         break
       fi
     done
@@ -295,11 +285,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl5 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 5"
-    error=`echo error`
     break
   elif [[ $curl5 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 5"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -314,7 +302,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item5=`echo ngon`
+        echo "5"
         break
       fi
     done
@@ -350,18 +338,16 @@ curl6=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'sec-fetch-dest: empty' \
   -H 'referer: https://www.walmart.com/orders' \
   -H 'accept-language: vi' \
-  --data-raw $'{"query":"query getGuestOrder($orderId:ID\u0021 $emailAddress:String\u0021){guestOrder(input:{id:$orderId emailAddress:$emailAddress}){...OrderFieldsFragment}}fragment cancelReason on OrderCancelReason{__typename subReasonCode subDescription}fragment priceDetailFragment on OrderPriceDetailRow{label value displayValue info{title message}rowInfo{...orderPriceDetailRowInfo}}fragment orderPriceDetailRowInfo on OrderPriceDetailRowInfo{title message{...textFragment}}fragment price on Price{displayValue value}fragment variants on MapEntry{name value}fragment OrderAddOn on OrderAddOn{lineId uniqueLineId productInfo{name usItemId offerId}quantityString quantityLabel type fulfillmentInstructions{...textFragment}actions{manageProtectionPlan{...orderActionFragment}cancel}priceInfo{linePrice{...price}}quantity isActive}fragment orderDonationDetails on OrderDonationDetails{message{...textFragment}emailReceipt emailReceiptToken status{...textFragment}errorStatus}fragment orderLineItem on OrderLineItem{id uniqueId actions{contactSeller cancel addToCart configureCake reviewItem resendEGiftCardToken protectionPlan{...orderActionFragment}manageProtectionPlan{...orderActionFragment}}isGift digitalDeliveryMessage quantity quantityString quantityLabel isSubstitutionSelected fulfilledItems{id quantityString priceInfo{itemPrice{value}}product{usItemId name}}isReturnable returnEligibilityMessage product{name usItemId imageInfo{thumbnailUrl}canonicalUrl offerId sellerId sellerName hasSellerBadge seller{sellerId name}orderLimit orderMinLimit weightIncrement salesUnit salesUnitType isSubstitutionEligible isAlcohol}reshop{reshopMessage isShippingAvailable minPromiseDate maxPromiseDate}selectedVariants{...variants}variantAdditionalInfo{parts{text nativeAction}}priceInfo{priceDisplayCodes{showItemPrice priceDisplayCondition finalCostByWeight}itemPrice{...price}linePrice{...price}unitPrice{...price}preDiscountedLinePrice{...price}additionalLines{name value}}discounts{label labelText{...textFragment}}itemReviewed activationCodes{label code}protectionPlanMessage{...textFragment}showSeller isShippedByWalmart seller{id name isPro}digitalDeliveryPhoneNumber addOns{...OrderAddOn}multiboxBundleId}fragment DriverFragment on Driver{id firstName photoUrl}fragment OrderGroupFragment on OrderGroup{driver{...DriverFragment}deliveryDate fulfillmentType status{...OrderGroupStatusFragment}showSeller isShippedByWalmart seller{...SellerFragment}id itemCount items{...LiteLineItemFragment}pickupPerson{firstName lastName email}accessPointId shipment{...ShipmentFragment}returnEligibilityMessage actions{...OrderGroupActionsFragment}recipientEmailAddress digitalDelivery{...DigitalDeliveryFragment}tireInstallationReservation{status extraText}}fragment OrderGroupStatusFragment on OrderGroupStatus{statusType showStatusTracker statusTracker{status label isCurrent}message{...textFragment}subtext subMessage{...textFragment}notice helpCenterText{...textFragment}}fragment textFragment on Text{parts{bold url text nativeAction lineBreak}}fragment LiteLineItemFragment on OrderLineItem{id quantity product{name usItemId imageInfo{thumbnailUrl}offerId isAlcohol}priceInfo{linePrice{...price}}}fragment SellerFragment on GroupSeller{id name isPro}fragment DigitalDeliveryFragment on DigitalDelivery{title name instructions{...textFragment}}fragment ShipmentFragment on Shipment{id trackingNumber isExternalTracking trackingUrl proofOfDelivery{photoUrl photoPreviewUrl showPreview}}fragment OrderGroupActionsFragment on OrderGroupActions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson editTip tip cancel enableTip{...orderActionFragment}enableEdit{...orderActionFragment}rescheduleTireInstall{...orderActionFragment}cancelTireInstall{...orderActionFragment}help viewCancellationDetails{...cancellationDetailsActionFragment}}fragment cancellationDetailsActionFragment on CancellationDetailsAction{label heading text{...textFragment}}fragment ODPGroupCategoryFragment on OrderCategory{type name subtext returnMessage substitutionsBanner{...textFragment}showExtendedSubstitutions actions{substitutions{message label type}nilPickReshop{message action{text url}}returnDetails viewCancellationDetails{...cancellationDetailsActionFragment}trackOnInHomeApp}banner{...textFragment}accordionState items{...orderLineItem}substitutions{...orderLineItem fulfilledItems{...orderLineItem}}returnInfo{...returnInfoFragment}}fragment ODPGroupFragment on OrderGroup{id fulfillmentType deliveryMessage deliveryAddress{fullName firstName lastName address{...addressFragment}}deliveryInstructions{text type typeText}deliveryPreferences{text{...textFragment}cta{...orderActionFragment}}editSubstitutionsCutOff status{statusType showStatusTracker message{...textFragment}notice helpCenterText{...textFragment}}itemCount isCategorized categories{...ODPGroupCategoryFragment}seller{id name isPro}shipment{id trackingNumber}actions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson tip cancel help enableTip{...orderActionFragment}enableEdit{...orderActionFragment}viewCancellationDetails{...cancellationDetailsActionFragment}enableInHome{...orderActionFragment}createGiftReceipt}cutOffTimestamp isEditSubstitutionsEligible isInHome giftDetails{recipientAddress{fullName}recipientEmail senderName giftMessage}donationDetails{...orderDonationDetails}}fragment returnInfoFragment on ReturnInfo{returnOrderId type refundPriceDetails{__typename...refundPriceDetailsFragment}refundMessage tierRefundMessage paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}}actions{__typename generate scheduleOrModifyPickup{text url}reschedulePickup editPickupContact}shippingLabelUrl qrCodeImageUrl carriers{__typename id name}pickupCarrier pickupContact{nameAndAddress{fullName firstName lastName address{addressString city state postalCode addressLineOne addressLineTwo country}}phone}pickupConfirmationNumber bannerMessage{...textFragment}}fragment refundPriceDetailsFragment on RefundPriceDetails{subTotal{__typename...orderPriceDetailRowFragment}fees{__typename...orderPriceDetailRowFragment}discounts{__typename...orderPriceDetailRowFragment}taxTotal{__typename...orderPriceDetailRowFragment}grandTotal{__typename...orderPriceDetailRowFragment}}fragment orderPriceDetailRowFragment on OrderPriceDetailRow{label displayValue value info{__typename title message}}fragment addressFragment on OrderAddress{addressString addressLineOne addressLineTwo state postalCode city}fragment ODPPickupInfo on OrderGroup{pickupInstructions pickupPerson{...person}alternatePickupPerson{...person}store{id name address{...addressFragment}}}fragment person on OrderPickupPerson{firstName lastName email}fragment ODPTippingInfo on OrderGroup{addTipMessage{...textFragment}driver{...DriverFragment}tipping{min{...price}max{...price}suggested{...price}preselected}subtotal{...price}}fragment orderActionFragment on Action{text url}fragment orderCustomer on OrderCustomer{id firstName lastName email isGuest isEmailRegistered}fragment OrderFieldsFragment on Order{__typename id version type customer{...orderCustomer}displayId idBarcodeImageUrl(barWidth:3 barHeight:100) isFuelPurchase title shortTitle timezone tippableGroup{...OrderGroupFragment}amendableGroup{id changeSlotIterationsLeft cutOffTimestamp fulfillmentType deliveryAddress{fullName firstName lastName address{addressString addressLineOne addressLineTwo state postalCode city country}}isAmendInProgress}substitutionsBanner{heading subheading longSubheading}groups_2101{__typename...OrderGroupFragment...ODPGroupFragment...ODPPickupInfo...ODPTippingInfo}multiboxBundles{...orderLineItem}itemCancelReasons{__typename...cancelReason}groupCancelReasons{__typename...cancelReason}priceDetails{__typename subTotal{__typename...priceDetailFragment}taxTotal{__typename...priceDetailFragment}grandTotal{__typename...priceDetailFragment}authorizationAmount{__typename...priceDetailFragment}fees{__typename...priceDetailFragment}discounts{__typename...priceDetailFragment}minimumThreshold{__typename...price}belowMinimumFee{__typename...priceDetailFragment}driverTip{__typename...priceDetailFragment}donations{__typename...priceDetailFragment}}paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}actions{connectToCapitalOne{...orderActionFragment}visitAffirm{...orderActionFragment}}}actions{__typename return pendingReturn cancel startReturn{...orderActionFragment}reorder}banners{...textFragment}}","variables":{"orderId":"2782221952580","emailAddress":"tinamerrill2008@gmail.com"}}' \
+  --data-raw $'{"query":"query getGuestOrder($orderId:ID\u0021 $emailAddress:String\u0021){guestOrder(input:{id:$orderId emailAddress:$emailAddress}){...OrderFieldsFragment}}fragment cancelReason on OrderCancelReason{__typename subReasonCode subDescription}fragment priceDetailFragment on OrderPriceDetailRow{label value displayValue info{title message}rowInfo{...orderPriceDetailRowInfo}}fragment orderPriceDetailRowInfo on OrderPriceDetailRowInfo{title message{...textFragment}}fragment price on Price{displayValue value}fragment variants on MapEntry{name value}fragment OrderAddOn on OrderAddOn{lineId uniqueLineId productInfo{name usItemId offerId}quantityString quantityLabel type fulfillmentInstructions{...textFragment}actions{manageProtectionPlan{...orderActionFragment}cancel}priceInfo{linePrice{...price}}quantity isActive}fragment orderDonationDetails on OrderDonationDetails{message{...textFragment}emailReceipt emailReceiptToken status{...textFragment}errorStatus}fragment orderLineItem on OrderLineItem{id uniqueId actions{contactSeller cancel addToCart configureCake reviewItem resendEGiftCardToken protectionPlan{...orderActionFragment}manageProtectionPlan{...orderActionFragment}}isGift digitalDeliveryMessage quantity quantityString quantityLabel isSubstitutionSelected fulfilledItems{id quantityString priceInfo{itemPrice{value}}product{usItemId name}}isReturnable returnEligibilityMessage product{name usItemId imageInfo{thumbnailUrl}canonicalUrl offerId sellerId sellerName hasSellerBadge seller{sellerId name}orderLimit orderMinLimit weightIncrement salesUnit salesUnitType isSubstitutionEligible isAlcohol}reshop{reshopMessage isShippingAvailable minPromiseDate maxPromiseDate}selectedVariants{...variants}variantAdditionalInfo{parts{text nativeAction}}priceInfo{priceDisplayCodes{showItemPrice priceDisplayCondition finalCostByWeight}itemPrice{...price}linePrice{...price}unitPrice{...price}preDiscountedLinePrice{...price}additionalLines{name value}}discounts{label labelText{...textFragment}}itemReviewed activationCodes{label code}protectionPlanMessage{...textFragment}showSeller isShippedByWalmart seller{id name isPro}digitalDeliveryPhoneNumber addOns{...OrderAddOn}multiboxBundleId}fragment DriverFragment on Driver{id firstName photoUrl}fragment OrderGroupFragment on OrderGroup{driver{...DriverFragment}deliveryDate fulfillmentType status{...OrderGroupStatusFragment}showSeller isShippedByWalmart seller{...SellerFragment}id itemCount items{...LiteLineItemFragment}pickupPerson{firstName lastName email}accessPointId shipment{...ShipmentFragment}returnEligibilityMessage actions{...OrderGroupActionsFragment}recipientEmailAddress digitalDelivery{...DigitalDeliveryFragment}tireInstallationReservation{status extraText}}fragment OrderGroupStatusFragment on OrderGroupStatus{statusType showStatusTracker statusTracker{status label isCurrent}message{...textFragment}subtext subMessage{...textFragment}notice helpCenterText{...textFragment}}fragment textFragment on Text{parts{bold url text nativeAction lineBreak}}fragment LiteLineItemFragment on OrderLineItem{id quantity product{name usItemId imageInfo{thumbnailUrl}offerId isAlcohol}priceInfo{linePrice{...price}}}fragment SellerFragment on GroupSeller{id name isPro}fragment DigitalDeliveryFragment on DigitalDelivery{title name instructions{...textFragment}}fragment ShipmentFragment on Shipment{id trackingNumber isExternalTracking trackingUrl proofOfDelivery{photoUrl photoPreviewUrl showPreview}}fragment OrderGroupActionsFragment on OrderGroupActions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson editTip tip cancel enableTip{...orderActionFragment}enableEdit{...orderActionFragment}rescheduleTireInstall{...orderActionFragment}cancelTireInstall{...orderActionFragment}help viewCancellationDetails{...cancellationDetailsActionFragment}}fragment cancellationDetailsActionFragment on CancellationDetailsAction{label heading text{...textFragment}}fragment ODPGroupCategoryFragment on OrderCategory{type name subtext returnMessage substitutionsBanner{...textFragment}showExtendedSubstitutions actions{substitutions{message label type}nilPickReshop{message action{text url}}returnDetails viewCancellationDetails{...cancellationDetailsActionFragment}trackOnInHomeApp}banner{...textFragment}accordionState items{...orderLineItem}substitutions{...orderLineItem fulfilledItems{...orderLineItem}}returnInfo{...returnInfoFragment}}fragment ODPGroupFragment on OrderGroup{id fulfillmentType deliveryMessage deliveryAddress{fullName firstName lastName address{...addressFragment}}deliveryInstructions{text type typeText}deliveryPreferences{text{...textFragment}cta{...orderActionFragment}}editSubstitutionsCutOff status{statusType showStatusTracker message{...textFragment}notice helpCenterText{...textFragment}}itemCount isCategorized categories{...ODPGroupCategoryFragment}seller{id name isPro}shipment{id trackingNumber}actions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson tip cancel help enableTip{...orderActionFragment}enableEdit{...orderActionFragment}viewCancellationDetails{...cancellationDetailsActionFragment}enableInHome{...orderActionFragment}createGiftReceipt}cutOffTimestamp isEditSubstitutionsEligible isInHome giftDetails{recipientAddress{fullName}recipientEmail senderName giftMessage}donationDetails{...orderDonationDetails}}fragment returnInfoFragment on ReturnInfo{returnOrderId type refundPriceDetails{__typename...refundPriceDetailsFragment}refundMessage tierRefundMessage paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}}actions{__typename generate scheduleOrModifyPickup{text url}reschedulePickup editPickupContact}shippingLabelUrl qrCodeImageUrl carriers{__typename id name}pickupCarrier pickupContact{nameAndAddress{fullName firstName lastName address{addressString city state postalCode addressLineOne addressLineTwo country}}phone}pickupConfirmationNumber bannerMessage{...textFragment}}fragment refundPriceDetailsFragment on RefundPriceDetails{subTotal{__typename...orderPriceDetailRowFragment}fees{__typename...orderPriceDetailRowFragment}discounts{__typename...orderPriceDetailRowFragment}taxTotal{__typename...orderPriceDetailRowFragment}grandTotal{__typename...orderPriceDetailRowFragment}}fragment orderPriceDetailRowFragment on OrderPriceDetailRow{label displayValue value info{__typename title message}}fragment addressFragment on OrderAddress{addressString addressLineOne addressLineTwo state postalCode city}fragment ODPPickupInfo on OrderGroup{pickupInstructions pickupPerson{...person}alternatePickupPerson{...person}store{id name address{...addressFragment}}}fragment person on OrderPickupPerson{firstName lastName email}fragment ODPTippingInfo on OrderGroup{addTipMessage{...textFragment}driver{...DriverFragment}tipping{min{...price}max{...price}suggested{...price}preselected}subtotal{...price}}fragment orderActionFragment on Action{text url}fragment orderCustomer on OrderCustomer{id firstName lastName email isGuest isEmailRegistered}fragment OrderFieldsFragment on Order{__typename id version type customer{...orderCustomer}displayId idBarcodeImageUrl(barWidth:3 barHeight:100) isFuelPurchase title shortTitle timezone tippableGroup{...OrderGroupFragment}amendableGroup{id changeSlotIterationsLeft cutOffTimestamp fulfillmentType deliveryAddress{fullName firstName lastName address{addressString addressLineOne addressLineTwo state postalCode city country}}isAmendInProgress}substitutionsBanner{heading subheading longSubheading}groups_2101{__typename...OrderGroupFragment...ODPGroupFragment...ODPPickupInfo...ODPTippingInfo}multiboxBundles{...orderLineItem}itemCancelReasons{__typename...cancelReason}groupCancelReasons{__typename...cancelReason}priceDetails{__typename subTotal{__typename...priceDetailFragment}taxTotal{__typename...priceDetailFragment}grandTotal{__typename...priceDetailFragment}authorizationAmount{__typename...priceDetailFragment}fees{__typename...priceDetailFragment}discounts{__typename...priceDetailFragment}minimumThreshold{__typename...price}belowMinimumFee{__typename...priceDetailFragment}driverTip{__typename...priceDetailFragment}donations{__typename...priceDetailFragment}}paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}actions{connectToCapitalOne{...orderActionFragment}visitAffirm{...orderActionFragment}}}actions{__typename return pendingReturn cancel startReturn{...orderActionFragment}reorder}banners{...textFragment}}","variables":{"orderId":"2862239321183","emailAddress":"dorrieleighlombardi78@hotmail.com"}}' \
   --compressed`
  
 for (( i=0; i<=4; i++ ))
   do
   if [[ $curl6 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 6"
-    error=`echo error`
     break
   elif [[ $curl6 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 6"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -376,7 +362,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item6=`echo ngon`
+        echo "6"
         break
       fi
     done
@@ -419,11 +405,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl7 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 7"
-    error=`echo error`
     break
   elif [[ $curl7 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 7"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -438,7 +422,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item7=`echo ngon`
+        echo "7"
         break
       fi
     done
@@ -481,11 +465,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl8 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 8"
-    error=`echo error`
     break
   elif [[ $curl8 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 8"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -500,7 +482,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item8=`echo ngon`
+        echo "8"
         break
       fi
     done
@@ -543,11 +525,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl9 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 9"
-    error=`echo error`
     break
   elif [[ $curl9 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 9"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -562,7 +542,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item9=`echo ngon`
+        echo "9"
         break
       fi
     done
@@ -605,11 +585,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl10 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 10"
-    error=`echo error`
     break
   elif [[ $curl10 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 10"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -624,7 +602,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item10=`echo ngon`
+        echo "10"
         break
       fi
     done
@@ -667,11 +645,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl11 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 11"
-    error=`echo error`
     break
   elif [[ $curl11 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 11"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -686,7 +662,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item11=`echo ngon`
+        echo "11"
         break
       fi
     done
@@ -729,11 +705,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl12 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 12"
-    error=`echo error`
     break
   elif [[ $curl12 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 12"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -748,7 +722,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item12=`echo ngon`
+        echo "12"
         break
       fi
     done
@@ -791,11 +765,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl13 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 13"
-    error=`echo error`
     break
   elif [[ $curl13 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 13"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -810,7 +782,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item13=`echo ngon`
+        echo "13"
         break
       fi
     done
@@ -853,11 +825,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl14 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 14"
-    error=`echo error`
     break
   elif [[ $curl14 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 14"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -872,7 +842,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item14=`echo ngon`
+        echo "14"
         break
       fi
     done
@@ -915,11 +885,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl15 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 15"
-    error=`echo error`
     break
   elif [[ $curl15 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 15"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -934,7 +902,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item15=`echo ngon`
+        echo "15"
         break
       fi
     done
@@ -977,11 +945,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl16 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 16"
-    error=`echo error`
     break
   elif [[ $curl16 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 16"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -996,7 +962,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item16=`echo ngon`
+        echo "16"
         break
       fi
     done
@@ -1039,11 +1005,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl17 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 17"
-    error=`echo error`
     break
   elif [[ $curl17 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 17"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1058,7 +1022,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item17=`echo ngon`
+        echo "17"
         break
       fi
     done
@@ -1101,11 +1065,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl18 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 18"
-    error=`echo error`
     break
   elif [[ $curl18 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 18"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1120,7 +1082,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item18=`echo ngon`
+        echo "18"
         break
       fi
     done
@@ -1163,11 +1125,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl19 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 19"
-    error=`echo error`
     break
   elif [[ $curl19 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 19"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1182,7 +1142,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item19=`echo ngon`
+        echo "19"
         break
       fi
     done
@@ -1225,11 +1185,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl20 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 20"
-    error=`echo error`
     break
   elif [[ $curl20 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 20"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1244,7 +1202,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item20=`echo ngon`
+        echo "20"
         break
       fi
     done
@@ -1280,18 +1238,16 @@ curl21=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'sec-fetch-dest: empty' \
   -H 'referer: https://www.walmart.com/orders' \
   -H 'accept-language: vi' \
-  --data-raw $'{"query":"query getGuestOrder($orderId:ID\u0021 $emailAddress:String\u0021){guestOrder(input:{id:$orderId emailAddress:$emailAddress}){...OrderFieldsFragment}}fragment cancelReason on OrderCancelReason{__typename subReasonCode subDescription}fragment priceDetailFragment on OrderPriceDetailRow{label value displayValue info{title message}rowInfo{...orderPriceDetailRowInfo}}fragment orderPriceDetailRowInfo on OrderPriceDetailRowInfo{title message{...textFragment}}fragment price on Price{displayValue value}fragment variants on MapEntry{name value}fragment OrderAddOn on OrderAddOn{lineId uniqueLineId productInfo{name usItemId offerId}quantityString quantityLabel type fulfillmentInstructions{...textFragment}actions{manageProtectionPlan{...orderActionFragment}cancel}priceInfo{linePrice{...price}}quantity isActive}fragment orderDonationDetails on OrderDonationDetails{message{...textFragment}emailReceipt emailReceiptToken status{...textFragment}errorStatus}fragment orderLineItem on OrderLineItem{id uniqueId actions{contactSeller cancel addToCart configureCake reviewItem resendEGiftCardToken protectionPlan{...orderActionFragment}manageProtectionPlan{...orderActionFragment}}isGift digitalDeliveryMessage quantity quantityString quantityLabel isSubstitutionSelected fulfilledItems{id quantityString priceInfo{itemPrice{value}}product{usItemId name}}isReturnable returnEligibilityMessage product{name usItemId imageInfo{thumbnailUrl}canonicalUrl offerId sellerId sellerName hasSellerBadge seller{sellerId name}orderLimit orderMinLimit weightIncrement salesUnit salesUnitType isSubstitutionEligible isAlcohol}reshop{reshopMessage isShippingAvailable minPromiseDate maxPromiseDate}selectedVariants{...variants}variantAdditionalInfo{parts{text nativeAction}}priceInfo{priceDisplayCodes{showItemPrice priceDisplayCondition finalCostByWeight}itemPrice{...price}linePrice{...price}unitPrice{...price}preDiscountedLinePrice{...price}additionalLines{name value}}discounts{label labelText{...textFragment}}itemReviewed activationCodes{label code}protectionPlanMessage{...textFragment}showSeller isShippedByWalmart seller{id name isPro}digitalDeliveryPhoneNumber addOns{...OrderAddOn}multiboxBundleId}fragment DriverFragment on Driver{id firstName photoUrl}fragment OrderGroupFragment on OrderGroup{driver{...DriverFragment}deliveryDate fulfillmentType status{...OrderGroupStatusFragment}showSeller isShippedByWalmart seller{...SellerFragment}id itemCount items{...LiteLineItemFragment}pickupPerson{firstName lastName email}accessPointId shipment{...ShipmentFragment}returnEligibilityMessage actions{...OrderGroupActionsFragment}recipientEmailAddress digitalDelivery{...DigitalDeliveryFragment}tireInstallationReservation{status extraText}}fragment OrderGroupStatusFragment on OrderGroupStatus{statusType showStatusTracker statusTracker{status label isCurrent}message{...textFragment}subtext subMessage{...textFragment}notice helpCenterText{...textFragment}}fragment textFragment on Text{parts{bold url text nativeAction lineBreak}}fragment LiteLineItemFragment on OrderLineItem{id quantity product{name usItemId imageInfo{thumbnailUrl}offerId isAlcohol}priceInfo{linePrice{...price}}}fragment SellerFragment on GroupSeller{id name isPro}fragment DigitalDeliveryFragment on DigitalDelivery{title name instructions{...textFragment}}fragment ShipmentFragment on Shipment{id trackingNumber isExternalTracking trackingUrl proofOfDelivery{photoUrl photoPreviewUrl showPreview}}fragment OrderGroupActionsFragment on OrderGroupActions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson editTip tip cancel enableTip{...orderActionFragment}enableEdit{...orderActionFragment}rescheduleTireInstall{...orderActionFragment}cancelTireInstall{...orderActionFragment}help viewCancellationDetails{...cancellationDetailsActionFragment}}fragment cancellationDetailsActionFragment on CancellationDetailsAction{label heading text{...textFragment}}fragment ODPGroupCategoryFragment on OrderCategory{type name subtext returnMessage substitutionsBanner{...textFragment}showExtendedSubstitutions actions{substitutions{message label type}nilPickReshop{message action{text url}}returnDetails viewCancellationDetails{...cancellationDetailsActionFragment}trackOnInHomeApp}banner{...textFragment}accordionState items{...orderLineItem}substitutions{...orderLineItem fulfilledItems{...orderLineItem}}returnInfo{...returnInfoFragment}}fragment ODPGroupFragment on OrderGroup{id fulfillmentType deliveryMessage deliveryAddress{fullName firstName lastName address{...addressFragment}}deliveryInstructions{text type typeText}deliveryPreferences{text{...textFragment}cta{...orderActionFragment}}editSubstitutionsCutOff status{statusType showStatusTracker message{...textFragment}notice helpCenterText{...textFragment}}itemCount isCategorized categories{...ODPGroupCategoryFragment}seller{id name isPro}shipment{id trackingNumber}actions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson tip cancel help enableTip{...orderActionFragment}enableEdit{...orderActionFragment}viewCancellationDetails{...cancellationDetailsActionFragment}enableInHome{...orderActionFragment}createGiftReceipt}cutOffTimestamp isEditSubstitutionsEligible isInHome giftDetails{recipientAddress{fullName}recipientEmail senderName giftMessage}donationDetails{...orderDonationDetails}}fragment returnInfoFragment on ReturnInfo{returnOrderId type refundPriceDetails{__typename...refundPriceDetailsFragment}refundMessage tierRefundMessage paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}}actions{__typename generate scheduleOrModifyPickup{text url}reschedulePickup editPickupContact}shippingLabelUrl qrCodeImageUrl carriers{__typename id name}pickupCarrier pickupContact{nameAndAddress{fullName firstName lastName address{addressString city state postalCode addressLineOne addressLineTwo country}}phone}pickupConfirmationNumber bannerMessage{...textFragment}}fragment refundPriceDetailsFragment on RefundPriceDetails{subTotal{__typename...orderPriceDetailRowFragment}fees{__typename...orderPriceDetailRowFragment}discounts{__typename...orderPriceDetailRowFragment}taxTotal{__typename...orderPriceDetailRowFragment}grandTotal{__typename...orderPriceDetailRowFragment}}fragment orderPriceDetailRowFragment on OrderPriceDetailRow{label displayValue value info{__typename title message}}fragment addressFragment on OrderAddress{addressString addressLineOne addressLineTwo state postalCode city}fragment ODPPickupInfo on OrderGroup{pickupInstructions pickupPerson{...person}alternatePickupPerson{...person}store{id name address{...addressFragment}}}fragment person on OrderPickupPerson{firstName lastName email}fragment ODPTippingInfo on OrderGroup{addTipMessage{...textFragment}driver{...DriverFragment}tipping{min{...price}max{...price}suggested{...price}preselected}subtotal{...price}}fragment orderActionFragment on Action{text url}fragment orderCustomer on OrderCustomer{id firstName lastName email isGuest isEmailRegistered}fragment OrderFieldsFragment on Order{__typename id version type customer{...orderCustomer}displayId idBarcodeImageUrl(barWidth:3 barHeight:100) isFuelPurchase title shortTitle timezone tippableGroup{...OrderGroupFragment}amendableGroup{id changeSlotIterationsLeft cutOffTimestamp fulfillmentType deliveryAddress{fullName firstName lastName address{addressString addressLineOne addressLineTwo state postalCode city country}}isAmendInProgress}substitutionsBanner{heading subheading longSubheading}groups_2101{__typename...OrderGroupFragment...ODPGroupFragment...ODPPickupInfo...ODPTippingInfo}multiboxBundles{...orderLineItem}itemCancelReasons{__typename...cancelReason}groupCancelReasons{__typename...cancelReason}priceDetails{__typename subTotal{__typename...priceDetailFragment}taxTotal{__typename...priceDetailFragment}grandTotal{__typename...priceDetailFragment}authorizationAmount{__typename...priceDetailFragment}fees{__typename...priceDetailFragment}discounts{__typename...priceDetailFragment}minimumThreshold{__typename...price}belowMinimumFee{__typename...priceDetailFragment}driverTip{__typename...priceDetailFragment}donations{__typename...priceDetailFragment}}paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}actions{connectToCapitalOne{...orderActionFragment}visitAffirm{...orderActionFragment}}}actions{__typename return pendingReturn cancel startReturn{...orderActionFragment}reorder}banners{...textFragment}}","variables":{"orderId":"2852237059182","emailAddress":"dalenachristensen83@hotmail.com"}}' \
+  --data-raw $'{"query":"query getGuestOrder($orderId:ID\u0021 $emailAddress:String\u0021){guestOrder(input:{id:$orderId emailAddress:$emailAddress}){...OrderFieldsFragment}}fragment cancelReason on OrderCancelReason{__typename subReasonCode subDescription}fragment priceDetailFragment on OrderPriceDetailRow{label value displayValue info{title message}rowInfo{...orderPriceDetailRowInfo}}fragment orderPriceDetailRowInfo on OrderPriceDetailRowInfo{title message{...textFragment}}fragment price on Price{displayValue value}fragment variants on MapEntry{name value}fragment OrderAddOn on OrderAddOn{lineId uniqueLineId productInfo{name usItemId offerId}quantityString quantityLabel type fulfillmentInstructions{...textFragment}actions{manageProtectionPlan{...orderActionFragment}cancel}priceInfo{linePrice{...price}}quantity isActive}fragment orderDonationDetails on OrderDonationDetails{message{...textFragment}emailReceipt emailReceiptToken status{...textFragment}errorStatus}fragment orderLineItem on OrderLineItem{id uniqueId actions{contactSeller cancel addToCart configureCake reviewItem resendEGiftCardToken protectionPlan{...orderActionFragment}manageProtectionPlan{...orderActionFragment}}isGift digitalDeliveryMessage quantity quantityString quantityLabel isSubstitutionSelected fulfilledItems{id quantityString priceInfo{itemPrice{value}}product{usItemId name}}isReturnable returnEligibilityMessage product{name usItemId imageInfo{thumbnailUrl}canonicalUrl offerId sellerId sellerName hasSellerBadge seller{sellerId name}orderLimit orderMinLimit weightIncrement salesUnit salesUnitType isSubstitutionEligible isAlcohol}reshop{reshopMessage isShippingAvailable minPromiseDate maxPromiseDate}selectedVariants{...variants}variantAdditionalInfo{parts{text nativeAction}}priceInfo{priceDisplayCodes{showItemPrice priceDisplayCondition finalCostByWeight}itemPrice{...price}linePrice{...price}unitPrice{...price}preDiscountedLinePrice{...price}additionalLines{name value}}discounts{label labelText{...textFragment}}itemReviewed activationCodes{label code}protectionPlanMessage{...textFragment}showSeller isShippedByWalmart seller{id name isPro}digitalDeliveryPhoneNumber addOns{...OrderAddOn}multiboxBundleId}fragment DriverFragment on Driver{id firstName photoUrl}fragment OrderGroupFragment on OrderGroup{driver{...DriverFragment}deliveryDate fulfillmentType status{...OrderGroupStatusFragment}showSeller isShippedByWalmart seller{...SellerFragment}id itemCount items{...LiteLineItemFragment}pickupPerson{firstName lastName email}accessPointId shipment{...ShipmentFragment}returnEligibilityMessage actions{...OrderGroupActionsFragment}recipientEmailAddress digitalDelivery{...DigitalDeliveryFragment}tireInstallationReservation{status extraText}}fragment OrderGroupStatusFragment on OrderGroupStatus{statusType showStatusTracker statusTracker{status label isCurrent}message{...textFragment}subtext subMessage{...textFragment}notice helpCenterText{...textFragment}}fragment textFragment on Text{parts{bold url text nativeAction lineBreak}}fragment LiteLineItemFragment on OrderLineItem{id quantity product{name usItemId imageInfo{thumbnailUrl}offerId isAlcohol}priceInfo{linePrice{...price}}}fragment SellerFragment on GroupSeller{id name isPro}fragment DigitalDeliveryFragment on DigitalDelivery{title name instructions{...textFragment}}fragment ShipmentFragment on Shipment{id trackingNumber isExternalTracking trackingUrl proofOfDelivery{photoUrl photoPreviewUrl showPreview}}fragment OrderGroupActionsFragment on OrderGroupActions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson editTip tip cancel enableTip{...orderActionFragment}enableEdit{...orderActionFragment}rescheduleTireInstall{...orderActionFragment}cancelTireInstall{...orderActionFragment}help viewCancellationDetails{...cancellationDetailsActionFragment}}fragment cancellationDetailsActionFragment on CancellationDetailsAction{label heading text{...textFragment}}fragment ODPGroupCategoryFragment on OrderCategory{type name subtext returnMessage substitutionsBanner{...textFragment}showExtendedSubstitutions actions{substitutions{message label type}nilPickReshop{message action{text url}}returnDetails viewCancellationDetails{...cancellationDetailsActionFragment}trackOnInHomeApp}banner{...textFragment}accordionState items{...orderLineItem}substitutions{...orderLineItem fulfilledItems{...orderLineItem}}returnInfo{...returnInfoFragment}}fragment ODPGroupFragment on OrderGroup{id fulfillmentType deliveryMessage deliveryAddress{fullName firstName lastName address{...addressFragment}}deliveryInstructions{text type typeText}deliveryPreferences{text{...textFragment}cta{...orderActionFragment}}editSubstitutionsCutOff status{statusType showStatusTracker message{...textFragment}notice helpCenterText{...textFragment}}itemCount isCategorized categories{...ODPGroupCategoryFragment}seller{id name isPro}shipment{id trackingNumber}actions{reorder edit track changeSlot checkin editDeliveryInstructions editPickupPerson tip cancel help enableTip{...orderActionFragment}enableEdit{...orderActionFragment}viewCancellationDetails{...cancellationDetailsActionFragment}enableInHome{...orderActionFragment}createGiftReceipt}cutOffTimestamp isEditSubstitutionsEligible isInHome giftDetails{recipientAddress{fullName}recipientEmail senderName giftMessage}donationDetails{...orderDonationDetails}}fragment returnInfoFragment on ReturnInfo{returnOrderId type refundPriceDetails{__typename...refundPriceDetailsFragment}refundMessage tierRefundMessage paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}}actions{__typename generate scheduleOrModifyPickup{text url}reschedulePickup editPickupContact}shippingLabelUrl qrCodeImageUrl carriers{__typename id name}pickupCarrier pickupContact{nameAndAddress{fullName firstName lastName address{addressString city state postalCode addressLineOne addressLineTwo country}}phone}pickupConfirmationNumber bannerMessage{...textFragment}}fragment refundPriceDetailsFragment on RefundPriceDetails{subTotal{__typename...orderPriceDetailRowFragment}fees{__typename...orderPriceDetailRowFragment}discounts{__typename...orderPriceDetailRowFragment}taxTotal{__typename...orderPriceDetailRowFragment}grandTotal{__typename...orderPriceDetailRowFragment}}fragment orderPriceDetailRowFragment on OrderPriceDetailRow{label displayValue value info{__typename title message}}fragment addressFragment on OrderAddress{addressString addressLineOne addressLineTwo state postalCode city}fragment ODPPickupInfo on OrderGroup{pickupInstructions pickupPerson{...person}alternatePickupPerson{...person}store{id name address{...addressFragment}}}fragment person on OrderPickupPerson{firstName lastName email}fragment ODPTippingInfo on OrderGroup{addTipMessage{...textFragment}driver{...DriverFragment}tipping{min{...price}max{...price}suggested{...price}preselected}subtotal{...price}}fragment orderActionFragment on Action{text url}fragment orderCustomer on OrderCustomer{id firstName lastName email isGuest isEmailRegistered}fragment OrderFieldsFragment on Order{__typename id version type customer{...orderCustomer}displayId idBarcodeImageUrl(barWidth:3 barHeight:100) isFuelPurchase title shortTitle timezone tippableGroup{...OrderGroupFragment}amendableGroup{id changeSlotIterationsLeft cutOffTimestamp fulfillmentType deliveryAddress{fullName firstName lastName address{addressString addressLineOne addressLineTwo state postalCode city country}}isAmendInProgress}substitutionsBanner{heading subheading longSubheading}groups_2101{__typename...OrderGroupFragment...ODPGroupFragment...ODPPickupInfo...ODPTippingInfo}multiboxBundles{...orderLineItem}itemCancelReasons{__typename...cancelReason}groupCancelReasons{__typename...cancelReason}priceDetails{__typename subTotal{__typename...priceDetailFragment}taxTotal{__typename...priceDetailFragment}grandTotal{__typename...priceDetailFragment}authorizationAmount{__typename...priceDetailFragment}fees{__typename...priceDetailFragment}discounts{__typename...priceDetailFragment}minimumThreshold{__typename...price}belowMinimumFee{__typename...priceDetailFragment}driverTip{__typename...priceDetailFragment}donations{__typename...priceDetailFragment}}paymentMethods{__typename description cardType paymentType displayValues message{...textFragment}actions{connectToCapitalOne{...orderActionFragment}visitAffirm{...orderActionFragment}}}actions{__typename return pendingReturn cancel startReturn{...orderActionFragment}reorder}banners{...textFragment}}","variables":{"orderId":"2862239293547","emailAddress":"rodneybenson23@hotmail.com"}}' \
   --compressed`
  
 for (( i=0; i<=4; i++ ))
   do
   if [[ $curl21 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 21"
-    error=`echo error`
     break
   elif [[ $curl21 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 21"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1306,7 +1262,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item21=`echo ngon`
+        echo "21"
         break
       fi
     done
@@ -1349,11 +1305,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl22 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 22"
-    error=`echo error`
     break
   elif [[ $curl22 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 22"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1368,7 +1322,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item22=`echo ngon`
+        echo "22"
         break
       fi
     done
@@ -1411,11 +1365,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl23 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 23"
-    error=`echo error`
     break
   elif [[ $curl23 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 23"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1430,7 +1382,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item23=`echo ngon`
+        echo "23"
         break
       fi
     done
@@ -1473,11 +1425,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl24 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 24"
-    error=`echo error`
     break
   elif [[ $curl24 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 24"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1492,7 +1442,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item24=`echo ngon`
+        echo "24"
         break
       fi
     done
@@ -1535,11 +1485,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl25 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 25"
-    error=`echo error`
     break
   elif [[ $curl25 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 25"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1554,7 +1502,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item25=`echo ngon`
+        echo "25"
         break
       fi
     done
@@ -1597,11 +1545,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl26 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 26"
-    error=`echo error`
     break
   elif [[ $curl26 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 26"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1616,7 +1562,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item26=`echo ngon`
+        echo "26"
         break
       fi
     done
@@ -1659,11 +1605,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl27 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 27"
-    error=`echo error`
     break
   elif [[ $curl27 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 27"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1678,7 +1622,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item27=`echo ngon`
+        echo "27"
         break
       fi
     done
@@ -1721,11 +1665,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl28 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 28"
-    error=`echo error`
     break
   elif [[ $curl28 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 28"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1740,7 +1682,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item28=`echo ngon`
+        echo "28"
         break
       fi
     done
@@ -1783,11 +1725,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl29 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 29"
-    error=`echo error`
     break
   elif [[ $curl29 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 29"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1802,7 +1742,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item29=`echo ngon`
+        echo "29"
         break
       fi
     done
@@ -1845,11 +1785,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl30 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 30"
-    error=`echo error`
     break
   elif [[ $curl30 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 30"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1864,7 +1802,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item30=`echo ngon`
+        echo "30"
         break
       fi
     done
@@ -1907,11 +1845,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl31 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 31"
-    error=`echo error`
     break
   elif [[ $curl31 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 31"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1926,7 +1862,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item31=`echo ngon`
+        echo "31"
         break
       fi
     done
@@ -1969,11 +1905,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl32 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 32"
-    error=`echo error`
     break
   elif [[ $curl32 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 32"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -1988,7 +1922,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item32=`echo ngon`
+        echo "32"
         break
       fi
     done
@@ -2031,11 +1965,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl33 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 33"
-    error=`echo error`
     break
   elif [[ $curl33 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 33"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2050,7 +1982,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item33=`echo ngon`
+        echo "33"
         break
       fi
     done
@@ -2093,11 +2025,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl34 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 34"
-    error=`echo error`
     break
   elif [[ $curl34 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 34"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2112,7 +2042,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item34=`echo ngon`
+        echo "34"
         break
       fi
     done
@@ -2155,11 +2085,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl35 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 35"
-    error=`echo error`
     break
   elif [[ $curl35 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 35"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2174,7 +2102,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item35=`echo ngon`
+        echo "35"
         break
       fi
     done
@@ -2217,11 +2145,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl36 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 36"
-    error=`echo error`
     break
   elif [[ $curl36 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 36"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2236,7 +2162,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item36=`echo ngon`
+        echo "36"
         break
       fi
     done
@@ -2279,11 +2205,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl37 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 37"
-    error=`echo error`
     break
   elif [[ $curl37 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 37"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2298,7 +2222,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item37=`echo ngon`
+        echo "37"
         break
       fi
     done
@@ -2341,11 +2265,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl38 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 38"
-    error=`echo error`
     break
   elif [[ $curl38 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 38"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2360,7 +2282,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item38=`echo ngon`
+        echo "38"
         break
       fi
     done
@@ -2403,11 +2325,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl39 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 39"
-    error=`echo error`
     break
   elif [[ $curl39 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 39"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2422,7 +2342,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item39=`echo ngon`
+        echo "39"
         break
       fi
     done
@@ -2465,11 +2385,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl40 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 40"
-    error=`echo error`
     break
   elif [[ $curl40 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 40"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2484,7 +2402,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item40=`echo ngon`
+        echo "40"
         break
       fi
     done
@@ -2527,11 +2445,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl41 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 41"
-    error=`echo error`
     break
   elif [[ $curl41 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 41"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2546,7 +2462,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item41=`echo ngon`
+        echo "41"
         break
       fi
     done
@@ -2589,11 +2505,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl42 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 42"
-    error=`echo error`
     break
   elif [[ $curl42 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 42"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2608,7 +2522,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item42=`echo ngon`
+        echo "42"
         break
       fi
     done
@@ -2651,11 +2565,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl43 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 43"
-    error=`echo error`
     break
   elif [[ $curl43 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 43"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2670,7 +2582,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item43=`echo ngon`
+        echo "43"
         break
       fi
     done
@@ -2713,11 +2625,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl44 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 44"
-    error=`echo error`
     break
   elif [[ $curl44 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 44"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2732,7 +2642,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item44=`echo ngon`
+        echo "44"
         break
       fi
     done
@@ -2775,11 +2685,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl45 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 45"
-    error=`echo error`
     break
   elif [[ $curl45 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 45"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2794,7 +2702,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item45=`echo ngon`
+        echo "45"
         break
       fi
     done
@@ -2837,11 +2745,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl46 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 46"
-    error=`echo error`
     break
   elif [[ $curl46 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 46"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2856,7 +2762,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item46=`echo ngon`
+        echo "46"
         break
       fi
     done
@@ -2899,11 +2805,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl47 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 47"
-    error=`echo error`
     break
   elif [[ $curl47 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 47"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2918,7 +2822,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item47=`echo ngon`
+        echo "47"
         break
       fi
     done
@@ -2961,11 +2865,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl48 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 48"
-    error=`echo error`
     break
   elif [[ $curl48 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 48"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -2980,7 +2882,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item48=`echo ngon`
+        echo "48"
         break
       fi
     done
@@ -3023,11 +2925,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl49 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 49"
-    error=`echo error`
     break
   elif [[ $curl49 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 49"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3042,7 +2942,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item49=`echo ngon`
+        echo "49"
         break
       fi
     done
@@ -3085,11 +2985,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl50 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 50"
-    error=`echo error`
     break
   elif [[ $curl50 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 50"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3104,7 +3002,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item50=`echo ngon`
+        echo "50"
         break
       fi
     done
@@ -3147,11 +3045,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl51 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 51"
-    error=`echo error`
     break
   elif [[ $curl51 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 51"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3166,7 +3062,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item51=`echo ngon`
+        echo "51"
         break
       fi
     done
@@ -3209,11 +3105,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl52 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 52"
-    error=`echo error`
     break
   elif [[ $curl52 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 52"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3228,7 +3122,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item52=`echo ngon`
+        echo "52"
         break
       fi
     done
@@ -3271,11 +3165,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl53 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 53"
-    error=`echo error`
     break
   elif [[ $curl53 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 53"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3290,7 +3182,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item53=`echo ngon`
+        echo "53"
         break
       fi
     done
@@ -3333,11 +3225,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl54 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 54"
-    error=`echo error`
     break
   elif [[ $curl54 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 54"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3352,7 +3242,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item54=`echo ngon`
+        echo "54"
         break
       fi
     done
@@ -3395,11 +3285,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl55 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 55"
-    error=`echo error`
     break
   elif [[ $curl55 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 55"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3414,7 +3302,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item55=`echo ngon`
+        echo "55"
         break
       fi
     done
@@ -3457,11 +3345,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl56 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 56"
-    error=`echo error`
     break
   elif [[ $curl56 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 56"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3476,7 +3362,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item56=`echo ngon`
+        echo "56"
         break
       fi
     done
@@ -3519,11 +3405,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl57 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 57"
-    error=`echo error`
     break
   elif [[ $curl57 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 57"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3538,7 +3422,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item57=`echo ngon`
+        echo "57"
         break
       fi
     done
@@ -3581,11 +3465,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl58 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 58"
-    error=`echo error`
     break
   elif [[ $curl58 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 58"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3600,7 +3482,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item58=`echo ngon`
+        echo "58"
         break
       fi
     done
@@ -3643,11 +3525,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl59 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 59"
-    error=`echo error`
     break
   elif [[ $curl59 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 59"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3662,7 +3542,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item59=`echo ngon`
+        echo "59"
         break
       fi
     done
@@ -3705,11 +3585,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl60 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 60"
-    error=`echo error`
     break
   elif [[ $curl60 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 60"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3724,7 +3602,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item60=`echo ngon`
+        echo "60"
         break
       fi
     done
@@ -3767,11 +3645,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl61 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 61"
-    error=`echo error`
     break
   elif [[ $curl61 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 61"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3786,7 +3662,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item61=`echo ngon`
+        echo "61"
         break
       fi
     done
@@ -3829,11 +3705,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl62 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 62"
-    error=`echo error`
     break
   elif [[ $curl62 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 62"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3848,7 +3722,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item62=`echo ngon`
+        echo "62"
         break
       fi
     done
@@ -3891,11 +3765,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl63 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 63"
-    error=`echo error`
     break
   elif [[ $curl63 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 63"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3910,7 +3782,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item63=`echo ngon`
+        echo "63"
         break
       fi
     done
@@ -3953,11 +3825,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl64 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 64"
-    error=`echo error`
     break
   elif [[ $curl64 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 64"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -3972,7 +3842,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item64=`echo ngon`
+        echo "64"
         break
       fi
     done
@@ -4015,11 +3885,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl65 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 65"
-    error=`echo error`
     break
   elif [[ $curl65 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 65"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4034,7 +3902,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item65=`echo ngon`
+        echo "65"
         break
       fi
     done
@@ -4077,11 +3945,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl66 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 66"
-    error=`echo error`
     break
   elif [[ $curl66 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 66"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4096,7 +3962,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item66=`echo ngon`
+        echo "66"
         break
       fi
     done
@@ -4139,11 +4005,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl67 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 67"
-    error=`echo error`
     break
   elif [[ $curl67 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 67"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4158,7 +4022,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item67=`echo ngon`
+        echo "67"
         break
       fi
     done
@@ -4201,11 +4065,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl68 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 68"
-    error=`echo error`
     break
   elif [[ $curl68 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 68"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4220,7 +4082,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item68=`echo ngon`
+        echo "68"
         break
       fi
     done
@@ -4263,11 +4125,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl69 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 69"
-    error=`echo error`
     break
   elif [[ $curl69 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 69"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4282,7 +4142,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item69=`echo ngon`
+        echo "69"
         break
       fi
     done
@@ -4325,11 +4185,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl70 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 70"
-    error=`echo error`
     break
   elif [[ $curl70 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 70"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4344,7 +4202,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item70=`echo ngon`
+        echo "70"
         break
       fi
     done
@@ -4387,11 +4245,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl71 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 71"
-    error=`echo error`
     break
   elif [[ $curl71 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 71"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4406,7 +4262,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item71=`echo ngon`
+        echo "71"
         break
       fi
     done
@@ -4449,11 +4305,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl72 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 72"
-    error=`echo error`
     break
   elif [[ $curl72 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 72"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4468,7 +4322,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item72=`echo ngon`
+        echo "72"
         break
       fi
     done
@@ -4511,11 +4365,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl73 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 73"
-    error=`echo error`
     break
   elif [[ $curl73 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 73"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4530,7 +4382,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item73=`echo ngon`
+        echo "73"
         break
       fi
     done
@@ -4573,11 +4425,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl74 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 74"
-    error=`echo error`
     break
   elif [[ $curl74 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 74"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4592,7 +4442,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item74=`echo ngon`
+        echo "74"
         break
       fi
     done
@@ -4635,11 +4485,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl75 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 75"
-    error=`echo error`
     break
   elif [[ $curl75 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 75"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4654,7 +4502,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item75=`echo ngon`
+        echo "75"
         break
       fi
     done
@@ -4697,11 +4545,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl76 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 76"
-    error=`echo error`
     break
   elif [[ $curl76 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 76"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4716,7 +4562,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item76=`echo ngon`
+        echo "76"
         break
       fi
     done
@@ -4759,11 +4605,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl77 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 77"
-    error=`echo error`
     break
   elif [[ $curl77 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 77"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4778,7 +4622,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item77=`echo ngon`
+        echo "77"
         break
       fi
     done
@@ -4821,11 +4665,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl78 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 78"
-    error=`echo error`
     break
   elif [[ $curl78 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 78"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4840,7 +4682,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item78=`echo ngon`
+        echo "78"
         break
       fi
     done
@@ -4883,11 +4725,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl79 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 79"
-    error=`echo error`
     break
   elif [[ $curl79 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 79"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4902,7 +4742,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item79=`echo ngon`
+        echo "79"
         break
       fi
     done
@@ -4945,11 +4785,9 @@ for (( i=0; i<=4; i++ ))
   do
   if [[ $curl80 =~ "error" ]]; then
     echo "Sai thông tin đăng nhập-Record số 80"
-    error=`echo error`
     break
   elif [[ $curl80 =~ "blocked" ]]; then
     echo "Lỗi blocked-Record số 80"
-    error=`echo error`
     break
   else
     for (( j=0; j<=4; j++))
@@ -4964,7 +4802,7 @@ for (( i=0; i<=4; i++ ))
         echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
         echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
         echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
-        item80=`echo ngon`
+        echo "80"
         break
       fi
     done
