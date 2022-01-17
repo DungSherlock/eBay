@@ -44,7 +44,6 @@
 "1703 N Thornton Rd # 518, Casa Grande, 85122-7805, AZ 20653"
 "3100 E 10th Ave, Sheffield, AL 35660"
 "346a Quail Village Ct, Ballwin, MO 63021"
-"1851 Chantilly Ct, Virginia Beach, 23451, VA 43081"
 "24231 Weldon Dr, Eustis, 32736, FL 15748"
 "27 Burning Bush Dr, Palm Coast, FL 32137"
 "737 Broughton Rd, JC s Fun N Sun Pet Products, Lake Helen, FL 32744"
