@@ -1,4 +1,5 @@
 "Delivered on Jan 18"
+"Delivered on Jan 17"
 "Delivered on Jan 18"
 "Canceled on Jan 18"
 "Canceled on Jan 17"
