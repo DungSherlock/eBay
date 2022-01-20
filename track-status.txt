@@ -7,6 +7,7 @@
 "Arrives by Sat, Jan 22"
 "Delivered on Jan 18"
 "Delivered on Jan 19"
+"Arrives by Thu, Feb 03"
 "Delivered on Jan 17"
 "Delivered on Jan 19"
 "Arrives by Mon, Jan 24"
