@@ -9,7 +9,9 @@
 : > track-OrderID.txt
 : > track-email.txt
 
-export HTTPS_PROXY='167.172.31.100:9300	'
+export {http,https,ftp}_proxy='165.227.104.122:10995'
+
+wget google.com
 
 curl1=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
@@ -71,7 +73,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl2=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl2=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -131,7 +133,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl3=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl3=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -191,7 +193,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl4=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl4=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -251,7 +253,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl5=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl5=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -311,7 +313,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl6=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl6=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -371,7 +373,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl7=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl7=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -431,7 +433,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl8=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl8=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -491,7 +493,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl9=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl9=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -551,7 +553,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl10=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl10=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -611,7 +613,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl11=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl11=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -671,7 +673,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl12=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl12=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -731,7 +733,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl13=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl13=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -791,7 +793,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl14=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl14=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -851,7 +853,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl15=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl15=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -911,7 +913,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl16=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl16=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -971,7 +973,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl17=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl17=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1031,7 +1033,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl18=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl18=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1091,7 +1093,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl19=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl19=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1151,7 +1153,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl20=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl20=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1211,7 +1213,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl21=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl21=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1271,7 +1273,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl22=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl22=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1331,7 +1333,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl23=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl23=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1391,7 +1393,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl24=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl24=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1451,7 +1453,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl25=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl25=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1511,7 +1513,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl26=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl26=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1571,7 +1573,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl27=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl27=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1631,7 +1633,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl28=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl28=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1691,7 +1693,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl29=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl29=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1751,7 +1753,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl30=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl30=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
@@ -1811,7 +1813,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl31=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+curl31=`curl -x 51.15.85.114:3128 -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
   -H 'x-o-platform: rweb' \
