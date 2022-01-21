@@ -53,7 +53,6 @@
 "Delivered on Jan 17"
 "Arrives by Sun, Jan 23"
 "Delivered on Jan 17"
-"Delivered on Jan 15"
 "Delivered on Jan 17"
 "Delivered on Jan 18"
 "Arrives by Sat, Jan 22"

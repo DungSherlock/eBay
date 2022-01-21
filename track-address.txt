@@ -53,7 +53,6 @@
 "4817 Babylon St, New Orleans, LA 70126"
 "426 County Road 163, Muleshoe, TX 79347"
 "56426 Pecan Rd, Astor, FL 32102"
-"13 W Park St, Bangor, ME 04401"
 "610 Riverwood Dr Pigeon, Pigeon Mi 48755-9412, MI 48755"
 "5364 E County Road 50 S Fillmore, Fillmore, IN 46128"
 "1612 N Bent Tree Trl Grand Prairie, Grand Prairie, TX 75052"
