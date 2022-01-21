@@ -9,7 +9,7 @@
 : > track-OrderID.txt
 : > track-email.txt
 
-curl1=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl1=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -52,7 +52,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"360148071"' ]]; then
+      if [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"360148071"' ]]; then
         echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -69,7 +69,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl2=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl2=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -112,7 +112,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"631091219"' ]]; then
+      if [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"631091219"' ]]; then
         echo $curl2 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl2 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -129,7 +129,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl3=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl3=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -172,7 +172,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"395854693"' ]]; then
+      if [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"395854693"' ]]; then
         echo $curl3 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl3 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -189,7 +189,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl4=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl4=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -232,7 +232,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"520367700"' ]]; then
+      if [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"520367700"' ]]; then
         echo $curl4 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl4 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -249,7 +249,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl5=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl5=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -292,7 +292,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"10752553"' ]]; then
+      if [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"10752553"' ]]; then
         echo $curl5 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl5 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -309,7 +309,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl6=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl6=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -352,7 +352,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"480863972"' ]]; then
+      if [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"480863972"' ]]; then
         echo $curl6 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl6 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -369,7 +369,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl7=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl7=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -412,7 +412,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"755361385"' ]]; then
+      if [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"755361385"' ]]; then
         echo $curl7 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl7 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -429,7 +429,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl8=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl8=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -472,7 +472,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"976967361"' ]]; then
+      if [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"976967361"' ]]; then
         echo $curl8 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl8 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -489,7 +489,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl9=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl9=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -532,7 +532,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"251382558"' ]]; then
+      if [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"251382558"' ]]; then
         echo $curl9 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl9 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -549,7 +549,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl10=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl10=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -592,7 +592,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"38444962"' ]]; then
+      if [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"38444962"' ]]; then
         echo $curl10 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl10 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -609,7 +609,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl11=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl11=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -652,7 +652,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"378936130"' ]]; then
+      if [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"378936130"' ]]; then
         echo $curl11 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl11 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -669,7 +669,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl12=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl12=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -712,7 +712,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"755361385"' ]]; then
+      if [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"755361385"' ]]; then
         echo $curl12 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl12 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -729,7 +729,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl13=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl13=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -772,7 +772,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"755361385"' ]]; then
+      if [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"755361385"' ]]; then
         echo $curl13 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl13 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -789,7 +789,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl14=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl14=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -832,7 +832,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"50109305"' ]]; then
+      if [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"50109305"' ]]; then
         echo $curl14 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl14 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -849,7 +849,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl15=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl15=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -892,7 +892,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"137359681"' ]]; then
+      if [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"137359681"' ]]; then
         echo $curl15 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl15 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -909,7 +909,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl16=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl16=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -952,7 +952,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"217281734"' ]]; then
+      if [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"217281734"' ]]; then
         echo $curl16 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl16 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -969,7 +969,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl17=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl17=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1012,7 +1012,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"54315959"' ]]; then
+      if [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"54315959"' ]]; then
         echo $curl17 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl17 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1029,7 +1029,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl18=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl18=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1072,7 +1072,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"3084"' ]]; then
+      if [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"3084"' ]]; then
         echo $curl18 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl18 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1089,7 +1089,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl19=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl19=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1132,7 +1132,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"46368979"' ]]; then
+      if [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"46368979"' ]]; then
         echo $curl19 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl19 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1149,7 +1149,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl20=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl20=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1192,7 +1192,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"689830322"' ]]; then
+      if [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"689830322"' ]]; then
         echo $curl20 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl20 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1209,7 +1209,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl21=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl21=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1252,7 +1252,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"6371940"' ]]; then
+      if [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"6371940"' ]]; then
         echo $curl21 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl21 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1269,7 +1269,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl22=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl22=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1312,7 +1312,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"251382558"' ]]; then
+      if [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"251382558"' ]]; then
         echo $curl22 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl22 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1329,7 +1329,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl23=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl23=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1372,7 +1372,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"19524988"' ]]; then
+      if [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"19524988"' ]]; then
         echo $curl23 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl23 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1389,7 +1389,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl24=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl24=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1432,7 +1432,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"251382558"' ]]; then
+      if [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"251382558"' ]]; then
         echo $curl24 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl24 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1449,7 +1449,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl25=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl25=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1492,7 +1492,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"665876299"' ]]; then
+      if [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"665876299"' ]]; then
         echo $curl25 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl25 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1509,7 +1509,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl26=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl26=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1552,7 +1552,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"165694599"' ]]; then
+      if [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"165694599"' ]]; then
         echo $curl26 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl26 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1569,7 +1569,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl27=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl27=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1612,7 +1612,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"54800682"' ]]; then
+      if [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"54800682"' ]]; then
         echo $curl27 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl27 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1629,7 +1629,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl28=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl28=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1672,7 +1672,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"555274277"' ]]; then
+      if [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"555274277"' ]]; then
         echo $curl28 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl28 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1689,7 +1689,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl29=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl29=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1732,7 +1732,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"2625289"' ]]; then
+      if [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"2625289"' ]]; then
         echo $curl29 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl29 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
@@ -1749,7 +1749,7 @@ for (( i=0; i<=4; i++ ))
   fi
 done
 
-curl30=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
+ curl30=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
   -H 'x-o-platform: rweb' \
@@ -1792,7 +1792,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId'` == '"653731574"' ]]; then
+      if [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"653731574"' ]]; then
         echo $curl30 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl30 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].product.usItemId' >> track-usItemId.txt
