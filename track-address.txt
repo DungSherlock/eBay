@@ -8,6 +8,7 @@
 "8741 Planet Dr, Cincinnati 45231, Gahanna, OH 43230"
 "5001 E Robertson Blvd, Chowchilla, Chowchilla, CA 93610"
 "308 Burlington Ave, Broussard, LA 70518"
+"3359 Columbia Rd, North Olmsted, 44070, OH 45344"
 "25422 Trabuco Rd Ste 105, Lake Forest, 92630, CA 93705"
 "4006 Route 9 South Unit 205, Middle Township, 08242, NJ 08016"
 "524y N Lowry St, Pampa, TX 79065"
