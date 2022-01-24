@@ -42,7 +42,7 @@
 "141 Janin Circle North, TX 78374-1411, Portland, TX 78374"
 "103 Caroline Cv, Clinton, Clinton, MS 39056"
 "365 County Road 1170, TX 76234-6219, Decatur, TX 76234"
-"235 High St, Jersey Shore, PA 17740"
+"235y High St, Jersey Shore, PA 17740"
 "1968 Samuelson Rd, Portage, IN 46368"
 "2751 W Walnut Hill Ln, Irving, TX 75038"
 "305 E. 12th St. Ste B PMB 102, Joshua, 76058, TX 78247"
