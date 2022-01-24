@@ -22,7 +22,3 @@ null
 null
 "https://www.walmart.com/tracking?order_id=5870240784773&tracking_id=535766223214&package_id=00022081030958147233"
 null
-null
-"https://www.walmart.com/tracking?order_id=5870240685532&tracking_id=558662635299&package_id=55572617816349934265"
-null
-"https://www.walmart.com/tracking?order_id=4870238779770&tracking_id=554978917554&package_id=554978917554"
