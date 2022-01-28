@@ -52,7 +52,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"10771204"' ]]; then
+      if [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Presto-16-Quart-Pressure-Canner-and-Cooker-01755/10771204"' ]]; then
         echo $curl1 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl1 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -112,7 +112,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"137359681"' ]]; then
+      if [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Comfort-Zone-1200W-Electric-Oil-Filled-Radiant-Portable-Heater-White/137359681"' ]]; then
         echo $curl2 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl2 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -172,7 +172,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"628834581"' ]]; then
+      if [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Bissell-PowerForce-Helix-Turbo-Rewind-Bagless-Vacuum-Cleaner-1797/628834581"' ]]; then
         echo $curl3 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl3 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -232,7 +232,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"378936130"' ]]; then
+      if [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Babideal-Flash-Standard-Stroller-with-Storage-Gray-Ombre/378936130"' ]]; then
         echo $curl4 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl4 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -292,7 +292,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"50753947"' ]]; then
+      if [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Gorilla-Carts-GOR4PS-600-lb-Poly-Garden-Dump-Cart-with-10-Tires/50753947"' ]]; then
         echo $curl5 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl5 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -352,7 +352,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"171122882"' ]]; then
+      if [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Ozark-Trail-Camping-Utility-Wagon-with-Tailgate-Extension-Handle-Red/171122882"' ]]; then
         echo $curl6 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl6 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -412,7 +412,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"755361385"' ]]; then
+      if [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Garden-Star-Dual-Wheel-Poly-Tray-Yard-Rover-Wheelbarrow/755361385"' ]]; then
         echo $curl7 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl7 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -472,7 +472,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"755361385"' ]]; then
+      if [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Garden-Star-Dual-Wheel-Poly-Tray-Yard-Rover-Wheelbarrow/755361385"' ]]; then
         echo $curl8 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl8 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -532,7 +532,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"807825255"' ]]; then
+      if [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/ChimneyFree-Powerheat-Infrared-Quartz-Electric-Stove-Heater/807825255"' ]]; then
         echo $curl9 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl9 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -592,7 +592,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"10752553"' ]]; then
+      if [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Lasko-1500W-Designer-Series-Ceramic-Space-Heater-with-Remote-6435-Beige/10752553"' ]]; then
         echo $curl10 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl10 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -652,7 +652,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"235744974"' ]]; then
+      if [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/VEVOR-Hydroponic-Site-Grow-Kit-36-Planting-Sites-Garden-Plant-System-Vegetable-Tool/235744974"' ]]; then
         echo $curl11 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl11 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -712,7 +712,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"121639349"' ]]; then
+      if [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Aprilaire-413-Replacement-Filter/121639349"' ]]; then
         echo $curl12 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl12 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -772,7 +772,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"488588268"' ]]; then
+      if [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Chefman-French-Door-Air-Fryer-Oven-26-Quart/488588268"' ]]; then
         echo $curl13 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl13 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -832,7 +832,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"265176340"' ]]; then
+      if [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Barton-Canner-Pressure-Cooker-Pressure-Cooker-22-Quart-Capacity-Polished-Aluminum/265176340"' ]]; then
         echo $curl14 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl14 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -892,7 +892,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"807825255"' ]]; then
+      if [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/ChimneyFree-Powerheat-Infrared-Quartz-Electric-Stove-Heater/807825255"' ]]; then
         echo $curl15 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl15 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -952,7 +952,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"128265240"' ]]; then
+      if [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/x6672-lennox-healthy-climate-16x25x5-merv-16-filter/128265240"' ]]; then
         echo $curl16 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl16 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1012,7 +1012,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"45465229"' ]]; then
+      if [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Everyday-Home-Retro-Ribbed-Swivel-Bar-Stool/45465229"' ]]; then
         echo $curl17 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl17 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1072,7 +1072,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"240828726"' ]]; then
+      if [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Ozark-Trail-Sand-Island-Beach-Wagon-Cart-Outdoor-and-Camping-Blue-Adult/240828726"' ]]; then
         echo $curl18 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl18 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1132,7 +1132,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"653731574"' ]]; then
+      if [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Moosoo-Air-Fryer-Oven-10-6-Quart-Air-Fryer-Oil-less-Electric-Air-Fryer-with-Touchscreen-Dehydrator-Rotisserie-Oven-with-Time-Temperature-Dial/653731574"' ]]; then
         echo $curl19 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl19 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1192,7 +1192,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"689830322"' ]]; then
+      if [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Trion-259112-102-20-x-25-x-5-MERV-11-Media-Air-Filter-3-Pack/689830322"' ]]; then
         echo $curl20 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl20 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1252,7 +1252,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"755361385"' ]]; then
+      if [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Garden-Star-Dual-Wheel-Poly-Tray-Yard-Rover-Wheelbarrow/755361385"' ]]; then
         echo $curl21 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl21 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1312,7 +1312,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"128265240"' ]]; then
+      if [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/x6672-lennox-healthy-climate-16x25x5-merv-16-filter/128265240"' ]]; then
         echo $curl22 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl22 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1372,7 +1372,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"755361385"' ]]; then
+      if [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Garden-Star-Dual-Wheel-Poly-Tray-Yard-Rover-Wheelbarrow/755361385"' ]]; then
         echo $curl23 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl23 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1432,7 +1432,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"514921600"' ]]; then
+      if [[ `echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Lowrance-HOOK2-4x-Fish-Finder-with-Bullet-Skimmer-Transducer/514921600"' ]]; then
         echo $curl24 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl24 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1492,7 +1492,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"631091219"' ]]; then
+      if [[ `echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Lennox-X6675-20x25x5-MERV-16-Furnace-Filter/631091219"' ]]; then
         echo $curl25 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl25 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1552,7 +1552,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"44488944"' ]]; then
+      if [[ `echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Coleman-Highline-4-Person-Dome-Tent-9-x-7/44488944"' ]]; then
         echo $curl26 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl26 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1612,7 +1612,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"947870483"' ]]; then
+      if [[ `echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/48-x24-x60-Horticulture-Mylar-Reflective-Grow-Tent-Hydroponic-Indoor-Growing/947870483"' ]]; then
         echo $curl27 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl27 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1672,7 +1672,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"689830322"' ]]; then
+      if [[ `echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Trion-259112-102-20-x-25-x-5-MERV-11-Media-Air-Filter-3-Pack/689830322"' ]]; then
         echo $curl28 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl28 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1732,7 +1732,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"976967361"' ]]; then
+      if [[ `echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/AeroGarden-Harvest-Elite-Slim-Indoor-Garden-with-LED-Grow-Light-Stainless-Steel/976967361"' ]]; then
         echo $curl29 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl29 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1792,7 +1792,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"898737407"' ]]; then
+      if [[ `echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Costway-1500W-Electric-Oil-Filled-Radiator-Space-Heater-7-Fin-Thermostat-Room-Radiant/898737407"' ]]; then
         echo $curl30 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl30 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1852,7 +1852,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"477200308"' ]]; then
+      if [[ `echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Ozark-Trail-Folding-Multipurpose-Camp-Wagon-Cart-Black/477200308"' ]]; then
         echo $curl31 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl31 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1912,7 +1912,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"950352380"' ]]; then
+      if [[ `echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Trane-BAYFTFREXM2-4-Pack-Perfect-Fit-5-Expandable-Replacement-Air-Filter/950352380"' ]]; then
         echo $curl32 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl32 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -1972,7 +1972,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"276199761"' ]]; then
+      if [[ `echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/6-Pack-of-20x25x4-MERV-10-Pleated-4-Inch-Air-Filters-by-Glasfloss-Actual-Size-19-1-2-x-24-1-2-x-3-3-4/276199761"' ]]; then
         echo $curl33 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl33 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2032,7 +2032,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"165694599"' ]]; then
+      if [[ `echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Mainstays-5-Piece-Resin-Plastic-Card-Table-and-Four-Chairs-Set-Black/165694599"' ]]; then
         echo $curl34 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl34 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2092,7 +2092,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"38317403"' ]]; then
+      if [[ `echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Mainstays-12-Cube-Square-Shelf-Bookcase-Espresso/38317403"' ]]; then
         echo $curl35 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl35 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2152,7 +2152,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"25776173"' ]]; then
+      if [[ `echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Convenience-Concepts-Designs2Go-12-W-x-17-75-D-x-39-H-Classic-Glass-4-Shelf-Tower-Unit-Clear/25776173"' ]]; then
         echo $curl36 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl36 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2212,7 +2212,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"824446116"' ]]; then
+      if [[ `echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/HOMEFORT-41-Kitchen-Pantry-Farmhouse-Pantry-Cabinet-Storage-Cabinet-with-Doors-and-Adjustable-Shelves-41-H-x-23-2-W-x-12-D-White/824446116"' ]]; then
         echo $curl37 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl37 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2272,7 +2272,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"424676577"' ]]; then
+      if [[ `echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Sorbus-Dresser-5-Fabric-Drawers-Bedroom-Furniture-Storage-Chest-Tower-Unit-Bedroom-Hallway-Closet-Office-Organization-Steel-Frame-Rustic-Wood-Top-Eas/424676577"' ]]; then
         echo $curl38 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl38 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2332,7 +2332,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"950352380"' ]]; then
+      if [[ `echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Trane-BAYFTFREXM2-4-Pack-Perfect-Fit-5-Expandable-Replacement-Air-Filter/950352380"' ]]; then
         echo $curl39 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl39 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2392,7 +2392,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"689830322"' ]]; then
+      if [[ `echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Trion-259112-102-20-x-25-x-5-MERV-11-Media-Air-Filter-3-Pack/689830322"' ]]; then
         echo $curl40 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl40 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2452,7 +2452,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"2625289"' ]]; then
+      if [[ `echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Presto-Aluminum-23-Quart-Pressure-Canner-and-Cooker/2625289"' ]]; then
         echo $curl41 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl41 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2512,7 +2512,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"121639349"' ]]; then
+      if [[ `echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Aprilaire-413-Replacement-Filter/121639349"' ]]; then
         echo $curl42 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl42 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2572,7 +2572,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"217281734"' ]]; then
+      if [[ `echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Ninja-Foodi-12-in-1-8-Quart-XL-Pressure-Cooker-Air-Fryer-Multicooker-OS401/217281734"' ]]; then
         echo $curl43 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl43 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2632,7 +2632,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"480863972"' ]]; then
+      if [[ `echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Aerostar-20x20x1-MERV-13-Pleated-Air-Filter-AC-Furnace-Air-Filter-6-Pack-Actual-Size-19-3-4-x-19-3-4-x-3-4/480863972"' ]]; then
         echo $curl44 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl44 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2692,7 +2692,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"217281734"' ]]; then
+      if [[ `echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Ninja-Foodi-12-in-1-8-Quart-XL-Pressure-Cooker-Air-Fryer-Multicooker-OS401/217281734"' ]]; then
         echo $curl45 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl45 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2752,7 +2752,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"240828726"' ]]; then
+      if [[ `echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Ozark-Trail-Sand-Island-Beach-Wagon-Cart-Outdoor-and-Camping-Blue-Adult/240828726"' ]]; then
         echo $curl46 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl46 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2812,7 +2812,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"54315959"' ]]; then
+      if [[ `echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Barrington-40-Dartboard-Cabinet-Set-LED-Lights-Steel-Tip-Darts-Brown-Black/54315959"' ]]; then
         echo $curl47 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl47 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2872,7 +2872,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"563031222"' ]]; then
+      if [[ `echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Schumacher-Fully-Automatic-Battery-Charger-and-Maintainer-15-Amp-3-Amp-6V-12V/563031222"' ]]; then
         echo $curl48 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl48 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2932,7 +2932,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"251382558"' ]]; then
+      if [[ `echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Mainstays-71-5-Shelf-Bookcase-with-Adjustable-Shelves-Canyon-Walnut/251382558"' ]]; then
         echo $curl49 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl49 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -2992,7 +2992,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"641220610"' ]]; then
+      if [[ `echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Blackstone-Griddle-Accessory-Table-Fits-22-and-17-Tabletop-Griddles/641220610"' ]]; then
         echo $curl50 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl50 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -3052,7 +3052,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"477200308"' ]]; then
+      if [[ `echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Ozark-Trail-Folding-Multipurpose-Camp-Wagon-Cart-Black/477200308"' ]]; then
         echo $curl51 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl51 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -3112,7 +3112,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"165694599"' ]]; then
+      if [[ `echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Mainstays-5-Piece-Resin-Plastic-Card-Table-and-Four-Chairs-Set-Black/165694599"' ]]; then
         echo $curl52 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl52 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -3172,7 +3172,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"477200308"' ]]; then
+      if [[ `echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Ozark-Trail-Folding-Multipurpose-Camp-Wagon-Cart-Black/477200308"' ]]; then
         echo $curl53 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl53 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
@@ -3232,7 +3232,7 @@ for (( i=0; i<=4; i++ ))
   else
     for (( j=0; j<=4; j++))
     do
-      if [[ `echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"641220610"' ]]; then
+      if [[ `echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"https://www.walmart.com/ip/Blackstone-Griddle-Accessory-Table-Fits-22-and-17-Tabletop-Griddles/641220610"' ]]; then
         echo $curl54 | jq '.data.guestOrder.id' >> track-OrderID.txt
         echo $curl54 | jq '.data.guestOrder.customer.email' >> track-email.txt
         echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
