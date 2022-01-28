@@ -47,7 +47,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 1"
     break
   elif [[ $curl1 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 1"
+    echo $curl1
     break
   else
     for (( j=0; j<=4; j++))
@@ -60,8 +60,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "1"
         break
       fi
@@ -107,7 +107,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 2"
     break
   elif [[ $curl2 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 2"
+    echo $curl2
     break
   else
     for (( j=0; j<=4; j++))
@@ -120,8 +120,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "2"
         break
       fi
@@ -167,7 +167,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 3"
     break
   elif [[ $curl3 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 3"
+    echo $curl3
     break
   else
     for (( j=0; j<=4; j++))
@@ -180,8 +180,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "3"
         break
       fi
@@ -227,7 +227,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 4"
     break
   elif [[ $curl4 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 4"
+    echo $curl4
     break
   else
     for (( j=0; j<=4; j++))
@@ -240,8 +240,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "4"
         break
       fi
@@ -287,7 +287,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 5"
     break
   elif [[ $curl5 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 5"
+    echo $curl5
     break
   else
     for (( j=0; j<=4; j++))
@@ -300,8 +300,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "5"
         break
       fi
@@ -347,7 +347,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 6"
     break
   elif [[ $curl6 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 6"
+    echo $curl6
     break
   else
     for (( j=0; j<=4; j++))
@@ -360,8 +360,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "6"
         break
       fi
@@ -407,7 +407,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 7"
     break
   elif [[ $curl7 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 7"
+    echo $curl7
     break
   else
     for (( j=0; j<=4; j++))
@@ -420,8 +420,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "7"
         break
       fi
@@ -467,7 +467,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 8"
     break
   elif [[ $curl8 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 8"
+    echo $curl8
     break
   else
     for (( j=0; j<=4; j++))
@@ -480,8 +480,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "8"
         break
       fi
@@ -527,7 +527,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 9"
     break
   elif [[ $curl9 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 9"
+    echo $curl9
     break
   else
     for (( j=0; j<=4; j++))
@@ -540,8 +540,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "9"
         break
       fi
@@ -587,7 +587,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 10"
     break
   elif [[ $curl10 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 10"
+    echo $curl10
     break
   else
     for (( j=0; j<=4; j++))
@@ -600,8 +600,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "10"
         break
       fi
@@ -647,7 +647,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 11"
     break
   elif [[ $curl11 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 11"
+    echo $curl11
     break
   else
     for (( j=0; j<=4; j++))
@@ -660,8 +660,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "11"
         break
       fi
@@ -707,7 +707,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 12"
     break
   elif [[ $curl12 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 12"
+    echo $curl12
     break
   else
     for (( j=0; j<=4; j++))
@@ -720,8 +720,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "12"
         break
       fi
@@ -767,7 +767,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 13"
     break
   elif [[ $curl13 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 13"
+    echo $curl13
     break
   else
     for (( j=0; j<=4; j++))
@@ -780,8 +780,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "13"
         break
       fi
@@ -827,7 +827,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 14"
     break
   elif [[ $curl14 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 14"
+    echo $curl14
     break
   else
     for (( j=0; j<=4; j++))
@@ -840,8 +840,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "14"
         break
       fi
@@ -887,7 +887,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 15"
     break
   elif [[ $curl15 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 15"
+    echo $curl15
     break
   else
     for (( j=0; j<=4; j++))
@@ -900,8 +900,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "15"
         break
       fi
@@ -947,7 +947,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 16"
     break
   elif [[ $curl16 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 16"
+    echo $curl16
     break
   else
     for (( j=0; j<=4; j++))
@@ -960,8 +960,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "16"
         break
       fi
@@ -1007,7 +1007,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 17"
     break
   elif [[ $curl17 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 17"
+    echo $curl17
     break
   else
     for (( j=0; j<=4; j++))
@@ -1020,8 +1020,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "17"
         break
       fi
@@ -1067,7 +1067,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 18"
     break
   elif [[ $curl18 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 18"
+    echo $curl18
     break
   else
     for (( j=0; j<=4; j++))
@@ -1080,8 +1080,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "18"
         break
       fi
@@ -1127,7 +1127,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 19"
     break
   elif [[ $curl19 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 19"
+    echo $curl19
     break
   else
     for (( j=0; j<=4; j++))
@@ -1140,8 +1140,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "19"
         break
       fi
@@ -1187,7 +1187,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 20"
     break
   elif [[ $curl20 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 20"
+    echo $curl20
     break
   else
     for (( j=0; j<=4; j++))
@@ -1200,8 +1200,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "20"
         break
       fi
@@ -1247,7 +1247,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 21"
     break
   elif [[ $curl21 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 21"
+    echo $curl21
     break
   else
     for (( j=0; j<=4; j++))
@@ -1260,8 +1260,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "21"
         break
       fi
@@ -1307,7 +1307,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 22"
     break
   elif [[ $curl22 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 22"
+    echo $curl22
     break
   else
     for (( j=0; j<=4; j++))
@@ -1320,8 +1320,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "22"
         break
       fi
@@ -1367,7 +1367,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 23"
     break
   elif [[ $curl23 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 23"
+    echo $curl23
     break
   else
     for (( j=0; j<=4; j++))
@@ -1380,8 +1380,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "23"
         break
       fi
@@ -1427,7 +1427,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 24"
     break
   elif [[ $curl24 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 24"
+    echo $curl24
     break
   else
     for (( j=0; j<=4; j++))
@@ -1440,8 +1440,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "24"
         break
       fi
@@ -1487,7 +1487,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 25"
     break
   elif [[ $curl25 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 25"
+    echo $curl25
     break
   else
     for (( j=0; j<=4; j++))
@@ -1500,8 +1500,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "25"
         break
       fi
@@ -1547,7 +1547,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 26"
     break
   elif [[ $curl26 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 26"
+    echo $curl26
     break
   else
     for (( j=0; j<=4; j++))
@@ -1560,8 +1560,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "26"
         break
       fi
@@ -1607,7 +1607,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 27"
     break
   elif [[ $curl27 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 27"
+    echo $curl27
     break
   else
     for (( j=0; j<=4; j++))
@@ -1620,8 +1620,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "27"
         break
       fi
@@ -1667,7 +1667,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 28"
     break
   elif [[ $curl28 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 28"
+    echo $curl28
     break
   else
     for (( j=0; j<=4; j++))
@@ -1680,8 +1680,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "28"
         break
       fi
@@ -1727,7 +1727,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 29"
     break
   elif [[ $curl29 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 29"
+    echo $curl29
     break
   else
     for (( j=0; j<=4; j++))
@@ -1740,8 +1740,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "29"
         break
       fi
@@ -1787,7 +1787,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 30"
     break
   elif [[ $curl30 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 30"
+    echo $curl30
     break
   else
     for (( j=0; j<=4; j++))
@@ -1800,8 +1800,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "30"
         break
       fi
@@ -1847,7 +1847,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 31"
     break
   elif [[ $curl31 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 31"
+    echo $curl31
     break
   else
     for (( j=0; j<=4; j++))
@@ -1860,8 +1860,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "31"
         break
       fi
@@ -1907,7 +1907,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 32"
     break
   elif [[ $curl32 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 32"
+    echo $curl32
     break
   else
     for (( j=0; j<=4; j++))
@@ -1920,8 +1920,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "32"
         break
       fi
@@ -1967,7 +1967,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 33"
     break
   elif [[ $curl33 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 33"
+    echo $curl33
     break
   else
     for (( j=0; j<=4; j++))
@@ -1980,8 +1980,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "33"
         break
       fi
@@ -2027,7 +2027,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 34"
     break
   elif [[ $curl34 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 34"
+    echo $curl34
     break
   else
     for (( j=0; j<=4; j++))
@@ -2040,8 +2040,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "34"
         break
       fi
@@ -2087,7 +2087,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 35"
     break
   elif [[ $curl35 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 35"
+    echo $curl35
     break
   else
     for (( j=0; j<=4; j++))
@@ -2100,8 +2100,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "35"
         break
       fi
@@ -2147,7 +2147,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 36"
     break
   elif [[ $curl36 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 36"
+    echo $curl36
     break
   else
     for (( j=0; j<=4; j++))
@@ -2160,8 +2160,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "36"
         break
       fi
@@ -2207,7 +2207,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 37"
     break
   elif [[ $curl37 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 37"
+    echo $curl37
     break
   else
     for (( j=0; j<=4; j++))
@@ -2220,8 +2220,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "37"
         break
       fi
@@ -2267,7 +2267,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 38"
     break
   elif [[ $curl38 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 38"
+    echo $curl38
     break
   else
     for (( j=0; j<=4; j++))
@@ -2280,8 +2280,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "38"
         break
       fi
@@ -2327,7 +2327,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 39"
     break
   elif [[ $curl39 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 39"
+    echo $curl39
     break
   else
     for (( j=0; j<=4; j++))
@@ -2340,8 +2340,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "39"
         break
       fi
@@ -2387,7 +2387,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 40"
     break
   elif [[ $curl40 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 40"
+    echo $curl40
     break
   else
     for (( j=0; j<=4; j++))
@@ -2400,8 +2400,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "40"
         break
       fi
@@ -2447,7 +2447,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 41"
     break
   elif [[ $curl41 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 41"
+    echo $curl41
     break
   else
     for (( j=0; j<=4; j++))
@@ -2460,8 +2460,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "41"
         break
       fi
@@ -2507,7 +2507,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 42"
     break
   elif [[ $curl42 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 42"
+    echo $curl42
     break
   else
     for (( j=0; j<=4; j++))
@@ -2520,8 +2520,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "42"
         break
       fi
@@ -2567,7 +2567,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 43"
     break
   elif [[ $curl43 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 43"
+    echo $curl43
     break
   else
     for (( j=0; j<=4; j++))
@@ -2580,8 +2580,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "43"
         break
       fi
@@ -2627,7 +2627,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 44"
     break
   elif [[ $curl44 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 44"
+    echo $curl44
     break
   else
     for (( j=0; j<=4; j++))
@@ -2640,8 +2640,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "44"
         break
       fi
@@ -2687,7 +2687,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 45"
     break
   elif [[ $curl45 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 45"
+    echo $curl45
     break
   else
     for (( j=0; j<=4; j++))
@@ -2700,8 +2700,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "45"
         break
       fi
@@ -2747,7 +2747,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 46"
     break
   elif [[ $curl46 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 46"
+    echo $curl46
     break
   else
     for (( j=0; j<=4; j++))
@@ -2760,8 +2760,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "46"
         break
       fi
@@ -2807,7 +2807,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 47"
     break
   elif [[ $curl47 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 47"
+    echo $curl47
     break
   else
     for (( j=0; j<=4; j++))
@@ -2820,8 +2820,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "47"
         break
       fi
@@ -2867,7 +2867,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 48"
     break
   elif [[ $curl48 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 48"
+    echo $curl48
     break
   else
     for (( j=0; j<=4; j++))
@@ -2880,8 +2880,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "48"
         break
       fi
@@ -2927,7 +2927,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 49"
     break
   elif [[ $curl49 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 49"
+    echo $curl49
     break
   else
     for (( j=0; j<=4; j++))
@@ -2940,8 +2940,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "49"
         break
       fi
@@ -2987,7 +2987,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 50"
     break
   elif [[ $curl50 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 50"
+    echo $curl50
     break
   else
     for (( j=0; j<=4; j++))
@@ -3000,8 +3000,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "50"
         break
       fi
@@ -3047,7 +3047,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 51"
     break
   elif [[ $curl51 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 51"
+    echo $curl51
     break
   else
     for (( j=0; j<=4; j++))
@@ -3060,8 +3060,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "51"
         break
       fi
@@ -3107,7 +3107,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 52"
     break
   elif [[ $curl52 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 52"
+    echo $curl52
     break
   else
     for (( j=0; j<=4; j++))
@@ -3120,8 +3120,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "52"
         break
       fi
@@ -3167,7 +3167,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 53"
     break
   elif [[ $curl53 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 53"
+    echo $curl53
     break
   else
     for (( j=0; j<=4; j++))
@@ -3180,8 +3180,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "53"
         break
       fi
@@ -3227,7 +3227,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 54"
     break
   elif [[ $curl54 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 54"
+    echo $curl54
     break
   else
     for (( j=0; j<=4; j++))
@@ -3240,8 +3240,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "54"
         break
       fi
@@ -3287,7 +3287,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 55"
     break
   elif [[ $curl55 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 55"
+    echo $curl55
     break
   else
     for (( j=0; j<=4; j++))
@@ -3300,8 +3300,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "55"
         break
       fi
@@ -3347,7 +3347,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 56"
     break
   elif [[ $curl56 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 56"
+    echo $curl56
     break
   else
     for (( j=0; j<=4; j++))
@@ -3360,8 +3360,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "56"
         break
       fi
@@ -3407,7 +3407,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 57"
     break
   elif [[ $curl57 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 57"
+    echo $curl57
     break
   else
     for (( j=0; j<=4; j++))
@@ -3420,8 +3420,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "57"
         break
       fi
@@ -3467,7 +3467,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 58"
     break
   elif [[ $curl58 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 58"
+    echo $curl58
     break
   else
     for (( j=0; j<=4; j++))
@@ -3480,8 +3480,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "58"
         break
       fi
@@ -3527,7 +3527,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 59"
     break
   elif [[ $curl59 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 59"
+    echo $curl59
     break
   else
     for (( j=0; j<=4; j++))
@@ -3540,8 +3540,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "59"
         break
       fi
@@ -3587,7 +3587,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 60"
     break
   elif [[ $curl60 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 60"
+    echo $curl60
     break
   else
     for (( j=0; j<=4; j++))
@@ -3600,8 +3600,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "60"
         break
       fi
@@ -3647,7 +3647,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 61"
     break
   elif [[ $curl61 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 61"
+    echo $curl61
     break
   else
     for (( j=0; j<=4; j++))
@@ -3660,8 +3660,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "61"
         break
       fi
@@ -3707,7 +3707,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 62"
     break
   elif [[ $curl62 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 62"
+    echo $curl62
     break
   else
     for (( j=0; j<=4; j++))
@@ -3720,8 +3720,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "62"
         break
       fi
@@ -3767,7 +3767,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 63"
     break
   elif [[ $curl63 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 63"
+    echo $curl63
     break
   else
     for (( j=0; j<=4; j++))
@@ -3780,8 +3780,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "63"
         break
       fi
@@ -3827,7 +3827,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 64"
     break
   elif [[ $curl64 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 64"
+    echo $curl64
     break
   else
     for (( j=0; j<=4; j++))
@@ -3840,8 +3840,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "64"
         break
       fi
@@ -3887,7 +3887,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 65"
     break
   elif [[ $curl65 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 65"
+    echo $curl65
     break
   else
     for (( j=0; j<=4; j++))
@@ -3900,8 +3900,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "65"
         break
       fi
@@ -3947,7 +3947,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 66"
     break
   elif [[ $curl66 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 66"
+    echo $curl66
     break
   else
     for (( j=0; j<=4; j++))
@@ -3960,8 +3960,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "66"
         break
       fi
@@ -4007,7 +4007,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 67"
     break
   elif [[ $curl67 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 67"
+    echo $curl67
     break
   else
     for (( j=0; j<=4; j++))
@@ -4020,8 +4020,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "67"
         break
       fi
@@ -4067,7 +4067,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 68"
     break
   elif [[ $curl68 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 68"
+    echo $curl68
     break
   else
     for (( j=0; j<=4; j++))
@@ -4080,8 +4080,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "68"
         break
       fi
@@ -4127,7 +4127,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 69"
     break
   elif [[ $curl69 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 69"
+    echo $curl69
     break
   else
     for (( j=0; j<=4; j++))
@@ -4140,8 +4140,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "69"
         break
       fi
@@ -4187,7 +4187,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 70"
     break
   elif [[ $curl70 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 70"
+    echo $curl70
     break
   else
     for (( j=0; j<=4; j++))
@@ -4200,8 +4200,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "70"
         break
       fi
@@ -4247,7 +4247,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 71"
     break
   elif [[ $curl71 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 71"
+    echo $curl71
     break
   else
     for (( j=0; j<=4; j++))
@@ -4260,8 +4260,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "71"
         break
       fi
@@ -4307,7 +4307,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 72"
     break
   elif [[ $curl72 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 72"
+    echo $curl72
     break
   else
     for (( j=0; j<=4; j++))
@@ -4320,8 +4320,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "72"
         break
       fi
@@ -4367,7 +4367,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 73"
     break
   elif [[ $curl73 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 73"
+    echo $curl73
     break
   else
     for (( j=0; j<=4; j++))
@@ -4380,8 +4380,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "73"
         break
       fi
@@ -4427,7 +4427,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 74"
     break
   elif [[ $curl74 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 74"
+    echo $curl74
     break
   else
     for (( j=0; j<=4; j++))
@@ -4440,8 +4440,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl74 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "74"
         break
       fi
@@ -4487,7 +4487,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 75"
     break
   elif [[ $curl75 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 75"
+    echo $curl75
     break
   else
     for (( j=0; j<=4; j++))
@@ -4500,8 +4500,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl75 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "75"
         break
       fi
@@ -4547,7 +4547,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 76"
     break
   elif [[ $curl76 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 76"
+    echo $curl76
     break
   else
     for (( j=0; j<=4; j++))
@@ -4560,8 +4560,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl76 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "76"
         break
       fi
@@ -4607,7 +4607,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 77"
     break
   elif [[ $curl77 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 77"
+    echo $curl77
     break
   else
     for (( j=0; j<=4; j++))
@@ -4620,8 +4620,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl77 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "77"
         break
       fi
@@ -4667,7 +4667,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 78"
     break
   elif [[ $curl78 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 78"
+    echo $curl78
     break
   else
     for (( j=0; j<=4; j++))
@@ -4680,8 +4680,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl78 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "78"
         break
       fi
@@ -4727,7 +4727,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 79"
     break
   elif [[ $curl79 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 79"
+    echo $curl79
     break
   else
     for (( j=0; j<=4; j++))
@@ -4740,8 +4740,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl79 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "79"
         break
       fi
@@ -4787,7 +4787,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 80"
     break
   elif [[ $curl80 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 80"
+    echo $curl80
     break
   else
     for (( j=0; j<=4; j++))
@@ -4800,8 +4800,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl80 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "80"
         break
       fi
@@ -4847,7 +4847,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 81"
     break
   elif [[ $curl81 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 81"
+    echo $curl81
     break
   else
     for (( j=0; j<=4; j++))
@@ -4860,8 +4860,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl81 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl81 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl81 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl81 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl81 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl81 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl81 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "81"
         break
       fi
@@ -4907,7 +4907,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 82"
     break
   elif [[ $curl82 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 82"
+    echo $curl82
     break
   else
     for (( j=0; j<=4; j++))
@@ -4920,8 +4920,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl82 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl82 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl82 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl82 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl82 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl82 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl82 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "82"
         break
       fi
@@ -4967,7 +4967,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 83"
     break
   elif [[ $curl83 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 83"
+    echo $curl83
     break
   else
     for (( j=0; j<=4; j++))
@@ -4980,8 +4980,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl83 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl83 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl83 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl83 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl83 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl83 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl83 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "83"
         break
       fi
@@ -5027,7 +5027,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 84"
     break
   elif [[ $curl84 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 84"
+    echo $curl84
     break
   else
     for (( j=0; j<=4; j++))
@@ -5040,8 +5040,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl84 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl84 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl84 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl84 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl84 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl84 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl84 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "84"
         break
       fi
@@ -5087,7 +5087,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 85"
     break
   elif [[ $curl85 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 85"
+    echo $curl85
     break
   else
     for (( j=0; j<=4; j++))
@@ -5100,8 +5100,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl85 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl85 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl85 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl85 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl85 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl85 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl85 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "85"
         break
       fi
@@ -5147,7 +5147,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 86"
     break
   elif [[ $curl86 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 86"
+    echo $curl86
     break
   else
     for (( j=0; j<=4; j++))
@@ -5160,8 +5160,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl86 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl86 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl86 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl86 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl86 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl86 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl86 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "86"
         break
       fi
@@ -5207,7 +5207,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 87"
     break
   elif [[ $curl87 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 87"
+    echo $curl87
     break
   else
     for (( j=0; j<=4; j++))
@@ -5220,8 +5220,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl87 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl87 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl87 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl87 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl87 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl87 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl87 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "87"
         break
       fi
@@ -5267,7 +5267,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 88"
     break
   elif [[ $curl88 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 88"
+    echo $curl88
     break
   else
     for (( j=0; j<=4; j++))
@@ -5280,8 +5280,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl88 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl88 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl88 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl88 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl88 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl88 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl88 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "88"
         break
       fi
@@ -5327,7 +5327,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 89"
     break
   elif [[ $curl89 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 89"
+    echo $curl89
     break
   else
     for (( j=0; j<=4; j++))
@@ -5340,8 +5340,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl89 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl89 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl89 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl89 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl89 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl89 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl89 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "89"
         break
       fi
@@ -5387,7 +5387,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 90"
     break
   elif [[ $curl90 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 90"
+    echo $curl90
     break
   else
     for (( j=0; j<=4; j++))
@@ -5400,8 +5400,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl90 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl90 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl90 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl90 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl90 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl90 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl90 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "90"
         break
       fi
@@ -5447,7 +5447,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 91"
     break
   elif [[ $curl91 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 91"
+    echo $curl91
     break
   else
     for (( j=0; j<=4; j++))
@@ -5460,8 +5460,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl91 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl91 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl91 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl91 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl91 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl91 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl91 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "91"
         break
       fi
@@ -5507,7 +5507,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 92"
     break
   elif [[ $curl92 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 92"
+    echo $curl92
     break
   else
     for (( j=0; j<=4; j++))
@@ -5520,8 +5520,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl92 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl92 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl92 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl92 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl92 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl92 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl92 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "92"
         break
       fi
@@ -5567,7 +5567,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 93"
     break
   elif [[ $curl93 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 93"
+    echo $curl93
     break
   else
     for (( j=0; j<=4; j++))
@@ -5580,8 +5580,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl93 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl93 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl93 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl93 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl93 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl93 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl93 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "93"
         break
       fi
@@ -5627,7 +5627,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 94"
     break
   elif [[ $curl94 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 94"
+    echo $curl94
     break
   else
     for (( j=0; j<=4; j++))
@@ -5640,8 +5640,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl94 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl94 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl94 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl94 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl94 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl94 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl94 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "94"
         break
       fi
@@ -5687,7 +5687,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 95"
     break
   elif [[ $curl95 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 95"
+    echo $curl95
     break
   else
     for (( j=0; j<=4; j++))
@@ -5700,8 +5700,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl95 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl95 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl95 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl95 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl95 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl95 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl95 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "95"
         break
       fi
@@ -5747,7 +5747,7 @@ for (( i=0; i<=4; i++ ))
     echo "Sai thông tin đăng nhập-Record số 96"
     break
   elif [[ $curl96 =~ "blocked" ]]; then
-    echo "Lỗi blocked-Record số 96"
+    echo $curl96
     break
   else
     for (( j=0; j<=4; j++))
@@ -5760,8 +5760,8 @@ for (( i=0; i<=4; i++ ))
         echo $curl96 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
         echo $curl96 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.address.addressString' >> track-address.txt
         echo $curl96 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.message.parts[].text' >> track-status.txt
-        echo $curl96 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' >> track-number.txt
-        echo $curl96 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' >> track-url.txt
+        echo $curl96 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
+        echo $curl96 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
         echo "96"
         break
       fi
