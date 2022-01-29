@@ -6,7 +6,7 @@
 : > ebay-wasPrice.txt
 : > ebay-availabilityStatus.txt
 
-list1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+list1=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
   -H 'x-o-platform: rweb' \
@@ -37,7 +37,7 @@ list1=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"5235469c-9c94-4bc9-96cc-e0f44ade3b9e","permission":"VIEW"}}}' \
   --compressed`
 
-list2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+list2=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
   -H 'x-o-platform: rweb' \
@@ -68,7 +68,7 @@ list2=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"35f6f25d-5c2a-49bb-a9f2-0c78204a2099","permission":"VIEW"}}}' \
   --compressed`
 
-list3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+list3=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
   -H 'x-o-platform: rweb' \
@@ -99,7 +99,7 @@ list3=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"caf523c1-f70a-4d38-aa12-029147e94b16","permission":"VIEW"}}}' \
   --compressed`
 
-list4=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+list4=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
   -H 'x-o-platform: rweb' \
@@ -130,7 +130,7 @@ list4=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"b1460f26-9507-4962-9b88-f31feebb06f4","permission":"VIEW"}}}' \
   --compressed`
 
-list5=`curl 'https://www.walmart.com/orchestra/home/graphql' \
+list5=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
   -H 'x-o-platform: rweb' \
@@ -161,12 +161,31 @@ list5=`curl 'https://www.walmart.com/orchestra/home/graphql' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"227986fe-7a93-4510-8a4b-4860174aaa41","permission":"VIEW"}}}' \
   --compressed`
 
-if [[ $list1 =~ "blocked" || $list2 =~ "blocked" || $list3 =~ "blocked" || $list4 =~ "blocked" || $list5 =~ "blocked" ]]
+if [[ $list1 =~ "blocked" ]]
 then
-  echo "Lỗi rồi!"
+  echo $list1
   exit
 fi
-
+if [[ $list2 =~ "blocked" ]]
+then
+  echo $list2
+  exit
+fi
+if [[ $list3 =~ "blocked" ]]
+then
+  echo $list3
+  exit
+fi
+if [[ $list4 =~ "blocked" ]]
+then
+  echo $list4
+  exit
+fi
+if [[ $list5 =~ "blocked" ]]
+then
+  echo $list5
+  exit
+fi
 
 # echo $output | jq '.data.shoppingListTotal.products[].imageInfo.thumbnailUrl' | sed 's/\,//g' > ebay-thumbnailUrl
 # echo $output | jq '.data.shoppingListTotal.products[].name' | sed 's/\,//g' > ebay-name
@@ -204,4 +223,4 @@ linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`ec
 linkApi=`echo https://script.google.com/macros/s/AKfycby_hOHVU89OzlCdtECUuqy3pSW83BtIPJmoW2UGMC7PWmLdxErG1Fn5niiyRyPnUgGqYA/exec?`
 linkPost=$linkApi`echo Link ID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\)\&Giá hiện tại==IMPORTDATA\(\"`$linkGit`echo ebay-currentPrice.txt\"\)\&Trạng thái hàng==IMPORTDATA\(\"`$linkGit`echo ebay-availabilityStatus.txt\"\)\&Giá gốc==IMPORTDATA\(\"`$linkGit`echo ebay-wasPrice.txt\"\)`
 echo $linkPost
-# curl POST `https://script.google.com/macros/s/AKfycby_hOHVU89OzlCdtECUuqy3pSW83BtIPJmoW2UGMC7PWmLdxErG1Fn5niiyRyPnUgGqYA/exec?Link ID==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/ea474c5affcfa46bdd9fa86d49ccb2f14f1aa5cc/ebay-usItemId.txt")&Giá hiện tại==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/ea474c5affcfa46bdd9fa86d49ccb2f14f1aa5cc/ebay-currentPrice.txt")&Trạng thái hàng==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/ea474c5affcfa46bdd9fa86d49ccb2f14f1aa5cc/ebay-availabilityStatus.txt")&Giá gốc==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/ea474c5affcfa46bdd9fa86d49ccb2f14f1aa5cc/ebay-wasPrice.txt")`
+# curl -s POST `https://script.google.com/macros/s/AKfycby_hOHVU89OzlCdtECUuqy3pSW83BtIPJmoW2UGMC7PWmLdxErG1Fn5niiyRyPnUgGqYA/exec?Link ID==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/ea474c5affcfa46bdd9fa86d49ccb2f14f1aa5cc/ebay-usItemId.txt")&Giá hiện tại==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/ea474c5affcfa46bdd9fa86d49ccb2f14f1aa5cc/ebay-currentPrice.txt")&Trạng thái hàng==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/ea474c5affcfa46bdd9fa86d49ccb2f14f1aa5cc/ebay-availabilityStatus.txt")&Giá gốc==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/ea474c5affcfa46bdd9fa86d49ccb2f14f1aa5cc/ebay-wasPrice.txt")`
