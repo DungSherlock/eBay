@@ -95,3 +95,8 @@
 "Delivered on Jan 27"
 "Delivered on Jan 28"
 "Canceled on Jan 28"
+"Arrives today"
+"Canceled on Jan 28"
+"Delivered today at 12:49pm"
+"Canceled today"
+"Delivered on Jan 29"

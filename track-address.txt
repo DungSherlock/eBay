@@ -95,3 +95,8 @@
 "4640 86th Ave N, Pinellas Park, Pinellas Park, FL 33782"
 "8023 S 77th E Ave, Tulsa, Tulsa, OK 74133"
 "27640 S 4410 rd, vinita, Vinita, OK 74301"
+"16650 Terrace Ln, Apt E, Fontana, CA 92335"
+"10916 N Kenwood Ave, Kansas City, MO 64155"
+"8037 1/4 70th Street, Paramount, Paramount, CA 90723"
+"2720y N Williamson Valley Rd, Prescott, AZ 86305"
+"701 N Olive Ave, Alhambra, CA 91801"
