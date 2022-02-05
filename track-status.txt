@@ -33,4 +33,6 @@
 "Canceled on Jan 30"
 "Canceled on Jan 28"
 "Canceled on Feb 01"
+"Arrives by Wed, Feb 09"
+"Arrives by Thu, Feb 17"
 "Arrives today"

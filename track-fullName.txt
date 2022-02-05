@@ -33,4 +33,6 @@
 "Tony Basileo"
 "Hayley Sisco"
 "Kayla Hall"
+"Patrick Gowin"
+"Tony Jacob"
 "John Douglas"

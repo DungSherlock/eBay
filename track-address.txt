@@ -33,4 +33,6 @@
 "3339 NW 15th Ave, Pompano Beach, 33064, FL 22623"
 "27640 S 4410 rd, vinita, Vinita, OK 74301"
 "2720y N Williamson Valley Rd, Prescott, AZ 86305"
+"2295 Airport Rd, Carson City, NV 89706"
+"1044 Harbor Way, Rodeo, CA 94572"
 "30991 Singletary Rd, Myakka City, FL 34251"
