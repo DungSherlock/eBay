@@ -55,7 +55,7 @@ Sai info
 "Delivered on Jan 18"
 "Delivered on Jan 22"
 "Delayed, check back for updates"
-"Delivered on Jan 14"
+Sai info
 "Delivered on Jan 19"
 "Delivered on Jan 12"
 "Canceled on Jan 14"
@@ -99,7 +99,7 @@ Sai info
 "Delivered on Jan 14"
 "Delivered on Jan 17"
 "Delivered on Jan 19"
-"Delivered on Jan 16"
+Sai info
 "Delivered on Jan 26"
 "Delivered on Jan 16"
 "Delivered on Jan 18"
@@ -208,7 +208,7 @@ Sai info
 "Delivered on Feb 12"
 "Arrives by Mon, Feb 14"
 "Canceled today"
-"Arrives by Wed, Feb 16"
+"Arrives by Mon, Feb 14"
 "Arrives by Mon, Feb 14"
 Sai info
 "Delivered on Feb 12"
@@ -216,7 +216,7 @@ Sai info
 "Delivered on Feb 11"
 "Delivered on Feb 12"
 "Arrives by Mon, Feb 14"
-"Delivered on Feb 11"
+Sai info
 "Cancellation requested on Feb 12"
 "Arrives by Fri, Feb 25"
 "Delivered today at 10:56am"
@@ -235,14 +235,7 @@ Sai info
 "Arrives by Mon, Feb 21"
 "Arrives by Thu, Feb 17"
 "Arrives by Wed, Feb 16"
-"Canceled"
-Sai info
-"Canceled"
+"Arrives by Tue, Feb 15"
 "Arrives by Tue, Feb 15"
 "Arrives by Thu, Feb 24"
-"Canceled"
-"Canceled today"
-"Canceled today"
-"Arrives by Thu, Feb 17"
-"Cancellation requested today"
 "Arrives by Thu, Feb 17"

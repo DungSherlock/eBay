@@ -55,7 +55,7 @@ Sai info
 "612 Sidney Rowe, Kingsland, 78639, TX 73068"
 "11723 Laneview Dr, Houston, 77070, TX 19943"
 "200 Rick St, Troy, AL 36079"
-"88 W 44th St, Bayonne, NJ 07002"
+Sai info
 "160 Fallsview Ave, York Haven, 17370, PA 81620"
 "1583 Sinking Springs Dr, O'Fallon, 62269, IL 36853"
 "891 union rd, Matthews, 28104, NC 75040"
@@ -99,7 +99,7 @@ Sai info
 "470338 E 844 Rd, Ste.none, Stilwell, OK 74960"
 "420 S Illinois St, Belleville, IL 62220"
 "44460 Palm Vista Avenue, Ste.none, Lancaster, CA 93535"
-"1460 Washington Ave, Apt 6A, Bronx, NY 10456"
+Sai info
 "1815 138th Street Court East, Ste.none, Tacoma, WA 98446"
 "1120 Bs Barbecue Rd, Apt C, Greenville, NC 27834"
 "1315 Cedar Street, Annville, PA 17003"
@@ -216,7 +216,7 @@ Sai info
 "4492 Camino De La Plz 586, San Ysidro, CA 92173"
 "80 Irons Rd, Congerville, IL 61729"
 "20095 Will Hughes Rd, delivery to Main House, Livingston, LA 70754"
-"3572 Eastridge Dr, San Jose, CA 95148"
+Sai info
 "101 E Seventh St, Dunkirk, NY 14048"
 "10916 N KENW00D AVE, Kansas City, MO 64155"
 "10303 W Alamo St, Wichita, KS 67212"
@@ -235,14 +235,7 @@ Sai info
 "2136 Cromwell Rd, Jacksonville, FL 32246"
 "1128 Marion Ave, Tallahassee, FL 32303"
 "276 W Hillside Dr, Saratoga Springs, UT 84045"
-"2874 80th Ave, Unit A, Woodville, WI 54028"
-Sai info
-"106 Labonte Dr, Unit A, Pikeville, NC 27863"
+"1 Arrowwood, Unit A, Mason City, IA 50401"
 "9741 Woodlawn Ave N, Apt B, Seattle, WA 98103"
 "9208 Furnace Rd, Unit A, Vermilion, OH 44089"
-"27640 S 4410 Rd, Unit A, Vinita, OK 74301"
-"27208 Lilly Dr, Unit A, Brownstown, MI 48183"
-"7870 New York 54, Apt 0, Bath, NY 14810"
-"6447 Shiloh Close, Unit A, Rockford, IL 61107"
-"2606 Imperial Grove Ln, Unit A, Conroe, TX 77385"
 "2342 Kenya St, Unit A, The Villages, FL 32162"
