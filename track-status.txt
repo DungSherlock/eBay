@@ -30,7 +30,7 @@ Khác Item
 "Canceled on Feb 12"
 "Arrives by Wed, Feb 16"
 "Arrives today"
-"Delivered on Feb 12"
+Sai info
 "Delivered on Feb 14"
 "Delivered on Feb 12"
 "Delivered on Feb 12"
@@ -49,7 +49,7 @@ Khác Item
 "Delivered on Feb 14"
 "Arrives by Fri, Feb 18"
 "Arrives by Wed, Feb 16"
-Sai info
+"Arrives today"
 "Delayed, arrives by Wed, Feb 16"
 "Arrives by Thu, Feb 17"
 "Canceled on Feb 13"

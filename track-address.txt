@@ -30,7 +30,7 @@ Khác Item
 "806 Teton Cir, Suffolk, VA 23435"
 "20211 374th Ave, Wessington, SD 57381"
 "1107 Armstrong Ave, Vandergrift, PA 15690"
-"2226 Brown Pelican Ln, Charleston, SC 29412"
+Sai info
 "309 Headhouse Court, 40 Twin Lane, Sugarloaf, PA 18249, Chesterbrook, PA 19087"
 "4648 NW 114th Ave, Apt 603, Doral, FL 33178"
 "330 Walnut Trl, Coventry, CT 06238"
@@ -49,7 +49,7 @@ Khác Item
 "1701 E Hebron Pkwy, Apt 11103, Carrollton, TX 75010"
 "2444 Noriega St, San Francisco, CA 94122"
 "2136 Cromwell Rd, Jacksonville, FL 32246"
-Sai info
+"1 Arrowwood, Unit A, Mason City, IA 50401"
 "9741 Woodlawn Ave N, Apt B, Seattle, WA 98103"
 "9208 Furnace Rd, Unit A, Vermilion, OH 44089"
 "7870 New York 54, Apt 0, Bath, NY 14810"
