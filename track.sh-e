@@ -58,7 +58,7 @@ if [[ $curl1 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA1=`md5 track-OrderID.txt`
+    sum1=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -141,7 +141,7 @@ if [[ $curl2 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA2=`md5 track-OrderID.txt`
+    sum2=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -224,7 +224,7 @@ if [[ $curl3 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA3=`md5 track-OrderID.txt`
+    sum3=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -307,7 +307,7 @@ if [[ $curl4 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA4=`md5 track-OrderID.txt`
+    sum4=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -390,7 +390,7 @@ if [[ $curl5 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA5=`md5 track-OrderID.txt`
+    sum5=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -473,7 +473,7 @@ if [[ $curl6 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA6=`md5 track-OrderID.txt`
+    sum6=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -556,7 +556,7 @@ if [[ $curl7 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA7=`md5 track-OrderID.txt`
+    sum7=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -639,7 +639,7 @@ if [[ $curl8 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA8=`md5 track-OrderID.txt`
+    sum8=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -722,7 +722,7 @@ if [[ $curl9 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA9=`md5 track-OrderID.txt`
+    sum9=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -805,7 +805,7 @@ if [[ $curl10 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA10=`md5 track-OrderID.txt`
+    sum10=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -888,7 +888,7 @@ if [[ $curl11 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA11=`md5 track-OrderID.txt`
+    sum11=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -971,7 +971,7 @@ if [[ $curl12 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA12=`md5 track-OrderID.txt`
+    sum12=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1054,7 +1054,7 @@ if [[ $curl13 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA13=`md5 track-OrderID.txt`
+    sum13=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1137,7 +1137,7 @@ if [[ $curl14 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA14=`md5 track-OrderID.txt`
+    sum14=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1220,7 +1220,7 @@ if [[ $curl15 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA15=`md5 track-OrderID.txt`
+    sum15=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1303,7 +1303,7 @@ if [[ $curl16 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA16=`md5 track-OrderID.txt`
+    sum16=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1386,7 +1386,7 @@ if [[ $curl17 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA17=`md5 track-OrderID.txt`
+    sum17=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1469,7 +1469,7 @@ if [[ $curl18 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA18=`md5 track-OrderID.txt`
+    sum18=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1552,7 +1552,7 @@ if [[ $curl19 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA19=`md5 track-OrderID.txt`
+    sum19=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1635,7 +1635,7 @@ if [[ $curl20 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA20=`md5 track-OrderID.txt`
+    sum20=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1718,7 +1718,7 @@ if [[ $curl21 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA21=`md5 track-OrderID.txt`
+    sum21=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1801,7 +1801,7 @@ if [[ $curl22 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA22=`md5 track-OrderID.txt`
+    sum22=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1884,7 +1884,7 @@ if [[ $curl23 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA23=`md5 track-OrderID.txt`
+    sum23=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -1967,7 +1967,7 @@ if [[ $curl24 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA24=`md5 track-OrderID.txt`
+    sum24=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2050,7 +2050,7 @@ if [[ $curl25 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA25=`md5 track-OrderID.txt`
+    sum25=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2133,7 +2133,7 @@ if [[ $curl26 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA26=`md5 track-OrderID.txt`
+    sum26=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2216,7 +2216,7 @@ if [[ $curl27 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA27=`md5 track-OrderID.txt`
+    sum27=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2299,7 +2299,7 @@ if [[ $curl28 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA28=`md5 track-OrderID.txt`
+    sum28=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2382,7 +2382,7 @@ if [[ $curl29 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA29=`md5 track-OrderID.txt`
+    sum29=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2467,7 +2467,7 @@ if [[ $curl30 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA30=`md5 track-OrderID.txt`
+    sum30=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2552,7 +2552,7 @@ if [[ $curl31 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA31=`md5 track-OrderID.txt`
+    sum31=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2635,7 +2635,7 @@ if [[ $curl32 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA32=`md5 track-OrderID.txt`
+    sum32=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2718,7 +2718,7 @@ if [[ $curl33 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA33=`md5 track-OrderID.txt`
+    sum33=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2801,7 +2801,7 @@ if [[ $curl34 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA34=`md5 track-OrderID.txt`
+    sum34=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2884,7 +2884,7 @@ if [[ $curl35 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA35=`md5 track-OrderID.txt`
+    sum35=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -2967,7 +2967,7 @@ if [[ $curl36 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA36=`md5 track-OrderID.txt`
+    sum36=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3050,7 +3050,7 @@ if [[ $curl37 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA37=`md5 track-OrderID.txt`
+    sum37=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3133,7 +3133,7 @@ if [[ $curl38 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA38=`md5 track-OrderID.txt`
+    sum38=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3216,7 +3216,7 @@ if [[ $curl39 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA39=`md5 track-OrderID.txt`
+    sum39=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3299,7 +3299,7 @@ if [[ $curl40 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA40=`md5 track-OrderID.txt`
+    sum40=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3382,7 +3382,7 @@ if [[ $curl41 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA41=`md5 track-OrderID.txt`
+    sum41=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3465,7 +3465,7 @@ if [[ $curl42 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA42=`md5 track-OrderID.txt`
+    sum42=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3548,7 +3548,7 @@ if [[ $curl43 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA43=`md5 track-OrderID.txt`
+    sum43=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3631,7 +3631,7 @@ if [[ $curl44 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA44=`md5 track-OrderID.txt`
+    sum44=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3714,7 +3714,7 @@ if [[ $curl45 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA45=`md5 track-OrderID.txt`
+    sum45=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3797,7 +3797,7 @@ if [[ $curl46 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA46=`md5 track-OrderID.txt`
+    sum46=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3880,7 +3880,7 @@ if [[ $curl47 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA47=`md5 track-OrderID.txt`
+    sum47=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -3963,7 +3963,7 @@ if [[ $curl48 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA48=`md5 track-OrderID.txt`
+    sum48=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4046,7 +4046,7 @@ if [[ $curl49 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA49=`md5 track-OrderID.txt`
+    sum49=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4129,7 +4129,7 @@ if [[ $curl50 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA50=`md5 track-OrderID.txt`
+    sum50=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4212,7 +4212,7 @@ if [[ $curl51 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA51=`md5 track-OrderID.txt`
+    sum51=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4295,7 +4295,7 @@ if [[ $curl52 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA52=`md5 track-OrderID.txt`
+    sum52=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4378,7 +4378,7 @@ if [[ $curl53 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA53=`md5 track-OrderID.txt`
+    sum53=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4461,7 +4461,7 @@ if [[ $curl54 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA54=`md5 track-OrderID.txt`
+    sum54=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4544,7 +4544,7 @@ if [[ $curl55 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA55=`md5 track-OrderID.txt`
+    sum55=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4627,7 +4627,7 @@ if [[ $curl56 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA56=`md5 track-OrderID.txt`
+    sum56=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4710,7 +4710,7 @@ if [[ $curl57 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA57=`md5 track-OrderID.txt`
+    sum57=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4793,7 +4793,7 @@ if [[ $curl58 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA58=`md5 track-OrderID.txt`
+    sum58=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4876,7 +4876,7 @@ if [[ $curl59 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA59=`md5 track-OrderID.txt`
+    sum59=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -4959,7 +4959,7 @@ if [[ $curl60 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA60=`md5 track-OrderID.txt`
+    sum60=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5042,7 +5042,7 @@ if [[ $curl61 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA61=`md5 track-OrderID.txt`
+    sum61=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5125,7 +5125,7 @@ if [[ $curl62 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA62=`md5 track-OrderID.txt`
+    sum62=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5208,7 +5208,7 @@ if [[ $curl63 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA63=`md5 track-OrderID.txt`
+    sum63=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5291,7 +5291,7 @@ if [[ $curl64 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA64=`md5 track-OrderID.txt`
+    sum64=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5374,7 +5374,7 @@ if [[ $curl65 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA65=`md5 track-OrderID.txt`
+    sum65=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5457,7 +5457,7 @@ if [[ $curl66 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA66=`md5 track-OrderID.txt`
+    sum66=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5544,7 +5544,7 @@ irishdeebee@msn.com"" >> track-email.txt
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA67=`md5 track-OrderID.txt`
+    sum67=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5635,7 +5635,7 @@ sam.arone@hotmail.com"" >> track-email.txt
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA68=`md5 track-OrderID.txt`
+    sum68=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5722,7 +5722,7 @@ if [[ $curl69 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA69=`md5 track-OrderID.txt`
+    sum69=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5805,7 +5805,7 @@ if [[ $curl70 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA70=`md5 track-OrderID.txt`
+    sum70=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5888,7 +5888,7 @@ if [[ $curl71 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA71=`md5 track-OrderID.txt`
+    sum71=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -5971,7 +5971,7 @@ if [[ $curl72 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA72=`md5 track-OrderID.txt`
+    sum72=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6054,7 +6054,7 @@ if [[ $curl73 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA73=`md5 track-OrderID.txt`
+    sum73=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6137,7 +6137,7 @@ if [[ $curl74 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA74=`md5 track-OrderID.txt`
+    sum74=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6220,7 +6220,7 @@ if [[ $curl75 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA75=`md5 track-OrderID.txt`
+    sum75=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6303,7 +6303,7 @@ if [[ $curl76 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA76=`md5 track-OrderID.txt`
+    sum76=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6386,7 +6386,7 @@ if [[ $curl77 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA77=`md5 track-OrderID.txt`
+    sum77=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6469,7 +6469,7 @@ if [[ $curl78 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA78=`md5 track-OrderID.txt`
+    sum78=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6552,7 +6552,7 @@ if [[ $curl79 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA79=`md5 track-OrderID.txt`
+    sum79=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6635,7 +6635,7 @@ if [[ $curl80 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA80=`md5 track-OrderID.txt`
+    sum80=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6718,7 +6718,7 @@ if [[ $curl81 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA81=`md5 track-OrderID.txt`
+    sum81=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6801,7 +6801,7 @@ if [[ $curl82 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA82=`md5 track-OrderID.txt`
+    sum82=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6884,7 +6884,7 @@ if [[ $curl83 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA83=`md5 track-OrderID.txt`
+    sum83=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -6967,7 +6967,7 @@ if [[ $curl84 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA84=`md5 track-OrderID.txt`
+    sum84=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7050,7 +7050,7 @@ if [[ $curl85 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA85=`md5 track-OrderID.txt`
+    sum85=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7133,7 +7133,7 @@ if [[ $curl86 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA86=`md5 track-OrderID.txt`
+    sum86=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7216,7 +7216,7 @@ if [[ $curl87 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA87=`md5 track-OrderID.txt`
+    sum87=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7299,7 +7299,7 @@ if [[ $curl88 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA88=`md5 track-OrderID.txt`
+    sum88=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7382,7 +7382,7 @@ if [[ $curl89 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA89=`md5 track-OrderID.txt`
+    sum89=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7465,7 +7465,7 @@ if [[ $curl90 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA90=`md5 track-OrderID.txt`
+    sum90=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7548,7 +7548,7 @@ if [[ $curl91 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA91=`md5 track-OrderID.txt`
+    sum91=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7631,7 +7631,7 @@ if [[ $curl92 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA92=`md5 track-OrderID.txt`
+    sum92=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7714,7 +7714,7 @@ if [[ $curl93 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA93=`md5 track-OrderID.txt`
+    sum93=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7797,7 +7797,7 @@ if [[ $curl94 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA94=`md5 track-OrderID.txt`
+    sum94=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7880,7 +7880,7 @@ if [[ $curl95 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA95=`md5 track-OrderID.txt`
+    sum95=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -7963,7 +7963,7 @@ if [[ $curl96 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA96=`md5 track-OrderID.txt`
+    sum96=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8046,7 +8046,7 @@ if [[ $curl97 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA97=`md5 track-OrderID.txt`
+    sum97=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8129,7 +8129,7 @@ if [[ $curl98 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA98=`md5 track-OrderID.txt`
+    sum98=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8212,7 +8212,7 @@ if [[ $curl99 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA99=`md5 track-OrderID.txt`
+    sum99=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8295,7 +8295,7 @@ if [[ $curl100 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA100=`md5 track-OrderID.txt`
+    sum100=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8378,7 +8378,7 @@ if [[ $curl101 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA101=`md5 track-OrderID.txt`
+    sum101=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8461,7 +8461,7 @@ if [[ $curl102 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA102=`md5 track-OrderID.txt`
+    sum102=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8544,7 +8544,7 @@ if [[ $curl103 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA103=`md5 track-OrderID.txt`
+    sum103=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8627,7 +8627,7 @@ if [[ $curl104 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA104=`md5 track-OrderID.txt`
+    sum104=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8710,7 +8710,7 @@ if [[ $curl105 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA105=`md5 track-OrderID.txt`
+    sum105=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8793,7 +8793,7 @@ if [[ $curl106 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA106=`md5 track-OrderID.txt`
+    sum106=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8876,7 +8876,7 @@ if [[ $curl107 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA107=`md5 track-OrderID.txt`
+    sum107=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -8959,7 +8959,7 @@ if [[ $curl108 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA108=`md5 track-OrderID.txt`
+    sum108=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9042,7 +9042,7 @@ if [[ $curl109 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA109=`md5 track-OrderID.txt`
+    sum109=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9125,7 +9125,7 @@ if [[ $curl110 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA110=`md5 track-OrderID.txt`
+    sum110=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9208,7 +9208,7 @@ if [[ $curl111 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA111=`md5 track-OrderID.txt`
+    sum111=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9291,7 +9291,7 @@ if [[ $curl112 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA112=`md5 track-OrderID.txt`
+    sum112=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9374,7 +9374,7 @@ if [[ $curl113 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA113=`md5 track-OrderID.txt`
+    sum113=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9457,7 +9457,7 @@ if [[ $curl114 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA114=`md5 track-OrderID.txt`
+    sum114=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9540,7 +9540,7 @@ if [[ $curl115 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA115=`md5 track-OrderID.txt`
+    sum115=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9623,7 +9623,7 @@ if [[ $curl116 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA116=`md5 track-OrderID.txt`
+    sum116=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9706,7 +9706,7 @@ if [[ $curl117 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA117=`md5 track-OrderID.txt`
+    sum117=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9789,7 +9789,7 @@ if [[ $curl118 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA118=`md5 track-OrderID.txt`
+    sum118=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9872,7 +9872,7 @@ if [[ $curl119 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA119=`md5 track-OrderID.txt`
+    sum119=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -9955,7 +9955,7 @@ if [[ $curl120 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA120=`md5 track-OrderID.txt`
+    sum120=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10038,7 +10038,7 @@ if [[ $curl121 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA121=`md5 track-OrderID.txt`
+    sum121=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10121,7 +10121,7 @@ if [[ $curl122 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA122=`md5 track-OrderID.txt`
+    sum122=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10204,7 +10204,7 @@ if [[ $curl123 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA123=`md5 track-OrderID.txt`
+    sum123=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10287,7 +10287,7 @@ if [[ $curl124 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA124=`md5 track-OrderID.txt`
+    sum124=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10370,7 +10370,7 @@ if [[ $curl125 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA125=`md5 track-OrderID.txt`
+    sum125=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10453,7 +10453,7 @@ if [[ $curl126 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA126=`md5 track-OrderID.txt`
+    sum126=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10536,7 +10536,7 @@ if [[ $curl127 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA127=`md5 track-OrderID.txt`
+    sum127=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10619,7 +10619,7 @@ if [[ $curl128 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA128=`md5 track-OrderID.txt`
+    sum128=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10702,7 +10702,7 @@ if [[ $curl129 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA129=`md5 track-OrderID.txt`
+    sum129=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10785,7 +10785,7 @@ if [[ $curl130 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA130=`md5 track-OrderID.txt`
+    sum130=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10868,7 +10868,7 @@ if [[ $curl131 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA131=`md5 track-OrderID.txt`
+    sum131=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -10951,7 +10951,7 @@ if [[ $curl132 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA132=`md5 track-OrderID.txt`
+    sum132=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11034,7 +11034,7 @@ if [[ $curl133 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA133=`md5 track-OrderID.txt`
+    sum133=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11117,7 +11117,7 @@ if [[ $curl134 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA134=`md5 track-OrderID.txt`
+    sum134=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11200,7 +11200,7 @@ if [[ $curl135 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA135=`md5 track-OrderID.txt`
+    sum135=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11283,7 +11283,7 @@ if [[ $curl136 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA136=`md5 track-OrderID.txt`
+    sum136=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11366,7 +11366,7 @@ if [[ $curl137 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA137=`md5 track-OrderID.txt`
+    sum137=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11449,7 +11449,7 @@ if [[ $curl138 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA138=`md5 track-OrderID.txt`
+    sum138=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11532,7 +11532,7 @@ if [[ $curl139 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA139=`md5 track-OrderID.txt`
+    sum139=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11615,7 +11615,7 @@ if [[ $curl140 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA140=`md5 track-OrderID.txt`
+    sum140=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11698,7 +11698,7 @@ if [[ $curl141 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA141=`md5 track-OrderID.txt`
+    sum141=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11781,7 +11781,7 @@ if [[ $curl142 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA142=`md5 track-OrderID.txt`
+    sum142=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11864,7 +11864,7 @@ if [[ $curl143 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA143=`md5 track-OrderID.txt`
+    sum143=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -11947,7 +11947,7 @@ if [[ $curl144 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA144=`md5 track-OrderID.txt`
+    sum144=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12030,7 +12030,7 @@ if [[ $curl145 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA145=`md5 track-OrderID.txt`
+    sum145=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12113,7 +12113,7 @@ if [[ $curl146 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA146=`md5 track-OrderID.txt`
+    sum146=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12196,7 +12196,7 @@ if [[ $curl147 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA147=`md5 track-OrderID.txt`
+    sum147=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12279,7 +12279,7 @@ if [[ $curl148 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA148=`md5 track-OrderID.txt`
+    sum148=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12362,7 +12362,7 @@ if [[ $curl149 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA149=`md5 track-OrderID.txt`
+    sum149=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12445,7 +12445,7 @@ if [[ $curl150 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA150=`md5 track-OrderID.txt`
+    sum150=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12528,7 +12528,7 @@ if [[ $curl151 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA151=`md5 track-OrderID.txt`
+    sum151=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12611,7 +12611,7 @@ if [[ $curl152 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA152=`md5 track-OrderID.txt`
+    sum152=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12694,7 +12694,7 @@ if [[ $curl153 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA153=`md5 track-OrderID.txt`
+    sum153=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12777,7 +12777,7 @@ if [[ $curl154 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA154=`md5 track-OrderID.txt`
+    sum154=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12860,7 +12860,7 @@ if [[ $curl155 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA155=`md5 track-OrderID.txt`
+    sum155=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -12943,7 +12943,7 @@ if [[ $curl156 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA156=`md5 track-OrderID.txt`
+    sum156=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13026,7 +13026,7 @@ if [[ $curl157 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA157=`md5 track-OrderID.txt`
+    sum157=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13109,7 +13109,7 @@ if [[ $curl158 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA158=`md5 track-OrderID.txt`
+    sum158=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13192,7 +13192,7 @@ if [[ $curl159 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA159=`md5 track-OrderID.txt`
+    sum159=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13275,7 +13275,7 @@ if [[ $curl160 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA160=`md5 track-OrderID.txt`
+    sum160=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13358,7 +13358,7 @@ if [[ $curl161 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA161=`md5 track-OrderID.txt`
+    sum161=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13441,7 +13441,7 @@ if [[ $curl162 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA162=`md5 track-OrderID.txt`
+    sum162=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13524,7 +13524,7 @@ if [[ $curl163 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA163=`md5 track-OrderID.txt`
+    sum163=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13607,7 +13607,7 @@ if [[ $curl164 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA164=`md5 track-OrderID.txt`
+    sum164=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13690,7 +13690,7 @@ if [[ $curl165 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA165=`md5 track-OrderID.txt`
+    sum165=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13773,7 +13773,7 @@ if [[ $curl166 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA166=`md5 track-OrderID.txt`
+    sum166=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13856,7 +13856,7 @@ if [[ $curl167 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA167=`md5 track-OrderID.txt`
+    sum167=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -13939,7 +13939,7 @@ if [[ $curl168 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA168=`md5 track-OrderID.txt`
+    sum168=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14022,7 +14022,7 @@ if [[ $curl169 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA169=`md5 track-OrderID.txt`
+    sum169=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14105,7 +14105,7 @@ if [[ $curl170 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA170=`md5 track-OrderID.txt`
+    sum170=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14188,7 +14188,7 @@ if [[ $curl171 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA171=`md5 track-OrderID.txt`
+    sum171=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14271,7 +14271,7 @@ if [[ $curl172 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA172=`md5 track-OrderID.txt`
+    sum172=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14354,7 +14354,7 @@ if [[ $curl173 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA173=`md5 track-OrderID.txt`
+    sum173=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14437,7 +14437,7 @@ if [[ $curl174 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA174=`md5 track-OrderID.txt`
+    sum174=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14520,7 +14520,7 @@ if [[ $curl175 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA175=`md5 track-OrderID.txt`
+    sum175=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14603,7 +14603,7 @@ if [[ $curl176 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA176=`md5 track-OrderID.txt`
+    sum176=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14686,7 +14686,7 @@ if [[ $curl177 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA177=`md5 track-OrderID.txt`
+    sum177=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14769,7 +14769,7 @@ if [[ $curl178 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA178=`md5 track-OrderID.txt`
+    sum178=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14852,7 +14852,7 @@ if [[ $curl179 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA179=`md5 track-OrderID.txt`
+    sum179=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -14935,7 +14935,7 @@ if [[ $curl180 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA180=`md5 track-OrderID.txt`
+    sum180=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15018,7 +15018,7 @@ if [[ $curl181 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA181=`md5 track-OrderID.txt`
+    sum181=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15101,7 +15101,7 @@ if [[ $curl182 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA182=`md5 track-OrderID.txt`
+    sum182=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15184,7 +15184,7 @@ if [[ $curl183 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA183=`md5 track-OrderID.txt`
+    sum183=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15267,7 +15267,7 @@ if [[ $curl184 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA184=`md5 track-OrderID.txt`
+    sum184=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15350,7 +15350,7 @@ if [[ $curl185 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA185=`md5 track-OrderID.txt`
+    sum185=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15433,7 +15433,7 @@ if [[ $curl186 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA186=`md5 track-OrderID.txt`
+    sum186=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15516,7 +15516,7 @@ if [[ $curl187 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA187=`md5 track-OrderID.txt`
+    sum187=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15599,7 +15599,7 @@ if [[ $curl188 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA188=`md5 track-OrderID.txt`
+    sum188=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15682,7 +15682,7 @@ if [[ $curl189 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA189=`md5 track-OrderID.txt`
+    sum189=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15765,7 +15765,7 @@ if [[ $curl190 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA190=`md5 track-OrderID.txt`
+    sum190=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15848,7 +15848,7 @@ if [[ $curl191 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA191=`md5 track-OrderID.txt`
+    sum191=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -15931,7 +15931,7 @@ if [[ $curl192 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA192=`md5 track-OrderID.txt`
+    sum192=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16014,7 +16014,7 @@ if [[ $curl193 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA193=`md5 track-OrderID.txt`
+    sum193=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16097,7 +16097,7 @@ if [[ $curl194 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA194=`md5 track-OrderID.txt`
+    sum194=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16180,7 +16180,7 @@ if [[ $curl195 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA195=`md5 track-OrderID.txt`
+    sum195=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16263,7 +16263,7 @@ if [[ $curl196 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA196=`md5 track-OrderID.txt`
+    sum196=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16346,7 +16346,7 @@ if [[ $curl197 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA197=`md5 track-OrderID.txt`
+    sum197=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16429,7 +16429,7 @@ if [[ $curl198 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA198=`md5 track-OrderID.txt`
+    sum198=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16512,7 +16512,7 @@ if [[ $curl199 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA199=`md5 track-OrderID.txt`
+    sum199=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16595,7 +16595,7 @@ if [[ $curl200 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA200=`md5 track-OrderID.txt`
+    sum200=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16678,7 +16678,7 @@ if [[ $curl201 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA201=`md5 track-OrderID.txt`
+    sum201=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16761,7 +16761,7 @@ if [[ $curl202 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA202=`md5 track-OrderID.txt`
+    sum202=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16844,7 +16844,7 @@ if [[ $curl203 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA203=`md5 track-OrderID.txt`
+    sum203=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -16927,7 +16927,7 @@ if [[ $curl204 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA204=`md5 track-OrderID.txt`
+    sum204=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17010,7 +17010,7 @@ if [[ $curl205 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA205=`md5 track-OrderID.txt`
+    sum205=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17093,7 +17093,7 @@ if [[ $curl206 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA206=`md5 track-OrderID.txt`
+    sum206=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17176,7 +17176,7 @@ if [[ $curl207 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA207=`md5 track-OrderID.txt`
+    sum207=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17259,7 +17259,7 @@ if [[ $curl208 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA208=`md5 track-OrderID.txt`
+    sum208=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17342,7 +17342,7 @@ if [[ $curl209 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA209=`md5 track-OrderID.txt`
+    sum209=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17425,7 +17425,7 @@ if [[ $curl210 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA210=`md5 track-OrderID.txt`
+    sum210=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17508,7 +17508,7 @@ if [[ $curl211 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA211=`md5 track-OrderID.txt`
+    sum211=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17591,7 +17591,7 @@ if [[ $curl212 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA212=`md5 track-OrderID.txt`
+    sum212=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17674,7 +17674,7 @@ if [[ $curl213 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA213=`md5 track-OrderID.txt`
+    sum213=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17757,7 +17757,7 @@ if [[ $curl214 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA214=`md5 track-OrderID.txt`
+    sum214=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17840,7 +17840,7 @@ if [[ $curl215 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA215=`md5 track-OrderID.txt`
+    sum215=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -17923,7 +17923,7 @@ if [[ $curl216 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA216=`md5 track-OrderID.txt`
+    sum216=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18006,7 +18006,7 @@ if [[ $curl217 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA217=`md5 track-OrderID.txt`
+    sum217=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18089,7 +18089,7 @@ if [[ $curl218 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA218=`md5 track-OrderID.txt`
+    sum218=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18172,7 +18172,7 @@ if [[ $curl219 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA219=`md5 track-OrderID.txt`
+    sum219=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18255,7 +18255,7 @@ if [[ $curl220 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA220=`md5 track-OrderID.txt`
+    sum220=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18338,7 +18338,7 @@ if [[ $curl221 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA221=`md5 track-OrderID.txt`
+    sum221=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18421,7 +18421,7 @@ if [[ $curl222 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA222=`md5 track-OrderID.txt`
+    sum222=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18504,7 +18504,7 @@ if [[ $curl223 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA223=`md5 track-OrderID.txt`
+    sum223=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18587,7 +18587,7 @@ if [[ $curl224 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA224=`md5 track-OrderID.txt`
+    sum224=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18670,7 +18670,7 @@ if [[ $curl225 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA225=`md5 track-OrderID.txt`
+    sum225=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18753,7 +18753,7 @@ if [[ $curl226 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA226=`md5 track-OrderID.txt`
+    sum226=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18836,7 +18836,7 @@ if [[ $curl227 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA227=`md5 track-OrderID.txt`
+    sum227=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -18919,7 +18919,7 @@ if [[ $curl228 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA228=`md5 track-OrderID.txt`
+    sum228=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19002,7 +19002,7 @@ if [[ $curl229 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA229=`md5 track-OrderID.txt`
+    sum229=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19085,7 +19085,7 @@ if [[ $curl230 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA230=`md5 track-OrderID.txt`
+    sum230=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19168,7 +19168,7 @@ if [[ $curl231 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA231=`md5 track-OrderID.txt`
+    sum231=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19251,7 +19251,7 @@ if [[ $curl232 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA232=`md5 track-OrderID.txt`
+    sum232=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19334,7 +19334,7 @@ if [[ $curl233 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA233=`md5 track-OrderID.txt`
+    sum233=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19417,7 +19417,7 @@ if [[ $curl234 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA234=`md5 track-OrderID.txt`
+    sum234=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19500,7 +19500,7 @@ if [[ $curl235 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA235=`md5 track-OrderID.txt`
+    sum235=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19583,7 +19583,7 @@ if [[ $curl236 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA236=`md5 track-OrderID.txt`
+    sum236=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19666,7 +19666,7 @@ if [[ $curl237 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA237=`md5 track-OrderID.txt`
+    sum237=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19749,7 +19749,7 @@ if [[ $curl238 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA238=`md5 track-OrderID.txt`
+    sum238=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19832,7 +19832,7 @@ if [[ $curl239 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA239=`md5 track-OrderID.txt`
+    sum239=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19915,7 +19915,7 @@ if [[ $curl240 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA240=`md5 track-OrderID.txt`
+    sum240=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -19998,7 +19998,7 @@ if [[ $curl241 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA241=`md5 track-OrderID.txt`
+    sum241=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20081,7 +20081,7 @@ if [[ $curl242 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA242=`md5 track-OrderID.txt`
+    sum242=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20164,7 +20164,7 @@ if [[ $curl243 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA243=`md5 track-OrderID.txt`
+    sum243=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20247,7 +20247,7 @@ if [[ $curl244 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA244=`md5 track-OrderID.txt`
+    sum244=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20330,7 +20330,7 @@ if [[ $curl245 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA245=`md5 track-OrderID.txt`
+    sum245=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20413,7 +20413,7 @@ if [[ $curl246 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA246=`md5 track-OrderID.txt`
+    sum246=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20496,7 +20496,7 @@ if [[ $curl247 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA247=`md5 track-OrderID.txt`
+    sum247=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20579,7 +20579,7 @@ if [[ $curl248 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA248=`md5 track-OrderID.txt`
+    sum248=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20662,7 +20662,7 @@ if [[ $curl249 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA249=`md5 track-OrderID.txt`
+    sum249=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20745,7 +20745,7 @@ if [[ $curl250 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA250=`md5 track-OrderID.txt`
+    sum250=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20828,7 +20828,7 @@ if [[ $curl251 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA251=`md5 track-OrderID.txt`
+    sum251=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20911,7 +20911,7 @@ if [[ $curl252 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA252=`md5 track-OrderID.txt`
+    sum252=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -20994,7 +20994,7 @@ if [[ $curl253 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA253=`md5 track-OrderID.txt`
+    sum253=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21077,7 +21077,7 @@ if [[ $curl254 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA254=`md5 track-OrderID.txt`
+    sum254=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21160,7 +21160,7 @@ if [[ $curl255 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA255=`md5 track-OrderID.txt`
+    sum255=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21243,7 +21243,7 @@ if [[ $curl256 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA256=`md5 track-OrderID.txt`
+    sum256=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21326,7 +21326,7 @@ if [[ $curl257 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA257=`md5 track-OrderID.txt`
+    sum257=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21409,7 +21409,7 @@ if [[ $curl258 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA258=`md5 track-OrderID.txt`
+    sum258=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21492,7 +21492,7 @@ if [[ $curl259 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA259=`md5 track-OrderID.txt`
+    sum259=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21575,7 +21575,7 @@ if [[ $curl260 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA260=`md5 track-OrderID.txt`
+    sum260=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21658,7 +21658,7 @@ if [[ $curl261 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA261=`md5 track-OrderID.txt`
+    sum261=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21741,7 +21741,7 @@ if [[ $curl262 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA262=`md5 track-OrderID.txt`
+    sum262=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21824,7 +21824,7 @@ if [[ $curl263 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA263=`md5 track-OrderID.txt`
+    sum263=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))
@@ -21907,7 +21907,7 @@ if [[ $curl264 =~ ""error"" ]]; then
     echo ""Sai info"" >> track-number.txt
     echo ""Sai info"" >> track-url.txt
 else
-    sumA264=`md5 track-OrderID.txt`
+    sum264=`md5 track-OrderID.txt`
     for (( i=0; i<=4; i++ ))
     do
         for (( j=0; j<=4; j++))

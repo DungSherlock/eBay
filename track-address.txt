@@ -10,6 +10,7 @@
 Sai info
 "235 High St, Jersey Shore, PA 17740"
 "3604 Cedar Oak Dr, Apt 102, Fort Myers, Fl 33916-6407, FL 31533"
+Khác Item
 "4817 Babylon St, New Orleans, LA 70126"
 "320 ELK NEST DR, North East, MD 21901"
 "2739 N 15th St, Fort Dodge, IA 50501"
@@ -22,14 +23,17 @@ Sai info
 "10916 N Kenwood Ave, Kansas City, MO 64155"
 "100 Montgomery St Apt 8G, Jersey City, NJ 07305"
 "5523 Slashwood Ln, Spring, TX 77379"
+Khác Item
 "817 Welch Drive, Haughton, 71037, LA 98506"
 "1815 138th Street Ct E, Tacoma, 98445, WA 30277"
 "3227 oak orchard road, Albion, 14411, NY 33034"
 Sai info
 "2225 Eastlawn St, Lorain, 44052, OH 48183"
 "309 Osage Ave, Hiawatha, 66434, KS 08012"
+Khác Item
 "517 N Stephen St, Clark Fork, ID 83811"
 "13610 Woodspire Dr, Houston, TX 77085"
+Khác Item
 "5 Stagden Look, Ormond Beach, FL 32174"
 "319 2nd St S, Sunburst, MT 59482"
 "3800 E Todd Rd, Columbia, 65202, MO 06611"
@@ -139,12 +143,14 @@ Sai info
 "4719 Avenue I, Brooklyn, NY 11234"
 "4774 Lockwood Dr, Washington, 48094-2623, MI 24450"
 "4040 Piedmont Dr, Highland, 92346-4823, CA 46158"
+Khác Item
 "324 Harefoote St, Holland, 43528-9513, OH 79936"
 "1315 E Cedar St, Annville, 17003-2010, PA 33909"
 "420 S Illinois St, Belleville, 62220-2136, IL 36587"
 Sai info
 Sai info
 Sai info
+Khác Item
 "632A Prospect Ave, Rumford, 04276, ME 90706"
 "4401 80th St NE, Marysville, 98270, WA 24201"
 "759 46th St, Apt 3C, Brooklyn, NY 11220"
@@ -159,13 +165,16 @@ Sai info
 "133... S Park View St, apt 0, Los Angeles, CA 90057"
 "2850 Edgecliff Rd, Apt 34, Lower Burrell, PA 15068"
 "235y High St, Jersey Shore, PA 17740"
+Khác Item
 "3359 Columbia Rd, North Olmsted, 44070, OH 45344"
 "195 Crawford Rd, Monroe, Monroe, LA 71202"
 "612 Sidney Rowe Street, Kingsland, 78639, TX 78620"
 "10038 N 50th Dr, Glendale, AZ 85302"
 "5932 Pinecreek Rd, Forest Park, GA 30297"
 "3704 Somerset Dr, Seaford, NY 11783"
+Khác Item
 "9198 E 700 N, Churubusco, IN 46723"
+Khác Item
 "7665 SW 67th Ave, Portland, Portland, OR 97223"
 "601 15th St, Lot 20, Mexico Beach, FL 32456"
 "3574 Dekalb Ave, Bronx, NY 10467"
