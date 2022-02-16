@@ -228,7 +228,7 @@ Sai info
 "4492 Camino De La Plz 586, San Ysidro, CA 92173"
 "80 Irons Rd, Congerville, IL 61729"
 "20095 Will Hughes Rd, delivery to Main House, Livingston, LA 70754"
-Sai info
+"3572 Eastridge Dr, San Jose, CA 95148"
 "10916 N KENW00D AVE, Kansas City, MO 64155"
 "10303 W Alamo St, Wichita, KS 67212"
 "2200 Kincaid Way, Sacramento, CA 95825"
