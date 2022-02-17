@@ -6,6 +6,8 @@
 : > ebay-wasPrice.txt
 : > ebay-availabilityStatus.txt
 
+while true
+do
 list1=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
@@ -36,7 +38,23 @@ list1=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'cookie: auth=MTAyOTYyMDE4SAFoijgoW%2BwVbVl1XCR8b1LY15K%2FPFkpB3eqeMWKxB8neaW%2BC1T2bnXu4hcsFbsL3drLRuHXPg%2F%2Fk1f6bSTYAzjhJuhJDynI%2BiazR%2F4BWP8KjDEgutZecVEIw2W%2FoD%2B4767wuZloTfhm7Wk2KcjygobRHThsmZk%2BGcqTfIab85SwxXtAz7E82fz1Znm95f9I31fMVdEFB01AdiHjLYIrVgSU6%2FFSyFHoBLkxTbgXNUoUMk70P8glgOEpLOprhDfMM%2FFHGZ2dCNmxWrdkwqEKrjMMRWvuyffZ1jFJ6FEiGMy5eEZMH6Z6ge%2BPBrf%2BmQ6MFTZUwhWEMIwdnlmj85fW3xwH4pTZFmNzWmz2pR5ixfLpB03mfjBSpaZQK7Euu6DERjQ3r9INNAjLhqBeT2p7%2FljKcklje4R5ioW78kDnDBU%3D; ACID=04d84235-6998-47be-a2f2-91071c122a77; hasACID=true; assortmentStoreId=3081; hasLocData=1; TB_Latency_Tracker_100=1; TB_Navigation_Preload_01=1; vtc=Wwbqv2nRsU2su70JwXaqZk; bstc=Wwbqv2nRsU2su70JwXaqZk; mobileweb=0; xpa=2PRJ6|9qHE4|DAwQd|KzWDJ|PwUCp|fD9ZO|mrxWN|pAAwd|s6z_-|vkFmv|yurXb; exp-ck=DAwQd2PwUCp1fD9ZO1vkFmv1yurXb1; TS01b0be75=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TS013ed49a=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TBV=7; tb_sw_supported=true; ak_bmsc=3C08BCE3E605BDA834111846614D317F~000000000000000000000000000000~YAAQBS83Fwcqtql+AQAAEVsnqg71Qntyg8gPY7pbbJQBYcohSHcwfonQ756IXPgno+Ni0rrSNFhBMPgWw2GLlJp3UJ1y6ZIc2n6Go+aNEYnELk1UotVxy/a06iVlWE3zlfFKyKMBSsJ1NpzvPSQ3O889ppxDP0XScxTXzKllwPwd5TF4EyE0YqKRkUK7vhdPJ/IQULjXOhy/mt3K9Nz2TPX/SQ5NEd7UmSoMIvASBmS+oyCdC4pdU/6tmKTtvgCGpQuVkw4eTjjK1U5VToGhYHb8RpHCfILCQl2DE0BqY0BJA1ZFEm2L+qgBXLevYmNVBKvp+RikFnP3hkCiupmaf18CSj5nf6ZQW+GLJP24KJZq/tNaWm0nypm0Ar9kv5++OhOoMRwBE+SqVYSFj3hszXQWE40b3ubmc3FZ/WowcIsu2j6597qI1xLzzQAslWQ2Y7ibhqk+94UzniGnWfoyXgD+XneJmoJ6OC11I0X7lt7de8iIID1m5LGiiEL3; pxcts=b524a810-81a8-11ec-b1c7-2f3bb0e953f5; _pxvid=b524530a-81a8-11ec-bb78-516742524d6f; _px3=1da26b5e368f3079da8896be506869586c02b5781ef543bbacf7de32bd38700a:GVI+qY/xG/RjSXWobZrYa+S+7RIUEYeuU6f0jbyqG90do1AuDIpg9MxHplnZddEHS5fwrCPCkG4XlHwpypIrcg==:1000:4Kw8A0Ai2P3eKFIlZlSGqzLq85QyDULwW9UYRHCqpGNZ6O9erOjjflqgaJ1CmpkIUQ7YBZ4H6+ZMJrUquXO3Rg0LkrGI9ffGDVBn029CJal/Ed4Rnq8SlQ2ZufgNRnulhDG2PshoBzA6rsfuOtHn5lOmLUAa+66V4dx/7/oSNZHgYC2K8G8F0rPXzfdTAAKXuIIdGv0h/ugS9jRdDeTRgw==; _pxde=91debf3db4ce52f57682bbd51ae3ee60287b66346b9afea0a84315e9916aadad:eyJ0aW1lc3RhbXAiOjE2NDM1MzIyMjkzODAsImZfa2IiOjAsImlwY19pZCI6W119; TB_SFOU-100=1; xpm=1%2B1643532208%2BWwbqv2nRsU2su70JwXaqZk~%2B0; tb-c30=scus-t1; locDataV3=Fe26.2**d78933d8d1735e992c15e31829880b5319f08fad3a9fa707e7e995b88d8a4553*l8MiNfVaU2yLfvmu9gRmuQ*FCthQUvf0zzmBl3XFuD0TQ37AB9eQit3FjmfxXMMDCNDrIbHYeqvMbe8e-vYcVAjZYxR1eoAlyfZfnq_nzKE3eY5zqAruPn5diTCnIlbLaPgedt5e1sN6r5LAbfxrfeRHlQMQf4fvoaMih8EDdTxFSmQIEaArflv7IaNQg0ta7Du3c_f7qkSrswH57gKmQwSxpeP6ea0Vll2tKAPpYdYIDn14Ld7e4PDcAePzyKhes3Uum1b7EQZpABfxM6fDDxyV3k14UB2KYMCCHFE-svPCbwFDaJMVIQiCZeF6sE1ke0OGwdTmyVAEoeK2E6ayxSPeMa3ei_dgGCyivZCQWRPLdjH92zJslh5_o8b_LejDZxSuMGCZt26qfoP-Rm6TD26fjhGQ1BXnfO-kudMdNwrOvPBaYikLj0fqmv4IHOi3Grb7deU60nY-DuhS5RdAfszNN-xzxnUeWqBqM5M58C95AFChk3ofCy7wCXVsW4MjEwb60qJBCji3nitX_bd1Y0bzeLUK_Hs7SotYbR3TO_Y9dk3TvklHz39LehQcJHvaTaBbLP6z4HNERg_Xk86pZqXcRj_Y4dkwkkx6gS1SSwoJKSg_pueLCSiZQnWYOoTzLRZ1QXf9rrEH1_o9VW5PCkDZkzl0DuIpNetiyzq0nPjaB2-T2eA_jF1b_gjMQ9ihujLXjSbmVcFvFOHaoI1VOj_o39ouXkiWD6jYuVvFm58hGK1-uawa69c-yly02GdhqyvFLHyydyvo7YnQV84tKutt5cF3F-5z4NzwGnbxsYCPTXIdSLvU4AYw6F5v7PdBu6Og62e9mzwzTSw3cx3sWClYYt2toohHuiqPtjeIHp3s-XSmCmISIWjzOaImJ9Prodv_ZnUyZoldFhplAdXnpuPzElculIAsmIRU2fjCGr3fSQEXSrMd5jLe8nnpXENXjmNNhVL-Y2CJBizmF68AJbtHY0s0F2oXbk4YgVkipO-sir4HbpJ5QDzVgVoR_0ZPZ2slE0ItIYNJzn9Cmw3eGFJkZT-Y4-tWem_9eChn2Ew9e3dud1PoH4_J1NaKI__f-vF6HevtrXVnc5j6mlInhJW**e952c5dcc46cc3d3698dd6fd1d4b161bbf8c797991a25424d9f8f18713f9c49d*piOZfd8qFyL_Ac8vqF-VDAyiRL7NVQhwbsTlc1chjfA; locGuestData=eyJpbnRlbnQiOiJTSElQUElORyIsInN0b3JlSW50ZW50IjoiUElDS1VQIiwibWVyZ2VGbGFnIjpmYWxzZSwicGlja3VwIjp7Im5vZGVJZCI6IjMwODEiLCJ0aW1lc3RhbXAiOjE2NDM1MzIyMzMyMzZ9LCJwb3N0YWxDb2RlIjp7InRpbWVzdGFtcCI6MTY0MzUzMjIzMzIzNiwiYmFzZSI6Ijk1ODI5In0sInZhbGlkYXRlS2V5IjoicHJvZDp2MjowNGQ4NDIzNS02OTk4LTQ3YmUtYTJmMi05MTA3MWMxMjJhNzcifQ%3D%3D; AID=wmlspartner%253D0%253Areflectorid%253D0000000000000000000000%253Alastupd%253D1643532291277; com.wm.reflector="reflectorid:0000000000000000000000@lastupd:1643532291277@firstcreate:1643532208806"; xptwg=931059659:5059901D814BE0:D1F97E:5F91AC9F:4FF50BAC:F12E0628:; bm_sv=A1989D55605AF57BB1876AA22994EDF8~t3gzpBSuSRX5QGQOWbSAIIw9RFr0NbwNcDvuILTihkyUC3L/u2/HnSMi+2t2Xo2OeApGjiae+svqz+G1buVgOH26z1AFI/LMVs3sVxRLfNyZlw5DERMGXjLHJlKeijXDdvoxkLTOGYbIeRz9I+2ZJ78RbNsiY1ooqPbL8UlH0H8=' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"5235469c-9c94-4bc9-96cc-e0f44ade3b9e","permission":"VIEW"}}}' \
   --compressed`
+  if [[ $list1 =~ "blocked" ]]
+  then
+    link1=`echo $list1 | jq '.redirectUrl' | sed 's/"//g'`
+    `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link1`
+    read -n 1 -p "blocked"
+  else
+    echo $list1 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+    echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+    echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+    echo $list1 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+    echo "1"
+    break
+  fi
+done
 
+while true
+do
 list2=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
@@ -67,7 +85,22 @@ list2=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'cookie: auth=MTAyOTYyMDE4SAFoijgoW%2BwVbVl1XCR8b1LY15K%2FPFkpB3eqeMWKxB8neaW%2BC1T2bnXu4hcsFbsL3drLRuHXPg%2F%2Fk1f6bSTYAzjhJuhJDynI%2BiazR%2F4BWP8KjDEgutZecVEIw2W%2FoD%2B4767wuZloTfhm7Wk2KcjygobRHThsmZk%2BGcqTfIab85SwxXtAz7E82fz1Znm95f9I31fMVdEFB01AdiHjLYIrVgSU6%2FFSyFHoBLkxTbgXNUoUMk70P8glgOEpLOprhDfMM%2FFHGZ2dCNmxWrdkwqEKrjMMRWvuyffZ1jFJ6FEiGMy5eEZMH6Z6ge%2BPBrf%2BmQ6MFTZUwhWEMIwdnlmj85fW3xwH4pTZFmNzWmz2pR5ixfLpB03mfjBSpaZQK7Euu6DERjQ3r9INNAjLhqBeT2p7%2FljKcklje4R5ioW78kDnDBU%3D; ACID=04d84235-6998-47be-a2f2-91071c122a77; hasACID=true; assortmentStoreId=3081; hasLocData=1; TB_Latency_Tracker_100=1; TB_Navigation_Preload_01=1; vtc=Wwbqv2nRsU2su70JwXaqZk; bstc=Wwbqv2nRsU2su70JwXaqZk; mobileweb=0; xpa=2PRJ6|9qHE4|DAwQd|KzWDJ|PwUCp|fD9ZO|mrxWN|pAAwd|s6z_-|vkFmv|yurXb; exp-ck=DAwQd2PwUCp1fD9ZO1vkFmv1yurXb1; TS01b0be75=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TS013ed49a=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TBV=7; tb_sw_supported=true; ak_bmsc=3C08BCE3E605BDA834111846614D317F~000000000000000000000000000000~YAAQBS83Fwcqtql+AQAAEVsnqg71Qntyg8gPY7pbbJQBYcohSHcwfonQ756IXPgno+Ni0rrSNFhBMPgWw2GLlJp3UJ1y6ZIc2n6Go+aNEYnELk1UotVxy/a06iVlWE3zlfFKyKMBSsJ1NpzvPSQ3O889ppxDP0XScxTXzKllwPwd5TF4EyE0YqKRkUK7vhdPJ/IQULjXOhy/mt3K9Nz2TPX/SQ5NEd7UmSoMIvASBmS+oyCdC4pdU/6tmKTtvgCGpQuVkw4eTjjK1U5VToGhYHb8RpHCfILCQl2DE0BqY0BJA1ZFEm2L+qgBXLevYmNVBKvp+RikFnP3hkCiupmaf18CSj5nf6ZQW+GLJP24KJZq/tNaWm0nypm0Ar9kv5++OhOoMRwBE+SqVYSFj3hszXQWE40b3ubmc3FZ/WowcIsu2j6597qI1xLzzQAslWQ2Y7ibhqk+94UzniGnWfoyXgD+XneJmoJ6OC11I0X7lt7de8iIID1m5LGiiEL3; pxcts=b524a810-81a8-11ec-b1c7-2f3bb0e953f5; _pxvid=b524530a-81a8-11ec-bb78-516742524d6f; _px3=1da26b5e368f3079da8896be506869586c02b5781ef543bbacf7de32bd38700a:GVI+qY/xG/RjSXWobZrYa+S+7RIUEYeuU6f0jbyqG90do1AuDIpg9MxHplnZddEHS5fwrCPCkG4XlHwpypIrcg==:1000:4Kw8A0Ai2P3eKFIlZlSGqzLq85QyDULwW9UYRHCqpGNZ6O9erOjjflqgaJ1CmpkIUQ7YBZ4H6+ZMJrUquXO3Rg0LkrGI9ffGDVBn029CJal/Ed4Rnq8SlQ2ZufgNRnulhDG2PshoBzA6rsfuOtHn5lOmLUAa+66V4dx/7/oSNZHgYC2K8G8F0rPXzfdTAAKXuIIdGv0h/ugS9jRdDeTRgw==; _pxde=91debf3db4ce52f57682bbd51ae3ee60287b66346b9afea0a84315e9916aadad:eyJ0aW1lc3RhbXAiOjE2NDM1MzIyMjkzODAsImZfa2IiOjAsImlwY19pZCI6W119; TB_SFOU-100=1; xpm=1%2B1643532208%2BWwbqv2nRsU2su70JwXaqZk~%2B0; tb-c30=scus-t1; locDataV3=Fe26.2**d78933d8d1735e992c15e31829880b5319f08fad3a9fa707e7e995b88d8a4553*l8MiNfVaU2yLfvmu9gRmuQ*FCthQUvf0zzmBl3XFuD0TQ37AB9eQit3FjmfxXMMDCNDrIbHYeqvMbe8e-vYcVAjZYxR1eoAlyfZfnq_nzKE3eY5zqAruPn5diTCnIlbLaPgedt5e1sN6r5LAbfxrfeRHlQMQf4fvoaMih8EDdTxFSmQIEaArflv7IaNQg0ta7Du3c_f7qkSrswH57gKmQwSxpeP6ea0Vll2tKAPpYdYIDn14Ld7e4PDcAePzyKhes3Uum1b7EQZpABfxM6fDDxyV3k14UB2KYMCCHFE-svPCbwFDaJMVIQiCZeF6sE1ke0OGwdTmyVAEoeK2E6ayxSPeMa3ei_dgGCyivZCQWRPLdjH92zJslh5_o8b_LejDZxSuMGCZt26qfoP-Rm6TD26fjhGQ1BXnfO-kudMdNwrOvPBaYikLj0fqmv4IHOi3Grb7deU60nY-DuhS5RdAfszNN-xzxnUeWqBqM5M58C95AFChk3ofCy7wCXVsW4MjEwb60qJBCji3nitX_bd1Y0bzeLUK_Hs7SotYbR3TO_Y9dk3TvklHz39LehQcJHvaTaBbLP6z4HNERg_Xk86pZqXcRj_Y4dkwkkx6gS1SSwoJKSg_pueLCSiZQnWYOoTzLRZ1QXf9rrEH1_o9VW5PCkDZkzl0DuIpNetiyzq0nPjaB2-T2eA_jF1b_gjMQ9ihujLXjSbmVcFvFOHaoI1VOj_o39ouXkiWD6jYuVvFm58hGK1-uawa69c-yly02GdhqyvFLHyydyvo7YnQV84tKutt5cF3F-5z4NzwGnbxsYCPTXIdSLvU4AYw6F5v7PdBu6Og62e9mzwzTSw3cx3sWClYYt2toohHuiqPtjeIHp3s-XSmCmISIWjzOaImJ9Prodv_ZnUyZoldFhplAdXnpuPzElculIAsmIRU2fjCGr3fSQEXSrMd5jLe8nnpXENXjmNNhVL-Y2CJBizmF68AJbtHY0s0F2oXbk4YgVkipO-sir4HbpJ5QDzVgVoR_0ZPZ2slE0ItIYNJzn9Cmw3eGFJkZT-Y4-tWem_9eChn2Ew9e3dud1PoH4_J1NaKI__f-vF6HevtrXVnc5j6mlInhJW**e952c5dcc46cc3d3698dd6fd1d4b161bbf8c797991a25424d9f8f18713f9c49d*piOZfd8qFyL_Ac8vqF-VDAyiRL7NVQhwbsTlc1chjfA; locGuestData=eyJpbnRlbnQiOiJTSElQUElORyIsInN0b3JlSW50ZW50IjoiUElDS1VQIiwibWVyZ2VGbGFnIjpmYWxzZSwicGlja3VwIjp7Im5vZGVJZCI6IjMwODEiLCJ0aW1lc3RhbXAiOjE2NDM1MzIyMzMyMzZ9LCJwb3N0YWxDb2RlIjp7InRpbWVzdGFtcCI6MTY0MzUzMjIzMzIzNiwiYmFzZSI6Ijk1ODI5In0sInZhbGlkYXRlS2V5IjoicHJvZDp2MjowNGQ4NDIzNS02OTk4LTQ3YmUtYTJmMi05MTA3MWMxMjJhNzcifQ%3D%3D; AID=wmlspartner%253D0%253Areflectorid%253D0000000000000000000000%253Alastupd%253D1643532291277; com.wm.reflector="reflectorid:0000000000000000000000@lastupd:1643532291277@firstcreate:1643532208806"; xptwg=931059659:5059901D814BE0:D1F97E:5F91AC9F:4FF50BAC:F12E0628:; bm_sv=A1989D55605AF57BB1876AA22994EDF8~t3gzpBSuSRX5QGQOWbSAIIw9RFr0NbwNcDvuILTihkyUC3L/u2/HnSMi+2t2Xo2OeApGjiae+svqz+G1buVgOH26z1AFI/LMVs3sVxRLfNyZlw5DERMGXjLHJlKeijXDdvoxkLTOGYbIeRz9I+2ZJ78RbNsiY1ooqPbL8UlH0H8=' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"35f6f25d-5c2a-49bb-a9f2-0c78204a2099","permission":"VIEW"}}}' \
   --compressed`
+  if [[ $list2 =~ "blocked" ]]
+  then
+    link2=`echo $list2 | jq '.redirectUrl' | sed 's/"//g'`
+    `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link2`
+  else
+    echo $list2 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+    echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+    echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+    echo $list2 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+    echo "2"
+    break
+  fi
+done
 
+while true
+do
 list3=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
@@ -98,7 +131,22 @@ list3=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'cookie: auth=MTAyOTYyMDE4SAFoijgoW%2BwVbVl1XCR8b1LY15K%2FPFkpB3eqeMWKxB8neaW%2BC1T2bnXu4hcsFbsL3drLRuHXPg%2F%2Fk1f6bSTYAzjhJuhJDynI%2BiazR%2F4BWP8KjDEgutZecVEIw2W%2FoD%2B4767wuZloTfhm7Wk2KcjygobRHThsmZk%2BGcqTfIab85SwxXtAz7E82fz1Znm95f9I31fMVdEFB01AdiHjLYIrVgSU6%2FFSyFHoBLkxTbgXNUoUMk70P8glgOEpLOprhDfMM%2FFHGZ2dCNmxWrdkwqEKrjMMRWvuyffZ1jFJ6FEiGMy5eEZMH6Z6ge%2BPBrf%2BmQ6MFTZUwhWEMIwdnlmj85fW3xwH4pTZFmNzWmz2pR5ixfLpB03mfjBSpaZQK7Euu6DERjQ3r9INNAjLhqBeT2p7%2FljKcklje4R5ioW78kDnDBU%3D; ACID=04d84235-6998-47be-a2f2-91071c122a77; hasACID=true; assortmentStoreId=3081; hasLocData=1; TB_Latency_Tracker_100=1; TB_Navigation_Preload_01=1; vtc=Wwbqv2nRsU2su70JwXaqZk; bstc=Wwbqv2nRsU2su70JwXaqZk; mobileweb=0; xpa=2PRJ6|9qHE4|DAwQd|KzWDJ|PwUCp|fD9ZO|mrxWN|pAAwd|s6z_-|vkFmv|yurXb; exp-ck=DAwQd2PwUCp1fD9ZO1vkFmv1yurXb1; TS01b0be75=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TS013ed49a=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TBV=7; tb_sw_supported=true; ak_bmsc=3C08BCE3E605BDA834111846614D317F~000000000000000000000000000000~YAAQBS83Fwcqtql+AQAAEVsnqg71Qntyg8gPY7pbbJQBYcohSHcwfonQ756IXPgno+Ni0rrSNFhBMPgWw2GLlJp3UJ1y6ZIc2n6Go+aNEYnELk1UotVxy/a06iVlWE3zlfFKyKMBSsJ1NpzvPSQ3O889ppxDP0XScxTXzKllwPwd5TF4EyE0YqKRkUK7vhdPJ/IQULjXOhy/mt3K9Nz2TPX/SQ5NEd7UmSoMIvASBmS+oyCdC4pdU/6tmKTtvgCGpQuVkw4eTjjK1U5VToGhYHb8RpHCfILCQl2DE0BqY0BJA1ZFEm2L+qgBXLevYmNVBKvp+RikFnP3hkCiupmaf18CSj5nf6ZQW+GLJP24KJZq/tNaWm0nypm0Ar9kv5++OhOoMRwBE+SqVYSFj3hszXQWE40b3ubmc3FZ/WowcIsu2j6597qI1xLzzQAslWQ2Y7ibhqk+94UzniGnWfoyXgD+XneJmoJ6OC11I0X7lt7de8iIID1m5LGiiEL3; pxcts=b524a810-81a8-11ec-b1c7-2f3bb0e953f5; _pxvid=b524530a-81a8-11ec-bb78-516742524d6f; _px3=1da26b5e368f3079da8896be506869586c02b5781ef543bbacf7de32bd38700a:GVI+qY/xG/RjSXWobZrYa+S+7RIUEYeuU6f0jbyqG90do1AuDIpg9MxHplnZddEHS5fwrCPCkG4XlHwpypIrcg==:1000:4Kw8A0Ai2P3eKFIlZlSGqzLq85QyDULwW9UYRHCqpGNZ6O9erOjjflqgaJ1CmpkIUQ7YBZ4H6+ZMJrUquXO3Rg0LkrGI9ffGDVBn029CJal/Ed4Rnq8SlQ2ZufgNRnulhDG2PshoBzA6rsfuOtHn5lOmLUAa+66V4dx/7/oSNZHgYC2K8G8F0rPXzfdTAAKXuIIdGv0h/ugS9jRdDeTRgw==; _pxde=91debf3db4ce52f57682bbd51ae3ee60287b66346b9afea0a84315e9916aadad:eyJ0aW1lc3RhbXAiOjE2NDM1MzIyMjkzODAsImZfa2IiOjAsImlwY19pZCI6W119; TB_SFOU-100=1; xpm=1%2B1643532208%2BWwbqv2nRsU2su70JwXaqZk~%2B0; tb-c30=scus-t1; locDataV3=Fe26.2**d78933d8d1735e992c15e31829880b5319f08fad3a9fa707e7e995b88d8a4553*l8MiNfVaU2yLfvmu9gRmuQ*FCthQUvf0zzmBl3XFuD0TQ37AB9eQit3FjmfxXMMDCNDrIbHYeqvMbe8e-vYcVAjZYxR1eoAlyfZfnq_nzKE3eY5zqAruPn5diTCnIlbLaPgedt5e1sN6r5LAbfxrfeRHlQMQf4fvoaMih8EDdTxFSmQIEaArflv7IaNQg0ta7Du3c_f7qkSrswH57gKmQwSxpeP6ea0Vll2tKAPpYdYIDn14Ld7e4PDcAePzyKhes3Uum1b7EQZpABfxM6fDDxyV3k14UB2KYMCCHFE-svPCbwFDaJMVIQiCZeF6sE1ke0OGwdTmyVAEoeK2E6ayxSPeMa3ei_dgGCyivZCQWRPLdjH92zJslh5_o8b_LejDZxSuMGCZt26qfoP-Rm6TD26fjhGQ1BXnfO-kudMdNwrOvPBaYikLj0fqmv4IHOi3Grb7deU60nY-DuhS5RdAfszNN-xzxnUeWqBqM5M58C95AFChk3ofCy7wCXVsW4MjEwb60qJBCji3nitX_bd1Y0bzeLUK_Hs7SotYbR3TO_Y9dk3TvklHz39LehQcJHvaTaBbLP6z4HNERg_Xk86pZqXcRj_Y4dkwkkx6gS1SSwoJKSg_pueLCSiZQnWYOoTzLRZ1QXf9rrEH1_o9VW5PCkDZkzl0DuIpNetiyzq0nPjaB2-T2eA_jF1b_gjMQ9ihujLXjSbmVcFvFOHaoI1VOj_o39ouXkiWD6jYuVvFm58hGK1-uawa69c-yly02GdhqyvFLHyydyvo7YnQV84tKutt5cF3F-5z4NzwGnbxsYCPTXIdSLvU4AYw6F5v7PdBu6Og62e9mzwzTSw3cx3sWClYYt2toohHuiqPtjeIHp3s-XSmCmISIWjzOaImJ9Prodv_ZnUyZoldFhplAdXnpuPzElculIAsmIRU2fjCGr3fSQEXSrMd5jLe8nnpXENXjmNNhVL-Y2CJBizmF68AJbtHY0s0F2oXbk4YgVkipO-sir4HbpJ5QDzVgVoR_0ZPZ2slE0ItIYNJzn9Cmw3eGFJkZT-Y4-tWem_9eChn2Ew9e3dud1PoH4_J1NaKI__f-vF6HevtrXVnc5j6mlInhJW**e952c5dcc46cc3d3698dd6fd1d4b161bbf8c797991a25424d9f8f18713f9c49d*piOZfd8qFyL_Ac8vqF-VDAyiRL7NVQhwbsTlc1chjfA; locGuestData=eyJpbnRlbnQiOiJTSElQUElORyIsInN0b3JlSW50ZW50IjoiUElDS1VQIiwibWVyZ2VGbGFnIjpmYWxzZSwicGlja3VwIjp7Im5vZGVJZCI6IjMwODEiLCJ0aW1lc3RhbXAiOjE2NDM1MzIyMzMyMzZ9LCJwb3N0YWxDb2RlIjp7InRpbWVzdGFtcCI6MTY0MzUzMjIzMzIzNiwiYmFzZSI6Ijk1ODI5In0sInZhbGlkYXRlS2V5IjoicHJvZDp2MjowNGQ4NDIzNS02OTk4LTQ3YmUtYTJmMi05MTA3MWMxMjJhNzcifQ%3D%3D; AID=wmlspartner%253D0%253Areflectorid%253D0000000000000000000000%253Alastupd%253D1643532291277; com.wm.reflector="reflectorid:0000000000000000000000@lastupd:1643532291277@firstcreate:1643532208806"; xptwg=931059659:5059901D814BE0:D1F97E:5F91AC9F:4FF50BAC:F12E0628:; bm_sv=A1989D55605AF57BB1876AA22994EDF8~t3gzpBSuSRX5QGQOWbSAIIw9RFr0NbwNcDvuILTihkyUC3L/u2/HnSMi+2t2Xo2OeApGjiae+svqz+G1buVgOH26z1AFI/LMVs3sVxRLfNyZlw5DERMGXjLHJlKeijXDdvoxkLTOGYbIeRz9I+2ZJ78RbNsiY1ooqPbL8UlH0H8=' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"caf523c1-f70a-4d38-aa12-029147e94b16","permission":"VIEW"}}}' \
   --compressed`
+  if [[ $list3 =~ "blocked" ]]
+  then
+    link3=`echo $list3 | jq '.redirectUrl' | sed 's/"//g'`
+    `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link3`
+  else
+    echo $list3 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+    echo $list3 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+    echo $list3 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+    echo $list3 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+    echo "3"
+    break
+  fi
+done
 
+while true
+do
 list4=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
@@ -129,7 +177,22 @@ list4=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'cookie: auth=MTAyOTYyMDE4SAFoijgoW%2BwVbVl1XCR8b1LY15K%2FPFkpB3eqeMWKxB8neaW%2BC1T2bnXu4hcsFbsL3drLRuHXPg%2F%2Fk1f6bSTYAzjhJuhJDynI%2BiazR%2F4BWP8KjDEgutZecVEIw2W%2FoD%2B4767wuZloTfhm7Wk2KcjygobRHThsmZk%2BGcqTfIab85SwxXtAz7E82fz1Znm95f9I31fMVdEFB01AdiHjLYIrVgSU6%2FFSyFHoBLkxTbgXNUoUMk70P8glgOEpLOprhDfMM%2FFHGZ2dCNmxWrdkwqEKrjMMRWvuyffZ1jFJ6FEiGMy5eEZMH6Z6ge%2BPBrf%2BmQ6MFTZUwhWEMIwdnlmj85fW3xwH4pTZFmNzWmz2pR5ixfLpB03mfjBSpaZQK7Euu6DERjQ3r9INNAjLhqBeT2p7%2FljKcklje4R5ioW78kDnDBU%3D; ACID=04d84235-6998-47be-a2f2-91071c122a77; hasACID=true; assortmentStoreId=3081; hasLocData=1; TB_Latency_Tracker_100=1; TB_Navigation_Preload_01=1; vtc=Wwbqv2nRsU2su70JwXaqZk; bstc=Wwbqv2nRsU2su70JwXaqZk; mobileweb=0; xpa=2PRJ6|9qHE4|DAwQd|KzWDJ|PwUCp|fD9ZO|mrxWN|pAAwd|s6z_-|vkFmv|yurXb; exp-ck=DAwQd2PwUCp1fD9ZO1vkFmv1yurXb1; TS01b0be75=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TS013ed49a=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TBV=7; tb_sw_supported=true; ak_bmsc=3C08BCE3E605BDA834111846614D317F~000000000000000000000000000000~YAAQBS83Fwcqtql+AQAAEVsnqg71Qntyg8gPY7pbbJQBYcohSHcwfonQ756IXPgno+Ni0rrSNFhBMPgWw2GLlJp3UJ1y6ZIc2n6Go+aNEYnELk1UotVxy/a06iVlWE3zlfFKyKMBSsJ1NpzvPSQ3O889ppxDP0XScxTXzKllwPwd5TF4EyE0YqKRkUK7vhdPJ/IQULjXOhy/mt3K9Nz2TPX/SQ5NEd7UmSoMIvASBmS+oyCdC4pdU/6tmKTtvgCGpQuVkw4eTjjK1U5VToGhYHb8RpHCfILCQl2DE0BqY0BJA1ZFEm2L+qgBXLevYmNVBKvp+RikFnP3hkCiupmaf18CSj5nf6ZQW+GLJP24KJZq/tNaWm0nypm0Ar9kv5++OhOoMRwBE+SqVYSFj3hszXQWE40b3ubmc3FZ/WowcIsu2j6597qI1xLzzQAslWQ2Y7ibhqk+94UzniGnWfoyXgD+XneJmoJ6OC11I0X7lt7de8iIID1m5LGiiEL3; pxcts=b524a810-81a8-11ec-b1c7-2f3bb0e953f5; _pxvid=b524530a-81a8-11ec-bb78-516742524d6f; _px3=1da26b5e368f3079da8896be506869586c02b5781ef543bbacf7de32bd38700a:GVI+qY/xG/RjSXWobZrYa+S+7RIUEYeuU6f0jbyqG90do1AuDIpg9MxHplnZddEHS5fwrCPCkG4XlHwpypIrcg==:1000:4Kw8A0Ai2P3eKFIlZlSGqzLq85QyDULwW9UYRHCqpGNZ6O9erOjjflqgaJ1CmpkIUQ7YBZ4H6+ZMJrUquXO3Rg0LkrGI9ffGDVBn029CJal/Ed4Rnq8SlQ2ZufgNRnulhDG2PshoBzA6rsfuOtHn5lOmLUAa+66V4dx/7/oSNZHgYC2K8G8F0rPXzfdTAAKXuIIdGv0h/ugS9jRdDeTRgw==; _pxde=91debf3db4ce52f57682bbd51ae3ee60287b66346b9afea0a84315e9916aadad:eyJ0aW1lc3RhbXAiOjE2NDM1MzIyMjkzODAsImZfa2IiOjAsImlwY19pZCI6W119; TB_SFOU-100=1; xpm=1%2B1643532208%2BWwbqv2nRsU2su70JwXaqZk~%2B0; tb-c30=scus-t1; locDataV3=Fe26.2**d78933d8d1735e992c15e31829880b5319f08fad3a9fa707e7e995b88d8a4553*l8MiNfVaU2yLfvmu9gRmuQ*FCthQUvf0zzmBl3XFuD0TQ37AB9eQit3FjmfxXMMDCNDrIbHYeqvMbe8e-vYcVAjZYxR1eoAlyfZfnq_nzKE3eY5zqAruPn5diTCnIlbLaPgedt5e1sN6r5LAbfxrfeRHlQMQf4fvoaMih8EDdTxFSmQIEaArflv7IaNQg0ta7Du3c_f7qkSrswH57gKmQwSxpeP6ea0Vll2tKAPpYdYIDn14Ld7e4PDcAePzyKhes3Uum1b7EQZpABfxM6fDDxyV3k14UB2KYMCCHFE-svPCbwFDaJMVIQiCZeF6sE1ke0OGwdTmyVAEoeK2E6ayxSPeMa3ei_dgGCyivZCQWRPLdjH92zJslh5_o8b_LejDZxSuMGCZt26qfoP-Rm6TD26fjhGQ1BXnfO-kudMdNwrOvPBaYikLj0fqmv4IHOi3Grb7deU60nY-DuhS5RdAfszNN-xzxnUeWqBqM5M58C95AFChk3ofCy7wCXVsW4MjEwb60qJBCji3nitX_bd1Y0bzeLUK_Hs7SotYbR3TO_Y9dk3TvklHz39LehQcJHvaTaBbLP6z4HNERg_Xk86pZqXcRj_Y4dkwkkx6gS1SSwoJKSg_pueLCSiZQnWYOoTzLRZ1QXf9rrEH1_o9VW5PCkDZkzl0DuIpNetiyzq0nPjaB2-T2eA_jF1b_gjMQ9ihujLXjSbmVcFvFOHaoI1VOj_o39ouXkiWD6jYuVvFm58hGK1-uawa69c-yly02GdhqyvFLHyydyvo7YnQV84tKutt5cF3F-5z4NzwGnbxsYCPTXIdSLvU4AYw6F5v7PdBu6Og62e9mzwzTSw3cx3sWClYYt2toohHuiqPtjeIHp3s-XSmCmISIWjzOaImJ9Prodv_ZnUyZoldFhplAdXnpuPzElculIAsmIRU2fjCGr3fSQEXSrMd5jLe8nnpXENXjmNNhVL-Y2CJBizmF68AJbtHY0s0F2oXbk4YgVkipO-sir4HbpJ5QDzVgVoR_0ZPZ2slE0ItIYNJzn9Cmw3eGFJkZT-Y4-tWem_9eChn2Ew9e3dud1PoH4_J1NaKI__f-vF6HevtrXVnc5j6mlInhJW**e952c5dcc46cc3d3698dd6fd1d4b161bbf8c797991a25424d9f8f18713f9c49d*piOZfd8qFyL_Ac8vqF-VDAyiRL7NVQhwbsTlc1chjfA; locGuestData=eyJpbnRlbnQiOiJTSElQUElORyIsInN0b3JlSW50ZW50IjoiUElDS1VQIiwibWVyZ2VGbGFnIjpmYWxzZSwicGlja3VwIjp7Im5vZGVJZCI6IjMwODEiLCJ0aW1lc3RhbXAiOjE2NDM1MzIyMzMyMzZ9LCJwb3N0YWxDb2RlIjp7InRpbWVzdGFtcCI6MTY0MzUzMjIzMzIzNiwiYmFzZSI6Ijk1ODI5In0sInZhbGlkYXRlS2V5IjoicHJvZDp2MjowNGQ4NDIzNS02OTk4LTQ3YmUtYTJmMi05MTA3MWMxMjJhNzcifQ%3D%3D; AID=wmlspartner%253D0%253Areflectorid%253D0000000000000000000000%253Alastupd%253D1643532291277; com.wm.reflector="reflectorid:0000000000000000000000@lastupd:1643532291277@firstcreate:1643532208806"; xptwg=931059659:5059901D814BE0:D1F97E:5F91AC9F:4FF50BAC:F12E0628:; bm_sv=A1989D55605AF57BB1876AA22994EDF8~t3gzpBSuSRX5QGQOWbSAIIw9RFr0NbwNcDvuILTihkyUC3L/u2/HnSMi+2t2Xo2OeApGjiae+svqz+G1buVgOH26z1AFI/LMVs3sVxRLfNyZlw5DERMGXjLHJlKeijXDdvoxkLTOGYbIeRz9I+2ZJ78RbNsiY1ooqPbL8UlH0H8=' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"b1460f26-9507-4962-9b88-f31feebb06f4","permission":"VIEW"}}}' \
   --compressed`
+  if [[ $list4 =~ "blocked" ]]
+  then
+    link4=`echo $list4 | jq '.redirectUrl' | sed 's/"//g'`
+    `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link4`
+  else
+      echo $list4 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+      echo $list4 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+      echo $list4 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+      echo $list4 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+      echo "4"
+      break
+  fi
+done
 
+while true
+do
 list5=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
@@ -160,7 +223,22 @@ list5=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'cookie: auth=MTAyOTYyMDE4SAFoijgoW%2BwVbVl1XCR8b1LY15K%2FPFkpB3eqeMWKxB8neaW%2BC1T2bnXu4hcsFbsL3drLRuHXPg%2F%2Fk1f6bSTYAzjhJuhJDynI%2BiazR%2F4BWP8KjDEgutZecVEIw2W%2FoD%2B4767wuZloTfhm7Wk2KcjygobRHThsmZk%2BGcqTfIab85SwxXtAz7E82fz1Znm95f9I31fMVdEFB01AdiHjLYIrVgSU6%2FFSyFHoBLkxTbgXNUoUMk70P8glgOEpLOprhDfMM%2FFHGZ2dCNmxWrdkwqEKrjMMRWvuyffZ1jFJ6FEiGMy5eEZMH6Z6ge%2BPBrf%2BmQ6MFTZUwhWEMIwdnlmj85fW3xwH4pTZFmNzWmz2pR5ixfLpB03mfjBSpaZQK7Euu6DERjQ3r9INNAjLhqBeT2p7%2FljKcklje4R5ioW78kDnDBU%3D; ACID=04d84235-6998-47be-a2f2-91071c122a77; hasACID=true; assortmentStoreId=3081; hasLocData=1; TB_Latency_Tracker_100=1; TB_Navigation_Preload_01=1; vtc=Wwbqv2nRsU2su70JwXaqZk; bstc=Wwbqv2nRsU2su70JwXaqZk; mobileweb=0; xpa=2PRJ6|9qHE4|DAwQd|KzWDJ|PwUCp|fD9ZO|mrxWN|pAAwd|s6z_-|vkFmv|yurXb; exp-ck=DAwQd2PwUCp1fD9ZO1vkFmv1yurXb1; TS01b0be75=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TS013ed49a=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TBV=7; tb_sw_supported=true; ak_bmsc=3C08BCE3E605BDA834111846614D317F~000000000000000000000000000000~YAAQBS83Fwcqtql+AQAAEVsnqg71Qntyg8gPY7pbbJQBYcohSHcwfonQ756IXPgno+Ni0rrSNFhBMPgWw2GLlJp3UJ1y6ZIc2n6Go+aNEYnELk1UotVxy/a06iVlWE3zlfFKyKMBSsJ1NpzvPSQ3O889ppxDP0XScxTXzKllwPwd5TF4EyE0YqKRkUK7vhdPJ/IQULjXOhy/mt3K9Nz2TPX/SQ5NEd7UmSoMIvASBmS+oyCdC4pdU/6tmKTtvgCGpQuVkw4eTjjK1U5VToGhYHb8RpHCfILCQl2DE0BqY0BJA1ZFEm2L+qgBXLevYmNVBKvp+RikFnP3hkCiupmaf18CSj5nf6ZQW+GLJP24KJZq/tNaWm0nypm0Ar9kv5++OhOoMRwBE+SqVYSFj3hszXQWE40b3ubmc3FZ/WowcIsu2j6597qI1xLzzQAslWQ2Y7ibhqk+94UzniGnWfoyXgD+XneJmoJ6OC11I0X7lt7de8iIID1m5LGiiEL3; pxcts=b524a810-81a8-11ec-b1c7-2f3bb0e953f5; _pxvid=b524530a-81a8-11ec-bb78-516742524d6f; _px3=1da26b5e368f3079da8896be506869586c02b5781ef543bbacf7de32bd38700a:GVI+qY/xG/RjSXWobZrYa+S+7RIUEYeuU6f0jbyqG90do1AuDIpg9MxHplnZddEHS5fwrCPCkG4XlHwpypIrcg==:1000:4Kw8A0Ai2P3eKFIlZlSGqzLq85QyDULwW9UYRHCqpGNZ6O9erOjjflqgaJ1CmpkIUQ7YBZ4H6+ZMJrUquXO3Rg0LkrGI9ffGDVBn029CJal/Ed4Rnq8SlQ2ZufgNRnulhDG2PshoBzA6rsfuOtHn5lOmLUAa+66V4dx/7/oSNZHgYC2K8G8F0rPXzfdTAAKXuIIdGv0h/ugS9jRdDeTRgw==; _pxde=91debf3db4ce52f57682bbd51ae3ee60287b66346b9afea0a84315e9916aadad:eyJ0aW1lc3RhbXAiOjE2NDM1MzIyMjkzODAsImZfa2IiOjAsImlwY19pZCI6W119; TB_SFOU-100=1; xpm=1%2B1643532208%2BWwbqv2nRsU2su70JwXaqZk~%2B0; tb-c30=scus-t1; locDataV3=Fe26.2**d78933d8d1735e992c15e31829880b5319f08fad3a9fa707e7e995b88d8a4553*l8MiNfVaU2yLfvmu9gRmuQ*FCthQUvf0zzmBl3XFuD0TQ37AB9eQit3FjmfxXMMDCNDrIbHYeqvMbe8e-vYcVAjZYxR1eoAlyfZfnq_nzKE3eY5zqAruPn5diTCnIlbLaPgedt5e1sN6r5LAbfxrfeRHlQMQf4fvoaMih8EDdTxFSmQIEaArflv7IaNQg0ta7Du3c_f7qkSrswH57gKmQwSxpeP6ea0Vll2tKAPpYdYIDn14Ld7e4PDcAePzyKhes3Uum1b7EQZpABfxM6fDDxyV3k14UB2KYMCCHFE-svPCbwFDaJMVIQiCZeF6sE1ke0OGwdTmyVAEoeK2E6ayxSPeMa3ei_dgGCyivZCQWRPLdjH92zJslh5_o8b_LejDZxSuMGCZt26qfoP-Rm6TD26fjhGQ1BXnfO-kudMdNwrOvPBaYikLj0fqmv4IHOi3Grb7deU60nY-DuhS5RdAfszNN-xzxnUeWqBqM5M58C95AFChk3ofCy7wCXVsW4MjEwb60qJBCji3nitX_bd1Y0bzeLUK_Hs7SotYbR3TO_Y9dk3TvklHz39LehQcJHvaTaBbLP6z4HNERg_Xk86pZqXcRj_Y4dkwkkx6gS1SSwoJKSg_pueLCSiZQnWYOoTzLRZ1QXf9rrEH1_o9VW5PCkDZkzl0DuIpNetiyzq0nPjaB2-T2eA_jF1b_gjMQ9ihujLXjSbmVcFvFOHaoI1VOj_o39ouXkiWD6jYuVvFm58hGK1-uawa69c-yly02GdhqyvFLHyydyvo7YnQV84tKutt5cF3F-5z4NzwGnbxsYCPTXIdSLvU4AYw6F5v7PdBu6Og62e9mzwzTSw3cx3sWClYYt2toohHuiqPtjeIHp3s-XSmCmISIWjzOaImJ9Prodv_ZnUyZoldFhplAdXnpuPzElculIAsmIRU2fjCGr3fSQEXSrMd5jLe8nnpXENXjmNNhVL-Y2CJBizmF68AJbtHY0s0F2oXbk4YgVkipO-sir4HbpJ5QDzVgVoR_0ZPZ2slE0ItIYNJzn9Cmw3eGFJkZT-Y4-tWem_9eChn2Ew9e3dud1PoH4_J1NaKI__f-vF6HevtrXVnc5j6mlInhJW**e952c5dcc46cc3d3698dd6fd1d4b161bbf8c797991a25424d9f8f18713f9c49d*piOZfd8qFyL_Ac8vqF-VDAyiRL7NVQhwbsTlc1chjfA; locGuestData=eyJpbnRlbnQiOiJTSElQUElORyIsInN0b3JlSW50ZW50IjoiUElDS1VQIiwibWVyZ2VGbGFnIjpmYWxzZSwicGlja3VwIjp7Im5vZGVJZCI6IjMwODEiLCJ0aW1lc3RhbXAiOjE2NDM1MzIyMzMyMzZ9LCJwb3N0YWxDb2RlIjp7InRpbWVzdGFtcCI6MTY0MzUzMjIzMzIzNiwiYmFzZSI6Ijk1ODI5In0sInZhbGlkYXRlS2V5IjoicHJvZDp2MjowNGQ4NDIzNS02OTk4LTQ3YmUtYTJmMi05MTA3MWMxMjJhNzcifQ%3D%3D; AID=wmlspartner%253D0%253Areflectorid%253D0000000000000000000000%253Alastupd%253D1643532291277; com.wm.reflector="reflectorid:0000000000000000000000@lastupd:1643532291277@firstcreate:1643532208806"; xptwg=931059659:5059901D814BE0:D1F97E:5F91AC9F:4FF50BAC:F12E0628:; bm_sv=A1989D55605AF57BB1876AA22994EDF8~t3gzpBSuSRX5QGQOWbSAIIw9RFr0NbwNcDvuILTihkyUC3L/u2/HnSMi+2t2Xo2OeApGjiae+svqz+G1buVgOH26z1AFI/LMVs3sVxRLfNyZlw5DERMGXjLHJlKeijXDdvoxkLTOGYbIeRz9I+2ZJ78RbNsiY1ooqPbL8UlH0H8=' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"227986fe-7a93-4510-8a4b-4860174aaa41","permission":"VIEW"}}}' \
   --compressed`
+  if [[ $list5 =~ "blocked" ]]
+  then
+    link5=`echo $list5 | jq '.redirectUrl' | sed 's/"//g'`
+    `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link5`
+  else
+    echo $list5 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+    echo $list5 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+    echo $list5 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+    echo $list5 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+    echo "5"
+    break
+  fi
+done
 
+while true
+do
 list6=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
@@ -191,7 +269,22 @@ list6=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'cookie: auth=MTAyOTYyMDE4SAFoijgoW%2BwVbVl1XCR8b1LY15K%2FPFkpB3eqeMWKxB8neaW%2BC1T2bnXu4hcsFbsL3drLRuHXPg%2F%2Fk1f6bSTYAzjhJuhJDynI%2BiazR%2F4BWP8KjDEgutZecVEIw2W%2FoD%2B4767wuZloTfhm7Wk2KcjygobRHThsmZk%2BGcqTfIab85SwxXtAz7E82fz1Znm95f9I31fMVdEFB01AdiHjLYIrVgSU6%2FFSyFHoBLkxTbgXNUoUMk70P8glgOEpLOprhDfMM%2FFHGZ2dCNmxWrdkwqEKrjMMRWvuyffZ1jFJ6FEiGMy5eEZMH6Z6ge%2BPBrf%2BmQ6MFTZUwhWEMIwdnlmj85fW3xwH4pTZFmNzWmz2pR5ixfLpB03mfjBSpaZQK7Euu6DERjQ3r9INNAjLhqBeT2p7%2FljKcklje4R5ioW78kDnDBU%3D; ACID=04d84235-6998-47be-a2f2-91071c122a77; hasACID=true; assortmentStoreId=3081; hasLocData=1; TB_Latency_Tracker_100=1; TB_Navigation_Preload_01=1; vtc=Wwbqv2nRsU2su70JwXaqZk; bstc=Wwbqv2nRsU2su70JwXaqZk; mobileweb=0; xpa=2PRJ6|9qHE4|DAwQd|KzWDJ|PwUCp|fD9ZO|mrxWN|pAAwd|s6z_-|vkFmv|yurXb; exp-ck=DAwQd2PwUCp1fD9ZO1vkFmv1yurXb1; TS01b0be75=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TS013ed49a=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TBV=7; tb_sw_supported=true; ak_bmsc=3C08BCE3E605BDA834111846614D317F~000000000000000000000000000000~YAAQBS83Fwcqtql+AQAAEVsnqg71Qntyg8gPY7pbbJQBYcohSHcwfonQ756IXPgno+Ni0rrSNFhBMPgWw2GLlJp3UJ1y6ZIc2n6Go+aNEYnELk1UotVxy/a06iVlWE3zlfFKyKMBSsJ1NpzvPSQ3O889ppxDP0XScxTXzKllwPwd5TF4EyE0YqKRkUK7vhdPJ/IQULjXOhy/mt3K9Nz2TPX/SQ5NEd7UmSoMIvASBmS+oyCdC4pdU/6tmKTtvgCGpQuVkw4eTjjK1U5VToGhYHb8RpHCfILCQl2DE0BqY0BJA1ZFEm2L+qgBXLevYmNVBKvp+RikFnP3hkCiupmaf18CSj5nf6ZQW+GLJP24KJZq/tNaWm0nypm0Ar9kv5++OhOoMRwBE+SqVYSFj3hszXQWE40b3ubmc3FZ/WowcIsu2j6597qI1xLzzQAslWQ2Y7ibhqk+94UzniGnWfoyXgD+XneJmoJ6OC11I0X7lt7de8iIID1m5LGiiEL3; pxcts=b524a810-81a8-11ec-b1c7-2f3bb0e953f5; _pxvid=b524530a-81a8-11ec-bb78-516742524d6f; _px3=1da26b5e368f3079da8896be506869586c02b5781ef543bbacf7de32bd38700a:GVI+qY/xG/RjSXWobZrYa+S+7RIUEYeuU6f0jbyqG90do1AuDIpg9MxHplnZddEHS5fwrCPCkG4XlHwpypIrcg==:1000:4Kw8A0Ai2P3eKFIlZlSGqzLq85QyDULwW9UYRHCqpGNZ6O9erOjjflqgaJ1CmpkIUQ7YBZ4H6+ZMJrUquXO3Rg0LkrGI9ffGDVBn029CJal/Ed4Rnq8SlQ2ZufgNRnulhDG2PshoBzA6rsfuOtHn5lOmLUAa+66V4dx/7/oSNZHgYC2K8G8F0rPXzfdTAAKXuIIdGv0h/ugS9jRdDeTRgw==; _pxde=91debf3db4ce52f57682bbd51ae3ee60287b66346b9afea0a84315e9916aadad:eyJ0aW1lc3RhbXAiOjE2NDM1MzIyMjkzODAsImZfa2IiOjAsImlwY19pZCI6W119; TB_SFOU-100=1; xpm=1%2B1643532208%2BWwbqv2nRsU2su70JwXaqZk~%2B0; tb-c30=scus-t1; locDataV3=Fe26.2**d78933d8d1735e992c15e31829880b5319f08fad3a9fa707e7e995b88d8a4553*l8MiNfVaU2yLfvmu9gRmuQ*FCthQUvf0zzmBl3XFuD0TQ37AB9eQit3FjmfxXMMDCNDrIbHYeqvMbe8e-vYcVAjZYxR1eoAlyfZfnq_nzKE3eY5zqAruPn5diTCnIlbLaPgedt5e1sN6r5LAbfxrfeRHlQMQf4fvoaMih8EDdTxFSmQIEaArflv7IaNQg0ta7Du3c_f7qkSrswH57gKmQwSxpeP6ea0Vll2tKAPpYdYIDn14Ld7e4PDcAePzyKhes3Uum1b7EQZpABfxM6fDDxyV3k14UB2KYMCCHFE-svPCbwFDaJMVIQiCZeF6sE1ke0OGwdTmyVAEoeK2E6ayxSPeMa3ei_dgGCyivZCQWRPLdjH92zJslh5_o8b_LejDZxSuMGCZt26qfoP-Rm6TD26fjhGQ1BXnfO-kudMdNwrOvPBaYikLj0fqmv4IHOi3Grb7deU60nY-DuhS5RdAfszNN-xzxnUeWqBqM5M58C95AFChk3ofCy7wCXVsW4MjEwb60qJBCji3nitX_bd1Y0bzeLUK_Hs7SotYbR3TO_Y9dk3TvklHz39LehQcJHvaTaBbLP6z4HNERg_Xk86pZqXcRj_Y4dkwkkx6gS1SSwoJKSg_pueLCSiZQnWYOoTzLRZ1QXf9rrEH1_o9VW5PCkDZkzl0DuIpNetiyzq0nPjaB2-T2eA_jF1b_gjMQ9ihujLXjSbmVcFvFOHaoI1VOj_o39ouXkiWD6jYuVvFm58hGK1-uawa69c-yly02GdhqyvFLHyydyvo7YnQV84tKutt5cF3F-5z4NzwGnbxsYCPTXIdSLvU4AYw6F5v7PdBu6Og62e9mzwzTSw3cx3sWClYYt2toohHuiqPtjeIHp3s-XSmCmISIWjzOaImJ9Prodv_ZnUyZoldFhplAdXnpuPzElculIAsmIRU2fjCGr3fSQEXSrMd5jLe8nnpXENXjmNNhVL-Y2CJBizmF68AJbtHY0s0F2oXbk4YgVkipO-sir4HbpJ5QDzVgVoR_0ZPZ2slE0ItIYNJzn9Cmw3eGFJkZT-Y4-tWem_9eChn2Ew9e3dud1PoH4_J1NaKI__f-vF6HevtrXVnc5j6mlInhJW**e952c5dcc46cc3d3698dd6fd1d4b161bbf8c797991a25424d9f8f18713f9c49d*piOZfd8qFyL_Ac8vqF-VDAyiRL7NVQhwbsTlc1chjfA; locGuestData=eyJpbnRlbnQiOiJTSElQUElORyIsInN0b3JlSW50ZW50IjoiUElDS1VQIiwibWVyZ2VGbGFnIjpmYWxzZSwicGlja3VwIjp7Im5vZGVJZCI6IjMwODEiLCJ0aW1lc3RhbXAiOjE2NDM1MzIyMzMyMzZ9LCJwb3N0YWxDb2RlIjp7InRpbWVzdGFtcCI6MTY0MzUzMjIzMzIzNiwiYmFzZSI6Ijk1ODI5In0sInZhbGlkYXRlS2V5IjoicHJvZDp2MjowNGQ4NDIzNS02OTk4LTQ3YmUtYTJmMi05MTA3MWMxMjJhNzcifQ%3D%3D; AID=wmlspartner%253D0%253Areflectorid%253D0000000000000000000000%253Alastupd%253D1643532291277; com.wm.reflector="reflectorid:0000000000000000000000@lastupd:1643532291277@firstcreate:1643532208806"; xptwg=931059659:5059901D814BE0:D1F97E:5F91AC9F:4FF50BAC:F12E0628:; bm_sv=A1989D55605AF57BB1876AA22994EDF8~t3gzpBSuSRX5QGQOWbSAIIw9RFr0NbwNcDvuILTihkyUC3L/u2/HnSMi+2t2Xo2OeApGjiae+svqz+G1buVgOH26z1AFI/LMVs3sVxRLfNyZlw5DERMGXjLHJlKeijXDdvoxkLTOGYbIeRz9I+2ZJ78RbNsiY1ooqPbL8UlH0H8=' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"d68191bf-e02b-4020-b1ae-6ed29acf7d2e","permission":"VIEW"}}}' \
   --compressed`
+  if [[ $list6 =~ "blocked" ]]
+  then
+    link6=`echo $list6 | jq '.redirectUrl' | sed 's/"//g'`
+    `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link6`
+  else
+    echo $list6 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+    echo $list6 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+    echo $list6 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+    echo $list6 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+    echo "6"
+    break
+  fi
+done
 
+while true
+do
 list7=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'authority: www.walmart.com' \
   -H 'sec-ch-ua: "Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
@@ -222,86 +315,20 @@ list7=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'cookie: auth=MTAyOTYyMDE4SAFoijgoW%2BwVbVl1XCR8b1LY15K%2FPFkpB3eqeMWKxB8neaW%2BC1T2bnXu4hcsFbsL3drLRuHXPg%2F%2Fk1f6bSTYAzjhJuhJDynI%2BiazR%2F4BWP8KjDEgutZecVEIw2W%2FoD%2B4767wuZloTfhm7Wk2KcjygobRHThsmZk%2BGcqTfIab85SwxXtAz7E82fz1Znm95f9I31fMVdEFB01AdiHjLYIrVgSU6%2FFSyFHoBLkxTbgXNUoUMk70P8glgOEpLOprhDfMM%2FFHGZ2dCNmxWrdkwqEKrjMMRWvuyffZ1jFJ6FEiGMy5eEZMH6Z6ge%2BPBrf%2BmQ6MFTZUwhWEMIwdnlmj85fW3xwH4pTZFmNzWmz2pR5ixfLpB03mfjBSpaZQK7Euu6DERjQ3r9INNAjLhqBeT2p7%2FljKcklje4R5ioW78kDnDBU%3D; ACID=04d84235-6998-47be-a2f2-91071c122a77; hasACID=true; assortmentStoreId=3081; hasLocData=1; TB_Latency_Tracker_100=1; TB_Navigation_Preload_01=1; vtc=Wwbqv2nRsU2su70JwXaqZk; bstc=Wwbqv2nRsU2su70JwXaqZk; mobileweb=0; xpa=2PRJ6|9qHE4|DAwQd|KzWDJ|PwUCp|fD9ZO|mrxWN|pAAwd|s6z_-|vkFmv|yurXb; exp-ck=DAwQd2PwUCp1fD9ZO1vkFmv1yurXb1; TS01b0be75=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TS013ed49a=01538efd7c6e4f5583d7d9fab7f97ce95db0a921ecad5afe719e9432b5beabf8d846a3ffd55efbabfae6b079855b9acab3f92af4ad; TBV=7; tb_sw_supported=true; ak_bmsc=3C08BCE3E605BDA834111846614D317F~000000000000000000000000000000~YAAQBS83Fwcqtql+AQAAEVsnqg71Qntyg8gPY7pbbJQBYcohSHcwfonQ756IXPgno+Ni0rrSNFhBMPgWw2GLlJp3UJ1y6ZIc2n6Go+aNEYnELk1UotVxy/a06iVlWE3zlfFKyKMBSsJ1NpzvPSQ3O889ppxDP0XScxTXzKllwPwd5TF4EyE0YqKRkUK7vhdPJ/IQULjXOhy/mt3K9Nz2TPX/SQ5NEd7UmSoMIvASBmS+oyCdC4pdU/6tmKTtvgCGpQuVkw4eTjjK1U5VToGhYHb8RpHCfILCQl2DE0BqY0BJA1ZFEm2L+qgBXLevYmNVBKvp+RikFnP3hkCiupmaf18CSj5nf6ZQW+GLJP24KJZq/tNaWm0nypm0Ar9kv5++OhOoMRwBE+SqVYSFj3hszXQWE40b3ubmc3FZ/WowcIsu2j6597qI1xLzzQAslWQ2Y7ibhqk+94UzniGnWfoyXgD+XneJmoJ6OC11I0X7lt7de8iIID1m5LGiiEL3; pxcts=b524a810-81a8-11ec-b1c7-2f3bb0e953f5; _pxvid=b524530a-81a8-11ec-bb78-516742524d6f; _px3=1da26b5e368f3079da8896be506869586c02b5781ef543bbacf7de32bd38700a:GVI+qY/xG/RjSXWobZrYa+S+7RIUEYeuU6f0jbyqG90do1AuDIpg9MxHplnZddEHS5fwrCPCkG4XlHwpypIrcg==:1000:4Kw8A0Ai2P3eKFIlZlSGqzLq85QyDULwW9UYRHCqpGNZ6O9erOjjflqgaJ1CmpkIUQ7YBZ4H6+ZMJrUquXO3Rg0LkrGI9ffGDVBn029CJal/Ed4Rnq8SlQ2ZufgNRnulhDG2PshoBzA6rsfuOtHn5lOmLUAa+66V4dx/7/oSNZHgYC2K8G8F0rPXzfdTAAKXuIIdGv0h/ugS9jRdDeTRgw==; _pxde=91debf3db4ce52f57682bbd51ae3ee60287b66346b9afea0a84315e9916aadad:eyJ0aW1lc3RhbXAiOjE2NDM1MzIyMjkzODAsImZfa2IiOjAsImlwY19pZCI6W119; TB_SFOU-100=1; xpm=1%2B1643532208%2BWwbqv2nRsU2su70JwXaqZk~%2B0; tb-c30=scus-t1; locDataV3=Fe26.2**d78933d8d1735e992c15e31829880b5319f08fad3a9fa707e7e995b88d8a4553*l8MiNfVaU2yLfvmu9gRmuQ*FCthQUvf0zzmBl3XFuD0TQ37AB9eQit3FjmfxXMMDCNDrIbHYeqvMbe8e-vYcVAjZYxR1eoAlyfZfnq_nzKE3eY5zqAruPn5diTCnIlbLaPgedt5e1sN6r5LAbfxrfeRHlQMQf4fvoaMih8EDdTxFSmQIEaArflv7IaNQg0ta7Du3c_f7qkSrswH57gKmQwSxpeP6ea0Vll2tKAPpYdYIDn14Ld7e4PDcAePzyKhes3Uum1b7EQZpABfxM6fDDxyV3k14UB2KYMCCHFE-svPCbwFDaJMVIQiCZeF6sE1ke0OGwdTmyVAEoeK2E6ayxSPeMa3ei_dgGCyivZCQWRPLdjH92zJslh5_o8b_LejDZxSuMGCZt26qfoP-Rm6TD26fjhGQ1BXnfO-kudMdNwrOvPBaYikLj0fqmv4IHOi3Grb7deU60nY-DuhS5RdAfszNN-xzxnUeWqBqM5M58C95AFChk3ofCy7wCXVsW4MjEwb60qJBCji3nitX_bd1Y0bzeLUK_Hs7SotYbR3TO_Y9dk3TvklHz39LehQcJHvaTaBbLP6z4HNERg_Xk86pZqXcRj_Y4dkwkkx6gS1SSwoJKSg_pueLCSiZQnWYOoTzLRZ1QXf9rrEH1_o9VW5PCkDZkzl0DuIpNetiyzq0nPjaB2-T2eA_jF1b_gjMQ9ihujLXjSbmVcFvFOHaoI1VOj_o39ouXkiWD6jYuVvFm58hGK1-uawa69c-yly02GdhqyvFLHyydyvo7YnQV84tKutt5cF3F-5z4NzwGnbxsYCPTXIdSLvU4AYw6F5v7PdBu6Og62e9mzwzTSw3cx3sWClYYt2toohHuiqPtjeIHp3s-XSmCmISIWjzOaImJ9Prodv_ZnUyZoldFhplAdXnpuPzElculIAsmIRU2fjCGr3fSQEXSrMd5jLe8nnpXENXjmNNhVL-Y2CJBizmF68AJbtHY0s0F2oXbk4YgVkipO-sir4HbpJ5QDzVgVoR_0ZPZ2slE0ItIYNJzn9Cmw3eGFJkZT-Y4-tWem_9eChn2Ew9e3dud1PoH4_J1NaKI__f-vF6HevtrXVnc5j6mlInhJW**e952c5dcc46cc3d3698dd6fd1d4b161bbf8c797991a25424d9f8f18713f9c49d*piOZfd8qFyL_Ac8vqF-VDAyiRL7NVQhwbsTlc1chjfA; locGuestData=eyJpbnRlbnQiOiJTSElQUElORyIsInN0b3JlSW50ZW50IjoiUElDS1VQIiwibWVyZ2VGbGFnIjpmYWxzZSwicGlja3VwIjp7Im5vZGVJZCI6IjMwODEiLCJ0aW1lc3RhbXAiOjE2NDM1MzIyMzMyMzZ9LCJwb3N0YWxDb2RlIjp7InRpbWVzdGFtcCI6MTY0MzUzMjIzMzIzNiwiYmFzZSI6Ijk1ODI5In0sInZhbGlkYXRlS2V5IjoicHJvZDp2MjowNGQ4NDIzNS02OTk4LTQ3YmUtYTJmMi05MTA3MWMxMjJhNzcifQ%3D%3D; AID=wmlspartner%253D0%253Areflectorid%253D0000000000000000000000%253Alastupd%253D1643532291277; com.wm.reflector="reflectorid:0000000000000000000000@lastupd:1643532291277@firstcreate:1643532208806"; xptwg=931059659:5059901D814BE0:D1F97E:5F91AC9F:4FF50BAC:F12E0628:; bm_sv=A1989D55605AF57BB1876AA22994EDF8~t3gzpBSuSRX5QGQOWbSAIIw9RFr0NbwNcDvuILTihkyUC3L/u2/HnSMi+2t2Xo2OeApGjiae+svqz+G1buVgOH26z1AFI/LMVs3sVxRLfNyZlw5DERMGXjLHJlKeijXDdvoxkLTOGYbIeRz9I+2ZJ78RbNsiY1ooqPbL8UlH0H8=' \
   --data-raw '{"query":"query shoppingListTotal($input:ListTotalInput){shoppingListTotal(input:$input){products{priceInfo{currentPrice{price}},priceInfo{wasPrice{price}},name,usItemId,availabilityStatus}}}","variables":{"input":{"id":"7772d6eb-e8d7-46b9-b08a-0d6bbebc19d9","permission":"VIEW"}}}' \
   --compressed`
+  if [[ $list7 =~ "blocked" ]]
+  then
+    link7=`echo $list7 | jq '.redirectUrl' | sed 's/"//g'`
+    `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link7`
+  else
+    echo $list7 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+    echo $list7 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+    echo $list7 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+    echo $list7 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+    echo "7"
+    break
+  fi
+done
 
-if [[ $list1 =~ "blocked" ]]
-then
-  link=`echo $list1 | jq '.redirectUrl' | sed 's/"//g'`
-  echo 'https://walmart.com'$link
-  exit
-fi
-if [[ $list2 =~ "blocked" ]]
-then
-  link=`echo $list2 | jq '.redirectUrl' | sed 's/"//g'`
-  echo 'https://walmart.com'$link
-  exit
-fi
-if [[ $list3 =~ "blocked" ]]
-then
-  link=`echo $list3 | jq '.redirectUrl' | sed 's/"//g'`
-  echo 'https://walmart.com'$link
-  exit
-fi
-if [[ $list4 =~ "blocked" ]]
-then
-  link=`echo $list4 | jq '.redirectUrl' | sed 's/"//g'`
-  echo 'https://walmart.com'$link
-  exit
-fi
-if [[ $list5 =~ "blocked" ]]
-then
-  link=`echo $list5 | jq '.redirectUrl' | sed 's/"//g'`
-  echo 'https://walmart.com'$link
-  exit
-fi
-if [[ $list6 =~ "blocked" ]]
-then
-  link=`echo $list6 | jq '.redirectUrl' | sed 's/"//g'`
-  echo 'https://walmart.com'$link
-  exit
-fi
-if [[ $list7 =~ "blocked" ]]
-then
-  link=`echo $list7 | jq '.redirectUrl' | sed 's/"//g'`
-  echo 'https://walmart.com'$link
-  exit
-fi
-
-# echo $output | jq '.data.shoppingListTotal.products[].imageInfo.thumbnailUrl' | sed 's/\,//g' > ebay-thumbnailUrl
-# echo $output | jq '.data.shoppingListTotal.products[].name' | sed 's/\,//g' > ebay-name
-echo $list1 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-echo $list1 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
-
-echo $list2 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
-echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-echo $list2 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-echo $list2 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
-
-echo $list3 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
-echo $list3 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-echo $list3 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-echo $list3 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
-
-echo $list4 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
-echo $list4 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-echo $list4 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-echo $list4 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
-
-echo $list5 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
-echo $list5 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-echo $list5 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-echo $list5 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
-
-echo $list6 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
-echo $list6 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-echo $list6 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-echo $list6 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
-
-echo $list7 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
-echo $list7 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-echo $list7 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-echo $list7 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
 
 git add -A .
 git commit -m --allow-empty
