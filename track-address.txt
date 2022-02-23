@@ -43,3 +43,5 @@ Khác Item
 "4164 Oakridge Street, Rocklin, CA 92065"
 "vvs.124 Apache Gold Loop, Santa Teresa, NM 88008"
 "433 W Broadway, New York, NY 10012"
+"351 Ardilla Ave, La Puente, CA 91746"
+"15809 W 65th Pl, Arvada, CO 80007"

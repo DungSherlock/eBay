@@ -43,3 +43,5 @@ Khác Item
 "Arturo Blanco"
 "Victor Trevizo"
 "Igal Maoz"
+"Jiayi Zhou"
+"Stephanie Blue"
