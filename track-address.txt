@@ -52,4 +52,5 @@ Khác Item
 "3731r W 4040 S, West Valley City, UT 84120"
 "7630 Fishel Dr N, 000, Dublin, OH 43016"
 "312r Epworth Ave, Wilmore, KY 40390"
+"947 NE Wiest Way, Bend, OR 97701"
 "20 Avenue D, Apt 11H, New York, NY 10009"
