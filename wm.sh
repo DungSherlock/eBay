@@ -274,10 +274,10 @@ list6=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
     link6=`echo $list6 | jq '.redirectUrl' | sed 's/"//g'`
     `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link6`
   else
-    echo $list6 | jq '.data.shoppingListTotal.products[].usItemId'
-    echo $list6 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price'
-    echo $list6 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g'
-    echo $list6 | jq '.data.shoppingListTotal.products[].availabilityStatus'
+    echo $list6 | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+    echo $list6 | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+    echo $list6 | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+    echo $list6 | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
     echo "6"
     break
   fi
