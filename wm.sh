@@ -237,8 +237,8 @@ list5=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   fi
 done
 
-rm "$list5"
-rm "$link5"
+rm -f $list5
+rm -f $link5
 
 while true
 do
