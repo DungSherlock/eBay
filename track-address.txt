@@ -6,8 +6,6 @@
 "3808 Frankfort Ave stenone, El Paso, TX 79930"
 "124 Apache Gold Loop, Santa Teresa, NM 88008"
 "433 West Broadway, New York, NY 10012"
-"151 Private Road 4913, Boyd, TX 76023"
-"625 Cumberland Pointe Cir, Mechanicsburg, PA 17055"
 "7501 142nd Ave N, Lot 524, Largo, FL 33771"
 "430 E 134th St, Apt 1, Bronx, NY 10454"
 Khác Item
