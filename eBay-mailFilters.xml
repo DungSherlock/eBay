@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+        <entry>
+                <apps:property name='from' value='ebay.com'/>
+                <apps:property name='to' value='DanielMontgomery1087@outlook.com'/>
+                <apps:property name='label' value='148.163.10.59:56868'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='from' value='ebay.com'/>
+                <apps:property name='to' value='CarolynSuter13106@outlook.com'/>
+                <apps:property name='label' value='148.163.66.28:56868'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+</feed>
