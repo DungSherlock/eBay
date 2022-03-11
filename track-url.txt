@@ -1,20 +1,13 @@
 "https://www.walmart.com/tracking?order_id=5870275442894&tracking_id=1Z61F3120393946279"
 "https://www.walmart.com/tracking?order_id=9870420392361&tracking_id=550581462689"
-"https://www.walmart.com/tracking?order_id=4870635954861&tracking_id=270500942290"
 "https://www.walmart.com/tracking?order_id=5870650419838&tracking_id=270530047202"
-
-
-Khác Item
 
 
 "https://www.walmart.com/tracking?order_id=5870699166230&tracking_id=270655307291"
 
 
-
-
 "https://www.walmart.com/tracking?order_id=5870699160023&tracking_id=270654383036"
 "https://www.walmart.com/tracking?order_id=5870686412911&tracking_id=545467195275"
-"https://www.walmart.com/tracking?order_id=5870661880129&tracking_id=270537671929"
 "https://www.walmart.com/tracking?order_id=5870661703753&tracking_id=1ZE272720393726288"
 "https://www.walmart.com/tracking?order_id=5870683265533&tracking_id=270625229740"
 
@@ -27,12 +20,12 @@ Khác Item
 "https://www.walmart.com/tracking?order_id=5870699045687&tracking_id=571678279786"
 "https://www.walmart.com/tracking?order_id=5870698960594&tracking_id=560891904922&package_id=00000089050210963920"
 "https://www.walmart.com/tracking?order_id=5870674132061&tracking_id=555128288525"
-"https://www.walmart.com/tracking?order_id=5870686509284&tracking_id=568082994465&package_id=00000074220257586552"
 "https://www.walmart.com/tracking?order_id=5870699063608&tracking_id=1Z3X66W40319355317"
 "https://www.walmart.com/tracking?order_id=6870701680595&tracking_id=270701004264"
 "https://www.walmart.com/tracking?order_id=6870701766040&tracking_id=571678287887"
 "https://www.walmart.com/tracking?order_id=4870659172312&tracking_id=562091894208&package_id=00000069550078779528"
 "https://www.walmart.com/tracking?order_id=4870677069396&tracking_id=270582569436"
+
 
 "https://www.walmart.com/tracking?order_id=6870701460850&tracking_id=569893437883&package_id=55529200884303229023"
 "https://www.walmart.com/tracking?order_id=6870700828471&tracking_id=561537774431&package_id=00000089050211034032"
@@ -41,7 +34,6 @@ Khác Item
 "https://www.walmart.com/tracking?order_id=5870686463375&tracking_id=568665778191&package_id=00022082400842269652"
 "https://www.walmart.com/tracking?order_id=6870701452529&tracking_id=563253667379&package_id=00000070740200238399"
 "https://www.walmart.com/tracking?order_id=5870686501069&tracking_id=270621684337"
-"https://www.walmart.com/tracking?order_id=5870674194939&tracking_id=548398483150&package_id=00000716490768191500"
 "https://www.walmart.com/tracking?order_id=5870686508382&tracking_id=270632135799"
 
 "https://www.walmart.com/tracking?order_id=6870701541685&tracking_id=1ZR29Y510399730923"
