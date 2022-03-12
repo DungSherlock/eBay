@@ -1,8 +1,3 @@
-let response = fetch("https://www.amazon.com/dp/B078YQTD2H");
-fetch(url)
-    .then(response => {
-        // handle the response
-    })
-    .catch(error => {
-        // handle the error
-    });
+fetch('https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch')
+  .then(response => response.json())
+  .then(data => console.log(data));
