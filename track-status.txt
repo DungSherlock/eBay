@@ -35,7 +35,7 @@ Sai info
 "Arrives today"
 "Arrives by Wed, Mar 16"
 "Arrives by Mon, Mar 21"
-"Arrives by Wed, Mar 16"
+"Arrives today"
 "Arrives by Tue, Mar 15"
 "Arrives by Wed, Mar 16"
 "Arrives by Tue, Mar 22"
@@ -43,7 +43,7 @@ Sai info
 "Arrives by Tue, Mar 15"
 "Arrives by Wed, Mar 23"
 "Arrives by Tue, Mar 15"
-"Cancellation requested on Mar 13"
+"Arrives by Thu, Mar 17"
 "Arrives by Thu, Mar 17"
 Sai info
 "Arrives by Mon, Mar 21"
