@@ -51,3 +51,5 @@ Sai info
 "Delivered to 116 Ward St #my friend ( Jeremy Volk ), Nekoosa, WI 54457"
 Khác Item
 "Delivery to South 3rd Street #best friend (P Shoem?ker ), Logansport, LA 71049"
+"Delivery to 422 HWY 414 E #my friend (John Walker), Mountain View, WY 82939"
+"Delivery to 1017 S Martin St #my friend (Rene Montealvo), Warren, AR 71671"

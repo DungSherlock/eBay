@@ -3,7 +3,7 @@
 
 "https://www.walmart.com/tracking?order_id=5870650419838&tracking_id=270530047202"
 "https://www.walmart.com/tracking?order_id=5870699166230&tracking_id=270655307291"
-
+"https://www.walmart.com/tracking?order_id=6870714588598&tracking_id=270762681054"
 "https://www.walmart.com/tracking?order_id=5870699160023&tracking_id=270654383036"
 "https://www.walmart.com/tracking?order_id=5870686412911&tracking_id=545467195275"
 "https://www.walmart.com/tracking?order_id=5870683265533&tracking_id=270625229740"
@@ -38,7 +38,7 @@ Sai info
 
 
 "https://www.walmart.com/tracking?order_id=6870726076628&tracking_id=927872811847&package_id=00000070490155224885"
-
+"https://www.walmart.com/tracking?order_id=6870725949046&tracking_id=270785110405"
 "https://www.walmart.com/tracking?order_id=6870738347684&tracking_id=C12114904107432&package_id=00000040270021209128"
 "https://www.walmart.com/tracking?order_id=6870726044308&tracking_id=270787342946"
 
@@ -51,3 +51,5 @@ Sai info
 "https://www.walmart.com/tracking?order_id=6870738624339&tracking_id=523081005147&package_id=00000070740200374011"
 Khác Item
 "https://www.walmart.com/tracking?order_id=6870737701903&tracking_id=1ZY558360397907861"
+
+
