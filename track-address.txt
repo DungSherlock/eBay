@@ -10,16 +10,14 @@
 "906 Perry Lake Dr, Fort Wayne, IN 46845"
 "55 Valley Rd, Toccoa, GA 30577"
 "408 E 9th St, Grand Island, NE 68801"
-Khác Item
+"Ship to my home 24231 Weldon Dr, Eustis, FL 32736"
 "109 Warren Dr, Altoona, AL 35952"
-Khác Item
 "222 Old Tacora Hills Rd, Clinton, TN 37716"
 "16150 Tish-A-Tang Rd, Spc 7, Lower Lake, CA 95457"
 "home delivery, 10529.Gera.Rd, King George, VA 22485"
 "700 Washington St SW, Blacksburg, VA 24060"
 "1200 N Mariposa Rd, Nogales, AZ 85621"
 "5493 State Park Rd, Penfield, PA 15849"
-"11639 S Sacramento Dr, Merrionette Park, IL 60803"
 "Ship to me 2140 Cristina Way, Brentwood, CA 94513"
 "402 Willis Cove Rd, Canton, NC 28716"
 "25 Hemlock Cir, Babbitt, MN 55706"
@@ -33,16 +31,17 @@ Sai info
 "W10357 Liberty Hall Rd, New London, WI 54961"
 "Ship to me 5692 Newman Ave, Paradise, CA 95969"
 "Ship to me 433 W Broadway, New York, NY 10012"
+"1407 N Lois Ave, Tampa, FL 33607"
 "102 Bradburn Ct, Frankfort, KY 40601"
 "4850 Trudy Ln, Hamilton, OH 45013"
 "13174 Oberlin Ave, Victorville, CA 92392"
-Sai info
+"119 Columbia Ave, Nutley, NJ 07110"
 "home delivery, 5503 Rixeyville Rd# my friend (Nancy Kolcun ), Rixeyville, VA 22737"
 "514 S 8th St, Ironton, OH 45638"
 "2107 Spraul Market Dr, Richmond, TX 77469"
 "38849 Calistoga St, Palmdale, CA 93551"
 "1507 Crestview Dr, Vermillion, SD 57069"
-Khác Item
+"delivered to 943 E St #mt friend (Dick Garrison ), Washougal, WA 98671"
 "7365 West Mount Drive# my father Travis Baker, Rocky Mount, NC 27803"
 "Delivery to home 3081 Floras Del Sol St, Santa Fe, NM 87507"
 "Delivery to 8528 Seaman Rd #my friend (steve payne), Gasport, NY 14067"
@@ -51,3 +50,4 @@ Sai info
 "Delivery to home 780 S 3rd St, Marine City, MI 48039"
 "Delivered to 116 Ward St #my friend ( Jeremy Volk ), Nekoosa, WI 54457"
 Khác Item
+"Delivery to South 3rd Street #best friend (P Shoem?ker ), Logansport, LA 71049"
