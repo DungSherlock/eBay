@@ -1,10 +1,10 @@
 #!/bin/bash
-curl=`curl 'https://www.amazon.com/Weber-Original-Kettle-Charcoal-Grill/dp/B00004RALW' \
-  # -H 'Accept-Encoding: gzip,deflate' \
+curl=`curl 'https://www.amazon.com/Blackstone-GRIDDLE-TABLE-TOP-19/dp/B07NLM5ZH9/ref=sr_1_4?crid=3OMUSATZQ8OSW&keywords=Blackstone+2-Burner+22%27%27+Tabletop+Griddle+with+Stainless+Steel+Front&qid=1646368476&sprefix=weber+original+kettle+18+black+charcoal+grill%2Caps%2C561&sr=8-4' \
+  -H 'Accept-Encoding: gzip,deflate' \
   -H 'authority: www.amazon.com' \
   -H 'cache-control: max-age=0' \
   -H 'rtt: 0' \
-  -H 'downlink: 10' \
+  -H 'downlink: 1' \
   -H 'ect: 4g' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Microsoft Edge";v="99"' \
   -H 'sec-ch-ua-mobile: ?0' \
@@ -18,7 +18,6 @@ curl=`curl 'https://www.amazon.com/Weber-Original-Kettle-Charcoal-Grill/dp/B0000
   -H 'sec-fetch-user: ?1' \
   -H 'sec-fetch-dest: document' \
   -H 'accept-language: vi' \
-  -H 'cookie: session-id=145-3440277-5257826; session-id-time=2082787201l; i18n-prefs=USD; ubid-main=135-0351932-9684740; session-token=CPuhT8lv2PaQaB8I0y9OoB7wlaGVQlPK8bJGCPMEPj96yNhBoN200+wt3Rtcg9vGUlKtjkG/ApfPxf+fSFLX5EwAGqKzWAFeczfVLY4C0wquhVlGu5mbsjXZrexd9mwa+qKVtVNuzRbxzNrV1485aPk82IA/wHtwEDCjG344hFwvJQH/QJ38+pE2F38UT6Ze; csm-hit=tb:s-NY3W9BBZ0H56C50SN3QQ|1647166433569&t:1647166438458&adb:adblk_no' \
   --compressed`
   
 echo $curl > /tmp/amz.txt
