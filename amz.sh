@@ -21,6 +21,6 @@ curl=`curl 'https://www.amazon.com/Weber-Original-Kettle-Charcoal-Grill/dp/B0000
   -H 'cookie: session-id=145-3440277-5257826; session-id-time=2082787201l; i18n-prefs=USD; ubid-main=135-0351932-9684740; session-token=CPuhT8lv2PaQaB8I0y9OoB7wlaGVQlPK8bJGCPMEPj96yNhBoN200+wt3Rtcg9vGUlKtjkG/ApfPxf+fSFLX5EwAGqKzWAFeczfVLY4C0wquhVlGu5mbsjXZrexd9mwa+qKVtVNuzRbxzNrV1485aPk82IA/wHtwEDCjG344hFwvJQH/QJ38+pE2F38UT6Ze; csm-hit=tb:s-NY3W9BBZ0H56C50SN3QQ|1647166433569&t:1647166438458&adb:adblk_no' \
   --compressed`
   
+echo $curl > /tmp/amz.txt
 echo $curl | grep -Eo ">[$].*?<" | head -n 1 | sed 's/[^0-9.]//g'
 # echo $curl | grep -Eo "dp\/.*?\/ref" | sed -E 's/dp\/|\/ref//g'
-# echo $curl > /tmp/amz-all.txt

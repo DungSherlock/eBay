@@ -1,10 +1,7 @@
 #!/bin/bash
-curl 'https://www.amazon.com/Muscle-Rack-UR361860PB4P-SV-Adjustable-Capacity/dp/B01HQ3YYZA?th=1' \
-  -H 'authority: www.amazon.com' \
+curl=`curl -L 'https://www.walmart.com/ip/140070421' \
+  -H 'authority: www.walmart.com' \
   -H 'cache-control: max-age=0' \
-  -H 'rtt: 0' \
-  -H 'downlink: 10' \
-  -H 'ect: 4g' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Microsoft Edge";v="99"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "macOS"' \
@@ -12,11 +9,13 @@ curl 'https://www.amazon.com/Muscle-Rack-UR361860PB4P-SV-Adjustable-Capacity/dp/
   -H 'upgrade-insecure-requests: 1' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+  -H 'service-worker-navigation-preload: true' \
   -H 'sec-fetch-site: same-origin' \
   -H 'sec-fetch-mode: navigate' \
   -H 'sec-fetch-user: ?1' \
   -H 'sec-fetch-dest: document' \
-  -H 'referer: https://docs.google.com/' \
-  -H 'accept-language: vi' \
-  -H 'cookie: aws-ubid-main=227-6411730-5048671; ubid-main=134-9169049-1060248; remember-account=false; awsc-color-theme=light; aws-userInfo-signed=eyJ0eXAiOiJKV1MiLCJrZXlSZWdpb24iOiJ1cy1lYXN0LTEiLCJhbGciOiJFUzM4NCIsImtpZCI6IjkxM2YxMWFjLTVlNGQtNGEzNC1hMmIwLTM1NjcxNTBkMWY1MCJ9.eyJzdWIiOiIiLCJzaWduaW5UeXBlIjoiUFVCTElDIiwiaXNzIjoiaHR0cDpcL1wvc2lnbmluLmF3cy5hbWF6b24uY29tXC9zaWduaW4iLCJrZXliYXNlIjoiM0ZLSlB6K3ZENU5VS3FyXC9nNTVpaUZudVl0cFl3dzFORXRNaGlhRXFmdjA9IiwiYXJuIjoiYXJuOmF3czppYW06OjcwNzA2MjM2MjkzMzpyb290IiwidXNlcm5hbWUiOiJEdW5nU2hlcmxvY2sifQ.sYdydkvT9qLeeubMnB1rQvTBfU3GDC4Jyu3agHPLSLDTMQ8yP4s0BN-wejN4v9J1MBzvSYJujqII6i9IlIChch_4_CGSHh85ML1YGpJZtfHfwMtmgUmd7UcCufpHPCV5; aws-userInfo=%7B%22arn%22%3A%22arn%3Aaws%3Aiam%3A%3A707062362933%3Aroot%22%2C%22alias%22%3A%22%22%2C%22username%22%3A%22DungSherlock%22%2C%22keybase%22%3A%223FKJPz%2BvD5NUKqr%2Fg55iiFnuYtpYww1NEtMhiaEqfv0%5Cu003d%22%2C%22issuer%22%3A%22http%3A%2F%2Fsignin.aws.amazon.com%2Fsignin%22%2C%22signinType%22%3A%22PUBLIC%22%7D; aws-target-visitor-id=1637691228210-502017; aws-target-data=%7B%22support%22%3A%221%22%7D; regStatus=pre-register; session-id=133-3333460-3646866; at-main=Atza|IwEBIBxNv3UbXQwLsDlM91oNGbWxLKjC0i7bytPOVMy0tk9RZSnsCpKdsWmWGAlB1OqTp0ACFFhCyrj0JBqTrlYnh1iRFEIMlIKPW-AJI2-1p_d0itNe67i0LeRF5jBiMjQsGVHIJKuXWiDcM6WYcR2su1J40YSl5UQ4-xG81AExPstKchB31etmOFEd5wEJimmP2aulaER2eTEkTA5xGb4aLI7s; sess-at-main="GdR4c/i4fnieXG32Sgz9oHQAcGhdnOsUTC3iiBKQmb0="; sst-main=Sst1|PQEoZhW8EFc6gZdOnDsWxbrfCZRudzU-ZfVY2LlQVI-c-22VjqPdYvoshp6i4YGLH-kySgpNNdamJA3Grnxe8o9YI7Jhkv-ULEW2_i4aC1W_Eit66XYFEg5FIT7WumBEuxgB9UtRGk9dxDtG7CL3iQTXnRvJXm-2dU4fth__lsZZrqBWBM7MOH0_3C_Ry4rPoCtDcYtFv470tbY_TMrf21-BVCA48DDxlXKXZk3WcWYEOKYsMc9A0Q-IIYGGy5fOa30Qv8Jshu_HcjLRbRmvdKoAlJSOVjdPuw1Ge38U6ZHWAxI; lc-main=en_US; i18n-prefs=USD; AMCV_7742037254C95E840A4C98A6%40AdobeOrg=1585540135%7CMCIDTS%7C19031%7CMCMID%7C40905678644671995114553388185229332590%7CMCAID%7CNONE%7CMCOPTOUT-1644226043s%7CNONE%7CvVersion%7C4.4.0; session-id-time=2082787201l; s_vnum=2070886772769%26vn%3D3; s_nr=1645005910724-Repeat; s_dslv=1645005910727; skin=noskin; av-timezone=Asia/Saigon; x-main=68zu5hNTVm@MPMLhxRoSgbfM1RmyZxF0DbY@?0hcCIFiaC@fkplKao9PxL1rCqJH; session-token="5kak8pKlqYb3hzbrGSbUnQDpL7Y5kq0Lcwy8GIY3lqNlXsckfIiFPGk30mWkgWcbT7KmfltUAiI7Pv1M/IkdaZtP+/OczufZd8ReD/v0GyvkPhQtbeNkgn3SJlyrBm5iJcJhyd084xXeKwloRYXK4Kjttj+LwGGMhi5jIDMHpm82hcns22ObKH0e1Qjw5z53W38z8gtE7Uo9cP13mq4iYw=="; csm-hit=tb:KP9N5S3KGM5WZK7KXCJW+s-KP9N5S3KGM5WZK7KXCJW|1647160021893&t:1647160021893&adb:adblk_no' \
-  --compressed | grep -Eo ">[$].*?<" | sed 's/[^0-9.]//g'
+  --compressed`
+
+# echo $curl > /tmp/test.txt
+echo $curl | grep -Eo "price\">.*?<" | head -n 1 | sed 's/[^0-9.]//g'
+echo $curl | grep -Eo " gray\">.*?<" | head -n 1 | sed 's/[^0-9.]//g'
