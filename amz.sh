@@ -1,5 +1,5 @@
 #!/bin/bash
-curl=`curl 'https://www.amazon.com/Blackstone-GRIDDLE-TABLE-TOP-19/dp/B07NLM5ZH9/ref=sr_1_4?crid=3OMUSATZQ8OSW&keywords=Blackstone+2-Burner+22%27%27+Tabletop+Griddle+with+Stainless+Steel+Front&qid=1646368476&sprefix=weber+original+kettle+18+black+charcoal+grill%2Caps%2C561&sr=8-4' \
+curl=`curl 'https://www.amazon.com/gp/product/B08HZ3W36X/ref=ewc_pr_img_1?smid=AJE1XFPPGWEBV&psc=1' \
   -H 'Accept-Encoding: gzip,deflate' \
   -H 'authority: www.amazon.com' \
   -H 'cache-control: max-age=0' \
