@@ -81,3 +81,6 @@
 "Delivered today at 11:48am"
 "Arrives by Sun, Mar 20"
 "Delivered today at 10:33am"
+"Arrives by Fri, Mar 25"
+"Canceled today"
+"Canceled today"
