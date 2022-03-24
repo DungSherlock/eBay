@@ -34,5 +34,4 @@ Khác Item
 "211 Angie Rd, Sandy Hook, MS 39478"
 "1112 East 920 North #myfriend (Doug Olauson ), Orem, UT 84097"
 "2075 Kentucky 467 #myfriend (Shawn Jacobs ), Demossville, KY 41033"
-"2092 Wiley St #myfriend (Thomas Jordan), Thomaston, GA 30286"
 "100 East Sterling Way #myfriend (carole fisher), Leesburg, FL 34788"
