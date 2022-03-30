@@ -23,7 +23,7 @@ list1=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
@@ -70,7 +70,7 @@ list2=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
@@ -116,7 +116,7 @@ list3=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
@@ -162,7 +162,7 @@ list4=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
@@ -208,7 +208,7 @@ list5=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
@@ -254,7 +254,7 @@ list6=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
@@ -300,7 +300,7 @@ list7=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
@@ -346,7 +346,7 @@ list8=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
@@ -393,7 +393,7 @@ list9=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
   -H 'x-apollo-operation-name: shoppingListTotal' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
   -H 'x-o-segment: oaoh' \
   -H 'content-type: application/json' \
   -H 'accept: application/json' \
