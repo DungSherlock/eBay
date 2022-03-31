@@ -1,15 +1,16 @@
 "Ship to my home 24231 Weldon Dr, Eustis, FL 32736"
-"124 Adams Ave, please ship to boxx-33, Morton, WA 98356"
+Sai info
 "ship to my home 9811 Lott Ct N, Chunchula, AL 36521"
 "5061 N Kaliga Dr, Saint Cloud, FL 34771"
 "414 S Meadow Ln, Mustang, OK 73064"
-"Andrea.Crutcher 276 E 31 Street 1FL Brooklyn, Brooklyn, NY 11226"
+Khác Item
 "delivery to (Majed Shaib) # my friend, 1715 Darbrook Dr, Charlotte, NC 28205"
 "725 Byrd Dr, Abilene, TX 79601"
 "5001 Sheridan St, Apt E115, Davenport, IA 52806"
+"Ship as to 5619 Carolyn Way, Louisville, KY 40219"
 "20270 Mada Ave, Southfield, MI 48075"
 Khác Item
-"211 Angie Rd, Sandy Hook, MS 39478"
+Sai info
 "128 Karen Ln, Black Mountain, NC 28711"
 "1405 Mill Rd, Trezevant, TN 38258"
 "Barbara sheppard 2296 Beauclair Ct, Myrtle Beach, SC 29579"
@@ -17,6 +18,7 @@ Sai info
 "Rosheka.Williams 9532 Alta Mira Dr, Dallas, TX 75218"
 "Rosheka.Williams 9532 Alta Mira Dr, Dallas, TX 75218"
 "Ellen.Meigs 116 Broken St, Liberty, MS 39645"
+"Ship as to 4940 S Duquesne St, Aurora, CO 80016"
 "1207 N Lewis Ave, Waukegan IL 60085-2632, Waukegan, IL 60085"
 "53 soundview rd #delivery to helen chen is my friend, great neck NY 11020-1112, Great Neck, NY 11020"
 "208 N 2nd St, Masontown, PA 15461"
@@ -52,3 +54,6 @@ Sai info
 "258Mount Quandry S.t, Grand Junction, CO 81503"
 "554 Bond Bridge Ext, Royston, GA 30662"
 "230 Bride Dr, Reidsville, NC 27320"
+"ship as to 200 Cedar Creek Dr, Athens, GA 30605"
+"ship as to 1389 East Stoneybrook Loop, Post Falls, ID 83854"
+"114 E Frederick Dr, Apt 2, Harrison, ID 83833"
