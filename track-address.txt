@@ -2,6 +2,7 @@
 ""
 Khác Item
 "Ship to me 2140 Cristina Way, Brentwood, CA 94513"
+"300 River Terrace Dr, Apt 508, Benton Harbor, MI 49022"
 Khác Item
 "Philip Anderson 15 Rice Lane, Bedford, NH 03110"
 Sai info
@@ -17,7 +18,6 @@ Sai info
 "Jarielle.Prince 1783 NW Estelle St, Roseburg, OR 97471"
 "830 Dixie Drive #myfriend (Kim Christensen), Ogden, UT 84405"
 Sai info
-"Chris.Bell 2118 NE Bellpark Dr, Bremerton, WA 98310"
 Sai info
 Khác Item
 "6603 101st St NW, Gig Harbor, WA 98332"
@@ -52,8 +52,12 @@ Khác Item
 "Wanda.Mitchell 146 Black Creek Rd, Gordon, GA 31031"
 "210 Artillery Rd, Southern Pines, NC 28387"
 "380 Yadkin Run Lane, Southern Pines, NC 28387"
+"24 Briarwood Rd, Woburn, MA 01801"
 "22026 Bohn Rd, Belleville, MI 48111"
 "71 Eldon Ln, Morgantown, WV 26508"
 "11275 Balsam Ave, Hesperia, CA 92345"
-"Ship as to home 514 N Brundage Ave, Farmersville, CA 93223"
-"Ship as to home 1360 W 3rd St, Apt 117, Pomona, CA 91766"
+"Delivery as to 426 9th St S, Glasgow, MT 59230"
+"Ship as to 17030 County Highway J, Chippewa Falls, WI 54729"
+"Ship as to home 7055 Cleveland Dr, Punta Gorda, FL 33982"
+"Ship as to 1708 Southwest 51st Terrace, Cape Coral, FL 33914"
+Khác Item
