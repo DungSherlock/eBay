@@ -3,7 +3,6 @@
 "ship to my home 9811 Lott Ct N, Chunchula, AL 36521"
 "5061 N Kaliga Dr, Saint Cloud, FL 34771"
 "414 S Meadow Ln, Mustang, OK 73064"
-Khác Item
 "delivery to (Majed Shaib) # my friend, 1715 Darbrook Dr, Charlotte, NC 28205"
 "725 Byrd Dr, Abilene, TX 79601"
 "5001 Sheridan St, Apt E115, Davenport, IA 52806"
@@ -15,8 +14,6 @@ Khác Item
 "1405 Mill Rd, Trezevant, TN 38258"
 "Barbara sheppard 2296 Beauclair Ct, Myrtle Beach, SC 29579"
 Sai info
-"Rosheka.Williams 9532 Alta Mira Dr, Dallas, TX 75218"
-"Rosheka.Williams 9532 Alta Mira Dr, Dallas, TX 75218"
 "Ellen.Meigs 116 Broken St, Liberty, MS 39645"
 "Ship as to 4940 S Duquesne St, Aurora, CO 80016"
 "1207 N Lewis Ave, Waukegan IL 60085-2632, Waukegan, IL 60085"
@@ -29,15 +26,12 @@ Sai info
 "1112 E 920 N, Orem, UT 84097"
 "ship as to 2075 Kentucky 467, Demossville, KY 41033"
 "1338 Doolin Run Rd, New Martinsville, WV 26155"
-"3838 Church Road, Mount Laurel, NJ 08054"
 "504 N Moreland Blvd, Waukesha, WI 53188"
 "2092 Wiley St delivery to (Thomas Jordan) # my friend, Thomaston, GA 30286"
 "60 Magnolia Ave, Apt F, San Anselmo, CA 94960"
 "100 East Sterling Way #myfriend (carole fisher), Leesburg, FL 34788"
-"Delivery as to 4 Seaview Ave, Milford, CT 06460"
 "1548 S Shirk Rd, Visalia, CA 93277"
 "delivery to 1313 Jones Ct, Jasper, AL 35504"
-Sai info
 "45 Gifford St, Fredericktown, OH 43019"
 "4501 W Colfax Ave denver CO, Denver, CO 80207"
 "Valerie.Rodriguez 44 Braemar Dr, Daleville, VA 24083"
