@@ -6,7 +6,6 @@
 "Sonya.Harrison 2110 1st Ave., New York, NY 10029"
 "Door to door delivery, my address is below, 3322CC S Campbell Ave, # CC-1, Springfield, MO 65807"
 "955 Belleville Ave, New Bedford, MA 02745"
-"Jarielle.Prince 1783 NW Estelle St, Roseburg, OR 97471"
 Sai info
 Sai info
 "12 Pine View Ln, stenone, Bantam, CT 06750"
@@ -27,8 +26,3 @@ Khác Item
 "9750 Bishopswood Ln, Perrysburg, OH 43551"
 "1008 N 12th St, Paducah, KY 42001"
 "Ship to 7720 El Padre Ln, Dallas, TX 75248"
-"Delivery home 73496 Castle Ct, Armada, MI 48005"
-"Transport to 1451 Winstead Rd, Thorn Hill, TN 37881"
-"Ship as to 21741 Leonard Ln, Waynesville, MO 65583"
-"13076r Cozy Cove Ave, El Paso, TX 79938"
-"13 Forsythia Dr, Belton, MO 64012"
