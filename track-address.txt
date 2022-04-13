@@ -3,9 +3,9 @@
 "Philip Anderson 15 Rice Lane, Bedford, NH 03110"
 "Door to door delivery, my address is below, 3322CC S Campbell Ave, # CC-1, Springfield, MO 65807"
 "7702 Raintree Ln, Orange, TX 77630"
-"111y Mockingbird Ln, Caledonia, MS 39740"
 null
-"215r Putts Pond Rd, Ticonderoga, NY 12883"
+"164 Claremont Ave, Verona, NJ 07044"
+"215 Putts Pond Rd, Ticonderoga, NY 12883"
 "22110 Lupine Rd, Apple Valley, CA 92308"
 "Ship as to 5501 W 31st St, Cicero, IL 60804"
 "45 Old Bridge Dr, Howell, NJ 07731"
@@ -18,6 +18,8 @@ null
 "26 Burdick Rd, Patterson, NY 12563"
 "11 Amy Todt Dr, Monroe, NY 10950"
 "11722 Sierra Sky Dr, Whittier, CA 90601"
+Khác Item
 "6 Pakanle Ridge, Jasper, GA 30143"
+"7203 Foxway Ln, Humble, TX 77338"
 Khác Item
 "14 Sorbonne St, Westminster, CA 92683"
