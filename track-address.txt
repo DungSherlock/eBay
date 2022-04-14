@@ -22,3 +22,4 @@ Sai info
 "14 S 32nd St, Wyandanch, NY 11798"
 Sai info
 "522 E Pacific Ave, Independence, MO 64050"
+"420 South 1050th East, Dietrich, ID 83324"
