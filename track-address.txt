@@ -1,25 +1,24 @@
 "110 STATE ROAD TT, BUFFALO, 65622, MO 64118"
 ""
-"Philip Anderson 15 Rice Lane, Bedford, NH 03110"
+"33473 Jules Dr, Donaldsonville, LA 70346"
 "Door to door delivery, my address is below, 3322CC S Campbell Ave, # CC-1, Springfield, MO 65807"
 "7702 Raintree Ln, Orange, TX 77630"
 null
-"164 Claremont Ave, Verona, NJ 07044"
 "215 Putts Pond Rd, Ticonderoga, NY 12883"
 "22110 Lupine Rd, Apple Valley, CA 92308"
 "Ship as to 5501 W 31st St, Cicero, IL 60804"
-"45 Old Bridge Dr, Howell, NJ 07731"
 "4140 Pattersonville-Rynex Corners Rd, Pattersonville, NY 12137"
-"4940 North Rd, Orangeburg, SC 29118"
-"1113 S 12th St, Apt C5, Bethany, MO 64424"
 "9387 Perry Rd, Erie, MI 48133"
 "4097 N 200 E, Shelbyville, IN 46176"
 "1175 York Avenue, New York, NY 10065"
 "26 Burdick Rd, Patterson, NY 12563"
 "11 Amy Todt Dr, Monroe, NY 10950"
 "11722 Sierra Sky Dr, Whittier, CA 90601"
-Khác Item
+"2501 Four Oclock Dr, Oklahoma City, OK 73128"
 "6 Pakanle Ridge, Jasper, GA 30143"
 "7203 Foxway Ln, Humble, TX 77338"
-Khác Item
+Sai info
 "14 Sorbonne St, Westminster, CA 92683"
+"14 S 32nd St, Wyandanch, NY 11798"
+Sai info
+"522 E Pacific Ave, Independence, MO 64050"
