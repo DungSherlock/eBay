@@ -19,6 +19,7 @@ Sai info
 "K Forrester Mosley"
 "Wai Leung Yam Leung Yam"
 "Jeff Allman Hill"
+"Curtis Ghent Ghent"
 "Isaac R Nolan Lockridge"
 "marcus gojko House"
 "Williamson Surdo Surdo"
@@ -26,3 +27,4 @@ Sai info
 "Donna Petty Petty"
 "Laurie Niles Niles"
 "Keith Anthony Anthony"
+"Taylor Simon Simon"

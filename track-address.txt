@@ -19,6 +19,7 @@ Sai info
 "200 Carmel Ridge Rd, Canton, GA 30114"
 "4215 Foxborough Trl, Arlington, TX 76001"
 "1686 Kendrick Ford Rd, Front Royal, VA 22630"
+"(1515) Salisbury Avenue, Apt-9, Spencer, NC 28159"
 "803 Reynolds Ave, Clinton, TN 37716"
 "6101 Spring River Dr, O Fallon, MO 63368"
 "217 Rivers Edge, Williamsburg, VA 23185"
@@ -26,3 +27,4 @@ Sai info
 "7665 E Lamar Alexander Pkwy, Townsend, Townsend, TN 37882"
 "34 Raven Drive, Princeton, ME 04668"
 "3578 Lebanon Church Rd, Athens, GA 30607"
+"2444 Lanrell Dr, Tallahassee, FL 32303"
