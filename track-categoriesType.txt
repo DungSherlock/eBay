@@ -1,5 +1,5 @@
 "REGULAR"
-"REGULAR"
+Khác Item
 Khác Item
 Khác Item
 "CANCELED"
@@ -10,9 +10,6 @@ Khác Item
 Sai info
 "REGULAR"
 "CANCELED"
-"REGULAR"
-"REGULAR"
-"REGULAR"
 "REGULAR"
 "REGULAR"
 "REGULAR"

@@ -1,5 +1,5 @@
-"116 Terrill Ln Apt 116, stenone, Carl Junction, MO 64834"
 "6 Kevin Ln, Hutchinson, KS 67501"
+Khác Item
 Khác Item
 Khác Item
 "4708 Bawell St, Baton Rouge, LA 70808"
@@ -12,13 +12,10 @@ Sai info
 "420 South 1050th East, Dietrich, ID 83324"
 "1300 Park Hill Ln, Mckinney, TX 75069"
 "16514 Baseline Ave, Fontana, CA 92336"
-"73 County Road 4106 GranbyRush, # 974, Granby, CO 80446"
 "200 Carmel Ridge Rd, Canton, GA 30114"
-"4215 Foxborough Trl, Arlington, TX 76001"
 "1686 Kendrick Ford Rd, Front Royal, VA 22630"
 "(1515) Salisbury Avenue, Apt-9, Spencer, NC 28159"
 "803 Reynolds Ave, Clinton, TN 37716"
-"217 Rivers Edge, Williamsburg, VA 23185"
 "256 Mill Branch Rd, Belpre, OH 45714"
 "9338 Bowen Dr, San Antonio, TX 78250"
 "7665 E Lamar Alexander Pkwy, Townsend, Townsend, TN 37882"
