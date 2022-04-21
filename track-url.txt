@@ -3,12 +3,13 @@ Khác Item
 Khác Item
 Khác Item
 
+"https://www.walmart.com/tracking?order_id=6871112566684&tracking_id=272251592304&package_id=5770123"
 "https://www.walmart.com/tracking?order_id=5871107734301&tracking_id=1ZY11A540333110677"
 "https://www.walmart.com/tracking?order_id=5871109187551&tracking_id=576088496677&package_id=00000089050213854867"
-"https://www.walmart.com/tracking?order_id=5871062542503&tracking_id=272086921426"
+
 
 Sai info
-"https://www.walmart.com/tracking?order_id=4871047596332&tracking_id=272022468338"
+
 
 "https://www.walmart.com/tracking?order_id=5871050611034&tracking_id=545964029195"
 "https://www.walmart.com/tracking?order_id=4871059760204&tracking_id=272022059181"
