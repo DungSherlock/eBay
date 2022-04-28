@@ -1,15 +1,14 @@
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
-Sai info
+"REGULAR"
+"CANCELLATION_REQUESTED"
+"REGULAR"
+"REGULAR"
+"REGULAR"
+"REGULAR"
+"REGULAR"
+"REGULAR"
+"REGULAR"
+"CANCELED"
+"CANCELED"
+"CANCELED"
+"CANCELED"
+"REGULAR"
