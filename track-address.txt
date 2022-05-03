@@ -1,7 +1,6 @@
 "Laredo, TX"
 "Cliffside Park, NJ"
 "Yonkers, NY"
-Khác Item
 "Taylorville, IL"
 "Holyoke, MA"
 "Powell, OH"

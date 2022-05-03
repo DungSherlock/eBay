@@ -1,7 +1,6 @@
 "Herrera Herrera"
 "Garcia Garcia"
 "Zhang Zhang"
-Khác Item
 "Krueger Krueger"
 "Calderone Calderone"
 "Hritz Hritz"
