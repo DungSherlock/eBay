@@ -51,3 +51,19 @@ null
 null
 null
 null
+null
+null
+null
+"shipped via UPS"
+null
+"shipped via Fedex"
+"shipped via Fedex"
+"shipped via Fedex"
+"shipped via Fedex"
+"shipped via UPS"
+"shipped via UPS"
+"Sorry, your order is arriving late"
+"shipped via Fedex"
+"shipped via Fedex"
+"shipped via Fedex"
+"shipped via Fedex"
