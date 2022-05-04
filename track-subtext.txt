@@ -28,3 +28,26 @@ null
 null
 null
 null
+null
+null
+"shipped via UPS"
+"shipped via Fedex"
+"shipped via Fedex"
+Khác Item
+"shipped via UPS"
+"shipped via UPS"
+"Sorry, your order is arriving late"
+"shipped via Fedex"
+null
+"shipped via Fedex"
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
