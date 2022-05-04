@@ -82,7 +82,7 @@ else
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -99,6 +99,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "1"
     fi   
@@ -175,7 +176,7 @@ else
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -192,6 +193,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "2"
     fi   
@@ -268,7 +270,7 @@ else
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -285,6 +287,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "3"
     fi   
@@ -361,7 +364,7 @@ else
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -378,6 +381,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "4"
     fi   
@@ -454,7 +458,7 @@ else
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -471,6 +475,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "5"
     fi   
@@ -547,7 +552,7 @@ else
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -564,6 +569,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "6"
     fi   
@@ -640,7 +646,7 @@ else
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -657,6 +663,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "7"
     fi   
@@ -733,7 +740,7 @@ else
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -750,6 +757,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "8"
     fi   
@@ -826,7 +834,7 @@ else
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -843,6 +851,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "9"
     fi   
@@ -919,7 +928,7 @@ else
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -936,6 +945,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "10"
     fi   
@@ -1012,7 +1022,7 @@ else
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -1029,6 +1039,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "11"
     fi   
@@ -1105,7 +1116,7 @@ else
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -1122,6 +1133,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "12"
     fi   
@@ -1198,7 +1210,7 @@ else
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number.txt
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url.txt
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType.txt
-
+                echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].status.subtext' >> track-subtext.txt
                 break
             fi
         done
@@ -1215,6 +1227,7 @@ else
         echo "Khác Item" >> track-number.txt
         echo "Khác Item" >> track-url.txt
         echo "Khác Item" >> track-categoriesType.txt
+        echo "Khác Item" >> track-subtext.txt
     else
         echo "13"
     fi   
