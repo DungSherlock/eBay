@@ -73,7 +73,7 @@ else
         do
             if [[ `echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""47423101""' ]]; then
                 echo ""'3942254577372"" >> track-OrderID.txt
-                echo Michael_lucas@uml.edu >> track-email.txt
+                echo TD220430112140408 >> track-email.txt
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -166,7 +166,7 @@ else
         do
             if [[ `echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""793321376""' ]]; then
                 echo ""'3942254525628"" >> track-OrderID.txt
-                echo Ltwn567@gmail.com >> track-email.txt
+                echo TD220501022638232 >> track-email.txt
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -259,7 +259,7 @@ else
         do
             if [[ `echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""910334923""' ]]; then
                 echo ""'3952257320854"" >> track-OrderID.txt
-                echo SAAJITH@GMAIL.COM >> track-email.txt
+                echo TD220501075711878 >> track-email.txt
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -352,7 +352,7 @@ else
         do
             if [[ `echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""480863972""' ]]; then
                 echo ""'3932253720516"" >> track-OrderID.txt
-                echo sunkiss1488@gmail.com >> track-email.txt
+                echo TD220501100140936 >> track-email.txt
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -445,7 +445,7 @@ else
         do
             if [[ `echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""749416908""' ]]; then
                 echo ""'3752216405054"" >> track-OrderID.txt
-                echo gerry101798@gmail.com >> track-email.txt
+                echo TD220412102916474 >> track-email.txt
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -538,7 +538,7 @@ else
         do
             if [[ `echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""188433577""' ]]; then
                 echo ""'3772220252414"" >> track-OrderID.txt
-                echo doris9840@aol.com >> track-email.txt
+                echo TD220415225902250 >> track-email.txt
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -631,7 +631,7 @@ else
         do
             if [[ `echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""47174168""' ]]; then
                 echo ""'3802225658557"" >> track-OrderID.txt
-                echo savoyiamcneal@yahoo.com >> track-email.txt
+                echo TD22041605590336 >> track-email.txt
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -724,7 +724,7 @@ else
         do
             if [[ `echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""217464147""' ]]; then
                 echo ""'3942254173075"" >> track-OrderID.txt
-                echo jleicht@templeohavshalom.org >> track-email.txt
+                echo TD220426210138694 >> track-email.txt
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -817,7 +817,7 @@ else
         do
             if [[ `echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""283887343""' ]]; then
                 echo ""'3902247176380"" >> track-OrderID.txt
-                echo Paytynkay13@gmail.com >> track-email.txt
+                echo TD220428215639983 >> track-email.txt
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -910,7 +910,7 @@ else
         do
             if [[ `echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""380065062""' ]]; then
                 echo ""'3902248371292"" >> track-OrderID.txt
-                echo Omar10142001@gmail.com >> track-email.txt
+                echo TD22042912214050 >> track-email.txt
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1003,7 +1003,7 @@ else
         do
             if [[ `echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""144693244""' ]]; then
                 echo ""'3912249254232"" >> track-OrderID.txt
-                echo pkramer27@gmail.com >> track-email.txt
+                echo TD220427004145303 >> track-email.txt
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1096,7 +1096,7 @@ else
         do
             if [[ `echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""652219207""' ]]; then
                 echo ""'3952256054902"" >> track-OrderID.txt
-                echo jessalady@gmail.com >> track-email.txt
+                echo TD220504082141958 >> track-email.txt
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1189,7 +1189,7 @@ else
         do
             if [[ `echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""550083937""' ]]; then
                 echo ""'3962258312550"" >> track-OrderID.txt
-                echo  blackbelt_2016@icloud.com >> track-email.txt
+                echo TD220505072147269 >> track-email.txt
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1282,7 +1282,7 @@ else
         do
             if [[ `echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""55498263""' ]]; then
                 echo ""'3962258917811"" >> track-OrderID.txt
-                echo  shueysk@gmail.com >> track-email.txt
+                echo TD220430203137103 >> track-email.txt
                 echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1375,7 +1375,7 @@ else
         do
             if [[ `echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""55498263""' ]]; then
                 echo ""'3962258014704"" >> track-OrderID.txt
-                echo  amberlyn129@gmail.com >> track-email.txt
+                echo TD220503083140448 >> track-email.txt
                 echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1468,7 +1468,7 @@ else
         do
             if [[ `echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""873363029""' ]]; then
                 echo ""'39622258127309"" >> track-OrderID.txt
-                echo arnuma@gmail.com >> track-email.txt
+                echo TD220505104642778 >> track-email.txt
                 echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1561,7 +1561,7 @@ else
         do
             if [[ `echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""47423101""' ]]; then
                 echo ""'3962258047244"" >> track-OrderID.txt
-                echo palmetto1019@comcast.net >> track-email.txt
+                echo TD220416065400141 >> track-email.txt
                 echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1654,7 +1654,7 @@ else
         do
             if [[ `echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""898415441""' ]]; then
                 echo ""'3962258327453"" >> track-OrderID.txt
-                echo easy.pc@live.com >> track-email.txt
+                echo TD220426085327375 >> track-email.txt
                 echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1747,7 +1747,7 @@ else
         do
             if [[ `echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""921376743""' ]]; then
                 echo ""'3962258126527"" >> track-OrderID.txt
-                echo vallin.adrienne@gmail.com >> track-email.txt
+                echo TD220428035637689 >> track-email.txt
                 echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1840,7 +1840,7 @@ else
         do
             if [[ `echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""897412435""' ]]; then
                 echo ""'3832232859080"" >> track-OrderID.txt
-                echo ekroot1@gmail.com >> track-email.txt
+                echo TD220401083352640 >> track-email.txt
                 echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -1933,7 +1933,7 @@ else
         do
             if [[ `echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""50638362""' ]]; then
                 echo ""'3872240803923"" >> track-OrderID.txt
-                echo HeatherLeePerryMcMillion127@outlook.com >> track-email.txt
+                echo TD220403231354959 >> track-email.txt
                 echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -2026,7 +2026,7 @@ else
         do
             if [[ `echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""921376743""' ]]; then
                 echo ""'3882241666316"" >> track-OrderID.txt
-                echo DesireeDSprague5794@hotmail.com   >> track-email.txt
+                echo TD220410233850208 >> track-email.txt
                 echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
@@ -2119,7 +2119,7 @@ else
         do
             if [[ `echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '""188433577""' ]]; then
                 echo ""'3872241024668"" >> track-OrderID.txt
-                echo fffcvjuffhjhdd@gmail.com >> track-email.txt
+                echo TD220411065350115 >> track-email.txt
                 echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                 echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
                 echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName.txt
