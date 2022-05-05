@@ -112,3 +112,33 @@ null
 "shipped via Fedex"
 "shipped via Fedex"
 null
+"shipped via Fedex"
+"shipped via UPS"
+null
+"shipped via Fedex"
+Khác Item
+null
+"shipped via UPS"
+"Sorry, your order is arriving late"
+null
+null
+"shipped via Fedex"
+null
+"shipped via Fedex"
+"shipped via Fedex"
+null
+"shipped via Fedex"
+"shipped via Fedex"
+null
+null
+null
+"shipped via Fedex"
+null
+null
+null
+"shipped via Fedex"
+null
+"shipped via Fedex"
+null
+"shipped via Fedex"
+null
