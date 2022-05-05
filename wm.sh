@@ -610,7 +610,9 @@ list13=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
     break
   fi
 done
-echo "13"
+
+sleep 2
+
 while true
 do
 list14=$(curl -s 'https://www.walmart.com/orchestra/home/graphql' \
@@ -657,6 +659,8 @@ list14=$(curl -s 'https://www.walmart.com/orchestra/home/graphql' \
     break
   fi
 done
+
+sleep 2
 
 while true
 do
