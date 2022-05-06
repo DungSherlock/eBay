@@ -1,14 +1,14 @@
 #!/bin/bash
-: > track-usItemId.txt
-: > track-priceValue.txt
-: > track-fullName.txt
-: > track-address.txt
-: > track-status.txt
-: > track-number.txt
-: > track-url.txt
-: > track-OrderID.txt
-: > track-email.txt
-: > track-categoriesType.txt
+: > track-usItemId-ADOT.txt
+: > track-priceValue-ADOT.txt
+: > track-fullName-ADOT.txt
+: > track-address-ADOT.txt
+: > track-status-ADOT.txt
+: > track-number-ADOT.txt
+: > track-url-ADOT.txt
+: > track-OrderID-ADOT.txt
+: > track-email-ADOT.txt
+: > track-categoriesType-ADOT.txt
 
 while true
 do
