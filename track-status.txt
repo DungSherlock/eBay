@@ -4,7 +4,7 @@
 "Delayed, check back for updates"
 "Delivered today at 2:28pm"
 "Arrives by Fri, May 06"
-"Arrives today"
+"Arrives by Fri, May 06"
 "Arrives by Fri, May 06"
 "Delivered today at 9:55am"
 "Arrives by Fri, May 06"
