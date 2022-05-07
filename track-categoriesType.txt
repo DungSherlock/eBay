@@ -41,4 +41,4 @@ Sai info
 "CANCELED"
 Khác Item
 "CANCELED"
-"REGULAR"
+"CANCELED"

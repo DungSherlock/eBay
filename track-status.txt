@@ -41,4 +41,4 @@ Sai info
 "Canceled today"
 Khác Item
 "Canceled today"
-"Arrives by Mon, May 16"
+"Canceled today"
