@@ -22,7 +22,7 @@
 "Arrives by Sat, May 07"
 "Delivered on May 07"
 "Arrives by Mon, May 09"
-Sai info
+"Arrives by Mon, May 09"
 "Cancellation requested on May 05"
 "Arrives by Sat, May 07"
 "Arrives by Sat, May 07"
