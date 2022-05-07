@@ -50,7 +50,6 @@ do
       echo $list | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
       echo $list | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
       echo $list | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
-      sleep 1
       echo ${array[0]}
       break
     fi
