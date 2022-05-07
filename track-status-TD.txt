@@ -32,4 +32,3 @@
 "Delivered on May 02"
 "Pending receipt of original item"
 "Delivered on Apr 28"
-"Arrives by Sun, May 08"

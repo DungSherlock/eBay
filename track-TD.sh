@@ -9,7 +9,7 @@
 : > track-OrderID-TD.txt
 : > track-email-TD.txt
 : > track-categoriesType-TD.txt
-
+: > track-CO-TD.txt
 
 while read line
 do
@@ -70,6 +70,7 @@ do
         echo "Sai info" >> track-number-TD.txt
         echo "Sai info" >> track-url-TD.txt
         echo "Sai info" >> track-categoriesType-TD.txt
+        echo ${array[4]} >> track-CO-TD.txt
     else
         sum=`md5 track-OrderID-TD.txt`
         for (( i=0; i<=4; i++ ))
@@ -87,6 +88,7 @@ do
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-TD.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-TD.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-TD.txt
+                    echo ${array[4]} >> track-CO-TD.txt
                     break
                 fi
             done
@@ -103,6 +105,7 @@ do
             echo "Khác Item" >> track-number-TD.txt
             echo "Khác Item" >> track-url-TD.txt
             echo "Khác Item" >> track-categoriesType-TD.txt
+            echo "Khác Item" >> track-CO-TD.txt
         else
             echo ${array[0]}
         fi   
@@ -117,6 +120,6 @@ git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
-linkApi=`echo https://script.google.com/macros/s/AKfycbxvgB0cMGKRjx_sVCDTrrzTkT40YIeRPsBUp-1-e913NLyI8mUywjiaGDu9MDj9bChN/exec?`
-linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-usItemId-TD.txt\"\)\&Giá==IMPORTDATA\(\"`$linkGit`echo track-priceValue-TD.txt\"\)\&Tên==IMPORTDATA\(\"`$linkGit`echo track-fullName-TD.txt\"\)\&Địa chỉ==index\(IMPORTDATA\(\"`$linkGit`echo track-address-TD.txt\"\),,1\)\&Status==IMPORTDATA\(\"`$linkGit`echo track-status-TD.txt\"\)\&Tracking Number==IMPORTDATA\(\"`$linkGit`echo track-number-TD.txt\"\)\&Tracking URL==IMPORTDATA\(\"`$linkGit`echo track-url-TD.txt\"\)\&Email==IMPORTDATA\(\"`$linkGit`echo track-email-TD.txt\"\)\&Order==IMPORTDATA\(\"`$linkGit`echo track-OrderID-TD.txt\"\)\&categoriesType==IMPORTDATA\(\"`$linkGit`echo track-categoriesType-TD.txt\"\)`
+linkApi=`echo https://script.google.com/macros/s/AKfycbxTUZPtaHbpL6Sdf4PXWLmCg1PcRotJWSyJQ-cKMC9AxPb-du0q4h3mmFAICVNeGp8GNQ/exec?`
+linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-usItemId-TD.txt\"\)\&Giá==IMPORTDATA\(\"`$linkGit`echo track-priceValue-TD.txt\"\)\&Tên==IMPORTDATA\(\"`$linkGit`echo track-fullName-TD.txt\"\)\&Địa chỉ==index\(IMPORTDATA\(\"`$linkGit`echo track-address-TD.txt\"\),,1\)\&Status==IMPORTDATA\(\"`$linkGit`echo track-status-TD.txt\"\)\&Tracking Number==IMPORTDATA\(\"`$linkGit`echo track-number-TD.txt\"\)\&Tracking URL==IMPORTDATA\(\"`$linkGit`echo track-url-TD.txt\"\)\&Email==IMPORTDATA\(\"`$linkGit`echo track-email-TD.txt\"\)\&Order==IMPORTDATA\(\"`$linkGit`echo track-OrderID-TD.txt\"\)\&categoriesType==IMPORTDATA\(\"`$linkGit`echo track-categoriesType-TD.txt\"\)\&CO==IMPORTDATA\(\"`$linkGit`echo track-CO-TD.txt\"\)`
 echo $linkPost
