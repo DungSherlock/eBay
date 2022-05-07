@@ -8,7 +8,6 @@
 "Baldwin Park, CA"
 "Woodbine, KS"
 "Manassas Park, VA"
-"Springfield, MA"
 "Saginaw, MN"
 "Erath, LA"
 "Christiansburg, VA"
@@ -21,7 +20,6 @@
 "Stone Park, IL"
 "Cary, NC"
 "Hammond, IN"
-"Staten Island, NY"
 "Belton, MO"
 "Faith, SD"
 "Toms River, NJ"
@@ -38,5 +36,9 @@
 "Farmingtn Hls, MI"
 "Los Angeles, CA"
 "Kelso, WA"
+Sai info
+"Colorado Springs, CO"
 "Augusta, KY"
 Khác Item
+"Cleveland, AL"
+"Broken Arrow, OK"
