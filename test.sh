@@ -81,7 +81,7 @@ do
             for (( j=0; j<=4; j++))
             do
                 if [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"'${array[3]}'"' ]]; then
-                    echo ${array[3]} >> track-OrderID.txt
+                    echo ${array[2]} >> track-OrderID.txt
                     echo ADOT220427042407372 >> track-email.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue.txt
