@@ -1,0 +1,12 @@
+"https://www.walmart.com/tracking?order_id=7871186721806&tracking_id=272469916539"
+"https://www.walmart.com/tracking?order_id=7871186779094&tracking_id=272469600807"
+"https://www.walmart.com/tracking?order_id=8871201272175&tracking_id=577804278998"
+"https://www.walmart.com/tracking?order_id=8871201199186&tracking_id=272564952814"
+"https://www.walmart.com/tracking?order_id=8871201262561&tracking_id=272565823097"
+"https://www.walmart.com/tracking?order_id=8871201310335&tracking_id=272606695429"
+"https://www.walmart.com/tracking?order_id=8871201278766&tracking_id=272622430293"
+
+"https://www.walmart.com/tracking?order_id=8871213109463&tracking_id=576917899841&package_id=00000089050214571176"
+"https://www.walmart.com/tracking?order_id=9871240318193&tracking_id=272702584014&package_id=272702584014"
+"https://www.walmart.com/tracking?order_id=9871276205156&tracking_id=576088703895&package_id=00000089050214983740"
+

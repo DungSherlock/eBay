@@ -1,4 +1,5 @@
 "Attleboro, MA"
+"Garden City, MI"
 "Columbus, OH"
 "Rancho Cucamonga, CA"
 "Weaverville, CA"
