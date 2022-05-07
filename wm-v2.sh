@@ -46,10 +46,10 @@ do
       `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link`
       read -n 1 -p "blocked"
     else
-      echo $list | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt;
-      echo $list | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt;
-      echo $list | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt;
-      echo $list | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt;
+      echo $list | jq '.data.shoppingListTotal.products[].availabilityStatus' >> ebay-availabilityStatus.txt
+      echo $list | jq '.data.shoppingListTotal.products[].usItemId' >> ebay-usItemId.txt
+      echo $list | jq '.data.shoppingListTotal.products[].priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+      echo $list | jq '.data.shoppingListTotal.products[].priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
       echo ${array[0]}
       break
     fi
