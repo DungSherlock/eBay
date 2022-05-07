@@ -9,7 +9,7 @@
 : > track-OrderID-ADOT.txt
 : > track-email-ADOT.txt
 : > track-categoriesType-ADOT.txt
-
+: > track-CO-ADOT.txt
 while true
 do
 curl1=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
@@ -65,6 +65,7 @@ if [[ $curl1 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum1=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -82,7 +83,7 @@ else
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl1 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -99,6 +100,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "1"
     fi   
@@ -158,6 +160,7 @@ if [[ $curl2 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum2=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -175,7 +178,7 @@ else
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl2 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -192,6 +195,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "2"
     fi   
@@ -251,6 +255,7 @@ if [[ $curl3 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum3=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -268,7 +273,7 @@ else
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl3 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -285,6 +290,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "3"
     fi   
@@ -344,6 +350,7 @@ if [[ $curl4 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum4=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -361,7 +368,7 @@ else
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl4 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -378,6 +385,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "4"
     fi   
@@ -437,6 +445,7 @@ if [[ $curl5 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum5=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -454,7 +463,7 @@ else
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl5 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -471,6 +480,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "5"
     fi   
@@ -530,6 +540,7 @@ if [[ $curl6 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum6=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -547,7 +558,7 @@ else
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl6 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -564,6 +575,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "6"
     fi   
@@ -623,6 +635,7 @@ if [[ $curl7 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum7=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -640,7 +653,7 @@ else
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl7 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -657,6 +670,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "7"
     fi   
@@ -716,6 +730,7 @@ if [[ $curl8 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum8=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -733,7 +748,7 @@ else
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl8 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -750,6 +765,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "8"
     fi   
@@ -809,6 +825,7 @@ if [[ $curl9 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum9=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -826,7 +843,7 @@ else
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl9 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -843,6 +860,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "9"
     fi   
@@ -902,6 +920,7 @@ if [[ $curl10 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum10=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -919,7 +938,7 @@ else
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl10 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -936,6 +955,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "10"
     fi   
@@ -995,6 +1015,7 @@ if [[ $curl11 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum11=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1012,7 +1033,7 @@ else
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl11 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1029,6 +1050,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "11"
     fi   
@@ -1088,6 +1110,7 @@ if [[ $curl12 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum12=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1105,7 +1128,7 @@ else
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl12 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1122,6 +1145,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "12"
     fi   
@@ -1181,6 +1205,7 @@ if [[ $curl13 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Đại Ngọc" >> track-CO-ADOT.txt
 else
     sum13=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1198,7 +1223,7 @@ else
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl13 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Đại Ngọc" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1215,6 +1240,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Đại Ngọc" >> track-CO-ADOT.txt
     else
         echo "13"
     fi   
@@ -1274,6 +1300,7 @@ if [[ $curl14 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum14=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1291,7 +1318,7 @@ else
                 echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl14 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1308,6 +1335,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "14"
     fi   
@@ -1367,6 +1395,7 @@ if [[ $curl15 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum15=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1384,7 +1413,7 @@ else
                 echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl15 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1401,6 +1430,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "15"
     fi   
@@ -1460,6 +1490,7 @@ if [[ $curl16 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum16=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1477,7 +1508,7 @@ else
                 echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl16 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1494,6 +1525,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "16"
     fi   
@@ -1553,6 +1585,7 @@ if [[ $curl17 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum17=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1570,7 +1603,7 @@ else
                 echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl17 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1587,6 +1620,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "17"
     fi   
@@ -1646,6 +1680,7 @@ if [[ $curl18 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum18=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1663,7 +1698,7 @@ else
                 echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl18 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1680,6 +1715,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "18"
     fi   
@@ -1739,6 +1775,7 @@ if [[ $curl19 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum19=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1756,7 +1793,7 @@ else
                 echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl19 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1773,6 +1810,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "19"
     fi   
@@ -1832,6 +1870,7 @@ if [[ $curl20 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum20=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1849,7 +1888,7 @@ else
                 echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl20 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1866,6 +1905,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "20"
     fi   
@@ -1925,6 +1965,7 @@ if [[ $curl21 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum21=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -1942,7 +1983,7 @@ else
                 echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl21 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -1959,6 +2000,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "21"
     fi   
@@ -2018,6 +2060,7 @@ if [[ $curl22 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum22=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2035,7 +2078,7 @@ else
                 echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl22 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2052,6 +2095,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "22"
     fi   
@@ -2111,6 +2155,7 @@ if [[ $curl23 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum23=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2128,7 +2173,7 @@ else
                 echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl23 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2145,6 +2190,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "23"
     fi   
@@ -2204,6 +2250,7 @@ if [[ $curl24 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum24=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2221,7 +2268,7 @@ else
                 echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl24 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2238,6 +2285,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "24"
     fi   
@@ -2297,6 +2345,7 @@ if [[ $curl25 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum25=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2314,7 +2363,7 @@ else
                 echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl25 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2331,6 +2380,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "25"
     fi   
@@ -2390,6 +2440,7 @@ if [[ $curl26 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum26=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2407,7 +2458,7 @@ else
                 echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl26 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2424,6 +2475,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "26"
     fi   
@@ -2483,6 +2535,7 @@ if [[ $curl27 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum27=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2500,7 +2553,7 @@ else
                 echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl27 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2517,6 +2570,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "27"
     fi   
@@ -2576,6 +2630,7 @@ if [[ $curl28 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum28=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2593,7 +2648,7 @@ else
                 echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl28 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2610,6 +2665,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "28"
     fi   
@@ -2669,6 +2725,7 @@ if [[ $curl29 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum29=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2686,7 +2743,7 @@ else
                 echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl29 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2703,6 +2760,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "29"
     fi   
@@ -2762,6 +2820,7 @@ if [[ $curl30 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum30=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2779,7 +2838,7 @@ else
                 echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl30 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2796,6 +2855,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "30"
     fi   
@@ -2855,6 +2915,7 @@ if [[ $curl31 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum31=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2872,7 +2933,7 @@ else
                 echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl31 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2889,6 +2950,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "31"
     fi   
@@ -2948,6 +3010,7 @@ if [[ $curl32 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum32=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -2965,7 +3028,7 @@ else
                 echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl32 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -2982,6 +3045,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "32"
     fi   
@@ -3041,6 +3105,7 @@ if [[ $curl33 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum33=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3058,7 +3123,7 @@ else
                 echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl33 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3075,6 +3140,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "33"
     fi   
@@ -3134,6 +3200,7 @@ if [[ $curl34 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum34=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3151,7 +3218,7 @@ else
                 echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl34 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3168,6 +3235,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "34"
     fi   
@@ -3227,6 +3295,7 @@ if [[ $curl35 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum35=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3244,7 +3313,7 @@ else
                 echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl35 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3261,6 +3330,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "35"
     fi   
@@ -3320,6 +3390,7 @@ if [[ $curl36 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum36=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3337,7 +3408,7 @@ else
                 echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl36 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3354,6 +3425,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "36"
     fi   
@@ -3413,6 +3485,7 @@ if [[ $curl37 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum37=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3430,7 +3503,7 @@ else
                 echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl37 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3447,6 +3520,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "37"
     fi   
@@ -3506,6 +3580,7 @@ if [[ $curl38 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum38=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3523,7 +3598,7 @@ else
                 echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl38 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3540,6 +3615,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "38"
     fi   
@@ -3599,6 +3675,7 @@ if [[ $curl39 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum39=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3616,7 +3693,7 @@ else
                 echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl39 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3633,6 +3710,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "39"
     fi   
@@ -3692,6 +3770,7 @@ if [[ $curl40 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum40=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3709,7 +3788,7 @@ else
                 echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl40 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3726,6 +3805,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "40"
     fi   
@@ -3785,6 +3865,7 @@ if [[ $curl41 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum41=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3802,7 +3883,7 @@ else
                 echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl41 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3819,6 +3900,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "41"
     fi   
@@ -3878,6 +3960,7 @@ if [[ $curl42 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum42=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3895,7 +3978,7 @@ else
                 echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl42 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -3912,6 +3995,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "42"
     fi   
@@ -3971,6 +4055,7 @@ if [[ $curl43 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum43=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -3988,7 +4073,7 @@ else
                 echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl43 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4005,6 +4090,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "43"
     fi   
@@ -4064,6 +4150,7 @@ if [[ $curl44 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Hiệp" >> track-CO-ADOT.txt
 else
     sum44=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4081,7 +4168,7 @@ else
                 echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl44 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Hiệp" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4098,6 +4185,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Hiệp" >> track-CO-ADOT.txt
     else
         echo "44"
     fi   
@@ -4157,6 +4245,7 @@ if [[ $curl45 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum45=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4174,7 +4263,7 @@ else
                 echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl45 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4191,6 +4280,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "45"
     fi   
@@ -4250,6 +4340,7 @@ if [[ $curl46 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum46=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4267,7 +4358,7 @@ else
                 echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl46 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4284,6 +4375,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "46"
     fi   
@@ -4343,6 +4435,7 @@ if [[ $curl47 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum47=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4360,7 +4453,7 @@ else
                 echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl47 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4377,6 +4470,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "47"
     fi   
@@ -4436,6 +4530,7 @@ if [[ $curl48 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum48=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4453,7 +4548,7 @@ else
                 echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl48 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4470,6 +4565,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "48"
     fi   
@@ -4529,6 +4625,7 @@ if [[ $curl49 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum49=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4546,7 +4643,7 @@ else
                 echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl49 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4563,6 +4660,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "49"
     fi   
@@ -4622,6 +4720,7 @@ if [[ $curl50 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum50=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4639,7 +4738,7 @@ else
                 echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl50 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4656,6 +4755,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "50"
     fi   
@@ -4715,6 +4815,7 @@ if [[ $curl51 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum51=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4732,7 +4833,7 @@ else
                 echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl51 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4749,6 +4850,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "51"
     fi   
@@ -4808,6 +4910,7 @@ if [[ $curl52 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum52=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4825,7 +4928,7 @@ else
                 echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl52 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4842,6 +4945,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "52"
     fi   
@@ -4901,6 +5005,7 @@ if [[ $curl53 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum53=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -4918,7 +5023,7 @@ else
                 echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl53 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -4935,6 +5040,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "53"
     fi   
@@ -4994,6 +5100,7 @@ if [[ $curl54 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum54=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5011,7 +5118,7 @@ else
                 echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl54 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5028,6 +5135,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "54"
     fi   
@@ -5087,6 +5195,7 @@ if [[ $curl55 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum55=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5104,7 +5213,7 @@ else
                 echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl55 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5121,6 +5230,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "55"
     fi   
@@ -5180,6 +5290,7 @@ if [[ $curl56 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum56=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5197,7 +5308,7 @@ else
                 echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl56 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5214,6 +5325,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "56"
     fi   
@@ -5273,6 +5385,7 @@ if [[ $curl57 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum57=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5290,7 +5403,7 @@ else
                 echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl57 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5307,6 +5420,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "57"
     fi   
@@ -5366,6 +5480,7 @@ if [[ $curl58 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum58=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5383,7 +5498,7 @@ else
                 echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl58 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5400,6 +5515,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "58"
     fi   
@@ -5459,6 +5575,7 @@ if [[ $curl59 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum59=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5476,7 +5593,7 @@ else
                 echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl59 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5493,6 +5610,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "59"
     fi   
@@ -5552,6 +5670,7 @@ if [[ $curl60 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum60=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5569,7 +5688,7 @@ else
                 echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl60 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5586,6 +5705,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "60"
     fi   
@@ -5645,6 +5765,7 @@ if [[ $curl61 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum61=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5662,7 +5783,7 @@ else
                 echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl61 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5679,6 +5800,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "61"
     fi   
@@ -5738,6 +5860,7 @@ if [[ $curl62 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum62=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5755,7 +5878,7 @@ else
                 echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl62 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5772,6 +5895,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "62"
     fi   
@@ -5831,6 +5955,7 @@ if [[ $curl63 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum63=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5848,7 +5973,7 @@ else
                 echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl63 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5865,6 +5990,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "63"
     fi   
@@ -5924,6 +6050,7 @@ if [[ $curl64 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum64=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -5941,7 +6068,7 @@ else
                 echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl64 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -5958,6 +6085,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "64"
     fi   
@@ -6017,6 +6145,7 @@ if [[ $curl65 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum65=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6034,7 +6163,7 @@ else
                 echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl65 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6051,6 +6180,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "65"
     fi   
@@ -6110,6 +6240,7 @@ if [[ $curl66 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum66=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6127,7 +6258,7 @@ else
                 echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl66 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6144,6 +6275,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "66"
     fi   
@@ -6203,6 +6335,7 @@ if [[ $curl67 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum67=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6220,7 +6353,7 @@ else
                 echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl67 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6237,6 +6370,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "67"
     fi   
@@ -6296,6 +6430,7 @@ if [[ $curl68 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum68=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6313,7 +6448,7 @@ else
                 echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl68 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6330,6 +6465,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "68"
     fi   
@@ -6389,6 +6525,7 @@ if [[ $curl69 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum69=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6406,7 +6543,7 @@ else
                 echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl69 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6423,6 +6560,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "69"
     fi   
@@ -6482,6 +6620,7 @@ if [[ $curl70 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum70=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6499,7 +6638,7 @@ else
                 echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl70 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6516,6 +6655,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "70"
     fi   
@@ -6575,6 +6715,7 @@ if [[ $curl71 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum71=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6592,7 +6733,7 @@ else
                 echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl71 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6609,6 +6750,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "71"
     fi   
@@ -6668,6 +6810,7 @@ if [[ $curl72 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
 else
     sum72=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6685,7 +6828,7 @@ else
                 echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl72 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6702,6 +6845,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'wm-Hùng Lee" >> track-CO-ADOT.txt
     else
         echo "72"
     fi   
@@ -6761,6 +6905,7 @@ if [[ $curl73 =~ "error" ]]; then
     echo "Sai info" >> track-number-ADOT.txt
     echo "Sai info" >> track-url-ADOT.txt
     echo "Sai info" >> track-categoriesType-ADOT.txt
+    echo "'Huy Hồng" >> track-CO-ADOT.txt
 else
     sum73=`md5 track-OrderID-ADOT.txt`
     for (( i=0; i<=4; i++ ))
@@ -6778,7 +6923,7 @@ else
                 echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-ADOT.txt
                 echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-ADOT.txt
                 echo $curl73 | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-ADOT.txt
-
+                echo "'Huy Hồng" >> track-CO-ADOT.txt
                 break
             fi
         done
@@ -6795,6 +6940,7 @@ else
         echo "Khác Item" >> track-number-ADOT.txt
         echo "Khác Item" >> track-url-ADOT.txt
         echo "Khác Item" >> track-categoriesType-ADOT.txt
+        echo "'Huy Hồng" >> track-CO-ADOT.txt
     else
         echo "73"
     fi   
@@ -6806,5 +6952,5 @@ git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
 linkApi=`echo https://script.google.com/macros/s/AKfycbxbhCQuu9ckpYTmrfV6WtMTnqdIJg0lf_bKVOvUZLHsVmuPCIbhtGv_SQ5bbLF_NeVUkA/exec?`
-linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-usItemId-ADOT.txt\"\)\&Giá==IMPORTDATA\(\"`$linkGit`echo track-priceValue-ADOT.txt\"\)\&Tên==IMPORTDATA\(\"`$linkGit`echo track-fullName-ADOT.txt\"\)\&Địa chỉ==index\(IMPORTDATA\(\"`$linkGit`echo track-address-ADOT.txt\"\),,1\)\&Status==IMPORTDATA\(\"`$linkGit`echo track-status-ADOT.txt\"\)\&Tracking Number==IMPORTDATA\(\"`$linkGit`echo track-number-ADOT.txt\"\)\&Tracking URL==IMPORTDATA\(\"`$linkGit`echo track-url-ADOT.txt\"\)\&Email==IMPORTDATA\(\"`$linkGit`echo track-email-ADOT.txt\"\)\&Order==IMPORTDATA\(\"`$linkGit`echo track-OrderID-ADOT.txt\"\)\&categoriesType==IMPORTDATA\(\"`$linkGit`echo track-categoriesType-ADOT.txt\"\)`
+linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-usItemId-ADOT.txt\"\)\&Giá==IMPORTDATA\(\"`$linkGit`echo track-priceValue-ADOT.txt\"\)\&Tên==IMPORTDATA\(\"`$linkGit`echo track-fullName-ADOT.txt\"\)\&Địa chỉ==index\(IMPORTDATA\(\"`$linkGit`echo track-address-ADOT.txt\"\),,1\)\&Status==IMPORTDATA\(\"`$linkGit`echo track-status-ADOT.txt\"\)\&Tracking Number==IMPORTDATA\(\"`$linkGit`echo track-number-ADOT.txt\"\)\&Tracking URL==IMPORTDATA\(\"`$linkGit`echo track-url-ADOT.txt\"\)\&Email==IMPORTDATA\(\"`$linkGit`echo track-email-ADOT.txt\"\)\&Order==IMPORTDATA\(\"`$linkGit`echo track-OrderID-ADOT.txt\"\)\&categoriesType==IMPORTDATA\(\"`$linkGit`echo track-categoriesType-ADOT.txt\"\)\&Order==IMPORTDATA\(\"`$linkGit`echo track-OrderID-ADOT.txt\"\)\&categoriesType==IMPORTDATA\(\"`$linkGit`echo track-CO-ADOT.txt\"\)`
 echo $linkPost
