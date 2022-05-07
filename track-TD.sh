@@ -13,7 +13,8 @@
 
 while read line
 do
-  array=(${line//|/ })
+  array0=(${line// /$})
+  array=(${array0//|/ })
   while true
     do
     curl=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
@@ -70,7 +71,7 @@ do
         echo "Sai info" >> track-number-TD.txt
         echo "Sai info" >> track-url-TD.txt
         echo "Sai info" >> track-categoriesType-TD.txt
-        echo ${array[4]} >> track-CO-TD.txt
+        echo ${array[4]//$/ } >> track-CO-TD.txt
     else
         sum=`md5 track-OrderID-TD.txt`
         for (( i=0; i<=4; i++ ))
@@ -88,7 +89,7 @@ do
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingNumber' | sed 's/null//g' >> track-number-TD.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].shipment.trackingUrl' | sed 's/null//g' >> track-url-TD.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].categories[].type' >> track-categoriesType-TD.txt
-                    echo ${array[4]} >> track-CO-TD.txt
+                    echo ${array[4]//$/ } >> track-CO-TD.txt
                     break
                 fi
             done
