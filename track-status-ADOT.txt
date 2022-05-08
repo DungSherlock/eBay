@@ -23,3 +23,6 @@
 "Arrives by Mon, May 16"
 "Arrives today"
 "Arrives by Mon, May 09"
+"Arrives by Mon, May 09"
+"Arrives by Wed, May 11"
+"Arrives by Sun, May 08"

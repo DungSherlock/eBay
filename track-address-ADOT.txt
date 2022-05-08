@@ -23,3 +23,6 @@
 "Dry Ridge, KY"
 "Hampstead, NC"
 "San Antonio, TX"
+"Baldwin Park, CA"
+"Livonia, MI"
+"Woodstock, GA"
