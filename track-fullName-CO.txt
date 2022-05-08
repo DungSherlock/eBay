@@ -25,7 +25,3 @@
 "Alan L Stein Stein"
 "Faron Tucker Tucker"
 "C Larot Larot"
-"Hilda Kemberling Kemberling"
-"Chris Conner Conner"
-"Jayson Heath Heath"
-""

@@ -80,7 +80,7 @@ do
             do
                 if [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"'${array[3]}'"' ]]; then
                     echo ${array[2]} >> track-OrderID-ADOT.txt
-                    echo ADOT220427042407372 >> track-email-ADOT.txt
+                    echo ${array[1]} >> track-email-ADOT.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId-ADOT.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue-ADOT.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName-ADOT.txt
