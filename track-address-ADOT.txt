@@ -49,9 +49,7 @@
 "Baldwin Park, CA"
 "Woodbine, KS"
 "Manassas Park, VA"
-"Springfield, MA"
 "Saginaw, MN"
-"Erath, LA"
 "South Dartmouth, MA"
 "Hanceville, AL"
 "Whittier, NC"
@@ -64,5 +62,4 @@
 "Toms River, NJ"
 "Alton, VA"
 ", "
-Sai info
 "2669 Goshen Church South Rd, Bowling Green, KY 42103"

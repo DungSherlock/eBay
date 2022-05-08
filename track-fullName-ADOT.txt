@@ -49,9 +49,7 @@
 "Lourdes Lopez Lopez"
 "ShanGlessner Glessner"
 "Adriana Filipova"
-"Floyd Roberts Roberts"
 "Cody Behrends Behrends"
-"Tara Dubois Dubois"
 "Bill Walter Walter"
 "Chris Collier Collier"
 "Ray Crawford"
@@ -64,5 +62,4 @@
 "Darren Locklin"
 "Chris Conner Conner"
 ""
-Sai info
 "james fox"
