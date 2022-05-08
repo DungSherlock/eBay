@@ -19,8 +19,6 @@
 "Belton, MO"
 "Faith, SD"
 "Morrow, OH"
-"Pleasantville, PA"
-"Elk Grove, CA"
 "Long Beach, CA"
 "Magnolia, KY"
 "21741 Leonard Ln, Waynesville, MO 65583"

@@ -19,8 +19,6 @@
 "Delivered on May 08"
 "Arrives by Mon, May 09"
 "Arrives by Thu, May 12"
-"Delivered today at 2:28pm"
-"Delivered today at 12:19pm"
 "Arrives today"
 "Arrives by Mon, May 09"
 "Delivered on Apr 27"
