@@ -62,7 +62,7 @@ do
     if [[ $curl =~ "error" ]]; then
         echo "1-Sai info"
         echo ${array[2]} >> track-OrderID-TD.txt
-        echo ${array[1]} >> track-email-TD.txt
+        echo ${array[0]} >> track-email-TD.txt
         echo "Sai info" >> track-usItemId-TD.txt
         echo "Sai info" >> track-priceValue-TD.txt
         echo "Sai info" >> track-fullName-TD.txt
@@ -80,7 +80,7 @@ do
             do
                 if [[ `echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId'` == '"'${array[3]}'"' ]]; then
                     echo ${array[2]} >> track-OrderID-TD.txt
-                    echo ${array[1]} >> track-email-TD.txt
+                    echo ${array[0]} >> track-email-TD.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].productInfo.usItemId' >> track-usItemId-TD.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].items['${j[@]}'].priceInfo.linePrice.value' >> track-priceValue-TD.txt
                     echo $curl | jq '.data.guestOrder.groups_2101['${i[@]}'].deliveryAddress.fullName' >> track-fullName-TD.txt
@@ -97,7 +97,7 @@ do
         if [[ $sum == `md5 track-OrderID-TD.txt` ]]; then
             echo ${array[0]}"-Khác Item"
             echo "'"${array[2]} >> track-OrderID-TD.txt
-            echo ${array[1]} >> track-email-TD.txt
+            echo ${array[0]} >> track-email-TD.txt
             echo "Khác Item" >> track-usItemId-TD.txt
             echo "Khác Item" >> track-priceValue-TD.txt
             echo "Khác Item" >> track-fullName-TD.txt
