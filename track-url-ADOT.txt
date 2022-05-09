@@ -26,10 +26,12 @@
 "https://www.walmart.com/tracking?order_id=9871288324612&tracking_id=538847917773&package_id=00000070050190823223"
 "https://www.walmart.com/tracking?order_id=9871288287430&tracking_id=567836736382&package_id=00000040270024083176"
 "https://www.walmart.com/tracking?order_id=9871288510461&tracking_id=272887037418"
+
 "https://www.walmart.com/tracking?order_id=1871290314953&tracking_id=272888439532"
 "https://www.walmart.com/tracking?order_id=1871291097993&tracking_id=927512474700&package_id=00000070490159732812"
 
 "https://www.walmart.com/tracking?order_id=1871290631285&tracking_id=272889133326"
+
 "https://www.walmart.com/tracking?order_id=5871097296837&tracking_id=272115152022"
 "https://www.walmart.com/tracking?order_id=5871074247131&tracking_id=1ZXR39000390955169"
 "https://www.walmart.com/tracking?order_id=7871186761140&tracking_id=573741239200&package_id=55531581451088611011"
@@ -47,17 +49,3 @@
 "https://www.walmart.com/tracking?order_id=8871249988980&tracking_id=272693858863"
 "https://www.walmart.com/tracking?order_id=8871249959870&tracking_id=272694743393"
 "https://www.walmart.com/tracking?order_id=8871258112642&tracking_id=272739658197"
-"https://www.walmart.com/tracking?order_id=9871264067087&tracking_id=576917961299&package_id=00000089050214921834"
-
-"https://www.walmart.com/tracking?order_id=9871252115858&tracking_id=00007520441047580625&package_id=571906097436"
-"https://www.walmart.com/tracking?order_id=9871264116980&tracking_id=272786640205"
-"https://www.walmart.com/tracking?order_id=9871276332106&tracking_id=1ZF7Y5100318715694"
-"https://www.walmart.com/tracking?order_id=9871264200647&tracking_id=272787861536"
-"https://www.walmart.com/tracking?order_id=9871252568689&tracking_id=576917953430&package_id=00000089050214872136"
-"https://www.walmart.com/tracking?order_id=9871252588812&tracking_id=567921514831&package_id=00000040270023943877"
-"https://www.walmart.com/tracking?order_id=8871259247006&tracking_id=563343988506&package_id=00000070520091949907"
-"https://www.walmart.com/tracking?order_id=1871290183789&tracking_id=272888722741"
-
-"https://www.walmart.com/tracking?order_id=9871286661182&tracking_id=C12157100534281&package_id=00000070490159641435"
-"https://www.walmart.com/tracking?order_id=7871186091621&tracking_id=272468197821"
-
