@@ -57,6 +57,7 @@
 "Cary, NC"
 "Hammond, IN"
 "Farmingtn, MI"
-Sai info
+"Los Angeles, CA"
+", "
 "2669 Goshen Church South Rd, Bowling Green, KY 42103"
 "3060 Pilgrim Valley Dr, Cumming, GA 30040"

@@ -27,7 +27,7 @@
 "Arrives by Thu, May 12"
 "Arrives by Fri, May 13"
 "Arrives by Tue, May 10"
-"Arrives by Fri, May 13"
+"Arrives by Thu, May 12"
 "Arrives by Mon, May 16"
 "Arrives by Wed, May 11"
 "Delivered on Apr 19"
@@ -57,6 +57,7 @@
 "Arrives by Wed, May 11"
 "Delivered on May 07"
 "Arrives by Wed, May 11"
-Sai info
+"Arrives by Tue, May 10"
+"Arrives by Tue, May 10"
 "Delivered on Apr 28"
 "Arrives by Thu, May 12"
