@@ -35,3 +35,5 @@
 "Far Rockaway, NY"
 "Winter Park, FL"
 "Wichita, KS"
+"Pewaukee, WI"
+"Concordia, KS"

@@ -35,3 +35,5 @@
 "Arrives by Tue, May 10"
 "Canceled today"
 "Arrives by Wed, May 11"
+"Arrives by Tue, May 10"
+"Arrives by Wed, May 11"
