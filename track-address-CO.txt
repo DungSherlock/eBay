@@ -21,7 +21,7 @@
 "Magnolia, KY"
 "Farmingtn, MI"
 "Los Angeles, CA"
-", "
+"Kelso, WA"
 "Southgate, MI"
 "Warren, OH"
 "Henderson, NV"
