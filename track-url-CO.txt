@@ -16,25 +16,22 @@
 "https://www.walmart.com/tracking?order_id=8871259247006&tracking_id=563343988506&package_id=00000070520091949907"
 "https://www.walmart.com/tracking?order_id=1871290181485&tracking_id=1ZY807120398888659"
 "https://www.walmart.com/tracking?order_id=9871264214332&tracking_id=572148664887"
-"https://www.walmart.com/tracking?order_id=9871264352367&tracking_id=272832576088"
 "https://www.walmart.com/tracking?order_id=9871264396007&tracking_id=927502040262&package_id=00000070490159473647"
 "https://www.walmart.com/tracking?order_id=1871290183789&tracking_id=272888722741"
 "https://www.walmart.com/tracking?order_id=1871302393486&tracking_id=C12157100571069&package_id=00000070490159783883"
 "https://www.walmart.com/tracking?order_id=9871286661182&tracking_id=C12157100534281&package_id=00000070490159641435"
 "https://www.walmart.com/tracking?order_id=1871302428019&tracking_id=272907544100&package_id=272907544100"
 "https://www.walmart.com/tracking?order_id=1871290304519&tracking_id=272886344948"
-
 "https://www.walmart.com/tracking?order_id=1871290231263&tracking_id=567836747118&package_id=00000040270024127245"
 "https://www.walmart.com/tracking?order_id=1871301855194&tracking_id=272939472330"
 "https://www.walmart.com/tracking?order_id=9871299044077&tracking_id=272887592974"
-"https://www.walmart.com/tracking?order_id=1871290201564&tracking_id=580310429434&package_id=00000069550083178743"
 "https://www.walmart.com/tracking?order_id=1871303628356&tracking_id=580668546021&package_id=00000039670028698088"
 "https://www.walmart.com/tracking?order_id=1871290243525&tracking_id=272899975553"
 
 "https://www.walmart.com/tracking?order_id=9871308038662&tracking_id=1Z82V59FYW15563187"
 
-
 "https://www.walmart.com/tracking?order_id=1871302163757&tracking_id=272917007878"
 "https://www.walmart.com/tracking?order_id=1871302349485&tracking_id=272901931098"
 "https://www.walmart.com/tracking?order_id=1871302185732&tracking_id=1Z4636WX0391535931"
 "https://www.walmart.com/tracking?order_id=1871314653200&tracking_id=1Z3Y18820339165618"
+
