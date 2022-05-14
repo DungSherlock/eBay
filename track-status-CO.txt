@@ -18,4 +18,3 @@
 "Canceled on May 09"
 "Delivered on May 16"
 "Delivered today at 12:25pm"
-Sai info

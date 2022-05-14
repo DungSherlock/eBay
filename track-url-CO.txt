@@ -18,4 +18,3 @@
 
 "https://www.walmart.com/tracking?order_id=1871314653200&tracking_id=1Z3Y18820339165618"
 "https://www.walmart.com/tracking?order_id=1871326697608&tracking_id=273009344495"
-Sai info
