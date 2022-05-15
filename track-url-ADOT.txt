@@ -3,14 +3,10 @@
 "https://www.walmart.com/tracking?order_id=8871213109463&tracking_id=576917899841&package_id=00000089050214571176"
 "https://www.walmart.com/tracking?order_id=9871276205156&tracking_id=576088703895&package_id=00000089050214983740"
 "https://www.walmart.com/tracking?order_id=9871288475368&tracking_id=567836736761&package_id=00000040270024086955"
-"https://www.walmart.com/tracking?order_id=1871314114020&tracking_id=580495610558&package_id=55526339215320318047"
 
 "https://www.walmart.com/tracking?order_id=2871341124664&tracking_id=273091615597"
 "https://www.walmart.com/tracking?order_id=2871341266001&tracking_id=273093380243&package_id=273093380243"
-
 "https://www.walmart.com/tracking?order_id=2871340947828&tracking_id=273105001377"
-
-"https://www.walmart.com/tracking?order_id=2871341336925&tracking_id=538431576164&package_id=00000070050191190683"
 "https://www.walmart.com/tracking?order_id=8871237717411&tracking_id=272638568461"
 "https://www.walmart.com/tracking?order_id=8871249609325&tracking_id=538461481954&package_id=00000069550082784495"
 "https://www.walmart.com/tracking?order_id=8871237701622&tracking_id=576088660053&package_id=00000089050214724091"
@@ -21,23 +17,32 @@
 "https://www.walmart.com/tracking?order_id=9871288510461&tracking_id=272887037418"
 "https://www.walmart.com/tracking?order_id=1871300855042&tracking_id=D10013130039024"
 "https://www.walmart.com/tracking?order_id=1871290314953&tracking_id=272888439532"
-"https://www.walmart.com/tracking?order_id=1871302386781&tracking_id=272900695933"
 "https://www.walmart.com/tracking?order_id=1871300125145&tracking_id=272901497010"
-"https://www.walmart.com/tracking?order_id=1871314693157&tracking_id=1Z45120E0335316812"
-"https://www.walmart.com/tracking?order_id=1871302272903&tracking_id=929143377763&package_id=00000070050190951681"
 "https://www.walmart.com/tracking?order_id=1871302331632&tracking_id=575659822820&package_id=00000074220262871728"
-"https://www.walmart.com/tracking?order_id=1871314365024&tracking_id=927512496933&package_id=00000070490159847400"
 "https://www.walmart.com/tracking?order_id=2871330225076&tracking_id=00007520441047710879&package_id=579995585564"
-"https://www.walmart.com/tracking?order_id=1871324984567&tracking_id=580496789252&package_id=55590160489426344365"
+
 "https://www.walmart.com/tracking?order_id=1871339286379&tracking_id=1ZX945W30304733512"
+
+"https://www.walmart.com/tracking?order_id=2871353589503&tracking_id=575756733439&package_id=55560455818429912674"
 "https://www.walmart.com/tracking?order_id=1871339006676&tracking_id=273047169038"
-"https://www.walmart.com/tracking?order_id=1871338741937&tracking_id=567607604176&package_id=00000077670227652775"
 
 "https://www.walmart.com/tracking?order_id=1871348983454&tracking_id=273105000500"
+"https://www.walmart.com/tracking?order_id=2871353382521&tracking_id=C12157100708711&package_id=00000070490160157215"
 "https://www.walmart.com/tracking?order_id=1871339384775&tracking_id=567836804015&package_id=00000040270024356089"
 "https://www.walmart.com/tracking?order_id=1871339173101&tracking_id=565519255255&package_id=00000074220263170462"
 
+"https://www.walmart.com/tracking?order_id=2871353485935&tracking_id=273133534589"
 "https://www.walmart.com/tracking?order_id=2871340971066&tracking_id=273088648787"
+
+
+
+"https://www.walmart.com/tracking?order_id=2871353263303&tracking_id=575756192350&package_id=55553331200744585442"
+
+
+
+
+
+
 
 "https://www.walmart.com/tracking?order_id=5871097296837&tracking_id=272115152022"
 "https://www.walmart.com/tracking?order_id=7871186761140&tracking_id=573741239200&package_id=55531581451088611011"
