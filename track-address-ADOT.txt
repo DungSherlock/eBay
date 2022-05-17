@@ -69,3 +69,5 @@
 "2669 Goshen Church South Rd, Bowling Green, KY 42103"
 "3060 Pilgrim Valley Dr, Cumming, GA 30040"
 "6901 Narra St, New Port Richey, FL 34653"
+"1037 Barkers Creek Rd, Whittier, NC 28789"
+"17328 Cedarlawn St, Southgate, MI 48195"
