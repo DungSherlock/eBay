@@ -46,3 +46,4 @@ Sai info
 "https://www.walmart.com/tracking?order_id=7871186358649&tracking_id=272488784896"
 "https://www.walmart.com/tracking?order_id=9871265702490&tracking_id=927502043331&package_id=00000070490159514432"
 
+"https://beta.walmart.com/orders/4052203467497/track-live"
