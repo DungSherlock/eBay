@@ -31,18 +31,17 @@
 "Canyon Lake, TX"
 "Appleton, WI"
 "West Richland, WA"
-"Newport, NH"
+Sai info
 "San Antonio, TX"
 "Moultrie, GA"
 "Palos Hills, IL"
 "Hartsville, SC"
 "Tampa, FL"
 "Danbury, TX"
-"Harmony, PA"
-"Harmony, PA"
+Sai info
 "Fayetteville, NC"
 "Frostproof, FL"
-"Chicago, IL"
+Sai info
 "Sacramento, CA"
 "Freeman, VA"
 "North Hollywood, CA"
