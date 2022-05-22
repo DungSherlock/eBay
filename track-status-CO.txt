@@ -16,7 +16,6 @@
 "Delayed, check back for updates"
 "Canceled on May 13"
 "Arrives by Fri, May 27"
-"Delivered on May 20"
 "Delayed, check back for updates"
 "Delivered on May 20"
 "Delivered on May 19"
