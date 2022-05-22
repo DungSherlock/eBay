@@ -33,7 +33,7 @@ do
     -H 'x-apollo-operation-name: getGuestOrder' \
     -H 'sec-ch-ua-platform: "macOS"' \
     -H 'sec-ch-ua-mobile: ?0' \
-    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39' \
+    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53' \
     -H 'x-o-segment: oaoh' \
     -H 'content-type: application/json' \
     -H 'accept: application/json' \
