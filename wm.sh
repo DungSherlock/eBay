@@ -25,7 +25,7 @@ do
     -H 'x-apollo-operation-name: shoppingListTotal' \
     -H 'sec-ch-ua-platform: "macOS"' \
     -H 'sec-ch-ua-mobile: ?0' \
-    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.36' \
+    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53' \
     -H 'x-o-segment: oaoh' \
     -H 'content-type: application/json' \
     -H 'accept: application/json' \
