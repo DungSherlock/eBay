@@ -60,3 +60,4 @@ Khác Item
 "Delivered on May 04"
 "Canceled on May 15"
 "Delivered on May 12"
+"Delayed, check back for updates"
