@@ -82,3 +82,5 @@ Khác Item
 "Delivered on May 23"
 "Delivered on May 18"
 "Delivered on May 20"
+"Delivered on May 20"
+"Arrives by Wed, Jun 15"

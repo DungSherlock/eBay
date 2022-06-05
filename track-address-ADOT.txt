@@ -82,3 +82,5 @@ null
 "1037 Barkers Creek Rd, Whittier, NC 28789"
 "17328 Cedarlawn St, Southgate, MI 48195"
 "2565 Summit St, Millersport, OH 43046"
+"2565 Summit St, Millersport, OH 43046"
+"850 County Road 939, Logan, AL 35098"
