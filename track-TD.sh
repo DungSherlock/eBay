@@ -15,8 +15,8 @@ while read line
 do
   array0=(${line// /$})
   array=(${array0//|/ })
-  while true
-    do
+  # while true
+  #   do
     curl=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
       -H 'authority: www.walmart.com' \
       -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="97", "Chromium";v="97"' \
@@ -57,7 +57,7 @@ do
       else
         break
       fi
-    done
+    # done
 
     if [[ $curl =~ "error" ]]; then
         echo "1-Sai info"
