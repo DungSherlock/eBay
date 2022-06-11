@@ -70,6 +70,8 @@ null
 "Browns Mills, NJ"
 "Las Vegas, NM"
 "Williamstown, NJ"
+"Dodge City, KS"
+"Jackson, NJ"
 "San Diego, CA"
 "Columbia, SC"
 "Milton, FL"
