@@ -115,6 +115,7 @@ fi
 
 done < input-wm-track-CO.txt
 
+git pull
 git add -A .
 git commit -m --allow-empty
 git push
