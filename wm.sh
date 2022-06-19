@@ -56,6 +56,7 @@ do
   done
 done < input-wm-list.txt
 
+git pull
 git add -A .
 git commit -m --allow-empty
 git push
