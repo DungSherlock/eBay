@@ -50,10 +50,13 @@
 "Brooklyn, NY"
 "Miami, FL"
 "East Falmouth, MA"
+"West Palm Beach, FL"
 "Fort Worth, TX"
 "Kaufman, TX"
 "Mesquite, NV"
 "Salem, OH"
+Khác Item
+"Buffalo, NY"
 "San Diego, CA"
 "Columbia, SC"
 "Milton, FL"
