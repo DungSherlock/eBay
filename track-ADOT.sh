@@ -1,4 +1,5 @@
 #!/bin/bash
+git pull
 : > track-usItemId-ADOT.txt
 : > track-priceValue-ADOT.txt
 : > track-fullName-ADOT.txt
@@ -115,7 +116,6 @@ fi
 
 done < input-wm-track-ADOT.txt
 
-git pull
 git add -A .
 git commit -m --allow-empty
 git push

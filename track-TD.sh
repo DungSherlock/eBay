@@ -1,4 +1,5 @@
 #!/bin/bash
+git pull
 : > track-usItemId-TD.txt
 : > track-priceValue-TD.txt
 : > track-fullName-TD.txt
@@ -115,7 +116,6 @@ fi
 
 done < input-wm-track-TD.txt
 
-git pull
 git add -A .
 git commit -m --allow-empty
 git push

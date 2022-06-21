@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git pull
 : > ebay-usItemId.txt
 : > ebay-currentPrice.txt
 : > ebay-wasPrice.txt
@@ -60,7 +60,6 @@ do
   done
 done < input-wm-list.txt
 
-git pull
 git add -A .
 git commit -m --allow-empty
 git push
