@@ -53,10 +53,10 @@
 "Kaufman, TX"
 "Mesquite, NV"
 "Salem, OH"
-Khác Item
 "Buffalo, NY"
 "Belding, MI"
 "Austin, TX"
+"Ooltewah, TN"
 "San Diego, CA"
 "Columbia, SC"
 "Milton, FL"
