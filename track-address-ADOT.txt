@@ -57,6 +57,7 @@
 "Austin, TX"
 "Ooltewah, TN"
 "To home shipping# 11 Scott Street, Medford, MA 02155"
+"209 W High St, Fredericksburg, IA 50630"
 "San Diego, CA"
 "Columbia, SC"
 "Milton, FL"
