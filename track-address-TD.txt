@@ -69,7 +69,10 @@
 "Independence, MO"
 "Noblesville, IN"
 "Philomath, OR"
-"219 Preakness Dr, Hinesville, GA 31313"
+"7306 50th Ave N, Apt 2, St Petersburg, FL 33709"
+"548 N Cherry St, Germantown, OH 45327"
+"5th Street, Leoti, KS 67861"
+"Ship to address: 508 South 5th Street, Cambridge City, IN 47327"
 "Fontana, CA"
 "Garden Grove, CA"
 "Warren, MI"
@@ -89,3 +92,4 @@ Sai info
 "1299 Mcgregor Ave, Petaluma, CA 94954"
 "26578 Pine Creek Drive, White River, SD 57579"
 "5929 E Wardlow Rd, Long Beach, CA 90808"
+Sai info
