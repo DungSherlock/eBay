@@ -54,10 +54,12 @@
 "Belding, MI"
 "Austin, TX"
 "Ooltewah, TN"
-"Street address shipping# 30 Gray Birch Court, East Amherst, NY 14051"
+"Street address shipping# 209 West High Street, Fredericksburg, IA 50630"
 "Ship to address: 65 William Street, Milford, CT 06461"
+"383 Monte Carlo Ave, Union City, CA 94587"
 "952 N Kirby Rd, Lyndonville, VT 05851"
 "Ship to address: 315 Railroad St, Pocahontas, IL 62275"
+"10528 Nast Dr, Cheltenham, MD 20623"
 "San Diego, CA"
 "Columbia, SC"
 "Milton, FL"
@@ -79,3 +81,11 @@
 "6901 Narra St, New Port Richey, FL 34653"
 "1037 Barkers Creek Rd, Whittier, NC 28789"
 "17328 Cedarlawn St, Southgate, MI 48195"
+"2565 Summit St, Millersport, OH 43046"
+"2565 Summit St, Millersport, OH 43046"
+"15318 Hayworth Dr, Winter Garden, FL 34787"
+"12321 SE 128th Ct, Ocklawaha, FL 32179"
+"7001 Huckleberry Dr, Excelsior, MN 55331"
+Sai info
+Sai info
+Sai info
