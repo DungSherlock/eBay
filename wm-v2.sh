@@ -44,21 +44,6 @@ do
     --data-raw '{"query":"query getListDetails($input:ShoppingListInput){shoppingListDetails(input:$input){pagination{page pageSize}list{id type name lineItemCount primary ownerDetails{firstName lastName caller}maxItemsReached}items{...f_listItems}collaborators{displayPermission firstName lastName owner caller}}}fragment f_listItems on ProductList{listItems{...f_listItem product{...f_product priceInfo{...f_priceInfo}imageInfo{...f_imageInfo}rewards{...f_rewards}}secondaryProduct{...f_secondaryProduct}}}fragment f_listItem on ListItem{listItemId genericItemName requestedQuantity}fragment f_imageInfo on ProductImageInfo{thumbnailUrl allImages{url}}fragment f_priceInfo on ProductPriceInfo{priceDisplayCodes{unitOfMeasure unitPriceDisplayCondition finalCostByWeight submapType}priceRange{minPrice}currentPrice{price...f_price}linePrice{...f_price}wasPrice{...f_price}}fragment f_price on ProductPrice{priceString}fragment f_rewards on Rewards{eligible state minQuantity rewardAmt promotionId selectionToken cbOffer term expiry description}fragment f_product on Product{availabilityMessage availabilityStatus averageWeight buyBoxSuppression category{categoryPathId path{name}}criteria{name value}classType giftingEligibility hasPriceRange id itemType name offerId offerType orderLimit orderMinLimit salesUnitType showAtc usItemId weightIncrement productLocation{displayValue}groupMetaData{groupComponents{quantity offerId}}}fragment f_secondaryProduct on SecondaryProduct{imageWhenAdded itemType nameWhenAdded linePriceString currentPriceString}","variables":{"input":{"id":"'${array[1]}'","listType":"WL","pagination":{"page":1,"pageSize":1},"sortOrder":"MOST_RECENT","maxItems":true,"skipGeneric":true,"permission":"VIEW"}}}' \
     --compressed`
 
-    if [[ $list =~ "blocked" ]]
-      then
-        link=`echo $list | jq '.redirectUrl' | sed 's/"//g'`
-        `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link`
-        read -n 1 -p "blocked"
-      else
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> ebay-usItemId.txt
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> ebay-availabilityStatus.txt
-        echo "1"
-        break
-    fi
-  
-
     list2=`curl -s 'https://www.walmart.com/orchestra/home/graphql' \
     -H 'authority: www.walmart.com' \
     -H 'accept: application/json' \
@@ -92,20 +77,25 @@ do
     -H 'x-o-segment: oaoh' \
     --data-raw '{"query":"query getListDetails($input:ShoppingListInput){shoppingListDetails(input:$input){pagination{page pageSize}list{id type name lineItemCount primary ownerDetails{firstName lastName caller}maxItemsReached}items{...f_listItems}collaborators{displayPermission firstName lastName owner caller}}}fragment f_listItems on ProductList{listItems{...f_listItem product{...f_product priceInfo{...f_priceInfo}imageInfo{...f_imageInfo}rewards{...f_rewards}}secondaryProduct{...f_secondaryProduct}}}fragment f_listItem on ListItem{listItemId genericItemName requestedQuantity}fragment f_imageInfo on ProductImageInfo{thumbnailUrl allImages{url}}fragment f_priceInfo on ProductPriceInfo{priceDisplayCodes{unitOfMeasure unitPriceDisplayCondition finalCostByWeight submapType}priceRange{minPrice}currentPrice{price...f_price}linePrice{...f_price}wasPrice{...f_price}}fragment f_price on ProductPrice{priceString}fragment f_rewards on Rewards{eligible state minQuantity rewardAmt promotionId selectionToken cbOffer term expiry description}fragment f_product on Product{availabilityMessage availabilityStatus averageWeight buyBoxSuppression category{categoryPathId path{name}}criteria{name value}classType giftingEligibility hasPriceRange id itemType name offerId offerType orderLimit orderMinLimit salesUnitType showAtc usItemId weightIncrement productLocation{displayValue}groupMetaData{groupComponents{quantity offerId}}}fragment f_secondaryProduct on SecondaryProduct{imageWhenAdded itemType nameWhenAdded linePriceString currentPriceString}","variables":{"input":{"id":"'${array[1]}'","listType":"WL","pagination":{"page":2,"pageSize":1},"sortOrder":"MOST_RECENT","maxItems":true,"skipGeneric":true,"permission":"VIEW"}}}' \
     --compressed` 
-  
-    if [[ $list2 =~ "blocked" ]]
-    then
-      link=`echo $list2 | jq '.redirectUrl' | sed 's/"//g'`
-      `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link`
-      read -n 1 -p "blocked"
-    else
-      echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> ebay-usItemId.txt
-      echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-      echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-      echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> ebay-availabilityStatus.txt
-      echo "2"
-      break
+
+    if [[ $list =~ "blocked" ]]
+      then
+        link=`echo $list | jq '.redirectUrl' | sed 's/"//g'`
+        `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link`
+        read -n 1 -p "blocked"
+      else
+        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> ebay-usItemId.txt
+        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> ebay-usItemId.txt
+        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.currentPrice.price' >> ebay-currentPrice.txt
+        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
+        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> ebay-availabilityStatus.txt
+        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> ebay-availabilityStatus.txt
+        echo ${array[0]}
+        break
     fi
+
   done
 done < input-wm-list.txt
 
