@@ -3,6 +3,7 @@
     <entry>
             <!-- <apps:property name='from' value='ebay.com'/> -->
             <apps:property name='subject' value='"You got paid with"|"USD payment"|"You made the sale"|"Payment dispute filed"|"Your Sold item is ready to ship"|"The payment from"'/>
+            <apps:property name='in' value='anywhere'/>
             <apps:property name='label' value='eBay'/>
             <apps:property name='shouldNeverSpam' value='true'/>
     </entry>
