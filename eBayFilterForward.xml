@@ -13,7 +13,7 @@
 		<id>tag:mail.google.com,2008:filter:z0000001665883956973*7328931125023223048</id>
 		<updated>2022-10-16T01:50:09Z</updated>
 		<content></content>
-		<apps:property name='from' value='@'/>
+		<apps:property name='doesNotHaveTheWord' value='fc1e258c565f4574a2c15b33c63b521a'/>
 		<apps:property name='in' value='anywhere'/>
 		<apps:property name='shouldMarkAsRead' value='true'/>
 		<apps:property name='forwardTo' value='giapt10@metabox.edu.vn'/>
