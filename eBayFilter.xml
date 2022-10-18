@@ -2,7 +2,7 @@
 <feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
     <entry>
             <!-- <apps:property name='from' value='ebay.com'/> -->
-            <apps:property name='subject' value='"You got paid with"|"USD payment"|"You made the sale"|"Payment dispute filed"|"Your Sold item is ready to ship"|"The payment from"'/>
+            <apps:property name='subject' value='"You got paid with"|"USD payment"|"You made the sale"|"Payment dispute filed"|"Your Sold item is ready to ship"|"The payment from"|"sent a message about"'/>
             <apps:property name='in' value='anywhere'/>
             <apps:property name='label' value='eBay'/>
             <apps:property name='shouldNeverSpam' value='true'/>
