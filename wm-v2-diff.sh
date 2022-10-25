@@ -27,7 +27,7 @@ do
     -H 'sec-fetch-mode: cors' \
     -H 'sec-fetch-site: same-origin' \
     -H 'traceparent: 00-8460e63dd0cc45954ed860e5f978ffec-12f151435acffd37-00' \
-    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.42' \
+    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.52' \
     -H 'wm_mp: true' \
     -H 'wm_qos.correlation_id: -AmEx86VnHJqJySNR3lVERGwp5TzzZPcxerF' \
     -H 'x-apollo-operation-name: getListDetails' \
@@ -61,7 +61,7 @@ do
     -H 'sec-fetch-mode: cors' \
     -H 'sec-fetch-site: same-origin' \
     -H 'traceparent: 00-8460e63dd0cc45954ed860e5f978ffec-12f151435acffd37-00' \
-    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.42' \
+    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.52' \
     -H 'wm_mp: true' \
     -H 'wm_qos.correlation_id: -AmEx86VnHJqJySNR3lVERGwp5TzzZPcxerF' \
     -H 'x-apollo-operation-name: getListDetails' \
