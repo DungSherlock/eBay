@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+        <entry>
+                <apps:property name='subject' value='"Your Sold item is ready to ship"|"The payment from"'/>
+                <apps:property name='label' value='sold'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"You made the sale"'/>
+                <apps:property name='label' value='sold2'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"You made the sale"'/>
+                <apps:property name='label' value='sold2'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"eBay has sent your payout"|"We sent your payout"'/>
+                <apps:property name='label' value='payout'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"sent a message about"'/>
+                <apps:property name='label' value='mess'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"has sent a question about item"'/>
+                <apps:property name='label' value='question'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"Your buyer opened a request"'/>
+                <apps:property name='label' value='case'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"Payment dispute filed" '/>
+                <apps:property name='label' value='dispute'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"suspended"'/>
+                <apps:property name='label' value='suspended'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"suspended"'/>
+                <apps:property name='label' value='suspended'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+</feed>
