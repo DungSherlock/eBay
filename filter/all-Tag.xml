@@ -52,12 +52,12 @@
         </entry>
         <entry>
                 <apps:property name='subject' value='"You got paid with"'/>
-                <apps:property name='label' value='paypal1'/>
+                <apps:property name='label' value='paypal_in'/>
                 <apps:property name='shouldNeverSpam' value='true'/>
         </entry>
         <entry>
                 <apps:property name='subject' value='"USD payment"'/>
-                <apps:property name='label' value='paypal2'/>
+                <apps:property name='label' value='paypal_out'/>
                 <apps:property name='shouldNeverSpam' value='true'/>
         </entry>
 
