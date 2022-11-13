@@ -85,7 +85,6 @@ do
         link=`echo $list | jq '.redirectUrl' | sed 's/"//g'`
         `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link`
         read -p "blocked"
-        break
         echo 'sleep 20'
         sleep 20
       else

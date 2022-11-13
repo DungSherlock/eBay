@@ -11,11 +11,6 @@
                 <apps:property name='shouldNeverSpam' value='true'/>
         </entry>
         <entry>
-                <apps:property name='subject' value='"You made the sale"'/>
-                <apps:property name='label' value='sold2'/>
-                <apps:property name='shouldNeverSpam' value='true'/>
-        </entry>
-        <entry>
                 <apps:property name='subject' value='"eBay has sent your payout"|"We sent your payout"'/>
                 <apps:property name='label' value='payout'/>
                 <apps:property name='shouldNeverSpam' value='true'/>
@@ -32,7 +27,7 @@
         </entry>
         <entry>
                 <apps:property name='subject' value='"Your buyer opened a request"'/>
-                <apps:property name='label' value='case'/>
+                <apps:property name='label' value='opencase'/>
                 <apps:property name='shouldNeverSpam' value='true'/>
         </entry>
         <entry>
@@ -46,8 +41,24 @@
                 <apps:property name='shouldNeverSpam' value='true'/>
         </entry>
         <entry>
-                <apps:property name='subject' value='"suspended"'/>
-                <apps:property name='label' value='suspended'/>
+                <apps:property name='subject' value='"Refund issued"'/>
+                <apps:property name='label' value='refund'/>
                 <apps:property name='shouldNeverSpam' value='true'/>
         </entry>
+        <entry>
+                <apps:property name='subject' value='"Return requested"|"Return approved"'/>
+                <apps:property name='label' value='return'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"You got paid with"'/>
+                <apps:property name='label' value='paypal1'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+        <entry>
+                <apps:property name='subject' value='"USD payment"'/>
+                <apps:property name='label' value='paypal2'/>
+                <apps:property name='shouldNeverSpam' value='true'/>
+        </entry>
+
 </feed>
