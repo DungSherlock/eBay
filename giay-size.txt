@@ -491,3 +491,8 @@
 "US 12.5 (Men's)"
 "US 8.5 (Men's)"
 "US 10.5 (Men's)"
+"US 6 (Women's)"
+"US 9 (Women's)"
+"US 8 (Women's)"
+"US 9 (Men's)"
+"US 12.5 (Men's)"

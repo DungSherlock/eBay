@@ -491,3 +491,8 @@
 "https://www.on-running.com/en-us/products/cloudswift/mens/magnet-citron"
 "https://www.on-running.com/en-us/products/cloudflyer-4-0/mens/ginger-white"
 "https://www.on-running.com/en-us/products/cloudflyer-4-0/mens/ginger-white"
+"https://www.on-running.com/en-us/products/cloudnova/womens/white-glacier"
+"https://www.on-running.com/en-us/products/cloudnova/womens/white-glacier"
+"https://www.on-running.com/en-us/products/cloudnova/womens/white-glacier"
+"https://www.on-running.com/en-us/products/cloud-5/mens/all-black"
+"https://www.on-running.com/en-us/products/cloud-5/mens/all-black"
