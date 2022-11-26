@@ -28,6 +28,9 @@ list=`curl -s 'https://www.on-running.com/en-us/graphql' \
   --data-raw '{"operationName":null,"variables":{},"query":"{\n  currentOrder {\n    number\n    email\n    checkoutVersion\n    state\n    completedAt\n    containsSocks\n    isRegistrationValid\n    isShippingValid\n    isPaymentValid\n    adyenTotalAmount\n    guestToken\n    isPreorder\n    isExcludedFromStoreCredit\n    isCyclon\n    items {\n      id\n      variantId\n      variantSku\n      sku\n      color\n      name\n      groupName\n      imageUrl\n      price\n      productPath\n      productType\n      quantity\n      size\n      stock\n      giftCardMessage\n      isBackorderable\n      variant {\n        isPreorderable\n        __typename\n      }\n      __typename\n    }\n    promotionAdjustment {\n      ...promotionAdjustment\n      __typename\n    }\n    payments {\n      amount\n      paymentMethodType\n      __typename\n    }\n    __typename\n  }\n  paths {\n    explorePath\n    cartUrl\n    __typename\n  }\n}\n\nfragment promotionAdjustment on PromotionAdjustment {\n  id\n  amount\n  code\n  currency\n  __typename\n}\n"}' \
   --compressed`
 
+
+echo $list | jq '.data.currentOrder.items[]'
+sleep 20
 echo $list | jq '.data.currentOrder.items[].id' >> giay-id.txt
 echo $list | jq '.data.currentOrder.items[].productPath' >> giay-productPath.txt
 echo $list | jq '.data.currentOrder.items[].size' >> giay-size.txt
