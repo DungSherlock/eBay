@@ -79,6 +79,7 @@ do
   -H 'x-o-platform-version: main-1.26.0-be17f7' \
   -H 'x-o-segment: oaoh' \
   --compressed`
+    echo $list | jq '.data.shoppingListDetails.items' >> ebay-test.txt
 
     if [[ $list =~ "blocked" ]]
       then
