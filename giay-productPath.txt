@@ -674,3 +674,5 @@
 "https://www.on-running.com/en-us/products/cloudnova/mens/navy-white"
 "https://www.on-running.com/en-us/products/cloudnova/mens/navy-white"
 "https://www.on-running.com/en-us/products/cloudnova/mens/navy-white"
+"https://www.on-running.com/en-us/products/cloudnova/womens/zinc-lily"
+"https://www.on-running.com/en-us/products/cloudnova/womens/zinc-lily"
