@@ -1,0 +1,9 @@
+docker
+- inStock
+curl -s https://www.ebay.com/itm/314256733123 | grep -oiP '(?<=inStock":).*?(?=\,)'
+- size giay
+curl -s https://www.ebay.com/itm/314256733123 | grep -oiP '(?<=Shoe Size":).*?(?=})'
+- gia ban
+curl -s https://www.ebay.com/itm/314256733123 | grep -oiP '(?<="text":"US \$).*?(?=")'
+- itemID
+curl -s https://www.ebay.com/itm/314256733123 | grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's/.*/itemID/'
