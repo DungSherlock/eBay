@@ -13,7 +13,7 @@ do
   while true
     do
       curl -s ${array[0]} > log.txt
-      grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's/.*/itemID/' log.txt
+      grep -oiP '(?<="text":"US \$).*?(?=")' log.txt | sed 's/.*/itemID/'
       grep -oiP '(?<=Shoe Size":).*?(?=})' log.txt
       grep -oiP '(?<="text":"US \$).*?(?=")' log.txt
       grep -oiP '(?<=inStock":).*?(?=\,)' log.txt
