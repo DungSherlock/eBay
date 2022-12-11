@@ -12,11 +12,11 @@ do
   array=(${line//|/ })
   while true
     do
-      curl=`curl -s '${array[0]}'`
-      echo curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's/.*/itemID/'
-      echo curl | grep -oiP '(?<=Shoe Size":).*?(?=})'
-      echo curl | grep -oiP '(?<="text":"US \$).*?(?=")'
-      echo curl | grep -oiP '(?<=inStock":).*?(?=\,)'
+      curl ${array[0]} > log.txt
+      grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's/.*/itemID/' log.txt
+      grep -oiP '(?<=Shoe Size":).*?(?=})' log.txt
+      grep -oiP '(?<="text":"US \$).*?(?=")' log.txt
+      grep -oiP '(?<=inStock":).*?(?=\,)' log.txt
 
     done
 done < input-giay.txt
