@@ -19,8 +19,6 @@ do
       echo curl | grep -oiP '(?<=inStock":).*?(?=\,)'
 
     done
-fi
-
 done < input-giay.txt
 
 # git add -A .
