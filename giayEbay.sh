@@ -11,7 +11,7 @@ while read line
 do
   array=(${line//|/ })
   curl=`curl -s ${array[0]}`
-  echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's/.*/itemID/'
+  echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's/.*/'${array[0]}'/'
   echo $curl | grep -oiP '(?<=Shoe Size":).*?(?=})'
   echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")'
   echo $curl | grep -oiP '(?<=inStock":).*?(?=\,)'
