@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git pull
+# git pull
 : > giayEbay-item.txt
 : > giayEbay-size.txt
 : > giayEbay-price.txt
@@ -10,12 +10,12 @@ git pull
 while read line
 do
   array=(${line//|/ })
-  curl=`curl ${array[0]}`
-  echo ${array[0]}
-  echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed "s|.*|'${array[0]}'|g" >> giayEbay-item.txt
-  echo $curl | grep -oiP '(?<=Shoe Size":).*?(?=})' >> giayEbay-size.txt
-  echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' >> giayEbay-price.txt
-  echo $curl | grep -oiP '(?<=inStock":).*?(?=\,)' >> giayEbay-stock.txt
+  curl=`curl ${array[0]}' -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application signed-exchange;v=b3;q=0.9'`
+  echo $curl
+  # echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's|.*|${array[0]}|g' >> giayEbay-item.txt
+  # echo $curl | grep -oiP '(?<=Shoe Size":).*?(?=})' >> giayEbay-size.txt
+  # echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' >> giayEbay-price.txt
+  # echo $curl | grep -oiP '(?<=inStock":).*?(?=\,)' >> giayEbay-stock.txt
 done < input-giay.txt
 
 git add -A .
