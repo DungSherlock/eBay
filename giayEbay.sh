@@ -9,9 +9,9 @@
 
 while read line
 do
-  curl=`curl '$line' -H 'accept: text/html'`
-  echo $line
-  echo $curl
+  curl=`curl `$line` -H 'accept: text/html'`
+  # echo $line
+  # echo $curl
   echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's|.*|${array[0]}|g' >> giayEbay-item.txt
   echo $curl | grep -oiP '(?<=Shoe Size":).*?(?=})' >> giayEbay-size.txt
   echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' >> giayEbay-price.txt
