@@ -9,7 +9,8 @@
 
 while read line
 do
-  curl=`curl -H 'accept: text/html' `$line
+  # curl=`curl $line -H 'accept: text/html'`
+  curl $line -H 'accept: text/html'
   # echo $line
   # echo $curl
   echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's|.*|${array[0]}|g' >> giayEbay-item.txt
