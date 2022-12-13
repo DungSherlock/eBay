@@ -10,8 +10,9 @@ git pull
 while read line
 do
   array=(${line//|/ })
-  curl=`curl -s ${array[0]}`
-  echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed "s|.*|'${array[0]}'|" >> giayEbay-item.txt
+  curl=`curl ${array[0]}`
+  echo ${array[0]}
+  echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed "s|.*|'${array[0]}'|g" >> giayEbay-item.txt
   echo $curl | grep -oiP '(?<=Shoe Size":).*?(?=})' >> giayEbay-size.txt
   echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' >> giayEbay-price.txt
   echo $curl | grep -oiP '(?<=inStock":).*?(?=\,)' >> giayEbay-stock.txt
