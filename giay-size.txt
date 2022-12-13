@@ -839,3 +839,4 @@
 "US 10.5 (Men's)"
 "US 11.5 (Men's)"
 "US 13 (Men's)"
+"US 10.5 (Women's)"
