@@ -9,7 +9,7 @@
 
 while read line
 do
-  curl=`curl `$line` -H 'accept: text/html'`
+  # curl=`curl `$line` -H 'accept: text/html'`
   # echo $line
   # echo $curl
   curl $line -H 'accept: text/html'
