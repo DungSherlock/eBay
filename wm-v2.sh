@@ -85,8 +85,8 @@ do
         link=`echo $list | jq '.redirectUrl' | sed 's/"//g'`
         `open -n -a /Applications/Microsoft\ Edge.app --args --profile-directory=Default https://walmart.com$link`
         read -p "blocked"
-        echo 'sleep 20'
-        sleep 20
+        echo 'Thoát script'
+        exit 1
       else
         echo $list | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> ebay-usItemId.txt
         echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> ebay-usItemId.txt
