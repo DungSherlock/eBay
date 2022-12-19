@@ -15,8 +15,8 @@
 # exit 1  
 while read line
 do
-  echo $line
-  curl ${line} \
+  echo http://www.ebay.com/itm/$line
+  nguon+=`curl http://www.ebay.com/itm/$line \
   -H 'authority: www.ebay.com' \
   -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
   -H 'accept-language: vi' \
@@ -35,9 +35,9 @@ do
   -H 'sec-fetch-user: ?1' \
   -H 'upgrade-insecure-requests: 1' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46' \
-  --compressed
-  
-  echo Hay
+  --compressed`
+
+  echo $nguon
 
   echo $curl | grep -oiP '(?<="text":"US \$).*?(?=")' | sed 's|.*|${array[0]}|g' >> giayEbay-item.txt
   echo $curl | grep -oiP '(?<=Shoe Size":).*?(?=})' >> giayEbay-size.txt
