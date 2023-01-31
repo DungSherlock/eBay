@@ -7,7 +7,7 @@
 "6595 W 300 N, Decatur, IN 46733"
 "10630W Twin Bay Rd, Lot 12, Hayward, WI 54843"
 "422 W Melrose St, Apt 301, Chicago, IL 60657"
-Sai info
+"4716 E Richert Ave, Fresno, CA 93726"
 "278 County Road 911, Royse City, TX 75189"
 "460 Greenleaf St, Boise, ID 83713"
 "941 S Alma Ave, Los Angeles, CA 90023"

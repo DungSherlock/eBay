@@ -6,8 +6,8 @@
 "Now arrives Fri, Feb 03"
 "Canceled"
 "Arrives by Thu, Feb 02"
-"Cancellation requested today"
-Sai info
+"Canceled"
+"Delivered on Jan 27"
 "Now arrives Tue, Jan 31"
 "Now arrives Tue, Jan 31"
 "Arrives by Mon, Feb 06"
