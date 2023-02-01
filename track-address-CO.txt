@@ -26,3 +26,6 @@
 "1779 Krucker Rd, Hamilton, OH 45013"
 "82 3rd Ave, Hadley, NY 12835"
 "100 Arbor Rd NW, Minerva, OH 44657"
+"8326 NW 68th St, Miami, FL 33166"
+"5214 E Mourn Ln, Hutchinson, KS 67501"
+"19235 Pine Pl, Oregon City, OR 97045"
