@@ -15,6 +15,7 @@
 "11 Jennifer St, Greenbrier, AR 72058"
 "154 S Main St, Lisbon, NH 03585"
 "29662 Northshore St, Menifee, CA 92584"
+"371 Napa Loop, Bismarck, ND 58504"
 "1681 W Oliver, Show Low, AZ 85901"
 "140 W 13th St apt A3, Wahoo, NE 68066"
 "1851 Holt Rd, Mobile, AL 36617"
