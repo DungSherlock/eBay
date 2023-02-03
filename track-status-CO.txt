@@ -17,3 +17,4 @@ Sai info
 "Now arrives Mon, Feb 06"
 "Cancellation requested on Feb 02"
 "Delivered on Feb 01"
+"Now arrives Fri, Feb 03"

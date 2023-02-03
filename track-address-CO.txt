@@ -17,3 +17,4 @@ Sai info
 "8326 NW 68th St, Miami, FL 33166"
 "3891 Lamar Ave #38118w, Memphis, TN 38117"
 "5214 E Mourn Ln, Hutchinson, KS 67501"
+"19235 Pine Pl, Oregon City, OR 97045"
