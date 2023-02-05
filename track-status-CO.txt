@@ -3,7 +3,7 @@
 "Delivered on Feb 03"
 "Now arrives Tue, Feb 07"
 "Delivered on Feb 03"
-Sai info
+"Arrives today"
 "Delivered today at 10:24am"
 "Canceled"
 "Cancellation requested on Feb 04"
