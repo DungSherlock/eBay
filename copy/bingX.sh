@@ -1,5 +1,5 @@
 #!/bin/bash
-# git pull
+git pull
 : > nickName.txt
 : > uid.txt
 : > equity.txt
@@ -10,6 +10,9 @@
 : > avgProfitRate.txt
 : > avgLossRate.txt
 : > totalTransactions.txt
+: > strFollowerNum.txt
+: > tradeDays.txt
+: > lastTradeTime.txt
 
 for i in {0..11}
 do
@@ -49,7 +52,9 @@ do
     else
         echo "page $i"
         echo $bingX | jq '.data.result[].trader.nickName' >> nickName.txt
-        echo $bingX | jq '.data.result[].trader.uid' >> uid.txt
+        # echo $bingX | jq '.data.result[].trader.uid' >> uid.txt
+        # echo $bingX | jq '.data.result[].trader.nickName' | + `echo https://bingx.com/vi-vn/traders/\?from=5\&search=` >> uid.txt
+        echo $bingX | jq '.data.result[].trader.nickName' | xargs -I {} echo "https://bingx.com/vi-vn/traders/?from=5&search={}" >> uid.txt
         echo $bingX | jq '.data.result[].rankStat.equity' >> equity.txt # Vốn
         echo $bingX | jq '.data.result[].rankStat.totalEarnings' >> totalEarnings.txt # Lợi nhuận trader
         echo $bingX | jq '.data.result[].rankStat.followerEarning' >> followerEarning.txt # Lợi nhuận người copy
@@ -58,6 +63,9 @@ do
         echo $bingX | jq '.data.result[].rankStat.avgProfitRate' >> avgProfitRate.txt # Tỉ lệ lãi bình quân
         echo $bingX | jq '.data.result[].rankStat.avgLossRate' >> avgLossRate.txt # Tỉ lệ lỗ bình quân
         echo $bingX | jq '.data.result[].rankStat.totalTransactions' >> totalTransactions.txt # Tổng các lệnh giao dịch
+        echo $bingX | jq '.data.result[].rankStat.strFollowerNum' >> strFollowerNum.txt # Số người sao chép
+        echo $bingX | jq '.data.result[].rankStat.tradeDays' >> tradeDays.txt # Số ngày đã giao dịch
+        echo $bingX | jq '.data.result[].rankStat.lastTradeTime' >> lastTradeTime.txt # Ngày giao dịch gần nhất
     fi
 done
 
@@ -78,6 +86,9 @@ linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&avgProfitRate==IMPORTDATA\(\"`$linkGit`echo avgProfitRate.txt\"\)\
 \&avgLossRate==IMPORTDATA\(\"`$linkGit`echo avgLossRate.txt\"\)\
 \&totalTransactions==IMPORTDATA\(\"`$linkGit`echo totalTransactions.txt\"\)\
+\&strFollowerNum==IMPORTDATA\(\"`$linkGit`echo strFollowerNum.txt\"\)\
+\&tradeDays==IMPORTDATA\(\"`$linkGit`echo tradeDays.txt\"\)\
+\&tradeDays==IMPORTDATA\(\"`$linkGit`echo lastTradeTime.txt\"\)\
 `
 echo $linkPost
 
