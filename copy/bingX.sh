@@ -73,6 +73,6 @@ linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&equity==IMPORTDATA\(\"`$linkGit`echo equity.txt\"\)\
 \&totalEarnings==IMPORTDATA\(\"`$linkGit`echo totalEarnings.txt\"\)\
 \&followerEarning==IMPORTDATA\(\"`$linkGit`echo followerEarning.txt\"\)\
-\`
+`
 echo $linkPost
 
