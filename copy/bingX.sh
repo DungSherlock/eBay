@@ -73,6 +73,11 @@ linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&equity==IMPORTDATA\(\"`$linkGit`echo equity.txt\"\)\
 \&totalEarnings==IMPORTDATA\(\"`$linkGit`echo totalEarnings.txt\"\)\
 \&followerEarning==IMPORTDATA\(\"`$linkGit`echo followerEarning.txt\"\)\
+\&maxDrawDown==IMPORTDATA\(\"`$linkGit`echo maxDrawDown.txt\"\)\
+\&winRate==IMPORTDATA\(\"`$linkGit`echo winRate.txt\"\)\
+\&avgProfitRate==IMPORTDATA\(\"`$linkGit`echo avgProfitRate.txt\"\)\
+\&avgLossRate==IMPORTDATA\(\"`$linkGit`echo avgLossRate.txt\"\)\
+\&totalTransactions==IMPORTDATA\(\"`$linkGit`echo totalTransactions.txt\"\)\
 `
 echo $linkPost
 
