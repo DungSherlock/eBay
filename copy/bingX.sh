@@ -69,9 +69,10 @@ gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/copy/`$gitCommit`echo /`
 linkApi=`echo https://script.google.com/macros/s/AKfycbxZKVFLSFo99w9G8aL1BGd5Inx9g2P0bo4Jm0qrb8KflcC_CDBvs22GuKx9J3HHPR8-WA/exec?`
 linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
-&uid==IMPORTDATA\(\"`$linkGit`echo uid.txt\"\)\
-&equity==IMPORTDATA\(\"`$linkGit`echo equity.txt\"\)\
-&totalEarnings==IMPORTDATA\(\"`$linkGit`echo totalEarnings.txt\"\)\
-&followerEarning==IMPORTDATA\(\"`$linkGit`echo followerEarning.txt\"\)`
+\&uid==IMPORTDATA\(\"`$linkGit`echo uid.txt\"\)\
+\&equity==IMPORTDATA\(\"`$linkGit`echo equity.txt\"\)\
+\&totalEarnings==IMPORTDATA\(\"`$linkGit`echo totalEarnings.txt\"\)\
+\&followerEarning==IMPORTDATA\(\"`$linkGit`echo followerEarning.txt\"\)\
+\`
 echo $linkPost
 
