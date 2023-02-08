@@ -46,7 +46,7 @@ do
   -H 'visitorid: -1' \
   --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":3,"value":0}],"nickName":""}' \
   --compressed`
-  
+
     result=`echo $bingX | jq '.data.result[]'`
 
     if [ "$result" == "" ]; then
@@ -55,7 +55,7 @@ do
         echo "page $i"
         echo $bingX | jq '.data.result[].trader.nickName' >> nickName.txt
         # echo $bingX | jq '.data.result[].trader.uid' >> uid.txt
-        echo $bingX | jq '.data.result[].trader.nickName' | xargs -I {} echo "https://bingx.com/vi-vn/traders/?from=5&search={}" >> uid.txt
+        echo $bingX | jq '.data.result[].trader.nickName' | xargs -I {} echo "https://bingx.com/vi-vn/traders/?from=5&search={}" | sed 's/,/ /g' >> uid.txt
         echo $bingX | jq '.data.result[].rankStat.disPlayName' >> disPlayName.txt # Tên hợp đồng
         echo $bingX | jq '.data.result[].rankStat.equity' >> equity.txt # Vốn
         echo $bingX | jq '.data.result[].rankStat.totalEarnings' >> totalEarnings.txt # Lợi nhuận trader
