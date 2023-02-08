@@ -2,6 +2,7 @@
 git pull
 : > nickName.txt
 : > uid.txt
+: > disPlayName.txt
 : > equity.txt
 : > totalEarnings.txt
 : > followerEarning.txt
@@ -16,7 +17,7 @@ git pull
 
 for i in {0..1000}
 do
-    bingX=`curl -s 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=comprehensive' \
+    bingX=`curl -s 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageSize=6&pageId='$i'&order=desc&sort=comprehensive' \
   -H 'authority: api-app.we-api.com' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: vi' \
@@ -37,14 +38,15 @@ do
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: cross-site' \
-  -H 'sign: F137B2120FACEEDD30D021C5F40E41F4FF9362C37048269B5FBC67DE280FEEC7' \
-  -H 'timestamp: 1675825216742' \
+  -H 'sign: 8BE71E970C7C3CDBC13FAAED17547804603AF5765DCABDA11904FE049435A561' \
+  -H 'timestamp: 1675829298875' \
   -H 'timezone: 7' \
-  -H 'traceid: be9a0853-c919-4bab-ada5-2798a0a1324b' \
+  -H 'traceid: 52e0873f-8980-43e6-8dfc-4e0d7b89ba74' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
   -H 'visitorid: -1' \
-  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":4,"value":0}],"nickName":""}' \
+  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":3,"value":0}],"nickName":""}' \
   --compressed`
+  
     result=`echo $bingX | jq '.data.result[]'`
 
     if [ "$result" == "" ]; then
@@ -53,8 +55,8 @@ do
         echo "page $i"
         echo $bingX | jq '.data.result[].trader.nickName' >> nickName.txt
         # echo $bingX | jq '.data.result[].trader.uid' >> uid.txt
-        # echo $bingX | jq '.data.result[].trader.nickName' | + `echo https://bingx.com/vi-vn/traders/\?from=5\&search=` >> uid.txt
         echo $bingX | jq '.data.result[].trader.nickName' | xargs -I {} echo "https://bingx.com/vi-vn/traders/?from=5&search={}" >> uid.txt
+        echo $bingX | jq '.data.result[].rankStat.disPlayName' >> disPlayName.txt # Tên hợp đồng
         echo $bingX | jq '.data.result[].rankStat.equity' >> equity.txt # Vốn
         echo $bingX | jq '.data.result[].rankStat.totalEarnings' >> totalEarnings.txt # Lợi nhuận trader
         echo $bingX | jq '.data.result[].rankStat.followerEarning' >> followerEarning.txt # Lợi nhuận người copy
@@ -78,6 +80,7 @@ linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`ec
 linkApi=`echo https://script.google.com/macros/s/AKfycbxZKVFLSFo99w9G8aL1BGd5Inx9g2P0bo4Jm0qrb8KflcC_CDBvs22GuKx9J3HHPR8-WA/exec?`
 linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&uid==IMPORTDATA\(\"`$linkGit`echo uid.txt\"\)\
+\&disPlayName==IMPORTDATA\(\"`$linkGit`echo disPlayName.txt\"\)\
 \&equity==IMPORTDATA\(\"`$linkGit`echo equity.txt\"\)\
 \&totalEarnings==IMPORTDATA\(\"`$linkGit`echo totalEarnings.txt\"\)\
 \&followerEarning==IMPORTDATA\(\"`$linkGit`echo followerEarning.txt\"\)\
