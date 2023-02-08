@@ -14,9 +14,9 @@ git pull
 : > tradeDays.txt
 : > lastTradeTime.txt
 
-for i in {0..11}
+for i in {0..100}
 do
-    bingX=`curl -s 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageSize=6&pageId='$i'&order=desc&sort=comprehensive' \
+    bingX=`curl 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageSize=6&pageId='$1'&order=desc&sort=comprehensive' \
   -H 'authority: api-app.we-api.com' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: vi' \
@@ -37,13 +37,13 @@ do
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: cross-site' \
-  -H 'sign: BB860EE8954A6C62A6F07B941703BA6F9D6AAD30DEB572EE154BAE5D1644151A' \
-  -H 'timestamp: 1675781863547' \
+  -H 'sign: F137B2120FACEEDD30D021C5F40E41F4FF9362C37048269B5FBC67DE280FEEC7' \
+  -H 'timestamp: 1675825216742' \
   -H 'timezone: 7' \
-  -H 'traceid: 406ccd0c-1476-497b-8c90-13ec58c69eed' \
+  -H 'traceid: be9a0853-c919-4bab-ada5-2798a0a1324b' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
   -H 'visitorid: -1' \
-  --data-raw '{"conditions":[{"key":"equity","type":"range","min":1000,"value":0},{"key":"riskLevel","type":"range","min":1,"max":4,"value":0},{"key":"winRate","type":"range","min":80,"value":0}],"nickName":""}' \
+  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":4,"value":0}],"nickName":""}' \
   --compressed`
     result=`echo $bingX | jq '.data.result[]'`
 
