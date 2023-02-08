@@ -88,7 +88,7 @@ linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&totalTransactions==IMPORTDATA\(\"`$linkGit`echo totalTransactions.txt\"\)\
 \&strFollowerNum==IMPORTDATA\(\"`$linkGit`echo strFollowerNum.txt\"\)\
 \&tradeDays==IMPORTDATA\(\"`$linkGit`echo tradeDays.txt\"\)\
-\&tradeDays==IMPORTDATA\(\"`$linkGit`echo lastTradeTime.txt\"\)\
+\&lastTradeTime==IMPORTDATA\(\"`$linkGit`echo lastTradeTime.txt\"\)\
 `
 echo $linkPost
 

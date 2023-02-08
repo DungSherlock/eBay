@@ -4,7 +4,7 @@
 "Canceled"
 "Now arrives Thu, Feb 09"
 "Delivered on Feb 06"
-"Now arrives Thu, Feb 09"
+"Now arrives Fri, Feb 10"
 "Delivered on Feb 06"
 "Delivered on Feb 06"
 "Cancellation requested on Feb 02"
