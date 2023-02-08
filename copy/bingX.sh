@@ -16,7 +16,7 @@ git pull
 
 for i in {0..1000}
 do
-    bingX=`curl -s 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageSize=6&pageId=500&order=desc&sort=comprehensive' \
+    bingX=`curl -s 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=comprehensive' \
   -H 'authority: api-app.we-api.com' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: vi' \
@@ -46,7 +46,7 @@ do
   --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":4,"value":0}],"nickName":""}' \
   --compressed`
     result=`echo $bingX | jq '.data.result[]'`
-    echo $result
+
     if [ "$result" == "" ]; then
         break
     else
