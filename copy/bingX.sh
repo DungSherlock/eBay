@@ -56,7 +56,7 @@ do
         echo "page $i"
         echo $bingX | jq '.data.result[].trader.nickName' >> nickName.txt
         # echo $bingX | jq '.data.result[].trader.uid' >> uid.txt
-        echo $bingX | jq '.data.result[].trader.nickName' | xargs -I {} echo "=hyperlink(\"https://bingx.com/vi-vn/traders/?from=5&search={}\")" | sed 's/,/ /g' >> uid.txt
+        echo $bingX | jq '.data.result[].trader.nickName' | xargs -I {} echo "=HYPERLINK(\"https://bingx.com/vi-vn/traders/?from=5&search={}\")" | sed 's/,/ /g' >> uid.txt
         echo $bingX | jq '.data.result[].rankStat.disPlayName' >> disPlayName.txt # Tên hợp đồng
         echo $bingX | jq '.data.result[].rankStat.equity' >> equity.txt # Vốn
         echo $bingX | jq '.data.result[].rankStat.totalEarnings' >> totalEarnings.txt # Lợi nhuận trader
