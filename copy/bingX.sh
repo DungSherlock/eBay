@@ -13,6 +13,10 @@ git pull
 : > strRecent30DaysRate.txt
 : > strRecent90DaysRate.txt
 : > strRecent180DaysRate.txt
+: > riskLevel7Days.txt
+: > riskLevel30Days.txt
+: > riskLevel90Days.txt
+: > riskLevel180Days.txt
 : > winRate.txt
 : > avgProfitRate.txt
 : > avgLossRate.txt
@@ -73,6 +77,10 @@ do
         echo $bingX | jq '.data.result[].rankStat.strRecent30DaysRate' | sed 's/+//g' >> strRecent30DaysRate.txt
         echo $bingX | jq '.data.result[].rankStat.strRecent90DaysRate' | sed 's/+//g' >> strRecent90DaysRate.txt
         echo $bingX | jq '.data.result[].rankStat.strRecent180DaysRate' | sed 's/+//g' >> strRecent180DaysRate.txt
+        echo $bingX | jq '.data.result[].rankStat.riskLevel7Days' >> riskLevel7Days.txt
+        echo $bingX | jq '.data.result[].rankStat.riskLevel30Days' >> riskLevel30Days.txt
+        echo $bingX | jq '.data.result[].rankStat.riskLevel90Days' >> riskLevel90Days.txt
+        echo $bingX | jq '.data.result[].rankStat.riskLevel180Days' >> riskLevel180Days.txt
         echo $bingX | jq '.data.result[].rankStat.winRate' | sed 's/+//g' >> winRate.txt # Tỉ lệ thắng
         echo $bingX | jq '.data.result[].rankStat.avgProfitRate' >> avgProfitRate.txt # Tỉ lệ lãi bình quân
         echo $bingX | jq '.data.result[].rankStat.avgLossRate' >> avgLossRate.txt # Tỉ lệ lỗ bình quân
@@ -103,6 +111,10 @@ linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&strRecent30DaysRate==IMPORTDATA\(\"`$linkGit`echo strRecent30DaysRate.txt\"\)\
 \&strRecent90DaysRate==IMPORTDATA\(\"`$linkGit`echo strRecent90DaysRate.txt\"\)\
 \&strRecent180DaysRate==IMPORTDATA\(\"`$linkGit`echo strRecent180DaysRate.txt\"\)\
+\&riskLevel7Days==IMPORTDATA\(\"`$linkGit`echo riskLevel7Days.txt\"\)\
+\&riskLevel30Days==IMPORTDATA\(\"`$linkGit`echo riskLevel30Days.txt\"\)\
+\&riskLevel90Days==IMPORTDATA\(\"`$linkGit`echo riskLevel90Days.txt\"\)\
+\&riskLevel180Days==IMPORTDATA\(\"`$linkGit`echo riskLevel180Days.txt\"\)\
 \&winRate==IMPORTDATA\(\"`$linkGit`echo winRate.txt\"\)\
 \&avgProfitRate==IMPORTDATA\(\"`$linkGit`echo avgProfitRate.txt\"\)\
 \&avgLossRate==IMPORTDATA\(\"`$linkGit`echo avgLossRate.txt\"\)\
