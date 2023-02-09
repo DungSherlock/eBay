@@ -23,16 +23,16 @@ git pull
 
 for i in {0..1000}
 do
-    bingX=`curl -s 'https://bingx.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=comprehensive' \
-  -H 'authority: bingx.com' \
+    bingX=`curl -s 'https://api-app.qq-os.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=comprehensive' \
+  -H 'authority: api-app.qq-os.com' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: vi' \
-  -H 'app_version: 4.59.4' \
+  -H 'app_version: 4.59.6' \
   -H 'appid: 30004' \
   -H 'authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDc1NjY2OTY1MTAxNjc4NTk0IiwiZXhwIjoxNjc2MTYzNTExfQ.-1wSkftHAwllgLFqQSZ3g74IYldMdDV5WL8AK1jo8-BoBxanjvB7jZWi1EcXttr2nX6fixAFXZObDH1Bbv_vqA' \
   -H 'channel: copychadingSEO' \
   -H 'content-type: application/json' \
-  -H 'cookie: uuid=b47c0dce-fbf5-4b3b-926e-a1da81c5a417; __cfruid=bf3b3bde847242aa3005005a7be47b05f043f1a0-1675484998; uid=1075666965101678594; fpw=login; kline_time_zone=8; locale=vi-vn; _cfuvid=wAZ4592mPbCaK8d5ry5Qip2x_p70hXaqLO9xyHC.caA-1675904279197-0-604800000; user_token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDc1NjY2OTY1MTAxNjc4NTk0IiwiZXhwIjoxNjc2MTYzNTExfQ.-1wSkftHAwllgLFqQSZ3g74IYldMdDV5WL8AK1jo8-BoBxanjvB7jZWi1EcXttr2nX6fixAFXZObDH1Bbv_vqA; showKo=0; showKo=0; __cf_bm=jgsrbT7DHZvDbyycPdgsg7TyfxYbQiAl7etTg6LOcYs-1675926529-0-AXdaDRPyRhsujb5W6hBcIvIPgqEBzBHij+iHzXW4+vZfUWWE1kvcp4uhWg4sLSawml6tschwrGM6Yk/pCbUfxFM=; lastCheckSessionAt=1675926957362; tokenExpiredAt=1675970157519; network_delay=92' \
+  -H 'cookie: __cfruid=8a2e0048ecaade746201a1e96518c0f6919043ca-1675904282; __cf_bm=4eqem.e5VftSCAjxv7ogKK_mijTLkHYPJbjQt2aBvkc-1675939228-0-AX3h7f0fSkCJ7ecb4eK7t/82RaLZAdqecz5J7fX80BqJiT497QpGbhs0Kifir0gxZnp8DiDnBf5JKr6a1So9lsI=' \
   -H 'device_id: b47c0dce-fbf5-4b3b-926e-a1da81c5a417' \
   -H 'dnt: 1' \
   -H 'lang: vi-VN' \
@@ -44,11 +44,11 @@ do
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-origin' \
-  -H 'sign: 9709C64ADB8176DDF7BA022EF6D416359C2966A20534EAB1A0313543964A377E' \
-  -H 'timestamp: 1675927420173' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'sign: C7FF4A8D4CA2C5DD8B0FB9EE2A55D62AA0BD0309FE8BC00CA64F24755A7720A3' \
+  -H 'timestamp: 1675939285573' \
   -H 'timezone: 7' \
-  -H 'traceid: 21c14334-d9d1-428f-8848-1028bc205ab7' \
+  -H 'traceid: 1d5ef421-24fe-427e-a510-0c8bd6d6f5c7' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
   -H 'visitorid: -1' \
   --data-raw '{"nickName":""}' \
