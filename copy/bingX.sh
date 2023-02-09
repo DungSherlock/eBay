@@ -66,7 +66,7 @@ do
         echo $bingX | jq '.data.result[].rankStat.disPlayName' >> disPlayName.txt # Tên hợp đồng
         echo $bingX | jq '.data.result[].rankStat.equity' >> equity.txt # Vốn
         echo $bingX | jq '.data.result[].rankStat.totalEarnings' | sed 's/+//g' >> totalEarnings.txt # Lợi nhuận trader
-        echo $bingX | jq '.data.result[].rankStat.followerEarning' >> followerEarning.txt # Lợi nhuận người copy
+        echo $bingX | jq '.data.result[].rankStat.followerEarning' | sed 's/+//g' >> followerEarning.txt # Lợi nhuận người copy
         echo $bingX | jq '.data.result[].rankStat.maxDrawDown' >> maxDrawDown.txt # Mức âm tài khoản tối đa
         echo $bingX | jq '.data.result[].rankStat.strTotalEarningsRate' | sed 's/+//g' >> strTotalEarningsRate.txt
         echo $bingX | jq '.data.result[].rankStat.strRecent7DaysRate' | sed 's/+//g' >> strRecent7DaysRate.txt
