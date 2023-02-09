@@ -17,7 +17,7 @@ git pull
 
 for i in {0..1000}
 do
-    bingX=`curl -s 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageSize=6&pageId='$i'&order=desc&sort=comprehensive' \
+    bingX=`curl -s 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=comprehensive' \
   -H 'authority: api-app.we-api.com' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: vi' \
@@ -38,13 +38,13 @@ do
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: cross-site' \
-  -H 'sign: 81DE294E91AA9AD22D3BE08F3A03B56BF42027AA9556913F3EFD7D3C4F2D3581' \
-  -H 'timestamp: 1675905464360' \
+  -H 'sign: B99F1219CE7AEDC8757D075E685DDF210046707CEC8E63C965F0058D1D2533A7' \
+  -H 'timestamp: 1675906167121' \
   -H 'timezone: 7' \
-  -H 'traceid: 71c879bf-5f2d-45ca-b52a-4da890bb7989' \
+  -H 'traceid: efc777e2-9107-47e8-8aaa-ae918b10947f' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
   -H 'visitorid: -1' \
-  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":5,"value":0}],"nickName":""}' \
+  --data-raw '{"nickName":""}' \
   --compressed`
 
     result=`echo $bingX | jq '.data.result[]'`
