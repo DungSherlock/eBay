@@ -65,15 +65,15 @@ do
         echo $bingX | jq '.data.result[].trader.nickName' | xargs -I {} echo "=HYPERLINK(\"https://bingx.com/vi-vn/traders/?from=5&search={}\")" | sed 's/,/ /g' >> link.txt
         echo $bingX | jq '.data.result[].rankStat.disPlayName' >> disPlayName.txt # Tên hợp đồng
         echo $bingX | jq '.data.result[].rankStat.equity' >> equity.txt # Vốn
-        echo $bingX | jq '.data.result[].rankStat.totalEarnings' >> totalEarnings.txt # Lợi nhuận trader
+        echo $bingX | jq '.data.result[].rankStat.totalEarnings' | sed 's/+//g' >> totalEarnings.txt # Lợi nhuận trader
         echo $bingX | jq '.data.result[].rankStat.followerEarning' >> followerEarning.txt # Lợi nhuận người copy
         echo $bingX | jq '.data.result[].rankStat.maxDrawDown' >> maxDrawDown.txt # Mức âm tài khoản tối đa
-        echo $bingX | jq '.data.result[].rankStat.strTotalEarningsRate' >> strTotalEarningsRate.txt
-        echo $bingX | jq '.data.result[].rankStat.strRecent7DaysRate' >> strRecent7DaysRate.txt
-        echo $bingX | jq '.data.result[].rankStat.strRecent30DaysRate' >> strRecent30DaysRate.txt
-        echo $bingX | jq '.data.result[].rankStat.strRecent90DaysRate' >> strRecent90DaysRate.txt
-        echo $bingX | jq '.data.result[].rankStat.strRecent180DaysRate' >> strRecent180DaysRate.txt
-        echo $bingX | jq '.data.result[].rankStat.winRate' >> winRate.txt # Tỉ lệ thắng
+        echo $bingX | jq '.data.result[].rankStat.strTotalEarningsRate' | sed 's/+//g' >> strTotalEarningsRate.txt
+        echo $bingX | jq '.data.result[].rankStat.strRecent7DaysRate' | sed 's/+//g' >> strRecent7DaysRate.txt
+        echo $bingX | jq '.data.result[].rankStat.strRecent30DaysRate' | sed 's/+//g' >> strRecent30DaysRate.txt
+        echo $bingX | jq '.data.result[].rankStat.strRecent90DaysRate' | sed 's/+//g' >> strRecent90DaysRate.txt
+        echo $bingX | jq '.data.result[].rankStat.strRecent180DaysRate' | sed 's/+//g' >> strRecent180DaysRate.txt
+        echo $bingX | jq '.data.result[].rankStat.winRate' | sed 's/+//g' >> winRate.txt # Tỉ lệ thắng
         echo $bingX | jq '.data.result[].rankStat.avgProfitRate' >> avgProfitRate.txt # Tỉ lệ lãi bình quân
         echo $bingX | jq '.data.result[].rankStat.avgLossRate' >> avgLossRate.txt # Tỉ lệ lỗ bình quân
         echo $bingX | jq '.data.result[].rankStat.totalTransactions' >> totalTransactions.txt # Tổng các lệnh giao dịch
