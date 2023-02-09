@@ -17,16 +17,15 @@ git pull
 
 for i in {0..1000}
 do
-    bingX=`curl -s 'https://api-app.qq-os.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=comprehensive' \
-  -H 'authority: api-app.qq-os.com' \
+    bingX=`curl -s 'https://api-app.we-api.com/api/v5/copy-trade/search/search?pageSize=6&pageId='$i'&order=desc&sort=comprehensive' \
+  -H 'authority: api-app.we-api.com' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: vi' \
   -H 'app_version: 4.59.4' \
   -H 'appid: 30004' \
-  -H 'authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDc1NjY2OTY1MTAxNjc4NTk0IiwiZXhwIjoxNjc2MDMzNTAxfQ.UaBEU26iv3KI9LkNM3WfE5CD7sRDwlmcSgs2Cgbio2hlfUXS2RHdLv0bdj7U1UHknviut01RzCoISG1nCyRPmg' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDc1NjY2OTY1MTAxNjc4NTk0IiwiZXhwIjoxNjc2MTYzNTExfQ.-1wSkftHAwllgLFqQSZ3g74IYldMdDV5WL8AK1jo8-BoBxanjvB7jZWi1EcXttr2nX6fixAFXZObDH1Bbv_vqA' \
   -H 'channel: copychadingSEO' \
   -H 'content-type: application/json' \
-  -H 'cookie: __cfruid=190fd71e7023344fe78f21570b1cd3f18b11f712-1675855830; __cf_bm=rHyTreU24ZntXWMLMIu68yAz36QNS.O1CAm1Aegl8yQ-1675855830-0-AY7BFTqNO/WMqAAH71Glt68pRbaJ6Bn3pFzM0gVOGZm3NC9pEHlsK6krV6wlRooH+JiN2IDppICpPm1KhFIEYx8=' \
   -H 'device_id: b47c0dce-fbf5-4b3b-926e-a1da81c5a417' \
   -H 'dnt: 1' \
   -H 'lang: vi-VN' \
@@ -39,13 +38,13 @@ do
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: cross-site' \
-  -H 'sign: D7DBBCE2809C7FC702683D3B6BA2C138EC5B964C39DDD35969C5C63F35DC2742' \
-  -H 'timestamp: 1675855900981' \
+  -H 'sign: 81DE294E91AA9AD22D3BE08F3A03B56BF42027AA9556913F3EFD7D3C4F2D3581' \
+  -H 'timestamp: 1675905464360' \
   -H 'timezone: 7' \
-  -H 'traceid: eb3522a3-cbef-4ecd-9666-c0a6f9bce346' \
+  -H 'traceid: 71c879bf-5f2d-45ca-b52a-4da890bb7989' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
   -H 'visitorid: -1' \
-  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":4,"value":0},{"key":"winRate","type":"range","min":80,"value":0}],"nickName":""}' \
+  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":5,"value":0}],"nickName":""}' \
   --compressed`
 
     result=`echo $bingX | jq '.data.result[]'`
