@@ -16,7 +16,7 @@ git pull
 
 for i in {0..1000}
 do
-    bybit=`curl 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?timeStamp=1676015594891&pageNo='$i'&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
+    bybit=`curl 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?timeStamp=1676015594891&pageNo='$i'&pageSize=16&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
   -H 'authority: api2.bybit.com' \
   -H 'accept: application/json' \
   -H 'accept-language: vi' \
@@ -37,7 +37,6 @@ do
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
   -H 'usertoken: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzYyNjg0NTMsInVzZXJfaWQiOjQ1NjE1MzIyLCJub25jZSI6IjQ1YmNiNmQzIiwiZ2VuX3RzIjoxNjc2MDA5MjUzLCJwIjozLCJucyI6IiIsImIiOjB9.KXgwbjvRP3hJrhA0icf8kFoT9-uw6uVtTF9fZaNzXoOv42VJtiDKribLWa8Seyqba0IXjU51eRMZ_QBRaVkTHw' \
   --compressed`
-    echo $bybit
 
     leaderDetails=`echo $bybit | jq '.result.leaderDetails[]'`
 
