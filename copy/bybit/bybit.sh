@@ -1,5 +1,5 @@
 #!/bin/bash
-git pull
+# git pull
 : > nickName.txt
 : > leaderMark.txt
 : > yesterdayMaxFollowersNum.txt
@@ -16,7 +16,7 @@ git pull
 
 for i in {1..1000}
 do
-    bybit=`curl 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?timeStamp=1676015594891&pageNo='$i'&pageSize=16&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
+    bybit=`curl -s 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?timeStamp=1676015594891&pageNo='$i'&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
   -H 'authority: api2.bybit.com' \
   -H 'accept: application/json' \
   -H 'accept-language: vi' \
@@ -46,14 +46,14 @@ do
         echo "page $i"
         echo $bybit | jq '.result.leaderDetails[].nickName' >> nickName.txt
         echo $bybit | jq '.result.leaderDetails[].leaderMark' >> leaderMark.txt
-        echo $bybit | jq '.result.leaderDetails[].leaderLevel' >> leaderLevel.txt
-        echo $bybit | jq '.result.leaderDetails[].lastLeaderLevel' >> lastLeaderLevel.txt
+        echo $bybit | jq '.result.leaderDetails[].leaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> leaderLevel.txt
+        echo $bybit | jq '.result.leaderDetails[].lastLeaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> lastLeaderLevel.txt
         echo $bybit | jq '.result.leaderDetails[].leaderLevelChangeTimeE3' >> leaderLevelChangeTimeE3.txt
-        echo $bybit | jq '.result.leaderDetails[].metricValues[0]' >> ROI.txt
-        echo $bybit | jq '.result.leaderDetails[].metricValues[1]' >> totalTradeProfit.txt
+        echo $bybit | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI.txt
+        echo $bybit | jq '.result.leaderDetails[].metricValues[1]' | sed 's/+//g' >> totalTradeProfit.txt
         echo $bybit | jq '.result.leaderDetails[].metricValues[2]' >> maxFollower.txt
-        echo $bybit | jq '.result.leaderDetails[].metricValues[3]' >> totalAllFollowProfit.txt
-        echo $bybit | jq '.result.leaderDetails[].metricValues[4]' >> WinRate.txt
+        echo $bybit | jq '.result.leaderDetails[].metricValues[3]' | sed 's/+//g' >> totalAllFollowProfit.txt
+        echo $bybit | jq '.result.leaderDetails[].metricValues[4]' | sed 's/+//g' >> WinRate.txt
         echo $bybit | jq '.result.leaderDetails[].metricValues[5]' >> stableScoreLevel.txt
 
 
@@ -71,7 +71,7 @@ git commit -m --allow-empty
 git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
-linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/`
+linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/bybit/`
 linkApi=`echo https://script.google.com/macros/s/AKfycbzqe1xUYUS3DMYILrf4gi0r3jlf5rok46Yvx_2BSVEu_p_oVj5hdv3q-YXoMUG-N7HB/exec?`
 linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&leaderMark==IMPORTDATA\(\"`$linkGit`echo leaderMark.txt\"\)\
