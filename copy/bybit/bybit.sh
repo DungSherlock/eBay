@@ -44,8 +44,10 @@ do
         break
     else
         echo "page $i"
+        nickName=`echo $bybit | jq '.result.leaderDetails[].nickName'`
         echo $bybit | jq '.result.leaderDetails[].nickName' >> nickName.txt
-        echo $bybit | jq '.result.leaderDetails[].leaderMark' >> leaderMark.txt
+        echo $bybit | jq '.result.leaderDetails[].leaderMark' | xargs -I {} echo "=HYPERLINK(\"https://www.bybit.com/copyTrade/trade-center/detail?leaderMark={}\",\"{$nickName}\"" >> leaderMark.txt
+        echo $bybit | jq '.result.leaderDetails[].yesterdayMaxFollowersNum' >> yesterdayMaxFollowersNum.txt
         echo $bybit | jq '.result.leaderDetails[].leaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> leaderLevel.txt
         echo $bybit | jq '.result.leaderDetails[].lastLeaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> lastLeaderLevel.txt
         echo $bybit | jq '.result.leaderDetails[].leaderLevelChangeTimeE3' >> leaderLevelChangeTimeE3.txt
