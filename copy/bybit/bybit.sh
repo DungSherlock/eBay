@@ -37,6 +37,7 @@ do
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
   -H 'usertoken: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzYyNjg0NTMsInVzZXJfaWQiOjQ1NjE1MzIyLCJub25jZSI6IjQ1YmNiNmQzIiwiZ2VuX3RzIjoxNjc2MDA5MjUzLCJwIjozLCJucyI6IiIsImIiOjB9.KXgwbjvRP3hJrhA0icf8kFoT9-uw6uVtTF9fZaNzXoOv42VJtiDKribLWa8Seyqba0IXjU51eRMZ_QBRaVkTHw' \
   --compressed`
+    echo $bybit
 
     leaderDetails=`echo $bybit | jq '.result.leaderDetails[]'`
 
