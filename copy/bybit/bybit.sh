@@ -14,7 +14,7 @@ git pull
 : > stableScoreLevel.txt
 
 
-for i in {0..1000}
+for i in {1..1000}
 do
     bybit=`curl 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?timeStamp=1676015594891&pageNo='$i'&pageSize=16&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
   -H 'authority: api2.bybit.com' \
