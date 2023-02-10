@@ -4648,6 +4648,7 @@
 =HYPERLINK("https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark=6Lf/y6Gs4vtO8pkNZ4JWbw==")
 =HYPERLINK("https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark=Yi1RayufRSaqkJl7KYYFog==")
 =HYPERLINK("https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark=OdxngFU2Yi05oZbbXD1coQ==")
+=HYPERLINK("https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark=OdxngFU2Yi05oZbbXD1coQ==")
 =HYPERLINK("https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark=JlGQ5Cx3fa1R/bRgJIlGxg==")
 =HYPERLINK("https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark=cm2WGv/Y/t1EGIVoJHTcSQ==")
 =HYPERLINK("https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark=f9ljNDpIq166fNmk9b0AiA==")
