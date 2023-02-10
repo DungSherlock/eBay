@@ -14,10 +14,11 @@
 : > stableScoreLevel.txt
 : > link.txt
 
-
+#THIRTY
+#SEVEN
 for i in {1..1000}
 do
-    bybit=`curl 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo='$i'&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
+    bybit=`curl -s 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo='$i'&dataDuration=DATA_DURATION_THIRTY_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
   -H 'authority: api2.bybit.com' \
   -H 'accept: application/json' \
   -H 'accept-language: vi' \
