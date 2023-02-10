@@ -21,7 +21,7 @@
   --compressed | jq '.result.totalPageCount'`
     echo $bybit7
 
-for i in {1..$totalPageCount}
+for i in {1..echo $totalPageCount}
 do
     bybit7=`curl 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo='$i'&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
   -H 'content-type: application/json' \
