@@ -6,16 +6,31 @@
 : > leaderLevel.txt
 : > lastLeaderLevel.txt
 : > leaderLevelChangeTimeE3.txt
-: > ROI.txt
-: > totalTradeProfit.txt
 : > maxFollower.txt
-: > totalAllFollowProfit.txt
-: > WinRate.txt
-: > stableScoreLevel.txt
-: > link.txt
+: > ROI7.txt
+: > totalTradeProfit7.txt
+: > totalAllFollowProfit7.txt
+: > WinRate7.txt
+: > stableScoreLevel7.txt
+: > ROI30.txt
+: > totalTradeProfit30.txt
+: > totalAllFollowProfit30.txt
+: > WinRate30.txt
+: > stableScoreLevel30.txt
+: > ROI90.txt
+: > totalTradeProfit90.txt
+: > totalAllFollowProfit90.txt
+: > WinRate90.txt
+: > stableScoreLevel90.txt
 
 
-for i in {1..1000}
+    totalPageCount=`curl -s 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo=1&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
+  -H 'content-type: application/json' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
+  --compressed | jq '.result.totalPageCount' | sed 's/"//g'`
+    echo $totalPageCount
+
+for i in $(seq 1 $totalPageCount)
 do
     bybit7=`curl 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo='$i'&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
   -H 'content-type: application/json' \
@@ -25,13 +40,16 @@ do
   -H 'content-type: application/json' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
   --compressed`
+    bybit90=`curl 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo='$i'&dataDuration=DATA_DURATION_NINETY_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
+  -H 'content-type: application/json' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
+  --compressed`
 
+    # leaderDetails=`echo $bybit7 | jq '.result.leaderDetails[]'`
 
-    leaderDetails=`echo $bybit | jq '.result.leaderDetails[]'`
-
-    if [ "$leaderDetails" == "" ]; then
-        break
-    else
+    # if [ "$leaderDetails" == "" ]; then
+    #     break
+    # else
         echo "page $i"
         echo $bybit7 | jq '.result.leaderDetails[].nickName' >> nickName.txt
         echo $bybit7 | jq '.result.leaderDetails[].leaderMark' | xargs -I {} echo "=HYPERLINK(\"https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark={}\")" >> leaderMark.txt        
@@ -39,13 +57,26 @@ do
         echo $bybit7 | jq '.result.leaderDetails[].leaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> leaderLevel.txt
         echo $bybit7 | jq '.result.leaderDetails[].lastLeaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> lastLeaderLevel.txt
         echo $bybit7 | jq '.result.leaderDetails[].leaderLevelChangeTimeE3' >> leaderLevelChangeTimeE3.txt
-        echo $bybit7 | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI.txt
+        echo $bybit7 | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI7.txt
         echo $bybit7 | jq '.result.leaderDetails[].metricValues[1]' | sed 's/+//g' >> totalTradeProfit.txt
         echo $bybit7 | jq '.result.leaderDetails[].metricValues[2]' >> maxFollower.txt
         echo $bybit7 | jq '.result.leaderDetails[].metricValues[3]' | sed 's/+//g' >> totalAllFollowProfit.txt
         echo $bybit7 | jq '.result.leaderDetails[].metricValues[4]' | sed 's/+//g' >> WinRate.txt
         echo $bybit7 | jq '.result.leaderDetails[].metricValues[5]' >> stableScoreLevel.txt
-    fi
+
+        echo $bybit30 | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI30.txt
+        echo $bybit30 | jq '.result.leaderDetails[].metricValues[1]' | sed 's/+//g' >> totalTradeProfit30.txt
+        echo $bybit30 | jq '.result.leaderDetails[].metricValues[3]' | sed 's/+//g' >> totalAllFollowProfit30.txt
+        echo $bybit30 | jq '.result.leaderDetails[].metricValues[4]' | sed 's/+//g' >> WinRate30.txt
+        echo $bybit30 | jq '.result.leaderDetails[].metricValues[5]' >> stableScoreLevel30.txt
+
+        echo $bybit90 | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI90.txt
+        echo $bybit90 | jq '.result.leaderDetails[].metricValues[1]' | sed 's/+//g' >> totalTradeProfit90.txt
+        echo $bybit90 | jq '.result.leaderDetails[].metricValues[3]' | sed 's/+//g' >> totalAllFollowProfit90.txt
+        echo $bybit90 | jq '.result.leaderDetails[].metricValues[4]' | sed 's/+//g' >> WinRate90.txt
+        echo $bybit90 | jq '.result.leaderDetails[].metricValues[5]' >> stableScoreLevel90.txt
+
+    # fi
 done
 
 git add -A .
@@ -61,12 +92,25 @@ linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&leaderLevel==IMPORTDATA\(\"`$linkGit`echo leaderLevel.txt\"\)\
 \&lastLeaderLevel==IMPORTDATA\(\"`$linkGit`echo lastLeaderLevel.txt\"\)\
 \&leaderLevelChangeTimeE3==IMPORTDATA\(\"`$linkGit`echo leaderLevelChangeTimeE3.txt\"\)\
-\&ROI==IMPORTDATA\(\"`$linkGit`echo ROI.txt\"\)\
-\&totalTradeProfit==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit.txt\"\)\
 \&maxFollower==IMPORTDATA\(\"`$linkGit`echo maxFollower.txt\"\)\
-\&totalAllFollowProfit==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit.txt\"\)\
-\&WinRate==IMPORTDATA\(\"`$linkGit`echo WinRate.txt\"\)\
-\&stableScoreLevel==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel.txt\"\)\
+
+\&ROI7==IMPORTDATA\(\"`$linkGit`echo ROI7.txt\"\)\
+\&totalTradeProfit7==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit7.txt\"\)\
+\&totalAllFollowProfit7==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit7.txt\"\)\
+\&WinRate7==IMPORTDATA\(\"`$linkGit`echo WinRate7.txt\"\)\
+\&stableScoreLevel7==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel7.txt\"\)\
+
+\&ROI30==IMPORTDATA\(\"`$linkGit`echo ROI30.txt\"\)\
+\&totalTradeProfit30==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit30.txt\"\)\
+\&totalAllFollowProfit30==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit30.txt\"\)\
+\&WinRate30==IMPORTDATA\(\"`$linkGit`echo WinRate30.txt\"\)\
+\&stableScoreLevel30==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel30.txt\"\)\
+
+\&ROI90==IMPORTDATA\(\"`$linkGit`echo ROI90.txt\"\)\
+\&totalTradeProfit90==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit90.txt\"\)\
+\&totalAllFollowProfit90==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit90.txt\"\)\
+\&WinRate90==IMPORTDATA\(\"`$linkGit`echo WinRate90.txt\"\)\
+\&stableScoreLevel90==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel90.txt\"\)\
 `
 echo $linkPost
 
