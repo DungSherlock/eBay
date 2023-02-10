@@ -1,5 +1,5 @@
 #!/bin/bash
-# git pull
+git pull
 : > nickName.txt
 : > leaderMark.txt
 : > yesterdayMaxFollowersNum.txt
@@ -93,19 +93,16 @@ linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&lastLeaderLevel==IMPORTDATA\(\"`$linkGit`echo lastLeaderLevel.txt\"\)\
 \&leaderLevelChangeTimeE3==IMPORTDATA\(\"`$linkGit`echo leaderLevelChangeTimeE3.txt\"\)\
 \&maxFollower==IMPORTDATA\(\"`$linkGit`echo maxFollower.txt\"\)\
-
 \&ROI7==IMPORTDATA\(\"`$linkGit`echo ROI7.txt\"\)\
 \&totalTradeProfit7==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit7.txt\"\)\
 \&totalAllFollowProfit7==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit7.txt\"\)\
 \&WinRate7==IMPORTDATA\(\"`$linkGit`echo WinRate7.txt\"\)\
 \&stableScoreLevel7==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel7.txt\"\)\
-
 \&ROI30==IMPORTDATA\(\"`$linkGit`echo ROI30.txt\"\)\
 \&totalTradeProfit30==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit30.txt\"\)\
 \&totalAllFollowProfit30==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit30.txt\"\)\
 \&WinRate30==IMPORTDATA\(\"`$linkGit`echo WinRate30.txt\"\)\
 \&stableScoreLevel30==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel30.txt\"\)\
-
 \&ROI90==IMPORTDATA\(\"`$linkGit`echo ROI90.txt\"\)\
 \&totalTradeProfit90==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit90.txt\"\)\
 \&totalAllFollowProfit90==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit90.txt\"\)\
