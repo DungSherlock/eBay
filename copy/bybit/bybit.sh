@@ -56,7 +56,7 @@ do
         echo $bybit7 | jq '.result.leaderDetails[].leaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> leaderLevel.txt
         echo $bybit7 | jq '.result.leaderDetails[].lastLeaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> lastLeaderLevel.txt
         echo $bybit7 | jq '.result.leaderDetails[].leaderLevelChangeTimeE3' >> leaderLevelChangeTimeE3.txt
-        echo $bybit7 | jq '.result.leaderDetails[].metricValues[2]' >> maxFollower.txt
+        echo $bybit7 | jq '.result.leaderDetails[].metricValues[2]' | sed 's/\//,/g' >> maxFollower.txt
 
         echo $bybit7 | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI7.txt
         echo $bybit7 | jq '.result.leaderDetails[].metricValues[1]' | sed 's/+//g' >> totalTradeProfit7.txt
