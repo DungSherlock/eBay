@@ -51,7 +51,7 @@ do
     # else
         echo "page $i/$totalPageCount"
         echo $bybit7 | jq '.result.leaderDetails[].nickName' >> nickName.txt
-        echo $bybit7 | jq '.result.leaderDetails[].leaderMark' | xargs -I {} echo "=HYPERLINK(\"https://www.bybit7.com/copyTrade/trade-center/detail?leaderMark={}\")" >> leaderMark.txt        
+        echo $bybit7 | jq '.result.leaderDetails[].leaderMark' | xargs -I {} echo "=HYPERLINK(\"https://www.bybit.com/copyTrade/trade-center/detail?leaderMark={}\")" >> leaderMark.txt        
         echo $bybit7 | jq '.result.leaderDetails[].yesterdayMaxFollowersNum' >> yesterdayMaxFollowersNum.txt
         echo $bybit7 | jq '.result.leaderDetails[].leaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> leaderLevel.txt
         echo $bybit7 | jq '.result.leaderDetails[].lastLeaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> lastLeaderLevel.txt
