@@ -7,7 +7,6 @@
 "27501 565th Ave, Deer Creek, MN 56527"
 "10982 Avenue 412, Dinuba, CA 93618"
 "389 Maggie Loop, Pottsville, AR 72858"
-"3128 Montego Bay Ln #76123, Fort Worth, TX 76010"
 "5021 Frederick Ave, Saint Joseph, MO 64506"
 "15429 Natalie Dr, Oak Forest, IL 60452"
 "1240 Colorado Blvd, Apt 27, Denver, CO 80206"
