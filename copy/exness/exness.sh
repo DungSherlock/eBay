@@ -10,7 +10,8 @@ git pull
 : > drawdown.txt
 : > investors.txt
 : > equity.txt
-: > trading_period.txt
+: > trading_period_start.txt
+: > trading_period_end.txt
 
 
   total=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/?drawdown__lt=100' \
@@ -38,7 +39,8 @@ do
     echo $exness | jq '.result[].drawdown' >> drawdown.txt
     echo $exness | jq '.result[].investors' >> investors.txt
     echo $exness | jq '.result[].equity' >> equity.txt
-    echo $exness | jq '.result[].trading_period' >> trading_period.txt
+    echo $exness | jq '.result[].trading_period.start' >> trading_period_start.txt
+    echo $exness | jq '.result[].trading_period.end' >> trading_period_end.txt
 done
 
 git add -A .
@@ -48,28 +50,18 @@ git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/bybit/`
 linkApi=`echo https://script.google.com/macros/s/AKfycbzqe1xUYUS3DMYILrf4gi0r3jlf5rok46Yvx_2BSVEu_p_oVj5hdv3q-YXoMUG-N7HB/exec?`
-linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
-\&leaderMark==IMPORTDATA\(\"`$linkGit`echo leaderMark.txt\"\)\
-\&yesterdayMaxFollowersNum==IMPORTDATA\(\"`$linkGit`echo yesterdayMaxFollowersNum.txt\"\)\
-\&leaderLevel==IMPORTDATA\(\"`$linkGit`echo leaderLevel.txt\"\)\
-\&lastLeaderLevel==IMPORTDATA\(\"`$linkGit`echo lastLeaderLevel.txt\"\)\
-\&leaderLevelChangeTimeE3==IMPORTDATA\(\"`$linkGit`echo leaderLevelChangeTimeE3.txt\"\)\
-\&maxFollower==IMPORTDATA\(\"`$linkGit`echo maxFollower.txt\"\)\
-\&ROI7==IMPORTDATA\(\"`$linkGit`echo ROI7.txt\"\)\
-\&totalTradeProfit7==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit7.txt\"\)\
-\&totalAllFollowProfit7==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit7.txt\"\)\
-\&WinRate7==IMPORTDATA\(\"`$linkGit`echo WinRate7.txt\"\)\
-\&stableScoreLevel7==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel7.txt\"\)\
-\&ROI30==IMPORTDATA\(\"`$linkGit`echo ROI30.txt\"\)\
-\&totalTradeProfit30==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit30.txt\"\)\
-\&totalAllFollowProfit30==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit30.txt\"\)\
-\&WinRate30==IMPORTDATA\(\"`$linkGit`echo WinRate30.txt\"\)\
-\&stableScoreLevel30==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel30.txt\"\)\
-\&ROI90==IMPORTDATA\(\"`$linkGit`echo ROI90.txt\"\)\
-\&totalTradeProfit90==IMPORTDATA\(\"`$linkGit`echo totalTradeProfit90.txt\"\)\
-\&totalAllFollowProfit90==IMPORTDATA\(\"`$linkGit`echo totalAllFollowProfit90.txt\"\)\
-\&WinRate90==IMPORTDATA\(\"`$linkGit`echo WinRate90.txt\"\)\
-\&stableScoreLevel90==IMPORTDATA\(\"`$linkGit`echo stableScoreLevel90.txt\"\)\
+linkPost=$linkApi`echo account==IMPORTDATA\(\"`$linkGit`echo account.txt\"\)\
+\&name==IMPORTDATA\(\"`$linkGit`echo name.txt\"\)\
+\&trading_time==IMPORTDATA\(\"`$linkGit`echo trading_time.txt\"\)\
+\&leverage==IMPORTDATA\(\"`$linkGit`echo leverage.txt\"\)\
+\&risk_score==IMPORTDATA\(\"`$linkGit`echo risk_score.txt\"\)\
+\&commission==IMPORTDATA\(\"`$linkGit`echo commission.txt\"\)\
+\&profitability==IMPORTDATA\(\"`$linkGit`echo profitability.txt\"\)\
+\&drawdown==IMPORTDATA\(\"`$linkGit`echo drawdown.txt\"\)\
+\&investors==IMPORTDATA\(\"`$linkGit`echo investors.txt\"\)\
+\&equity==IMPORTDATA\(\"`$linkGit`echo equity.txt\"\)\
+\&trading_period_start==IMPORTDATA\(\"`$linkGit`echo trading_period_start.txt\"\)\
+\&trading_period_end==IMPORTDATA\(\"`$linkGit`echo trading_period_end.txt\"\)\
 `
 echo $linkPost
 
