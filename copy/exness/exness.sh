@@ -1,5 +1,5 @@
 #!/bin/bash
-git pull
+# git pull
 : > nickName.txt
 
 
@@ -7,57 +7,19 @@ git pull
     total=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/?drawdown__lt=100' \
   -H 'content-type: application/json' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
-  --compressed | jq '.total''`
-    echo $total
+  --compressed | jq '.total'`
+    result=$(echo "$total / 34" | bc)
+    echo $result
 
-for i in $(seq 1 $total)
+
+for i in $(seq 1 $result)
 do
-    bybit7=`curl -s 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo='$i'&dataDuration=DATA_DURATION_SEVEN_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
-  -H 'content-type: application/json' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
+    exness=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/?drawdown__lt=100&limit=34&offset='$i*34'' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41' \
   --compressed`
-    bybit30=`curl -s 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo='$i'&dataDuration=DATA_DURATION_THIRTY_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
-  -H 'content-type: application/json' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
-  --compressed`
-    bybit90=`curl -s 'https://api2.bybit.com/fapi/beehive/public/v1/common/dynamic-leader-list?pageNo='$i'&dataDuration=DATA_DURATION_NINETY_DAY&leaderTag=&code=&leaderLevel=&userTag=' \
-  -H 'content-type: application/json' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
-  --compressed`
-
-    # leaderDetails=`echo $bybit7 | jq '.result.leaderDetails[]'`
-
-    # if [ "$leaderDetails" == "" ]; then
-    #     break
-    # else
-        echo "page $i/$totalPageCount"
-        echo $bybit7 | jq '.result.leaderDetails[].nickName' >> nickName.txt
-        echo $bybit7 | jq '.result.leaderDetails[].leaderMark' | xargs -I {} echo "=HYPERLINK(\"https://www.bybit.com/copyTrade/trade-center/detail?leaderMark={}\")" >> leaderMark.txt        
-        echo $bybit7 | jq '.result.leaderDetails[].yesterdayMaxFollowersNum' >> yesterdayMaxFollowersNum.txt
-        echo $bybit7 | jq '.result.leaderDetails[].leaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> leaderLevel.txt
-        echo $bybit7 | jq '.result.leaderDetails[].lastLeaderLevel' | sed 's/.*LEVEL_/"/g' | sed 's/_.*/"/g' >> lastLeaderLevel.txt
-        echo $bybit7 | jq '.result.leaderDetails[].leaderLevelChangeTimeE3' >> leaderLevelChangeTimeE3.txt
-        echo $bybit7 | jq '.result.leaderDetails[].metricValues[2]' | sed 's/\//,/g' | sed 's/"//g' >> maxFollower.txt
-
-        echo $bybit7 | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI7.txt
-        echo $bybit7 | jq '.result.leaderDetails[].metricValues[1]' | sed 's/+//g' >> totalTradeProfit7.txt
-        echo $bybit7 | jq '.result.leaderDetails[].metricValues[3]' | sed 's/+//g' >> totalAllFollowProfit7.txt
-        echo $bybit7 | jq '.result.leaderDetails[].metricValues[4]' | sed 's/+//g' >> WinRate7.txt
-        echo $bybit7 | jq '.result.leaderDetails[].metricValues[5]' >> stableScoreLevel7.txt
-
-        echo $bybit30 | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI30.txt
-        echo $bybit30 | jq '.result.leaderDetails[].metricValues[1]' | sed 's/+//g' >> totalTradeProfit30.txt
-        echo $bybit30 | jq '.result.leaderDetails[].metricValues[3]' | sed 's/+//g' >> totalAllFollowProfit30.txt
-        echo $bybit30 | jq '.result.leaderDetails[].metricValues[4]' | sed 's/+//g' >> WinRate30.txt
-        echo $bybit30 | jq '.result.leaderDetails[].metricValues[5]' >> stableScoreLevel30.txt
-
-        echo $bybit90 | jq '.result.leaderDetails[].metricValues[0]' | sed 's/+//g' >> ROI90.txt
-        echo $bybit90 | jq '.result.leaderDetails[].metricValues[1]' | sed 's/+//g' >> totalTradeProfit90.txt
-        echo $bybit90 | jq '.result.leaderDetails[].metricValues[3]' | sed 's/+//g' >> totalAllFollowProfit90.txt
-        echo $bybit90 | jq '.result.leaderDetails[].metricValues[4]' | sed 's/+//g' >> WinRate90.txt
-        echo $bybit90 | jq '.result.leaderDetails[].metricValues[5]' >> stableScoreLevel90.txt
-
-    # fi
+    echo "page $i/$result"
+    echo $exness | jq '.result[].account' | sed 's/+//g' >> ROI7.txt
 done
 
 git add -A .
