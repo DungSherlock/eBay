@@ -1,6 +1,7 @@
 #!/bin/bash
 git pull
 : > account.txt
+: > link.txt
 : > name.txt
 : > trading_time.txt
 : > leverage.txt
@@ -30,6 +31,7 @@ do
   --compressed`
     echo "page $i/$result"
     echo $exness | jq '.result[].account' >> account.txt
+    echo $exness | jq '.result[].account' | xargs -I {} echo "=HYPERLINK(\"https://social-trading.exness.com/strategy/{}\")" >> link.txt
     echo $exness | jq '.result[].name' >> name.txt
     echo $exness | jq '.result[].trading_time' >> trading_time.txt
     echo $exness | jq '.result[].leverage' >> leverage.txt
@@ -51,6 +53,7 @@ gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/exness/`
 linkApi=`echo https://script.google.com/macros/s/AKfycby6z7gCg6QHCMx6iiGA7Ioc3IR7y7k0G5B_NgZWSWQpcEmI6iSUBAM0e0VQkyyVoe3KSQ/exec?`
 linkPost=$linkApi`echo account==IMPORTDATA\(\"`$linkGit`echo account.txt\"\)\
+\&link==IMPORTDATA\(\"`$linkGit`echo link.txt\"\)\
 \&name==IMPORTDATA\(\"`$linkGit`echo name.txt\"\)\
 \&trading_time==IMPORTDATA\(\"`$linkGit`echo trading_time.txt\"\)\
 \&leverage==IMPORTDATA\(\"`$linkGit`echo leverage.txt\"\)\
