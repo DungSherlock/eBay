@@ -19,13 +19,13 @@ git pull
 -H 'content-type: application/json' \
 -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
 --compressed | jq '.total'`
-  result=$(echo "$total / 34" | bc)
+  result=$(echo "$total / 30" | bc)
   echo $total
 
 
 for i in $(seq 0 $result)
 do
-    exness=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/?drawdown__lt=100&limit=34&offset='$((i*34))'' \
+    exness=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/?drawdown__lt=100&limit=0&offset='$((i*30))'' \
   -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41' \
   --compressed`
