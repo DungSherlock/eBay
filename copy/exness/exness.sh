@@ -14,10 +14,11 @@
 
 for i in $(seq 1 $result)
 do
-    exness=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/?drawdown__lt=100&limit=34&offset='$i*34'' \
+    exness=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/?drawdown__lt=100&limit=34&offset='($i*34)'' \
   -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41' \
   --compressed`
+    echo $((i*34))
     echo "page $i/$result"
     echo $exness | jq '.result[].account' >> account.txt
     echo $exness | jq '.result[].name' >> name.txt
