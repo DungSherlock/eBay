@@ -48,7 +48,7 @@ git commit -m --allow-empty
 git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
-linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/bybit/`
+linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/exness/`
 linkApi=`echo https://script.google.com/macros/s/AKfycby6z7gCg6QHCMx6iiGA7Ioc3IR7y7k0G5B_NgZWSWQpcEmI6iSUBAM0e0VQkyyVoe3KSQ/exec?`
 linkPost=$linkApi`echo account==IMPORTDATA\(\"`$linkGit`echo account.txt\"\)\
 \&name==IMPORTDATA\(\"`$linkGit`echo name.txt\"\)\
