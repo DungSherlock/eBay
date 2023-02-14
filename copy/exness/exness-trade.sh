@@ -12,7 +12,7 @@ git pull
 : > swap.txt
 : > profit.txt
 
-  total=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/11103957/trade-history/?limit=100&offset=0' \
+  total=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/11763801/trade-history/?limit=100&offset=0' \
 --compressed | jq '.total'`
   result=$(echo "$total / 100" | bc)
   echo $total
@@ -20,7 +20,7 @@ git pull
 
 for i in $(seq 0 $result)
 do
-    exness=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/11103957/trade-history/?limit=100&offset='$((i*100))'' \
+    exness=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/11763801/trade-history/?limit=100&offset='$((i*100))'' \
   --compressed`
     echo "page $i/$result"
     echo $exness | jq '.result[].account' >> account.txt
