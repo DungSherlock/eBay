@@ -54,7 +54,6 @@ do
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-origin' \
   -H 'sign: 52196DE19123D62AB3F7FA3800521E05AA4C2D14E75CBA6EAD1DDDB49BF505B6' \
-  -H 'timestamp: 1675947119096' \
   -H 'timezone: 7' \
   -H 'traceid: 8218b343-5082-453a-8860-de0d95f9345a' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
