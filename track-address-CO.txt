@@ -10,3 +10,4 @@
 "1602 Juniper Cir, Apt A, Springdale, AR 72764"
 "321 1/2 S Front St, Steelton, PA 17113"
 "4778 Tate Ave N, Salem, OR 97303"
+"1791 Watts Rd, Loris, SC 29569"
