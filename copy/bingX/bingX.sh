@@ -102,7 +102,7 @@ git commit -m --allow-empty
 git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
-linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/`
+linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/bingX`
 linkApi=`echo https://script.google.com/macros/s/AKfycbxZKVFLSFo99w9G8aL1BGd5Inx9g2P0bo4Jm0qrb8KflcC_CDBvs22GuKx9J3HHPR8-WA/exec?`
 linkPost=$linkApi`echo nickName==IMPORTDATA\(\"`$linkGit`echo nickName.txt\"\)\
 \&uid==IMPORTDATA\(\"`$linkGit`echo uid.txt\"\)\
