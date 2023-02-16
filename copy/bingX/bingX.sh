@@ -32,17 +32,32 @@ git pull
 for i in {0..1000}
 do
     bingX=`curl 'https://api-app.qq-os.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=riskLevel' \
-  -X 'OPTIONS' \
   -H 'authority: api-app.qq-os.com' \
-  -H 'accept: */*' \
+  -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: vi' \
-  -H 'access-control-request-headers: app_version,appid,channel,content-type,device_id,lang,mainappid,platformid,sign,timestamp,timezone,traceid,visitorid' \
-  -H 'access-control-request-method: POST' \
+  -H 'app_version: 4.59.14' \
+  -H 'appid: 30004' \
+  -H 'channel: copychadingSEO' \
+  -H 'content-type: application/json' \
+  -H 'device_id: b47c0dce-fbf5-4b3b-926e-a1da81c5a417' \
+  -H 'dnt: 1' \
+  -H 'lang: vi-VN' \
+  -H 'mainappid: 10009' \
   -H 'origin: https://bingx.com' \
+  -H 'platformid: 30' \
+  -H 'sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Microsoft Edge";v="110"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: cross-site' \
+  -H 'sign: FD1F912BF3DBDD30701AA3298CE91767BFA8B9AAA48CB4BC4CD73B21FB2B3820' \
+  -H 'timestamp: 1676510948160' \
+  -H 'timezone: 7' \
+  -H 'traceid: a3795671-8dcf-4e86-9886-1a7b9245fb84' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41' \
+  -H 'visitorid: -1' \
+  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":3,"value":0}],"nickName":""}' \
   --compressed`
 
     result=`echo $bingX | jq '.data.result[]'`
