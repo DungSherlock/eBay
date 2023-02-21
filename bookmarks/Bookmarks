@@ -1,0 +1,422 @@
+{
+   "checksum": "d5bfe500e9f75e6fa6f37e44a23619e5",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13297569617000000",
+            "date_last_used": "0",
+            "guid": "af11861a-6c43-4907-a36b-04c25eddb9b0",
+            "id": "40",
+            "name": "0-Check",
+            "type": "url",
+            "url": "https://www.ebay.com/help/account/account-holds-restrictions-suspensions/account-holds-restrictions-suspensions?id=4190"
+         }, {
+            "date_added": "13297569616000000",
+            "date_last_used": "0",
+            "guid": "9a0743b2-ec90-4508-b622-21ccd374b31e",
+            "id": "41",
+            "name": "1-Overview",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/ovw"
+         }, {
+            "date_added": "13297569616000000",
+            "date_last_used": "0",
+            "guid": "875ebd85-e6f6-424c-b3e9-865af920dc24",
+            "id": "42",
+            "name": "2-Messages",
+            "type": "url",
+            "url": "https://mesg.ebay.com/mesgweb/ViewMessages/0"
+         }, {
+            "date_added": "13297569616000000",
+            "date_last_used": "0",
+            "guid": "f48650d9-a227-4bd1-94a5-ee2d22402c85",
+            "id": "43",
+            "name": "3-Orders",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/ord"
+         }, {
+            "date_added": "13297569617000000",
+            "date_last_used": "13321355074542165",
+            "guid": "d01f5574-785f-407c-86a5-1dccf88d9874",
+            "id": "44",
+            "name": "4-All Orders",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/ord/?filter=status:ALL_ORDERS"
+         }, {
+            "date_added": "13297569616000000",
+            "date_last_used": "13321359385021670",
+            "guid": "0de03dfe-2530-4f1c-8d09-aac9a4c79cbd",
+            "id": "45",
+            "name": "5-Listings",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/lst/active"
+         }, {
+            "date_added": "13297569617000000",
+            "date_last_used": "0",
+            "guid": "8dfe888d-d5a4-42e3-9da7-8bd7aaef88fd",
+            "id": "46",
+            "name": "6-New listing",
+            "type": "url",
+            "url": "https://www.ebay.com/sl/sell?sr=shstart"
+         }, {
+            "date_added": "13297569616000000",
+            "date_last_used": "13321361391436449",
+            "guid": "a079251c-cca7-4b53-b8ee-66eb87207bb8",
+            "id": "47",
+            "name": "7-Uploads",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/reports/uploads"
+         }, {
+            "date_added": "13300971644000000",
+            "date_last_used": "0",
+            "guid": "60b5d83a-7658-4e58-9bb7-3245db5f3e6e",
+            "id": "48",
+            "name": "8-Payments",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/fin"
+         }, {
+            "date_added": "13297569617000000",
+            "date_last_used": "13321357585684737",
+            "guid": "52dc9814-43e6-4ab7-9549-412b99ffc7f4",
+            "id": "49",
+            "name": "9-All transactions",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/fin/transactions"
+         }, {
+            "date_added": "13300971665000000",
+            "date_last_used": "0",
+            "guid": "d7988d83-96e1-4b97-93b7-ceb8dcec4248",
+            "id": "50",
+            "name": "10-Payouts",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/fin/payouts"
+         }, {
+            "date_added": "13297569616000000",
+            "date_last_used": "13321361503260156",
+            "guid": "91290c66-b5a4-4b8f-8a53-398c80d9614f",
+            "id": "51",
+            "name": "11-Reports",
+            "type": "url",
+            "url": "https://www.ebay.com/sh/fin/report"
+         }, {
+            "date_added": "13321361338313449",
+            "date_last_used": "0",
+            "guid": "0281dbb9-5a71-47c4-970a-d96d1f57e089",
+            "id": "80",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "12-Time Away",
+            "type": "url",
+            "url": "https://www.ebay.com/vac/timeaway"
+         }, {
+            "date_added": "13321361343694449",
+            "date_last_used": "0",
+            "guid": "dbc4f6de-99f2-44ea-bd14-b335edb7e9f7",
+            "id": "81",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "13-BuyerBlock",
+            "type": "url",
+            "url": "https://www.ebay.com/bmgt/BuyerBlock"
+         }, {
+            "children": [ {
+               "date_added": "13311589415000000",
+               "date_last_used": "13321361483181156",
+               "guid": "6b831286-6d09-4265-9235-2ec57346eacc",
+               "id": "53",
+               "name": "8-Payments",
+               "type": "url",
+               "url": "https://www.ebay.com/sh/fin"
+            }, {
+               "date_added": "13311589431000000",
+               "date_last_used": "13321361483067156",
+               "guid": "0bda71be-30bf-4bb8-8bdb-5d9476737b96",
+               "id": "54",
+               "name": "2-Messages",
+               "type": "url",
+               "url": "https://mesg.ebay.com/mesgweb/ViewMessages/0"
+            }, {
+               "date_added": "13311589448000000",
+               "date_last_used": "13321361481542156",
+               "guid": "92fea941-d442-4cdc-9b21-4341e17450ed",
+               "id": "55",
+               "name": "3-Orders",
+               "type": "url",
+               "url": "https://www.ebay.com/sh/ord"
+            } ],
+            "date_added": "13321352084870146",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "d0fcf606-7584-4675-8aab-2d743b26ecca",
+            "id": "52",
+            "name": "check",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13300972085000000",
+               "date_last_used": "0",
+               "guid": "695525bc-5f44-4072-b7a8-7e3ae5f8dbd7",
+               "id": "57",
+               "name": "Không endlist khi hết hàng",
+               "type": "url",
+               "url": "https://www.ebay.com/uas/selling-pref"
+            }, {
+               "date_added": "13300972081000000",
+               "date_last_used": "0",
+               "guid": "19269dc3-86e6-4bfe-b819-90a7fd335007",
+               "id": "58",
+               "name": "Loại trừ khu vực ship",
+               "type": "url",
+               "url": "https://www.ebay.com/ship/prf/excludeRegions"
+            } ],
+            "date_added": "13321352084871146",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "b0e99b5c-25a8-4153-af8e-94c1f7ede9a5",
+            "id": "56",
+            "name": "eBay",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13321361298450918",
+               "date_last_used": "0",
+               "guid": "672f9adf-db09-4c5c-bbc6-39721d056f7b",
+               "id": "79",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Inbox",
+               "type": "url",
+               "url": "https://outlook.live.com/mail/0/"
+            }, {
+               "date_added": "13300971880000000",
+               "date_last_used": "0",
+               "guid": "efaf6a27-1ac7-4f82-b326-d00699d11964",
+               "id": "59",
+               "name": "Verify SĐT",
+               "type": "url",
+               "url": "https://account.live.com/reputationcheck?ru=https://outlook.live.com/owa/"
+            }, {
+               "date_added": "13300971956000000",
+               "date_last_used": "0",
+               "guid": "d1925cd8-6cfe-4880-af88-aad6592d30c2",
+               "id": "60",
+               "name": "junkEmail",
+               "type": "url",
+               "url": "https://outlook.live.com/mail/0/options/mail/junkEmail"
+            }, {
+               "date_added": "13300971989000000",
+               "date_last_used": "0",
+               "guid": "ea362ff1-a7c3-49f2-9822-80a2bac8d167",
+               "id": "61",
+               "name": "forwarding",
+               "type": "url",
+               "url": "https://outlook.live.com/mail/0/options/mail/forwarding"
+            }, {
+               "date_added": "13321352515385394",
+               "date_last_used": "0",
+               "guid": "50a616fa-869d-41bc-85fc-8b8ead3423c5",
+               "id": "65",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Bật xác minh 2 bước",
+               "type": "url",
+               "url": "https://account.live.com/proofs/EnableTfa"
+            }, {
+               "date_added": "13300972384000000",
+               "date_last_used": "0",
+               "guid": "328f0115-4aef-41f8-ab93-5de5100cb516",
+               "id": "62",
+               "name": "Đổi pass",
+               "type": "url",
+               "url": "https://account.live.com/password/Change"
+            }, {
+               "date_added": "13300972459000000",
+               "date_last_used": "0",
+               "guid": "78950975-d6f7-4c39-8718-55cf2f9631b9",
+               "id": "63",
+               "name": "Bảo mật bổ sung",
+               "type": "url",
+               "url": "https://account.live.com/proofs/manage/additional"
+            }, {
+               "date_added": "13321361664336510",
+               "date_last_used": "0",
+               "guid": "b2606777-8a47-474f-8099-bdfedca8c26a",
+               "id": "82",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Tạo PassApp",
+               "type": "url",
+               "url": "https://account.live.com/proofs/AppPassword"
+            } ],
+            "date_added": "13321352169986373",
+            "date_last_used": "0",
+            "date_modified": "13321362137310347",
+            "guid": "df27b48e-aca3-41bb-bae6-bd1e9252e237",
+            "id": "64",
+            "name": "Outlook",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13321361007495420",
+               "date_last_used": "0",
+               "guid": "bed5c488-56e3-4906-bf9f-8768c95526fa",
+               "id": "78",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Inbox",
+               "type": "url",
+               "url": "https://mail.google.com/mail/u/0/#inbox"
+            }, {
+               "date_added": "13321356139271307",
+               "date_last_used": "13321357685179640",
+               "guid": "dfae6410-d99d-443a-a633-f5c4e0f71bc0",
+               "id": "67",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Bảo mật",
+               "type": "url",
+               "url": "https://myaccount.google.com/security"
+            }, {
+               "date_added": "13321357702142640",
+               "date_last_used": "0",
+               "guid": "7c9aa0ee-a141-4ff1-be54-c8c23f474fbe",
+               "id": "68",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Đổi mật khẩu",
+               "type": "url",
+               "url": "https://myaccount.google.com/signinoptions/password"
+            }, {
+               "date_added": "13321357707636640",
+               "date_last_used": "0",
+               "guid": "284e9f38-0485-4513-83e9-a68044a3222b",
+               "id": "69",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Xác minh 2 bước",
+               "type": "url",
+               "url": "https://myaccount.google.com/signinoptions/two-step-verification"
+            }, {
+               "date_added": "13321357990323439",
+               "date_last_used": "13321358746534766",
+               "guid": "a4a78ce9-597f-41d2-be28-3a93be8b928b",
+               "id": "70",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Tạo PassApp",
+               "type": "url",
+               "url": "https://myaccount.google.com/apppasswords"
+            } ],
+            "date_added": "13321356133534307",
+            "date_last_used": "0",
+            "date_modified": "13321361035328679",
+            "guid": "b6f25755-37ae-4c18-a1af-ba0a06f22742",
+            "id": "66",
+            "name": "Gmail",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13321360935947951",
+               "date_last_used": "0",
+               "guid": "92d89a29-bb28-4019-8892-fb65ccbfe9f0",
+               "id": "77",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Inbox",
+               "type": "url",
+               "url": "https://mail.yahoo.com/d/folders/1"
+            }, {
+               "date_added": "13321359672370515",
+               "date_last_used": "0",
+               "guid": "9fae466e-751c-4012-a84b-64b4633ef976",
+               "id": "72",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Bảo mật",
+               "type": "url",
+               "url": "https://login.yahoo.com/myaccount/security/"
+            }, {
+               "date_added": "13321360689667241",
+               "date_last_used": "0",
+               "guid": "863411ab-dc35-4a3f-b257-68365bee658c",
+               "id": "74",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Đổi mật khẩu",
+               "type": "url",
+               "url": "https://login.yahoo.com/myaccount/security/change-password/"
+            }, {
+               "date_added": "13321360694620241",
+               "date_last_used": "0",
+               "guid": "3132d08a-f251-489d-abee-ebe520799e57",
+               "id": "75",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Xác minh 2 bước",
+               "type": "url",
+               "url": "https://login.yahoo.com/myaccount/security/two-step-verification/"
+            }, {
+               "date_added": "13321360860135592",
+               "date_last_used": "0",
+               "guid": "0524fa77-cea8-476c-b734-497983aafdcb",
+               "id": "76",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Tạo PassApp",
+               "type": "url",
+               "url": "https://login.yahoo.com/myaccount/security/two-step-verification/"
+            } ],
+            "date_added": "13321359164657033",
+            "date_last_used": "0",
+            "date_modified": "13321361622242020",
+            "guid": "e4168137-c90b-40a1-b65f-f1f713ae0381",
+            "id": "71",
+            "name": "Yahoo",
+            "type": "folder"
+         } ],
+         "date_added": "13320750226603373",
+         "date_last_used": "0",
+         "date_modified": "13321361343694449",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13320750226603600",
+         "date_last_used": "0",
+         "date_modified": "13320750226603600",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "37",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13320750226603602",
+         "date_last_used": "0",
+         "date_modified": "13320750226603602",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "38",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
