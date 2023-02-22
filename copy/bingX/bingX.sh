@@ -31,14 +31,16 @@ git pull
 
 for i in {0..1000}
 do
-    bingX=`curl 'https://api-app.qq-os.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=riskLevel' \
-  -H 'authority: api-app.qq-os.com' \
+    bingX=`curl -s 'https://bingx.com/api/v5/copy-trade/search/search?pageId='$i'&order=desc&sort=comprehensive' \
+  -H 'authority: bingx.com' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: vi' \
-  -H 'app_version: 4.59.14' \
+  -H 'app_version: 4.60.3' \
   -H 'appid: 30004' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDc1NjY2OTY1MTAxNjc4NTk0IiwiZXhwIjoxNjc3MzEzMDQ2fQ.KAVawYMl72Nj9i1qhsJfKZL9te7gkG5ggppFesHp8cb9hy0azoL47kdUlX5SbSfULFgMcFS9PXwTEq31mB-QWA' \
   -H 'channel: copychadingSEO' \
   -H 'content-type: application/json' \
+  -H 'cookie: uuid=b47c0dce-fbf5-4b3b-926e-a1da81c5a417; kline_time_zone=8; locale=vi-vn; _bl_uid=7UlUXe9I6tIf7630t9vmtsaoI14j; fpw=login; __cf_bm=KKnPmdRsiTEKMfbFRTZ4Qx9v.K8Nrj5u05st.ZJFPMo-1677053806-0-AcWO+qVmfPoV9PruVTfttLuzCOHJgqzTzZLRQpECYby5f5QSJX0ID6LlHQTMYCZnLcZMFfxn8gmX9juaUCtkpkQ=; _cfuvid=UWFYzN21MX74VZoug1mbP.9m_HyqZWlR5bDk5tidKYY-1677053806193-0-604800000; __cfruid=0180ddedd9321d763371b0f1b3e2bad7c9ace1f0-1677053838; network_delay=89; uid=1075666965101678594; user_token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDc1NjY2OTY1MTAxNjc4NTk0IiwiZXhwIjoxNjc3MzEzMDQ2fQ.KAVawYMl72Nj9i1qhsJfKZL9te7gkG5ggppFesHp8cb9hy0azoL47kdUlX5SbSfULFgMcFS9PXwTEq31mB-QWA; lastCheckSessionAt=1677053859898; tokenExpiredAt=1677097060936; showKo=0' \
   -H 'device_id: b47c0dce-fbf5-4b3b-926e-a1da81c5a417' \
   -H 'dnt: 1' \
   -H 'lang: vi-VN' \
@@ -50,14 +52,14 @@ do
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: cross-site' \
-  -H 'sign: FD1F912BF3DBDD30701AA3298CE91767BFA8B9AAA48CB4BC4CD73B21FB2B3820' \
-  -H 'timestamp: 1676510948160' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sign: E8144AD7997DBBBC87DD05587B5B2E8E32CE4067E1CA28A40ABD33AC886C6EF2' \
+  -H 'timestamp: 1677053924944' \
   -H 'timezone: 7' \
-  -H 'traceid: a3795671-8dcf-4e86-9886-1a7b9245fb84' \
+  -H 'traceid: 0526582f-d58c-4cbf-8add-1f02f0875a09' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41' \
   -H 'visitorid: -1' \
-  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":3,"value":0}],"nickName":""}' \
+  --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":7,"value":0}],"nickName":""}' \
   --compressed`
 
     result=`echo $bingX | jq '.data.result[]'`
