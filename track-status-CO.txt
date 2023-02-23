@@ -10,5 +10,6 @@
 "Delivered today at 3:31pm"
 "Delivered today at 12:39pm"
 "Arrives by Fri, Feb 24"
-Khác Item
+"Arrives by Thu, Feb 23"
+"Arrives by Thu, Feb 23"
 "Arrives by Fri, Feb 24"
