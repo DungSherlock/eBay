@@ -3,7 +3,7 @@
 "Arrives today"
 "Canceled"
 "Delivered today at 11:48am"
-"Now arrives Wed, Mar 01"
+"Now arrives Tue, Feb 28"
 "Delivered today at 12:35pm"
 "Now arrives Thu, Mar 02"
 "Now arrives Wed, Mar 01"
