@@ -1,6 +1,6 @@
 "In transit, arriving late"
-"Now arrives Mon, Feb 27"
+"Delivered today at 1:42pm"
 "Canceled"
 "Canceled on Feb 21"
-"Arrives by Thu, Mar 02"
+"Now arrives Tue, Feb 28"
 "Now arrives Tue, Feb 28"
