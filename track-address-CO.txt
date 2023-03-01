@@ -1,3 +1,4 @@
+"1028 Brantley Dr, Knoxville, TN 37923"
 "213 Draper Rd NW #24060, Blacksburg, VA 23954"
 "9896 11 Mile Rd, Mecosta, MI 49332"
 "4602 Gordon ave #53716, Monona, WI 53593"
@@ -21,3 +22,6 @@ Khác Item
 "210 Hellams St, Fountain Inn, SC 29644"
 "18 S.h.a.n.n.o.n Dr #AR, Wynne, AR 72396"
 "588 Big Meadows Ln, Irvington, KY 40146"
+"912 San Jose Ave, South Lake Tahoe, CA 96150"
+"10232 Stathos Dr, Elk Grove, CA 95757"
+"5110 Lafitte Dr, Oak Park, CA 91377"
