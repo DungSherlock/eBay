@@ -3,6 +3,7 @@
 "Canceled"
 "Canceled"
 "Canceled"
+"Delivered on Feb 17"
 "Canceled"
 "Canceled"
 "Canceled"
@@ -13,10 +14,8 @@
 "Arrives today"
 "Delivered today at 10:31am"
 "Arrives today"
-"Delivered today at 11:48am"
 "In transit, arriving late"
 "Arrives by Fri, Mar 03"
-"Delivered today at 11:41am"
 "Now arrives Fri, Mar 03"
 "Now arrives Fri, Mar 03"
 Khác Item

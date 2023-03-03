@@ -3,6 +3,7 @@
 "Michael Thomas"
 "george kleopa"
 "chin anusatsanakul"
+"Karen Dowell Ausman"
 "Alaina Davis"
 "Heather Davis Krasowski"
 "Orey Heaney"
@@ -13,10 +14,8 @@
 "Nick Keri Sutherland"
 "Gemma Moses Mckever"
 "Carl Starr Giffin"
-"Ramon Rahimi Silberman"
 "Huda Lynn Schneider"
 "James Wisherd MIZE"
-"Eric Snyder Szwed"
 "Sharon Zacher Orr"
 "Alex Capoccia"
 Khác Item
