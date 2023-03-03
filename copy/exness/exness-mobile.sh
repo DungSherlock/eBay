@@ -1,5 +1,5 @@
 #!/bin/bash
-# git pull
+git pull
 : > accountID.txt
 : > day.txt
 : > daily_equity.txt
@@ -20,7 +20,7 @@ while IFS= read -r line; do
   echo $exness | jq '.result[].stopout_count' >> stopout_count.txt
   echo $exness | jq '.result[].deposit_amount' >> deposit_amount.txt
   echo $exness | jq '.result[].withdrawal_amount' >> withdrawal_amount.txt
-done < account.txt
+done < account-mobile.txt
   
 
 

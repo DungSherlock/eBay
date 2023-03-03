@@ -1,0 +1,151 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © cryptonnnite
+
+//@version=5
+indicator("Forex Lot Size Calculator", max_bars_back=100, overlay=true, linktoseries=true, scale=scale.none, precision=5, format=format.price)
+
+toString(x)=> str.tostring(x)
+numberToLotSizeFormat(size) => str.format("{0,number,#.##}", size)
+roundPrice(price) => math.round(price, 5)
+
+getTicksForNR(stopLossTickSize, commission, rCount) => stopLossTickSize * rCount + commission * rCount + commission
+
+getPriceForNR(entryPrice, stopLossPrice, ticks, mintick) => roundPrice(entryPrice > stopLossPrice ? entryPrice + (ticks * mintick) : entryPrice - (ticks * mintick))
+
+// USER SETTINGS GROUPS
+PRICE_LEVELS_GROUP = "Entry & SL Price"
+RISK_MANAGE_GROUP = 'Risk Manager'
+TABLE_APPEARANCE_GROUP = 'Table appearance'
+
+// Price
+isUserTakeProfit = input.bool(defval = false, title = 'Manual Target Price')
+isStaticTakeProfit = input.bool(defval = true, title = 'Static Target Prices')
+isShowOnlyLastProfitTargetLine = input.bool(defval = false, title = 'Show only last profit target line')
+
+rewardCount = input.int(defval = 3, title = 'What is your profit target in R', step = 1, minval = 1, maxval = 10)
+
+// RISK MANAGER
+accountSize = input(5000, 'Account Size in $', group=RISK_MANAGE_GROUP)
+risk = input.float(1, title='Risk in %', group=RISK_MANAGE_GROUP)
+commission = input.float(3, title='Commission in $', group = RISK_MANAGE_GROUP)
+
+entryPrice = roundPrice(input.price(defval = 1.00000, title = 'Entry Price   ', group = PRICE_LEVELS_GROUP, inline= '1', confirm = true))
+entryColor = input.color(color.green, title = '', inline= '1', group = PRICE_LEVELS_GROUP)
+
+stopLossPrice = roundPrice(input.price(defval = 0.99950, title = 'Stop Price    ', inline= '2', group = PRICE_LEVELS_GROUP, confirm = true))
+stopLossColor = input.color(defval = color.red  , title = '', inline= '2', group = PRICE_LEVELS_GROUP)
+
+takeProfitPrice = roundPrice(input.price(defval = 1.00050, title = 'Target Price  ', inline= '3', group = PRICE_LEVELS_GROUP))
+takeColor = input.color(defval = color.blue, title = '', inline= '3', group = PRICE_LEVELS_GROUP)
+
+// CALCULATION
+riskInUSD = int(risk * accountSize / 100)
+
+stopLossSize = math.abs(entryPrice - stopLossPrice)
+stopLossTickSize = int(roundPrice(stopLossSize / syminfo.mintick))
+stopLossTickSizeWithCommission = int(stopLossTickSize + commission)
+
+lotsWithCommission = riskInUSD / stopLossTickSizeWithCommission
+
+takeProfitSize = math.abs(entryPrice - takeProfitPrice)
+takeProfitTickSize = int(roundPrice(takeProfitSize / syminfo.mintick))
+takeProfitInUSD = takeProfitTickSize * lotsWithCommission - commission * lotsWithCommission
+
+// Smart Table
+tabPosI = input.string('top', 'Table Position', ['top', 'middle', 'bottom'], group = TABLE_APPEARANCE_GROUP)
+textSize = input.string('normal', 'Text Size', ['small', 'tiny', 'normal', 'large'], group=TABLE_APPEARANCE_GROUP)
+tabCol = input.color(color.new(#5b606b, 0), 'Background', group = TABLE_APPEARANCE_GROUP)
+textCol = input.color(color.white, 'Text Color', group = TABLE_APPEARANCE_GROUP)
+borderColor = input.color(color.white, 'Border', group = TABLE_APPEARANCE_GROUP)
+
+tabPos = tabPosI == 'top' ? position.top_right : tabPosI == 'bottom' ? position.bottom_right : position.middle_right
+
+var smartTable = table.new(position = tabPos, columns = 50, rows = 50, bgcolor = color.new(color.black, 100), frame_color = borderColor, frame_width = 1,  border_color = borderColor, border_width = 1)
+
+table.cell(smartTable, 0, 0, 'Account Size', text_color=textCol, text_size=textSize, bgcolor=tabCol)
+table.cell(smartTable, 0, 1, 'Risk', text_color=textCol, text_size=textSize, bgcolor=tabCol)
+table.cell(smartTable, 0, 2, 'Entry', text_color=textCol, text_size=textSize, bgcolor=tabCol)
+table.cell(smartTable, 0, 3, 'Stoploss', text_color=textCol, text_size=textSize, bgcolor=tabCol)
+table.cell(smartTable, 0, 4, 'SL Tick', text_color=textCol, text_size=textSize, bgcolor=tabCol)
+
+if isUserTakeProfit  
+    table.cell(smartTable, 0, 5, 'Profit in $', text_color=textCol, text_size=textSize, bgcolor=tabCol)
+
+table.cell(smartTable, 0, 6, 'Lot Size', text_color=textCol, text_size=textSize, bgcolor=tabCol)
+
+table.cell(smartTable, 1, 0, toString(accountSize), text_color=textCol, text_size=textSize, bgcolor=tabCol)
+table.cell(smartTable, 1, 1, toString(risk), text_color=textCol, text_size=textSize, bgcolor=tabCol)
+table.cell(smartTable, 1, 2, toString(entryPrice), text_color=textCol, text_size=textSize, bgcolor=tabCol)
+table.cell(smartTable, 1, 3, toString(stopLossPrice), text_color=textCol, text_size=textSize, bgcolor=tabCol)
+table.cell(smartTable, 1, 4, toString(stopLossTickSize), text_color=textCol, text_size=textSize, bgcolor=tabCol)
+
+if isUserTakeProfit
+    table.cell(smartTable, 1, 5, numberToLotSizeFormat(takeProfitInUSD), text_color=textCol, text_size=textSize, bgcolor=tabCol)
+
+table.cell(smartTable, 1, 6, numberToLotSizeFormat(lotsWithCommission), text_color=textCol, text_size=textSize, bgcolor=tabCol)
+
+var rewardLines = array.new_line()
+var rewardLabels = array.new_label()
+
+if array.size(rewardLines) < rewardCount
+    for i = 1 to rewardCount
+        rewardLine = line.new(bar_index, 0, bar_index+10, 0, extend=extend.left, style=line.style_dotted, color=takeColor)
+        rewardLabel = label.new(bar_index+10, 0, textcolor=takeColor, color= color.new(color.silver, 100), style=label.style_label_left)
+        array.push(rewardLines, rewardLine)
+        array.push(rewardLabels, rewardLabel)
+    
+
+var entryLine  = line.new (bar_index, 0, bar_index+10, 0, extend=extend.left, style=line.style_dotted, color=entryColor)
+var stopLossLine  = line.new (bar_index, 0, bar_index+10, 0, extend=extend.left, style=line.style_dotted, color=stopLossColor)
+var entryLineLabel = label.new(bar_index+10, 0, '', textcolor=entryColor, color=color.new(color.silver, 100), style=label.style_label_left)
+var stopLossLineLabel = label.new(bar_index+10, 0, '', textcolor=stopLossColor, color=color.new(color.silver, 100), style=label.style_label_left)
+var takeProfitLine = line.new(bar_index, takeProfitPrice, bar_index+10, takeProfitPrice, extend=extend.left, style=line.style_dotted, color=takeColor)
+var takeProfitLabel = label.new(bar_index+10, takeProfitPrice, 'Target: ' + toString(takeProfitPrice) + ' (' + toString(takeProfitTickSize) + ')', textcolor=takeColor, color=color.new(color.silver, 100), style=label.style_label_left)
+
+if barstate.islast
+    // Entry line & label
+    line.set_xy1(entryLine, bar_index, entryPrice)
+    line.set_xy2(entryLine, bar_index + 10, entryPrice)
+    label.set_xy(entryLineLabel, bar_index+10, entryPrice)
+    label.set_text(entryLineLabel, 'Entry: ' + toString(entryPrice))
+    
+    // Stop loss line & label
+    line.set_xy1(stopLossLine, bar_index, stopLossPrice)
+    line.set_xy2(stopLossLine, bar_index + 10, stopLossPrice)
+    label.set_xy(stopLossLineLabel, bar_index+10, stopLossPrice)
+    label.set_text(stopLossLineLabel, 'Stop: ' + toString(stopLossPrice) + ' (' + toString(stopLossTickSize) + ')')
+    
+    // Take profit line & label
+    line.set_xy1(takeProfitLine, bar_index, takeProfitPrice)
+    line.set_xy2(takeProfitLine, bar_index + 10, takeProfitPrice)
+    label.set_xy(takeProfitLabel, bar_index+10, takeProfitPrice)
+    
+    for i = 1 to rewardCount
+        rewardLine = array.get(rewardLines, i - 1)
+        rewardLabel = array.get(rewardLabels, i - 1)
+        ticks = getTicksForNR(stopLossTickSize, commission, i)
+        price = getPriceForNR(entryPrice, stopLossPrice, ticks, syminfo.mintick)
+        line.set_xy1(rewardLine, bar_index, price)
+        line.set_xy2(rewardLine, bar_index+10, price)
+        label.set_xy(rewardLabel, bar_index+10, price)
+        label.set_text(rewardLabel, toString(i) + 'R: ' + toString(price))
+        rewardLine
+        
+    if not isStaticTakeProfit
+        for i = 1 to rewardCount
+            rewardLine = array.get(rewardLines, i - 1)
+            rewardLabel = array.get(rewardLabels, i - 1)
+            line.delete(rewardLine)
+            label.delete(rewardLabel)
+            
+    if isShowOnlyLastProfitTargetLine and rewardCount > 1
+        for i = 1 to rewardCount - 1 
+            rewardLine = array.get(rewardLines, i - 1)
+            rewardLabel = array.get(rewardLabels, i - 1)
+            line.delete(rewardLine)
+            label.delete(rewardLabel)
+
+    if not isUserTakeProfit
+        line.delete(takeProfitLine)
+        label.delete(takeProfitLabel)
+    
