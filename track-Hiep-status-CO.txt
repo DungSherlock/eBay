@@ -4,3 +4,8 @@
 "Canceled"
 "In transit, arriving late"
 "Delivered on Feb 27"
+"Canceled"
+"Canceled on Feb 21"
+"Delivered on Mar 01"
+"Delivered today at 11:10am"
+"Canceled"
