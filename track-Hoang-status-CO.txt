@@ -23,3 +23,7 @@ Khác Item
 "Arrives today"
 "Delivered on Feb 28"
 "Now arrives Sat, Mar 04"
+"Now arrives Mon, Mar 06"
+"Canceled"
+"Now arrives Sat, Mar 04"
+"Canceled"
