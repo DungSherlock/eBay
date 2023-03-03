@@ -1,0 +1,7 @@
+"Now arrives Fri, Mar 03"
+"Canceled on Feb 28"
+"Now arrives Fri, Mar 03"
+"Cancellation requested on Feb 28"
+"Canceled"
+"Canceled on Mar 01"
+"Canceled today"
