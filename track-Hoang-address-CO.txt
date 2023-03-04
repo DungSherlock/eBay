@@ -6,3 +6,7 @@
 "8591 Stack Rock Ln, Ooltewah, TN 37363"
 "237 Elmer St, Saint Martinville, LA 70582"
 "1201 N Gilbert St, Danville, IL 61832"
+"219 Hummingbird Ln Ste0, Lewisburg, PA 17837"
+"1028 Brantley Dr, Knoxville, TN 37923"
+"6560 N Nevada Ave, Kansas City, MO 64152"
+"1008 Highland Ave #42450, Providence, KY 42141"

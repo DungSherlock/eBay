@@ -6,3 +6,7 @@
 "Delivered on Feb 17"
 "Canceled"
 "Canceled"
+"Canceled"
+"Delivered on Feb 24"
+"Canceled"
+"Arriving today"
