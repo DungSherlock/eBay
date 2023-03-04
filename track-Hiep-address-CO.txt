@@ -5,3 +5,6 @@
 "6634y Roos Rd, #lot000..,#Houston, Houston, TX 77074"
 "N6520 Lorraine Road,,,, Lot 00,,, Delavan, WI 53115"
 "62d Cobblestone Lane, #Unit-000, Tallassee, AL 36078"
+"9896s 11 Mile Rd, # 13-Office,,,,, Mecosta, MI 49332"
+"35z Barry Dr...., #000.., Rockaway, NJ 07866"
+"1111t E Morton Ave, Unit/0., Jacksonville, IL 62650"
