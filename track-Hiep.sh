@@ -130,9 +130,9 @@ linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-Hiep-usItemId
 \&categoriesType==IMPORTDATA\(\"`$linkGit`echo track-Hiep-categoriesType-CO.txt\"\)\
 `
 
-echo $linkPost
+echo -n $linkPost | base64 | wget -i -
 
-echo '[InternetShortcut]
-URL='$linkPost'' > track-Hiep.url
+# echo '[InternetShortcut]
+# URL='$linkPost'' > track-Hiep.url
 
-open track-Hiep.url
+# open track-Hiep.url
