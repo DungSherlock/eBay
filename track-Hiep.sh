@@ -132,7 +132,7 @@ linkPost=$linkApi`echo ItemID==IMPORTDATA\(\"`$linkGit`echo track-Hiep-usItemId-
 # echo $linkPost
 # echo -n $linkPost | base64
 
-echo `[InternetShortcut]\
-URL=$linkPost` > track-Hiep.url
+echo '[InternetShortcut]\
+URL='$linkPost > track-Hiep.url
 
 open track-Hiep.url
