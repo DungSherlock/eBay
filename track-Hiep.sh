@@ -120,19 +120,19 @@ git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
 linkApi=`echo https://script.google.com/macros/s/AKfycbxGrlzQU4LxH9VrPonQwYY3BtD25ILuHOFYDPSmGVesSRMJOXuA0KfUppq4AaTAqCU6/exec?`
-linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-Hiep-usItemId-CO.txt\"\)\&Giá==IMPORTDATA\(\"`$linkGit`echo track-Hiep-priceValue-CO.txt\"\)\
-\&Tên==IMPORTDATA\(\"`$linkGit`echo track-Hiep-fullName-CO.txt\"\)\&Địa chỉ==index\(IMPORTDATA\(\"`$linkGit`echo track-Hiep-address-CO.txt\"\),,1\)\
+linkPost=$linkApi`echo ItemID==IMPORTDATA\(\"`$linkGit`echo track-Hiep-usItemId-CO.txt\"\)\&Gia==IMPORTDATA\(\"`$linkGit`echo track-Hiep-priceValue-CO.txt\"\)\
+\&Ten==IMPORTDATA\(\"`$linkGit`echo track-Hiep-fullName-CO.txt\"\)\&ĐiaChi==index\(IMPORTDATA\(\"`$linkGit`echo track-Hiep-address-CO.txt\"\),,1\)\
 \&Status==IMPORTDATA\(\"`$linkGit`echo track-Hiep-status-CO.txt\"\)\
-\&Tracking Number==IMPORTDATA\(\"`$linkGit`echo track-Hiep-number-CO.txt\"\)\
-\&Tracking URL==IMPORTDATA\(\"`$linkGit`echo track-Hiep-url-CO.txt\"\)\
+\&TrackingNumber==IMPORTDATA\(\"`$linkGit`echo track-Hiep-number-CO.txt\"\)\
+\&TrackingURL==IMPORTDATA\(\"`$linkGit`echo track-Hiep-url-CO.txt\"\)\
 \&Email==IMPORTDATA\(\"`$linkGit`echo track-Hiep-email-CO.txt\"\)\
 \&Order==IMPORTDATA\(\"`$linkGit`echo track-Hiep-OrderID-CO.txt\"\)\
 \&categoriesType==IMPORTDATA\(\"`$linkGit`echo track-Hiep-categoriesType-CO.txt\"\)\
 `
-echo $linkPost
-echo -n $linkPost | base64
+# echo $linkPost
+# echo -n $linkPost | base64
 
-# echo '[InternetShortcut]
-# URL='$linkPost'' > track-Hiep.url
+echo `[InternetShortcut]\
+URL=$linkPost` > track-Hiep.url
 
-# open track-Hiep.url
+open track-Hiep.url
