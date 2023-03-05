@@ -1,7 +1,0 @@
-"Arriving today"
-"Delivered on Mar 03"
-"Cancellation requested on Feb 28"
-"Canceled"
-"Canceled on Feb 28"
-"Canceled on Mar 01"
-"Canceled on Mar 02"
