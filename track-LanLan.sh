@@ -120,13 +120,16 @@ git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
 linkApi=`echo https://script.google.com/macros/s/AKfycbwG2KIKS_dzMYCDBuUcLV1W4k6-pARScW5-Arm94rz9Uo0axrvMde9ACLgYkHzqcOfEIg/exec?`
-linkPost=$linkApi`echo Item ID==IMPORTDATA\(\"`$linkGit`echo track-LanLan-usItemId-CO.txt\"\)\&Giá==IMPORTDATA\(\"`$linkGit`echo track-LanLan-priceValue-CO.txt\"\)\
-\&Tên==IMPORTDATA\(\"`$linkGit`echo track-LanLan-fullName-CO.txt\"\)\&Địa chỉ==index\(IMPORTDATA\(\"`$linkGit`echo track-LanLan-address-CO.txt\"\),,1\)\
+linkPost=$linkApi`echo ItemID==IMPORTDATA\(\"`$linkGit`echo track-LanLan-usItemId-CO.txt\"\)\&Gia==IMPORTDATA\(\"`$linkGit`echo track-LanLan-priceValue-CO.txt\"\)\
+\&Ten==IMPORTDATA\(\"`$linkGit`echo track-LanLan-fullName-CO.txt\"\)\
+\&DiaChi==index\(IMPORTDATA\(\"`$linkGit`echo track-LanLan-address-CO.txt\"\),,1\)\
 \&Status==IMPORTDATA\(\"`$linkGit`echo track-LanLan-status-CO.txt\"\)\
-\&Tracking Number==IMPORTDATA\(\"`$linkGit`echo track-LanLan-number-CO.txt\"\)\
-\&Tracking URL==IMPORTDATA\(\"`$linkGit`echo track-LanLan-url-CO.txt\"\)\
+\&TrackingNumber==IMPORTDATA\(\"`$linkGit`echo track-LanLan-number-CO.txt\"\)\
+\&TrackingURL==IMPORTDATA\(\"`$linkGit`echo track-LanLan-url-CO.txt\"\)\
 \&Email==IMPORTDATA\(\"`$linkGit`echo track-LanLan-email-CO.txt\"\)\
 \&Order==IMPORTDATA\(\"`$linkGit`echo track-LanLan-OrderID-CO.txt\"\)\
 \&categoriesType==IMPORTDATA\(\"`$linkGit`echo track-LanLan-categoriesType-CO.txt\"\)\
 `
-echo $linkPost
+echo '[InternetShortcut]\
+URL='$linkPost > track-LanLan.url
+open track-LanLan.url
