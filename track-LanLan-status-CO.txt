@@ -8,3 +8,6 @@
 "Arrives by Mon, Mar 13"
 "Canceled today"
 "Canceled on Mar 04"
+"Canceled on Mar 04"
+"Canceled today"
+"Arrives by Wed, Mar 15"
