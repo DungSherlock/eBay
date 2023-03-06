@@ -8,3 +8,7 @@
 "Canceled"
 "Canceled"
 "Delivered on Feb 24"
+"Canceled"
+Khác Item
+"Canceled"
+"Delivered today at 2:00pm"
