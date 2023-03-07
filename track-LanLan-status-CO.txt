@@ -8,3 +8,8 @@
 "Canceled"
 "Canceled on Mar 04"
 "Canceled on Mar 04"
+"Now arrives Tue, Mar 14"
+Khác Item
+"Canceled today"
+"Canceled on Mar 05"
+"Canceled on Mar 05"
