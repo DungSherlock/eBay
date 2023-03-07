@@ -41,5 +41,5 @@ linkPost=$linkApi`echo accountID==IMPORTDATA\(\"`$linkGit`echo accountID.txt\"\)
 \&withdrawal_amount==IMPORTDATA\(\"`$linkGit`echo withdrawal_amount.txt\"\)\
 `
 echo '[InternetShortcut]\
-URL='$linkPost > exness-mobile.url
-open exness-mobile.url
+URL='$linkPost > $0.url
+open $0.url
