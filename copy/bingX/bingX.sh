@@ -57,7 +57,7 @@ do
   -H 'timestamp: 1677053924944' \
   -H 'timezone: 7' \
   -H 'traceid: 0526582f-d58c-4cbf-8add-1f02f0875a09' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.63' \
   -H 'visitorid: -1' \
   --data-raw '{"conditions":[{"key":"riskLevel","type":"range","min":1,"max":7,"value":0}],"nickName":""}' \
   --compressed`

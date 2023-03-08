@@ -6,10 +6,3 @@
 "Canceled on Mar 02"
 "Arrives by Wed, Mar 08"
 "Canceled"
-"Canceled on Mar 04"
-"Canceled on Mar 04"
-"Now arrives Wed, Mar 08"
-Khác Item
-"Canceled on Mar 06"
-"Canceled on Mar 05"
-"Canceled on Mar 05"
