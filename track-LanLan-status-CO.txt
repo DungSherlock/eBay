@@ -2,14 +2,10 @@
 "Canceled"
 "Canceled on Feb 28"
 "In transit, arriving late"
-"Delivered today at 12:58pm"
-"Delivered today at 3:35pm"
 Sai info
-"Canceled on Mar 04"
-"Canceled on Mar 04"
 Khác Item
 "Canceled on Mar 01"
+"Canceled on Mar 04"
+"Canceled on Mar 04"
 "Canceled on Mar 02"
 "Canceled on Mar 06"
-"Canceled on Mar 05"
-"Canceled on Mar 05"
