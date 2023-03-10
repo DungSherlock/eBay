@@ -8,3 +8,5 @@
 "CANCELED"
 "CANCELED"
 "REGULAR"
+"CANCELED"
+Khác Item
