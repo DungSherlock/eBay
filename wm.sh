@@ -117,3 +117,4 @@ linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\
 echo '[InternetShortcut]\
 URL='$linkPost > wm.url
 open wm.url
+open https://app.clickup.com/9008002310/v/b/7-9008002310-2
