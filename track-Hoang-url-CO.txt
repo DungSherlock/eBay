@@ -22,9 +22,8 @@ Khác Item
 
 "https://spreetail-delivery.toolkit.co/tracking/SDWT0000030299"
 "https://www.walmart.com/orders/200010824742156/track/395526576629"
+"https://www.walmart.com/orders/200010731190694/track/395362214691"
 "https://www.walmart.com/orders/200010736272974/track/395425720059"
-"https://www.walmart.com/orders/200010866112709/track/9449011206218494714662"
-"https://www.walmart.com/orders/200010866112709/track/9400111206214515992123"
 "https://www.walmart.com/orders/200010910996470/track/1Z7133W1NY00435942"
 "https://www.walmart.com/orders/200010873228365/track/1ZA2447R0394321159"
 "https://www.walmart.com/orders/200010755882890/track/395476311250"
@@ -37,10 +36,7 @@ Khác Item
 "https://www.walmart.com/orders/200010705461582/track/395574964282"
 "https://www.walmart.com/orders/200010913250605/track/93055109246300000005859343"
 "https://www.walmart.com/orders/200010779296860/track/395579446763"
-
+"https://www.walmart.com/orders/200010683783145/track/9305510944101988079973"
 "https://www.walmart.com/orders/200010786777402/track/636691327301"
-
+"https://www.walmart.com/orders/200010742289777/track/395619635450"
 "https://www.walmart.com/orders/200010850439680/track/395618411623"
-
-
-"https://www.walmart.com/orders/200010796390627/track/C12136922851859"
