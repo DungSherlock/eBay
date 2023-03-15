@@ -45,9 +45,9 @@ Khác Item
 "209 Larkspur Dr SW, Calhoun, GA 30701"
 "333 Joyner Rd, Waynesboro, GA 30830"
 "533 N 48th Ave, Pensacola, FL 32506"
-"543 Clark Rd, Ceresco, MI 49033"
+"543 Clark Rd #MIX, Ceresco, MI 49033"
 "2092 Laurel Lake Dr, Tuscaloosa, AL 35405"
-"31 camden drive lot193, Greenacres, FL 33463"
+"31camden drive lot 193, Greenacres, FL 33463"
 "1749 Bcc, Buckatunna, MS 39322"
 Khác Item
 "13409 Planters Row Dr, Charlotte, NC 28278"
