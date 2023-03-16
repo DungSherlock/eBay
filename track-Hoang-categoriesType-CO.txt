@@ -40,7 +40,3 @@ Khác Item
 "REGULAR"
 "REGULAR"
 "REGULAR"
-"REGULAR"
-"REGULAR"
-Khác Item
-"REGULAR"

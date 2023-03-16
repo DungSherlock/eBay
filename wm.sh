@@ -30,7 +30,7 @@ do
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-origin' \
   -H 'traceparent: 00-7397a0a5fef6de55685b3d3eca6a245a-ffc7eb1e30e2892c-00' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/111.0.1661.43' \
   -H 'wm_mp: true' \
   -H 'wm_page_url: https://www.walmart.com/lists/shared/WL/'${array[1]}'' \
   -H 'wm_qos.correlation_id: aN3Kozf7JSv9SfIdoMq_jMSUZTmEjc-3K_wf' \
@@ -63,7 +63,7 @@ do
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-origin' \
   -H 'traceparent: 00-7397a0a5fef6de55685b3d3eca6a245a-ffc7eb1e30e2892c-00' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/111.0.1661.43' \
   -H 'wm_mp: true' \
   -H 'wm_page_url: https://www.walmart.com/lists/shared/WL/'${array[1]}'' \
   -H 'wm_qos.correlation_id: aN3Kozf7JSv9SfIdoMq_jMSUZTmEjc-3K_wf' \
