@@ -7,9 +7,9 @@ git pull
 # : > swap_long.txt
 # : > swap_short.txt
 : > spread_pro.txt
-: > commission_pro.txt
+: > com_pro.txt
 : > spread_zero.txt
-: > commission_zero.txt
+: > com_zero.txt
 
 
 while IFS= read -r line; do
@@ -25,9 +25,9 @@ while IFS= read -r line; do
   echo $line >> CapTien.txt
   echo $pro | jq '.data.calculate.pip_value' >> pip_value.txt
   echo $pro | jq '.data.calculate.spread' >> spread_pro.txt
-  echo $pro | jq '.data.calculate.commission' >> commission_pro.txt
+  echo $pro | jq '.data.calculate.commission' >> com_pro.txt
   echo $zero | jq '.data.calculate.spread' >> spread_zero.txt
-  echo $zero | jq '.data.calculate.commission' >> commission_zero.txt
+  echo $zero | jq '.data.calculate.commission' >> com_zero.txt
 done < list-fx.txt
 
 git add -A .
@@ -41,9 +41,9 @@ linkPost=$linkApi`echo ItemID==IMPORTDATA\(\"`$linkGit`echo \
 \&CapTien==IMPORTDATA\(\"`$linkGit`echo CapTien.txt\"\)\
 \&pip_value==IMPORTDATA\(\"`$linkGit`echo pip_value.txt\"\)\
 \&spread_pro==IMPORTDATA\(\"`$linkGit`echo spread_pro.txt\"\)\
-\&commission_pro==IMPORTDATA\(\"`$linkGit`echo commission_pro.txt\"\)\
+\&com_pro==IMPORTDATA\(\"`$linkGit`echo com_pro.txt\"\)\
 \&spread_zero==IMPORTDATA\(\"`$linkGit`echo spread_zero.txt\"\)\
-\&commission_zero==IMPORTDATA\(\"`$linkGit`echo commission_zero.txt\"\)\
+\&com_zero==IMPORTDATA\(\"`$linkGit`echo com_zero.txt\"\)\
 `
 echo '[InternetShortcut]\
 URL='$linkPost > fx.url
