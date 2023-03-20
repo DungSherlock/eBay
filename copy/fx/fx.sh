@@ -1,5 +1,6 @@
 #!/bin/bash
 git pull
+: > CapTien.txt
 # : > currency.txt
 # : > margin.txt
 : > pip_value.txt
@@ -21,6 +22,7 @@ while IFS= read -r line; do
 -H 'content-type: application/json' \
 --data-raw $'{"operationName":"Calculate","variables":{"input":{"account_type":"mt5_zero_real_vc","instrument":"'$line'","currency":"USD","leverage":200,"lot":1}},"query":"mutation Calculate($input: CalculationInput\u0021) {\\n  calculate(input: $input) {\\n    pip_value\\n    spread\\n    commission\\n    __typename\\n  }\\n}"}' \
 --compressed`
+  echo $line >> CapTien.txt
   echo $pro | jq '.data.calculate.pip_value' >> pip_value.txt
   echo $pro | jq '.data.calculate.spread' >> spread_pro.txt
   echo $pro | jq '.data.calculate.commission' >> commission_pro.txt
@@ -33,9 +35,10 @@ git commit -m --allow-empty
 git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
-linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
+linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /copy/fx/`
 linkApi=`echo https://script.google.com/macros/s/AKfycbyg9KwvDN1B_jwX83fWpoXnQCXF43_fFSgP4T_b75KOrKdnkW5HyCSne_HzT4Ch9Wk-Ew/exec?`
 linkPost=$linkApi`echo ItemID==IMPORTDATA\(\"`$linkGit`echo \
+\&CapTien==IMPORTDATA\(\"`$linkGit`echo CapTien.txt\"\)\
 \&pip_value==IMPORTDATA\(\"`$linkGit`echo pip_value.txt\"\)\
 \&spread_pro==IMPORTDATA\(\"`$linkGit`echo spread_pro.txt\"\)\
 \&commission_pro==IMPORTDATA\(\"`$linkGit`echo commission_pro.txt\"\)\
