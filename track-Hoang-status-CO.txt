@@ -41,3 +41,7 @@ Khác Item
 "Arrives by Fri, Mar 24"
 "Cancellation requested on Mar 18"
 "Arrives by Thu, Mar 23"
+"Arrives by Fri, Mar 24"
+"Arrives by Wed, Mar 29"
+"Arrives by Wed, Mar 22"
+"Now arrives Tue, Mar 21"
