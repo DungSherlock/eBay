@@ -27,7 +27,6 @@ Khác Item
 "543 Clark Rd #MIX, Ceresco, MI 49033"
 "7500 Debutante Ln, Sacramento, CA 95828"
 "118 Danforth Cres, Rochester, NY 14618"
-"1011 E 71st St, Cleveland, OH 44103"
 "7437 W Tumblewood Dr, Peoria, AZ 85382"
 "3320 Indian Moon Dr, Las Vegas, NV 89129"
 "407 Levo Rd, New Vienna, OH 45159"
