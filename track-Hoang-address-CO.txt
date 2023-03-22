@@ -48,6 +48,7 @@ Khác Item
 "13389 Nightingale St NW, Andover, MN 55304"
 "5283 Overland Dr, Roanoke, VA 24018"
 "12130 Pine Knoll Dr, Houston, TX 77099"
+"8117 Highway 522, Totz, KY 40870"
 "50 Fairway Cir, Piketon, OH 45661"
 "2318 Edwards St, Fort Smith, AR 72904"
 "1119 Longwood Oaks Blvd, Lakeland, FL 33811"
