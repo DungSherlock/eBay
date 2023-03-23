@@ -49,3 +49,5 @@ Khác Item
 "2318 Edwards St, Fort Smith, AR 72904"
 "1119 Longwood Oaks Blvd, Lakeland, FL 33811"
 "1867 N Johnson Rd, Dragoon, AZ 85609"
+"560 Riverbend Rd, Lavonia, GA 30553"
+"2801 S Floyd St, Ste 400, Louisville, KY 40209"
