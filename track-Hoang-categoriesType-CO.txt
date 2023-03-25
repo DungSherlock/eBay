@@ -52,3 +52,4 @@ Khác Item
 "REGULAR"
 "REGULAR"
 "REGULAR"
+"REGULAR"

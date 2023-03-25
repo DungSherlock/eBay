@@ -52,3 +52,4 @@ Khác Item
 "20513 NW 39th Ct, Miami Gardens, FL 33055"
 "604 Newland Ave, Jamestown, NY 14701"
 "1306 Lakemoore Dr, Jefferson City, TN 37760"
+"4121 Tierra Patino Ln, El Paso, TX 79938"
