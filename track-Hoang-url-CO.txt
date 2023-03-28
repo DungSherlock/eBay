@@ -42,11 +42,9 @@ Khác Item
 "https://www.walmart.com/orders/200010828761666/track/396130961360"
 "https://www.walmart.com/orders/200010848689940/track/636089797200"
 "https://www.walmart.com/orders/200010846454305/track/396276236490"
-"https://www.walmart.com/orders/200010970079303/track/636177422555"
 "https://www.walmart.com/orders/200010919056639/track/396227273810"
 "https://www.walmart.com/orders/200010849585962/track/396276231113"
 
 "https://www.walmart.com/orders/200010856435847/track/636178333074"
-"https://beta.walmart.com/orders/200010844159861/track-live"
 "https://www.walmart.com/orders/200010991661383/track/396229726465"
 "https://www.walmart.com/orders/200010790624782/track/396276232083"
