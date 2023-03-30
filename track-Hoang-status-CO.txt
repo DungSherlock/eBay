@@ -40,7 +40,7 @@ Khác Item
 "Arrives today"
 "Delivered on Mar 29"
 "Canceled"
-"Now arrives Thu, Mar 30"
+"Arrives today"
 "Canceled on Mar 29"
 "Arrives by Fri, Mar 31"
 "Arrives today"
