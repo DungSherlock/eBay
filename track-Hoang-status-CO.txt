@@ -29,7 +29,7 @@ Khác Item
 "Canceled on Mar 20"
 "Canceled on Mar 21"
 "Canceled on Mar 23"
-"Delivered today at 2:56pm"
+"Delivered on Mar 31"
 "Canceled on Mar 29"
 "Canceled"
 "Canceled on Mar 29"
