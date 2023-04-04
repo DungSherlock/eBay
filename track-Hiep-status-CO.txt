@@ -5,3 +5,8 @@
 "Now arrives Wed, Apr 05"
 "Now arrives Mon, Apr 10"
 "Arrives by Thu, Apr 06"
+"Delivered on Apr 03"
+"Arrives by Thu, Apr 06"
+"Arrives by Mon, Apr 10"
+"Arrives by Tue, Apr 11"
+"Arrives by Thu, Apr 13"
