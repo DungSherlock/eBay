@@ -25,3 +25,7 @@
 "1877 Stanhope St Apt 1F, Ridgewood, NY 11385"
 "811 Montvue Ave, Morristown, TN 37813"
 "3119 Hickman Rd, Des Moines, IA 50310"
+"5732 Parke Ave, West Palm Beach, FL 33407"
+"5232 Shar Cal Rd, Calvert City, KY 42029"
+"13339 S Thorntree Dr, Houston, TX 77015"
+"10018 Waterview Pkwy, Rowlett, TX 75089"
