@@ -17,16 +17,3 @@
 
 "https://www.walmart.com/orders/200010909594470/track/538423498363"
 
-
-"https://www.walmart.com/orders/200010739899602/track/396477510983"
-"https://www.walmart.com/orders/200010994328967/track/396612448651"
-"https://www.walmart.com/orders/200010902824839/track/396548459072"
-"https://www.walmart.com/orders/200010796465851/track/396548461212"
-"https://www.walmart.com/orders/200010801044000/track/396538527701"
-"https://www.walmart.com/orders/200010844226772/track/396521876210"
-"https://www.walmart.com/orders/200010803389899/track/396521773799"
-"https://www.walmart.com/orders/200010764808814/track/636338392432"
-"https://www.walmart.com/orders/200010835673196/track/396583845697"
-"https://www.walmart.com/orders/200010812235094/track/1ZA5450J0314833082"
-"https://www.walmart.com/orders/200010866281875/track/396659067780"
-"https://www.walmart.com/orders/200011008653714/track/396646931912"
