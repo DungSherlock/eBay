@@ -6,6 +6,7 @@ git pull
 : > ebay-currentPrice.txt
 : > ebay-wasPrice.txt
 : > ebay-availabilityStatus.txt
+: > ebay-orderLimit.txt
 
 while read line
 do
