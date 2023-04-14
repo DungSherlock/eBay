@@ -11,6 +11,7 @@ git pull
 : > track-Hoang-email-CO.txt
 : > track-Hoang-categoriesType-CO.txt
 
+curl -Ls https://script.google.com/macros/s/AKfycbxMyceIyCfPF4RqNxmUPIwhnPiX95326RpNn8rlA7-sYB7DkeVDfsMbKmazwMWLZfaLWw/exec | jq '.content.names[]' | sed 's/"//g' > track-Hoang.txt
 
 while read line
 do
