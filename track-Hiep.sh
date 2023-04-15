@@ -11,13 +11,8 @@ git pull
 : > track-Hiep-email-CO.txt
 : > track-Hiep-categoriesType-CO.txt
 
-list=`curl -Ls https://script.google.com/macros/s/AKfycbyivYPogqsVEsKURcAUhFDLnsQqi4D3Sap_Vy_kOsyh9P83cumQ6DIUe3TFJJ6ZuO9_/exec`
+curl -Ls https://script.google.com/macros/s/AKfycbyivYPogqsVEsKURcAUhFDLnsQqi4D3Sap_Vy_kOsyh9P83cumQ6DIUe3TFJJ6ZuO9_/exec | jq '.content.names[]' | sed 's/"//g' > track-Hiep.txt
 
-$list | jq '.content.names[]' | sed 's/"//g' > track-Hiep.txt
-
-count=$(echo $list | wc -w)
-
-echo $count
 
 while read line
 do
