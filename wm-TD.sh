@@ -1,21 +1,19 @@
 #!/bin/bash
 #'$line'
 
-# git pull
-# : > ebay-usItemId.txt
-# : > ebay-currentPrice.txt
-# : > ebay-wasPrice.txt
-# : > ebay-availabilityStatus.txt
-# : > ebay-orderLimit.txt
+git pull
+: > ebay-usItemId.txt
+: > ebay-currentPrice.txt
+: > ebay-wasPrice.txt
+: > ebay-availabilityStatus.txt
+: > ebay-orderLimit.txt
 
-# curl -L https://script.google.com/macros/s/AKfycbxLSohHO4ZCfamg0195s7GB77CsXz20Xa_gVlrNhKvh3EToDMarPCtgNRcsXa6W09M4nA/exec | jq '.content.names[]' | sed 's/"//g' | sed 's/.*\///g' > wm-TD-list.txt
+curl -Ls https://script.google.com/macros/s/AKfycbxLSohHO4ZCfamg0195s7GB77CsXz20Xa_gVlrNhKvh3EToDMarPCtgNRcsXa6W09M4nA/exec | jq '.content.names[]' | sed 's/"//g' | sed 's/.*\///g' > wm-TD-list.txt
 
 
 while read line
 do
   # array=(${line//|/ })
-  # array=(${line//|/ })
-  # echo $line
   while true
   do
     list=`curl -s 'https://www.walmart.com/orchestra/home/graphql/getListDetails/4fb20c34987f00ecdbbf4f388b7ddc80a70519f2d9f87c615b59f71834124dcd?variables=%7B%22input%22%3A%7B%22id%22%3A%22'$line'%22%2C%22listType%22%3A%22WL%22%2C%22pagination%22%3A%7B%22page%22%3A1%2C%22pageSize%22%3A1%7D%2C%22sortOrder%22%3A%22DEFAULT%22%2C%22maxItems%22%3Atrue%2C%22skipGeneric%22%3Atrue%2C%22permission%22%3A%22VIEW%22%7D%7D' \
