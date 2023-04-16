@@ -1,14 +1,16 @@
 #!/bin/bash
 #'${array[1]}'
 
-git pull
-: > ebay-usItemId.txt
-: > ebay-currentPrice.txt
-: > ebay-wasPrice.txt
-: > ebay-availabilityStatus.txt
-: > ebay-orderLimit.txt
+# git pull
+# : > ebay-usItemId.txt
+# : > ebay-currentPrice.txt
+# : > ebay-wasPrice.txt
+# : > ebay-availabilityStatus.txt
+# : > ebay-orderLimit.txt
 
-curl -Ls https://script.google.com/macros/s/AKfycbxLSohHO4ZCfamg0195s7GB77CsXz20Xa_gVlrNhKvh3EToDMarPCtgNRcsXa6W09M4nA/exec | jq '.content.names[]' | sed 's/"//g' > wm-TD-list.txt
+curl -L https://script.google.com/macros/s/AKfycbxLSohHO4ZCfamg0195s7GB77CsXz20Xa_gVlrNhKvh3EToDMarPCtgNRcsXa6W09M4nA/exec | jq '.content.names[]' | sed 's/[.*\/|\"]//g' > wm-TD-list.txt
+
+exit
 
 while read line
 do
