@@ -1,6 +1,4 @@
 #!/bin/bash
-#'$line'
-
 git pull
 : > ebay-usItemId.txt
 : > ebay-currentPrice.txt
@@ -8,7 +6,7 @@ git pull
 : > ebay-availabilityStatus.txt
 : > ebay-orderLimit.txt
 
-curl -Ls https://script.google.com/macros/s/AKfycbxLSohHO4ZCfamg0195s7GB77CsXz20Xa_gVlrNhKvh3EToDMarPCtgNRcsXa6W09M4nA/exec | jq '.content.names[]' | sed 's/"//g' | sed 's/.*\///g' > wm-TD-list.txt
+# curl -Ls https://script.google.com/macros/s/AKfycbxLSohHO4ZCfamg0195s7GB77CsXz20Xa_gVlrNhKvh3EToDMarPCtgNRcsXa6W09M4nA/exec | jq '.content.names[]' | sed 's/"//g' | sed 's/.*\///g' > wm-TD-list.txt
 
 
 while read line
@@ -120,5 +118,5 @@ linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\
 `
 echo '[InternetShortcut]\
 URL='$linkPost > wm-TD.url
-open wm.url
+open wm-TD.url
 open https://app.clickup.com/9008002310/v/b/7-9008002310-2

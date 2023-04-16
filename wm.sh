@@ -6,7 +6,7 @@ git pull
 : > ebay-currentPrice.txt
 : > ebay-wasPrice.txt
 : > ebay-availabilityStatus.txt
-: > ebay-orderLimit.txt
+# : > ebay-orderLimit.txt
 
 while read line
 do
@@ -95,8 +95,8 @@ do
         echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
         echo $list | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> ebay-availabilityStatus.txt
         echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> ebay-availabilityStatus.txt
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.orderLimit' >> ebay-orderLimit.txt
-        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.orderLimit' >> ebay-orderLimit.txt
+        # echo $list | jq '.data.shoppingListDetails.items.listItems[].product.orderLimit' >> ebay-orderLimit.txt
+        # echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.orderLimit' >> ebay-orderLimit.txt
         echo ${array[0]}
         break
     fi
@@ -113,7 +113,7 @@ linkApi=`echo https://script.google.com/macros/s/AKfycbzsiGXaclu6CAFaAAQEIuR7io8
 linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\)\
 \&GiaHienTai==IMPORTDATA\(\"`$linkGit`echo ebay-currentPrice.txt\"\)\
 \&TrangThaiHang==IMPORTDATA\(\"`$linkGit`echo ebay-availabilityStatus.txt\"\)\
-\&Quantity==IMPORTDATA\(\"`$linkGit`echo ebay-orderLimit.txt\"\)
+# \&Quantity==IMPORTDATA\(\"`$linkGit`echo ebay-orderLimit.txt\"\)
 `
 echo '[InternetShortcut]\
 URL='$linkPost > wm.url
