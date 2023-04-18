@@ -23,3 +23,7 @@
 "46550 Shepherdstown Rd, Saint Clairsville, OH 43950"
 "4810 NE 151st St, Vancouver, WA 98686"
 "55 Broadway, Methuen, MA 01844"
+"1930 Winchester Rd N, St Petersburg, FL 33710"
+"14539 Balloch Dr, Hudson, FL 34667"
+"4525 Dean Martin Dr, T1-1212, Las Vegas, NV 89103"
+"16047 NW 251st Way, High Springs, FL 32643"

@@ -23,3 +23,7 @@
 "Canceled on Apr 09"
 "Delivered on Apr 17"
 "Delivered on Apr 17"
+"Arrives by Wed, Apr 19"
+"Arrives today"
+"Arrives by Thu, Apr 20"
+"Arrives today"
