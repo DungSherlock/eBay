@@ -17,3 +17,8 @@
 "2448 Beaver Creek Rd, Vernon, AL 35592"
 "8 Neptune St Ct, Lynn, MA 01905"
 "3508 Via Campana, Bakersfield, CA 93311"
+"768 Polo Dr N, Columbus, OH 43229"
+"623 Country Club Rd, Cochran, GA 31014"
+"3200 Range Line Rd, Memphis, TN 38127"
+"46550 Shepherdstown Rd, Saint Clairsville, OH 43950"
+"4810 NE 151st St, Vancouver, WA 98686"
