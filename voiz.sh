@@ -1,5 +1,5 @@
 #!/bin/bash
-git pull
+# git pull
 read -p 'Nhap ID: ' id
 book=`curl -s https://api.voiz.vn/v1/playlists/$id`
 title=`echo $book | jq '.data.author_string + "-" + .data.name'`
