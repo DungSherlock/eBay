@@ -20,6 +20,6 @@ linkPost=$linkApi`echo \
 \&id==IMPORTDATA\(\"`$linkGit`echo voiz-id.txt\"\)\
 \&name==IMPORTDATA\(\"`$linkGit`echo voiz-name.txt\"\)\
 `
-echo '[InternetShortcut]\
+echo '[InternetShortcut]
 URL='$linkPost > voiz.url
 open voiz.url
