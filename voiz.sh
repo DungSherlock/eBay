@@ -7,7 +7,7 @@ list=`curl -s https://api.voiz.vn/v1/playlists/$idBook/audios\?limit\=1000\&orde
 echo $list | jq '.data[].name' > voiz-name.txt
 echo $list | jq '.data[].id' > voiz-id.txt
 
-hay=$(echo -n "$title" | awk '{gsub(/[^[:alnum:]_.!~*'\''()-]/, sprintf("%%%02X", "0x&")); print}')
+hay=`echo -n "$title" | awk '{gsub(/[^[:alnum:]_.!~*'\''()-]/, sprintf("%%%02X", "0x&")); print}'`
 echo $hay
 
 git add -A .
