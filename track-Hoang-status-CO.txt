@@ -30,3 +30,6 @@
 "Delivered today at 6:03pm"
 "Delivered on Apr 19"
 "Delivered on Apr 18"
+"Canceled on Apr 20"
+"Arrives today"
+"Now arrives Sun, Apr 23"

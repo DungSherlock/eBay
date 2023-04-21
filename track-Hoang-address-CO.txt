@@ -30,3 +30,6 @@
 "3155 Bel Air Dr, Las Vegas, NV 89109"
 "16200 Auburn Rd, Grasston, MN 55030"
 "2216 State Route 72 N, Lebanon, PA 17046"
+"300 Herons Run Dr, Sarasota, FL 34232"
+"748 Shenanigan Loop, Murrells Inlet, SC 29576"
+"2213 Abbey Way, The Villages, FL 32162"

@@ -30,3 +30,6 @@
 "mark rowland"
 "Nicole Carr"
 "Michael Criswell"
+"Angel Verges"
+"James Fritz"
+"Earle R Petel"
