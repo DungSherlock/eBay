@@ -6,7 +6,8 @@ title=`echo $book | jq '.data.author_string + "-" + .data.name' | sed 's/"//g'`
 list=`curl -s https://api.voiz.vn/v1/playlists/$idBook/audios\?limit\=1000\&order\=asc\&position\=bottom`
 echo $list | jq '.data[].name' > voiz-name.txt
 echo $list | jq '.data[].id' > voiz-id.txt
-hay=`urlencode $title`
+
+hay=$(echo -n "$title" | awk '{gsub(/[^[:alnum:]_.!~*'\''()-]/, sprintf("%%%02X", "0x&")); print}')
 echo $hay
 
 git add -A .
