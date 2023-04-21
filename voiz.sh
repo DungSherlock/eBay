@@ -18,7 +18,7 @@ gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
 linkApi=`echo https://script.google.com/macros/s/AKfycbyX2_giAjG24Gh0HmVsErUD2r1ikuoUjkfhMDHfMsOopjy7OcimmUpTXPB87JmnSikwVw/exec?`
 linkPost=$linkApi`echo \
-\title=`$title` echo \
+\title=`$hay` echo \
 \&id==IMPORTDATA\(\"`$linkGit`echo voiz-id.txt\"\)\
 \&name==IMPORTDATA\(\"`$linkGit`echo voiz-name.txt\"\)\
 `
