@@ -17,7 +17,7 @@ linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`ec
 linkApi=`echo https://script.google.com/macros/s/AKfycbyX2_giAjG24Gh0HmVsErUD2r1ikuoUjkfhMDHfMsOopjy7OcimmUpTXPB87JmnSikwVw/exec?`
 linkPost=$linkApi`echo \
 \title=`$title`\
-\&id==IMPORTDATA\(\"`$linkGit`echo voiz-id.txt\"\)\
+\&haha==IMPORTDATA\(\"`$linkGit`echo voiz-id.txt\"\)\
 \&name==IMPORTDATA\(\"`$linkGit`echo voiz-name.txt\"\)\
 `
 echo '[InternetShortcut]\
