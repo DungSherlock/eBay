@@ -6,7 +6,8 @@ title=`echo $book | jq '.data.author_string + "-" + .data.name' | sed 's/"//g'`
 list=`curl -s https://api.voiz.vn/v1/playlists/$idBook/audios\?limit\=1000\&order\=asc\&position\=bottom`
 echo $list | jq '.data[].name' > voiz-name.txt
 echo $list | jq '.data[].id' > voiz-id.txt
-
+hay=`urlencode $title`
+echo $hay
 
 git add -A .
 git commit -m --allow-empty
