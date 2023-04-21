@@ -2,7 +2,7 @@
 # git pull
 read -p 'Nhap ID: ' idBook
 book=`curl -s https://api.voiz.vn/v1/playlists/$idBook`
-title=`echo $book | jq '.data.author_string + "-" + .data.name' | sed 's/"//g' | sed 's/[^[:alnum:]_.!~*()-]/\&#&/g; s/ /%20/g'`
+title=`echo $book | jq '.data.author_string + "-" + .data.name' | sed 's/"//g' | sed 's/ /%20/g' | sed 's/-/%20D/g'`
 list=`curl -s https://api.voiz.vn/v1/playlists/$idBook/audios\?limit\=1000\&order\=asc\&position\=bottom`
 echo $list | jq '.data[].name' > voiz-name.txt
 echo $list | jq '.data[].id' > voiz-id.txt
