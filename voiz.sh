@@ -1,8 +1,8 @@
 #!/bin/bash
 # git pull
 
-iBook=`curl -Ls https://script.google.com/macros/s/AKfycbwUXljrnjCBVZRFbDIbzNtmv9eFrSD-ejpOzXqvwXv2XO6Ybb1JtK5o1Xv9_ffr2QIySw/exec | jq '.content.names[]' | sed 's/"//g' | sed 's/.*\///g'`
-echo $iBook
+idBook=`curl -Ls https://script.google.com/macros/s/AKfycbwUXljrnjCBVZRFbDIbzNtmv9eFrSD-ejpOzXqvwXv2XO6Ybb1JtK5o1Xv9_ffr2QIySw/exec | jq '.content.names[]' | sed 's/"//g' | sed 's/.*\///g'`
+echo $idBook
 
 # read -p 'Nhap ID: ' idBook
 book=`curl -s https://api.voiz.vn/v1/playlists/$idBook`
