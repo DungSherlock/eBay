@@ -1,6 +1,10 @@
 #!/bin/bash
 # git pull
-read -p 'Nhap ID: ' idBook
+
+iBook=`curl -Ls https://script.google.com/macros/s/AKfycbwUXljrnjCBVZRFbDIbzNtmv9eFrSD-ejpOzXqvwXv2XO6Ybb1JtK5o1Xv9_ffr2QIySw/exec | jq '.content.names[]' | sed 's/"//g' | sed 's/.*\///g'`
+echo $iBook
+
+# read -p 'Nhap ID: ' idBook
 book=`curl -s https://api.voiz.vn/v1/playlists/$idBook`
 echo $book | jq '.data.author_string + "-" + .data.name' > voiz-title.txt
 echo $idBook >> voiz-title.txt
