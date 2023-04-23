@@ -2,11 +2,11 @@
 #'${array[1]}'
 
 git pull
-: > ebay-usItemId.txt
-: > ebay-currentPrice.txt
-: > ebay-wasPrice.txt
-: > ebay-availabilityStatus.txt
-# : > ebay-orderLimit.txt
+: > wm-TEA-usItemId.txt
+: > wm-TEA-currentPrice.txt
+: > wm-TEA-wasPrice.txt
+: > wm-TEA-availabilityStatus.txt
+# : > wm-TEA-orderLimit.txt
 
 while read line
 do
@@ -87,16 +87,16 @@ do
         echo 'Thoát script'
         exit 1
       else
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> ebay-usItemId.txt
-        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> ebay-usItemId.txt
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.currentPrice.price' >> ebay-currentPrice.txt
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> ebay-wasPrice.txt
-        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> ebay-availabilityStatus.txt
-        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> ebay-availabilityStatus.txt
-        # echo $list | jq '.data.shoppingListDetails.items.listItems[].product.orderLimit' >> ebay-orderLimit.txt
-        # echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.orderLimit' >> ebay-orderLimit.txt
+        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> wm-TEA-usItemId.txt
+        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.usItemId' >> wm-TEA-usItemId.txt
+        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.currentPrice.price' >> wm-TEA-currentPrice.txt
+        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.currentPrice.price' >> wm-TEA-currentPrice.txt
+        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> wm-TEA-wasPrice.txt
+        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.priceInfo.wasPrice.price' | sed 's/null//g' >> wm-TEA-wasPrice.txt
+        echo $list | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> wm-TEA-availabilityStatus.txt
+        echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.availabilityStatus' >> wm-TEA-availabilityStatus.txt
+        # echo $list | jq '.data.shoppingListDetails.items.listItems[].product.orderLimit' >> wm-TEA-orderLimit.txt
+        # echo $list2 | jq '.data.shoppingListDetails.items.listItems[].product.orderLimit' >> wm-TEA-orderLimit.txt
         echo ${array[0]}
         break
     fi
@@ -110,10 +110,10 @@ git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
 linkApi=`echo https://script.google.com/macros/s/AKfycbzsiGXaclu6CAFaAAQEIuR7io8UuGMP1jNM_flgD5uWrv8P4rIlhabx4B3AOdZ7kKw/exec?`
-linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\)\
-\&GiaHienTai==IMPORTDATA\(\"`$linkGit`echo ebay-currentPrice.txt\"\)\
-\&TrangThaiHang==IMPORTDATA\(\"`$linkGit`echo ebay-availabilityStatus.txt\"\)\
-# \&Quantity==IMPORTDATA\(\"`$linkGit`echo ebay-orderLimit.txt\"\)
+linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo wm-TEA-usItemId.txt\"\)\
+\&GiaHienTai==IMPORTDATA\(\"`$linkGit`echo wm-TEA-currentPrice.txt\"\)\
+\&TrangThaiHang==IMPORTDATA\(\"`$linkGit`echo wm-TEA-availabilityStatus.txt\"\)\
+# \&Quantity==IMPORTDATA\(\"`$linkGit`echo wm-TEA-orderLimit.txt\"\)
 `
 echo '[InternetShortcut]\
 URL='$linkPost > wm.url
