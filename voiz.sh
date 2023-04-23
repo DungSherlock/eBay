@@ -9,7 +9,7 @@ folder=`echo $book | jq '.data.author_string + "-" + .data.name'` | sed 's/^[[:s
 echo $folder
 echo $idBook >> voiz-title.txt
 mkdir "/Users/om/Downloads/voiz/$folder"
-image=`echo $book | jq '.data.avatar.original_url' | sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//'`
+image=`echo $book | jq '.data.avatar.original_url' | sed 's/"//g'`
 
 echo $image
 exit
