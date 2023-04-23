@@ -21,3 +21,26 @@
 
 
 
+"https://www.walmart.com/orders/200010940300547/track/645564386802"
+"https://www.walmart.com/orders/200010914752341/track/608596012067"
+"https://www.walmart.com/orders/200010992746544/track/397105532851"
+"https://www.walmart.com/orders/200010938621245/track/397114162045"
+"https://www.walmart.com/orders/200010865078168/track/1Z21W0530397139800"
+
+"https://www.walmart.com/orders/200010820857116/track/397105536114"
+"https://www.walmart.com/orders/200011015790573/track/397086043157"
+"https://www.walmart.com/orders/200010980983830/track/627248659880"
+
+"https://www.walmart.com/orders/200010986920493/track/397104681168"
+"https://www.walmart.com/orders/200010935781344/track/397235741743"
+"https://www.walmart.com/orders/200010924373365/track/397232505144"
+"https://www.walmart.com/orders/200011056923515/track/1Z21W0530391304794"
+Khác Item
+"https://www.walmart.com/orders/200010910051474/track/1Z1R44W70324272301"
+"https://www.walmart.com/orders/200010964128438/track/1ZA5450J0315207328"
+"https://www.walmart.com/orders/200010852666027/track/608596016934"
+"https://www.walmart.com/orders/200010858747463/track/397239534384"
+"https://www.walmart.com/orders/200010943321610/track/636778190082"
+"https://www.walmart.com/orders/200010796701688/track/643291637643"
+"https://www.walmart.com/orders/200010747828362/track/627250336561"
+"https://www.walmart.com/orders/200011022742076/track/397298939630"
