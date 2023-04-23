@@ -9,12 +9,12 @@ folder=`echo $book | jq '.data.author_string + "-" + .data.name'` | sed 's/^[[:s
 echo $folder
 echo $idBook >> voiz-title.txt
 mkdir "/Users/om/Downloads/voiz/$folder"
-image=`echo $book | jq '.data.avatar.original_url'`
+image=`echo $book | jq '.data.avatar.original_url' | sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//'`
 
 echo $image
 exit
 
-curl -H -LOs "Host: voiz-prod.s3.cloud.cmctelecom.vn" -H "Accept: image/x-ms-bmp,image/x-win-bitmap,image/bmp,image/tiff,image/ico,image/x-icon,image/jpeg,image/x-bmp,image/x-xbitmap,image/gif,image/png" -H "Accept-Language: en-US;q=1.0, vi-US;q=0.9" -H "User-Agent: wewe/12.0.0 (com.wewe.musicsounds; build:20230223.161211; iOS 16.4.1) Alamofire/12.0.0" --compressed $image
+curl -H -LOs "Host: voiz-prod.s3.cloud.cmctelecom.vn" -H "Accept: image/x-ms-bmp,image/x-win-bitmap,image/bmp,image/tiff,image/ico,image/x-icon,image/jpeg,image/x-bmp,image/x-xbitmap,image/gif,image/png" -H "Accept-Language: en-US;q=1.0, vi-US;q=0.9" -H "User-Agent: wewe/12.0.0 (com.wewe.musicsounds; build:20230223.161211; iOS 16.4.1) Alamofire/12.0.0" --compressed $image --output "/Users/om/Downloads/voiz/$folder"
 
 
 list=`curl -s https://api.voiz.vn/v1/playlists/$idBook/audios\?limit\=1000\&order\=asc\&position\=bottom`
