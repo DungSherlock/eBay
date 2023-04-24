@@ -48,3 +48,9 @@ Khác Item
 "Arrives by Wed, Apr 26"
 "Arrives by Thu, Apr 27"
 "Arrives by Thu, Apr 27"
+"Canceled today"
+"Arrives by Thu, Apr 27"
+Khác Item
+"Arrives by Wed, May 03"
+"Arrives by Wed, May 03"
+"Arrives by Thu, Apr 27"
