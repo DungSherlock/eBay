@@ -116,5 +116,5 @@ linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo wm-TEA-usItemId.txt\
 # \&Quantity==IMPORTDATA\(\"`$linkGit`echo wm-TEA-orderLimit.txt\"\)
 `
 echo '[InternetShortcut]\
-URL='$linkPost > wm.url
-open wm.url
+URL='$linkPost > wm-TEA.url
+open wm-TEA.url
