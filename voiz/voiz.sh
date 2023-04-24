@@ -13,7 +13,7 @@ imageExt=$(basename $imageLink | cut -d. -f2)
 curl -Ls `echo $imageLink` --output "/Users/om/Downloads/voiz/`echo $folder`/cover.`echo $imageExt`"
 
 list=`curl -s https://api.voiz.vn/v1/playlists/$idBook/audios\?limit\=1000\&order\=asc\&position\=bottom`
-echo $list | jq '.data[].name' | '"' + xargs -I {} '"' > voiz-name.txt
+echo $list | jq '.data[].name' | '"' + xargs -I {} + '"' > voiz-name.txt
 echo $list | jq '.data[].id' | xargs -I {} > voiz-id.txt
 
 
