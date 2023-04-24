@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>URL</key>
-	<string>https://script.google.com/macros/s/AKfycbxGrlzQU4LxH9VrPonQwYY3BtD25ILuHOFYDPSmGVesSRMJOXuA0KfUppq4AaTAqCU6/exec?Item%20ID==IMPORTDATA("https://raw.githubusercontent.com/DungSherlock/eBay/8263163f45d96887cbe44729f405709217d8a301/track-Hiep-usItemId-CO.txt")</string>
-</dict>
-</plist>
