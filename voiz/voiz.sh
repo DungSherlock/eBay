@@ -3,7 +3,7 @@
 
 read -p 'Nhap ID: ' idBook
 book=`curl -s https://api.voiz.vn/v1/playlists/$idBook`
-folder=`echo $book | jq '.data.author_string + "-" + .data.name' | xargs`
+folder=`echo $book | jq '.data.author_string + "-" + .data.name' | sed 's/^ *//;s/ *$//'`
 echo $folder > voiz-title.txt
 echo $idBook >> voiz-title.txt
 mkdir "/Users/om/Downloads/voiz/`echo $folder`"
