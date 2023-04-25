@@ -7,7 +7,7 @@ do
     m3u8Link=`echo $line | cut -d '|' -f4`
     outputName=`echo $line | cut -d '|' -f5`
 
-    curl -LOs -H "Host: voiz-prod.s3.cloud.cmctelecom.vn" -H "Accept-Language: vi-VN,vi;q=0.9" -H "Accept: */*" -H "User-Agent: AppleCoreMedia/1.0.0.20E252 (iPhone; U; CPU OS 16_4_1 like Mac OS X; vi_vn)" -H "Referer: stream.voiz.app" --compressed "$m3u8Link"
+    curl -C - -LOs -H "Host: voiz-prod.s3.cloud.cmctelecom.vn" -H "Accept-Language: vi-VN,vi;q=0.9" -H "Accept: */*" -H "User-Agent: AppleCoreMedia/1.0.0.20E252 (iPhone; U; CPU OS 16_4_1 like Mac OS X; vi_vn)" -H "Referer: stream.voiz.app" --compressed "$m3u8Link"
 
     cp "$outputName.m3u8" "$name.sh"
     gsed -i '/^#/d' "$name.sh"
@@ -22,3 +22,4 @@ do
     mv "$outputName.m3u8" "m3u8/"
 
 done < /Users/om/eBay/voiz/list.txt
+rm getList.sh
