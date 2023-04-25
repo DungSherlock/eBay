@@ -1,4 +1,6 @@
 #!/bin/bash
+curl -C - -Ls https://script.google.com/macros/s/AKfycbwUXljrnjCBVZRFbDIbzNtmv9eFrSD-ejpOzXqvwXv2XO6Ybb1JtK5o1Xv9_ffr2QIySw/exec | jq '.content.names[]' | sed 's/"//g' > m3u8/list.txt
+
 while read line
 do
     idAudio=`echo $line | cut -d '|' -f1`
@@ -21,5 +23,5 @@ do
     echo $lastRow >> "$name.sh"
     mv "$outputName.m3u8" "m3u8/"
 
-done < /Users/om/eBay/voiz/list.txt
-rm getList.sh
+done < m3u8/list.txt
+# rm getList.sh
