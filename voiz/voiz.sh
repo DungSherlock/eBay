@@ -8,7 +8,7 @@ echo '"'$folder'"' > voiz-title.txt
 echo $idBook >> voiz-title.txt
 mkdir "/Users/om/Downloads/voiz/`echo $folder`"
 mkdir "/Users/om/Downloads/voiz/`echo $folder/m3u8`"
-cp m3u8.sh "/Users/om/Downloads/voiz/`echo $folder`"
+cp getList.sh "/Users/om/Downloads/voiz/`echo $folder`"
 imageLink=`echo $book | jq '.data.avatar.original_url' | xargs`
 imageExt=$(basename $imageLink | cut -d. -f2)
 
