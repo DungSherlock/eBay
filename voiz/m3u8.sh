@@ -19,7 +19,6 @@ do
     lastRow='cat part*'$outputName'*.ts > '$outputName'.ts && ffmpeg -i '$outputName'.ts -map 0:a:0 -c copy -y "$(basename -s .sh "$0").aac" && rm *"'$outputName'"*""'
     gsed -i "1s/^/$firstRow/" "$name.sh"
     echo $lastRow >> "$name.sh"
-    mkdir "m3u8"
     mv "$outputName.m3u8" "m3u8"
 
-done < /Users/om/Downloads/voiz/list.txt
+done < /Users/om/eBay/voiz/list.txt
