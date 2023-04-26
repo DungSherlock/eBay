@@ -21,3 +21,9 @@
 "Canceled on Apr 06"
 "Canceled on Apr 07"
 "Canceled on Apr 09"
+"Canceled on Apr 16"
+"Canceled on Apr 20"
+Khác Item
+"Delivered today at 5:48pm"
+"In transit, arriving late"
+"Now arrives Sat, Apr 29"
