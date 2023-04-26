@@ -32,3 +32,5 @@ Khác Item
 "1931 Main St, Forest Grove, OR 97116"
 "260 N 1st St, Driggs, ID 83422"
 "1231 9th St, Tell City, IN 47586"
+"85 Papoo Dr, Castalia, NC 27816"
+"2322 W Sunset Bluffs Pl, Tucson, AZ 85742"

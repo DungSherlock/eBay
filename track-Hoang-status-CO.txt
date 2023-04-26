@@ -32,3 +32,5 @@ Khác Item
 "Delivered on Apr 24"
 "Delivered on Apr 24"
 "Arrives today"
+"Now arrives Sat, Apr 29"
+"Arrives by Wed, Apr 26"
