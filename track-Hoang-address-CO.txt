@@ -27,3 +27,4 @@ Khác Item
 "320 Riffle Box Creek Rd APT 84, Weaverville, CA 96093"
 "1231 9th St, Tell City, IN 47586"
 "85 Papoo Dr, Castalia, NC 27816"
+"2322 W Sunset Bluffs Pl, Tucson, AZ 85742"

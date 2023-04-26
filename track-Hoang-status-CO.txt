@@ -27,3 +27,4 @@ Khác Item
 "Delivered on Apr 25"
 "In transit, arriving late"
 "Now arrives Sat, Apr 29"
+"Arrives today"
