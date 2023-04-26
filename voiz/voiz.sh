@@ -17,6 +17,7 @@ curl -C - -Ls `echo $imageLink` --output "/Users/om/Downloads/voiz/`echo $folder
 list=`curl -s https://api.voiz.vn/v1/playlists/$idBook/audios\?limit\=1000\&order\=asc\&position\=bottom`
 echo $list | jq '.data[].name' > voiz-name.txt
 echo $list | jq '.data[].id' | xargs -I {} > voiz-id.txt
+echo $list | jq '.data[].position' > voiz-position.txt
 
 
 git add -A .
@@ -27,6 +28,7 @@ gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /voiz/`
 linkApi=`echo https://script.google.com/macros/s/AKfycbyX2_giAjG24Gh0HmVsErUD2r1ikuoUjkfhMDHfMsOopjy7OcimmUpTXPB87JmnSikwVw/exec?`
 linkPost=$linkApi`echo \
+\&position==IMPORTDATA\(\"`$linkGit`echo voiz-position.txt\"\)\
 \&title==IMPORTDATA\(\"`$linkGit`echo voiz-title.txt\"\)\
 \&id==IMPORTDATA\(\"`$linkGit`echo voiz-id.txt\"\)\
 \&name==IMPORTDATA\(\"`$linkGit`echo voiz-name.txt\"\)\
