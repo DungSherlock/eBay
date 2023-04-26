@@ -12,7 +12,7 @@ cp getList.sh "/Users/om/Downloads/voiz/`echo $folder/m3u8`"
 imageLink=`echo $book | jq '.data.avatar.original_url' | xargs`
 imageExt=$(basename $imageLink | cut -d. -f2)
 
-curl -Ls `echo $imageLink` --output "/Users/om/Downloads/voiz/`echo $folder`/cover.`echo $imageExt`"
+curl -C - -Ls `echo $imageLink` --output "/Users/om/Downloads/voiz/`echo $folder`/cover.`echo $imageExt`"
 
 list=`curl -s https://api.voiz.vn/v1/playlists/$idBook/audios\?limit\=1000\&order\=asc\&position\=bottom`
 echo $list | jq '.data[].name' > voiz-name.txt
