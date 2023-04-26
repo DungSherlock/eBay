@@ -6,8 +6,8 @@ book=`curl -s https://api.voiz.vn/v1/playlists/$idBook`
 folder=`echo $book | jq '.data.author_string + "-" + .data.name' | sed 's/!//g' | xargs`
 echo '"'$folder'"' > voiz-title.txt
 echo $idBook >> voiz-title.txt
-mkdir "/Users/om/Downloads/voiz/`echo $folder`"
-mkdir "/Users/om/Downloads/voiz/`echo $folder/m3u8`"
+mkdir "/Users/om/Downloads/voiz/$folder"
+mkdir "/Users/om/Downloads/voiz/$folder/m3u8"
 cp getList.sh "/Users/om/Downloads/voiz/`echo $folder/m3u8`"
 imageLink=`echo $book | jq '.data.avatar.original_url' | xargs`
 imageExt=$(basename $imageLink | cut -d. -f2)
