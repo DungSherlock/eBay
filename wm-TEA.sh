@@ -1,6 +1,5 @@
 #!/bin/bash
-#'${array[1]}'
-
+eval `ssh-agent -s`
 git pull
 : > wm-TEA-usItemId.txt
 : > wm-TEA-currentPrice.txt
