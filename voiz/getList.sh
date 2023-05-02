@@ -27,7 +27,7 @@ do
     text3='"; if [ $? -eq 0 ]; then break; fi; echo "Có lỗi xảy ra, chờ 3s"; sleep 3; done'
     gsed -i "s/^/${text1//\//\\/}${text2//\//\\/}/g; s/$/${text3//\//\\/}/g" "$name.sh"
     firstRow="#!\/bin\/bash\n"
-    lastRow='cat part*'$outputName'*.ts > '$outputName'.ts && ffmpeg -i '$outputName'.ts -map 0:a:0 -c copy -y "../$(basename -s .sh "$0").aac" && rm *"'$outputName'"*""'
+    lastRow='cat part*'$outputName'*.ts > '$outputName'.ts && ffmpeg -i '$outputName'.ts -map 0:a:0 -c copy -y "../$(basename -s .sh "$0").aac" && rm *"'$outputName'".ts""'
     gsed -i "1s/^/$firstRow/" "$name.sh"
     echo $lastRow >> "$name.sh"
 
