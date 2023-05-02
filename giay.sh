@@ -45,8 +45,12 @@ git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
-linkApi=`echo https://script.google.com/macros/s/AKfycbwjeDgCI1EMcwOCQoOqeIKyTa2zHJ3UOfGru0J_RfnHPjjQNaCYbsg1bX9q_8kL0k7ANQ/exec?`
-linkPost=$linkApi`echo id==IMPORTDATA\(\"`$linkGit`echo giay-id.txt\"\)\&productPath==IMPORTDATA\(\"`$linkGit`echo giay-productPath.txt\"\)\&size==IMPORTDATA\(\"`$linkGit`echo giay-size.txt\"\)\&price==IMPORTDATA\(\"`$linkGit`echo giay-price.txt\"\)\&stock==IMPORTDATA\(\"`$linkGit`echo giay-stock.txt\"\)`
+linkApi=`echo https://script.google.com/macros/s/AKfycbxvgB0cMGKRjx_sVCDTrrzTkT40YIeRPsBUp-1-e913NLyI8mUywjiaGDu9MDj9bChN/exec?`
+linkPost=$linkApi`echo id==IMPORTDATA\(\"`$linkGit`echo giay-id.txt\"\)\&productPath==IMPORTDATA\(\"`$linkGit`echo giay-productPath.txt\"\)\&size==IMPORTDATA\(\"`$linkGit`echo \
+giay-size.txt\"\)\
+\&price==IMPORTDATA\(\"`$linkGit`echo giay-price.txt\"\)\
+\&stock==IMPORTDATA\(\"`$linkGit`echo giay-stock.txt\"\)\
+`
 echo $linkPost
 
 echo '[InternetShortcut]
