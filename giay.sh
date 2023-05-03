@@ -59,7 +59,7 @@ linkPost=$linkApi`echo \
 \&price==IMPORTDATA\(\"`$linkGit`echo giay-price.txt\"\)\
 \&stock==IMPORTDATA\(\"`$linkGit`echo giay-stock.txt\"\)\
 `
-echo $linkPost
+# echo $linkPost
 
 echo '[InternetShortcut]
 URL='$linkPost > giay.url
