@@ -10,7 +10,7 @@ git pull
 : > giay-stock.txt
 
 
-list=`curl -s 'https://on-graphql-gateway.on-running.com/' \
+list=`curl 'https://on-graphql-gateway.on-running.com/' \
   -H 'authority: on-graphql-gateway.on-running.com' \
   -H 'accept: */*' \
   -H 'accept-language: vi' \
