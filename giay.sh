@@ -5,7 +5,7 @@ git pull
 : > giay-productPath.txt
 : > giay-sku.txt
 : > giay-isBackorderable.txt
-: > giay-size.txt
+: > giay-sizeIdentifier.txt
 : > giay-price.txt
 : > giay-stock.txt
 
@@ -39,7 +39,7 @@ echo $list | jq '.data.regular.order.items[].id' >> giay-id.txt
 echo $list | jq '.data.regular.order.items[].productPath' >> giay-productPath.txt
 echo $list | jq '.data.regular.order.items[].sku' >> giay-sku.txt
 echo $list | jq '.data.regular.order.items[].isBackorderable' >> giay-isBackorderable.txt
-echo $list | jq '.data.regular.order.items[].size' >> giay-size.txt
+echo $list | jq '.data.regular.order.items[].sizeIdentifier' >> giay-sizeIdentifier.txt
 echo $list | jq '.data.regular.order.items[].price' >> giay-price.txt
 echo $list | jq '.data.regular.order.items[].stock' >> giay-stock.txt
 
@@ -56,7 +56,7 @@ linkPost=$linkApi`echo \
 \&productPath==IMPORTDATA\(\"`$linkGit`echo giay-productPath.txt\"\)\
 \&sku==IMPORTDATA\(\"`$linkGit`echo giay-sku.txt\"\)\
 \&isBackorderable==IMPORTDATA\(\"`$linkGit`echo giay-isBackorderable.txt\"\)\
-\&size==IMPORTDATA\(\"`$linkGit`echo giay-size.txt\"\)\
+\&sizeIdentifier==IMPORTDATA\(\"`$linkGit`echo giay-sizeIdentifier.txt\"\)\
 \&price==IMPORTDATA\(\"`$linkGit`echo giay-price.txt\"\)\
 \&stock==IMPORTDATA\(\"`$linkGit`echo giay-stock.txt\"\)\
 `
