@@ -3,6 +3,8 @@
 git pull
 : > giay-id.txt
 : > giay-productPath.txt
+: > giay-sku.txt
+: > giay-isBackorderable.txt
 : > giay-size.txt
 : > giay-price.txt
 : > giay-stock.txt
@@ -34,6 +36,8 @@ list=`curl -s 'https://www.on-running.com/en-us/graphql' \
 # sleep 20
 echo $list | jq '.data.currentOrder.items[].id' >> giay-id.txt
 echo $list | jq '.data.currentOrder.items[].productPath' >> giay-productPath.txt
+echo $list | jq '.data.currentOrder.items[].sku' >> giay-sku.txt
+echo $list | jq '.data.currentOrder.items[].isBackorderable' >> giay-isBackorderable.txt
 echo $list | jq '.data.currentOrder.items[].size' >> giay-size.txt
 echo $list | jq '.data.currentOrder.items[].price' >> giay-price.txt
 echo $list | jq '.data.currentOrder.items[].stock' >> giay-stock.txt
@@ -46,8 +50,12 @@ git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
 linkApi=`echo https://script.google.com/macros/s/AKfycbxvgB0cMGKRjx_sVCDTrrzTkT40YIeRPsBUp-1-e913NLyI8mUywjiaGDu9MDj9bChN/exec?`
-linkPost=$linkApi`echo id==IMPORTDATA\(\"`$linkGit`echo giay-id.txt\"\)\&productPath==IMPORTDATA\(\"`$linkGit`echo giay-productPath.txt\"\)\&size==IMPORTDATA\(\"`$linkGit`echo \
-giay-size.txt\"\)\
+linkPost=$linkApi`echo \
+\id==IMPORTDATA\(\"`$linkGit`echo giay-id.txt\"\)\
+\&productPath==IMPORTDATA\(\"`$linkGit`echo giay-productPath.txt\"\)\
+\&sku==IMPORTDATA\(\"`$linkGit`echo giay-sku.txt\"\)\
+\&isBackorderable==IMPORTDATA\(\"`$linkGit`echo giay-isBackorderable.txt\"\)\
+\&size==IMPORTDATA\(\"`$linkGit`echo giay-size.txt\"\)\
 \&price==IMPORTDATA\(\"`$linkGit`echo giay-price.txt\"\)\
 \&stock==IMPORTDATA\(\"`$linkGit`echo giay-stock.txt\"\)\
 `
