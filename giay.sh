@@ -10,7 +10,7 @@ git pull
 : > giay-stock.txt
 
 
-list=`curl 'https://on-graphql-gateway.on-running.com/' \
+list=`curl -s 'https://on-graphql-gateway.on-running.com/' \
   -H 'authority: on-graphql-gateway.on-running.com' \
   -H 'accept: */*' \
   -H 'accept-language: vi' \
@@ -35,15 +35,13 @@ list=`curl 'https://on-graphql-gateway.on-running.com/' \
   --compressed`
 
 
-# echo $list | jq '.data.currentOrder.items[]'
-# sleep 20
-echo $list | jq '.data.currentOrder.items[].id' >> giay-id.txt
-echo $list | jq '.data.currentOrder.items[].productPath' >> giay-productPath.txt
-echo $list | jq '.data.currentOrder.items[].sku' >> giay-sku.txt
-echo $list | jq '.data.currentOrder.items[].isBackorderable' >> giay-isBackorderable.txt
-echo $list | jq '.data.currentOrder.items[].size' >> giay-size.txt
-echo $list | jq '.data.currentOrder.items[].price' >> giay-price.txt
-echo $list | jq '.data.currentOrder.items[].stock' >> giay-stock.txt
+echo $list | jq '.data.regular.order.items[].id' >> giay-id.txt
+echo $list | jq '.data.regular.order.items[].productPath' >> giay-productPath.txt
+echo $list | jq '.data.regular.order.items[].sku' >> giay-sku.txt
+echo $list | jq '.data.regular.order.items[].isBackorderable' >> giay-isBackorderable.txt
+echo $list | jq '.data.regular.order.items[].size' >> giay-size.txt
+echo $list | jq '.data.regular.order.items[].price' >> giay-price.txt
+echo $list | jq '.data.regular.order.items[].stock' >> giay-stock.txt
 
 
 git add -A .
