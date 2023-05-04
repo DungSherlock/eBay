@@ -60,8 +60,21 @@ linkPost=$linkApi`echo \
 \&price==IMPORTDATA\(\"`$linkGit`echo giay-price.txt\"\)\
 \&stock==IMPORTDATA\(\"`$linkGit`echo giay-stock.txt\"\)\
 `
-# echo $linkPost
+linkApiFly=`echo https://script.google.com/macros/s/AKfycbwwR3gPp-UqPXt8PDWLkC0ZI0TwY4Xb2dmdZ6xbGSdk_fTgyTfsDi5Ak_QHe5WLmt85nw/exec?`
+linkPostFly=$linkApiFly`echo \
+\id==IMPORTDATA\(\"`$linkGit`echo giay-id.txt\"\)\
+\&productPath==IMPORTDATA\(\"`$linkGit`echo giay-productPath.txt\"\)\
+\&sku==IMPORTDATA\(\"`$linkGit`echo giay-sku.txt\"\)\
+\&isBackorderable==IMPORTDATA\(\"`$linkGit`echo giay-isBackorderable.txt\"\)\
+\&sizeIdentifier==IMPORTDATA\(\"`$linkGit`echo giay-sizeIdentifier.txt\"\)\
+\&price==IMPORTDATA\(\"`$linkGit`echo giay-price.txt\"\)\
+\&stock==IMPORTDATA\(\"`$linkGit`echo giay-stock.txt\"\)\
+`
 
 echo '[InternetShortcut]
 URL='$linkPost > giay.url
 open giay.url
+
+echo '[InternetShortcut]
+URL='$linkPostFly > giay.url
+open giayFly.url
