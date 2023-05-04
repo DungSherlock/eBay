@@ -50,7 +50,7 @@ git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
-linkApi=`echo https://script.google.com/macros/s/AKfycbxvgB0cMGKRjx_sVCDTrrzTkT40YIeRPsBUp-1-e913NLyI8mUywjiaGDu9MDj9bChN/exec?`
+linkApi=`echo https://script.google.com/macros/s/AKfycbxw6ks67mRZMYmbprI4rgVyqLcM3rHWXgJvvgGNkQCubDFVT8sszLPJwPs4IATZUmcpgw/exec?`
 linkPost=$linkApi`echo \
 \id==IMPORTDATA\(\"`$linkGit`echo giay-id.txt\"\)\
 \&productPath==IMPORTDATA\(\"`$linkGit`echo giay-productPath.txt\"\)\
