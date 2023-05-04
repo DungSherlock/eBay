@@ -76,5 +76,5 @@ URL='$linkPost > giay.url
 open giay.url
 
 echo '[InternetShortcut]
-URL='$linkPostFly > giay.url
+URL='$linkPostFly > giayFly.url
 open giayFly.url
