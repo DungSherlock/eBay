@@ -1,2 +1,8 @@
 "5438 N Campbell Ave, Apt 1N, Chicago, IL 60625"
 "10332 Riata Ln, Bakersfield, CA 93306"
+"10959 110th St, South Ozone Park, NY 11420"
+"302 5th ST APT 151, Foosland, IL 61845"
+"4083 Magnolia Dr, Franklin, IN 46131"
+"5110 Lafitte Dr, Oak Park, CA 91377"
+"15000 Smith Rd, Aurora, CO 80011"
+"17320 NW 37th Ct, Miami Gardens, FL 33055"
