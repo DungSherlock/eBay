@@ -20,3 +20,5 @@
 "768 Polo Dr N, Columbus, OH 43229"
 "623 Country Club Rd, Cochran, GA 31014"
 "3200 Range Line Rd, Memphis, TN 38127"
+"46550 Shepherdstown Rd, Saint Clairsville, OH 43950"
+"16923 SW 17th Cir, Ocala, FL 34473"
