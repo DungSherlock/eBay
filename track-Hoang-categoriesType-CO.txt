@@ -25,3 +25,4 @@
 "CANCELED"
 Khác Item
 "REGULAR"
+"REGULAR"
