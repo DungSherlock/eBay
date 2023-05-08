@@ -5,3 +5,5 @@
 "Your order is on the way"
 "Delivered on Mar 07"
 "Canceled on Mar 14"
+"Delivered on Mar 20"
+"Canceled"
