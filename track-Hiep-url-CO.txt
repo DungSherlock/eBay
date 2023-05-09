@@ -3,5 +3,3 @@
 
 "https://www.walmart.com/orders/200010980576553/track/396622681966"
 "https://www.walmart.com/orders/200010928938436/track/927877453580"
-"https://www.walmart.com/orders/200010868653443/track/396639439712"
-"https://www.walmart.com/orders/200010813680507/track/396664481599"

@@ -3,5 +3,3 @@
 "Canceled"
 "Delivered on Apr 13"
 "Delivered on Apr 10"
-"Delivered on Apr 06"
-"Delivered on Apr 13"
