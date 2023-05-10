@@ -6,3 +6,6 @@
 "5110 Lafitte Dr, Oak Park, CA 91377"
 "15000 Smith Rd, Aurora, CO 80011"
 "17320 NW 37th Ct, Miami Gardens, FL 33055"
+"101 Ocean Pkwy, Berlin, MD 21811"
+"29251 Hubert Stilley Rd, Independence, LA 70443"
+"4121 Tierra Patino Ln, El Paso, TX 79938"

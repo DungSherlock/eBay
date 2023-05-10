@@ -6,3 +6,6 @@
 "Delivered on Mar 07"
 "Canceled on Mar 14"
 "Delivered on Mar 20"
+"Canceled"
+"Canceled"
+"Canceled on Mar 20"
