@@ -6,3 +6,5 @@
 "Jennifer Tamaddon"
 "James Kisor Kinard"
 "Raul R Fontana"
+"Doug Denny"
+"Fabian Flores"
