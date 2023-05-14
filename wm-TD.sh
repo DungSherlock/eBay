@@ -1,5 +1,5 @@
 #!/bin/bash
-# eval `ssh-agent -s`
+eval `ssh-agent -s`
 git pull
 : > wm-TD-usItemId.txt
 : > wm-TD-currentPrice.txt
