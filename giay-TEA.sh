@@ -50,18 +50,8 @@ git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
-linkApi=`echo https://script.google.com/macros/s/AKfycbxw6ks67mRZMYmbprI4rgVyqLcM3rHWXgJvvgGNkQCubDFVT8sszLPJwPs4IATZUmcpgw/exec?`
+linkApi=`echo https://script.google.com/macros/s/AKfycby6T3TFT3sLAYlRPCzHlS8ovaYzYRZXEXesDV5NzN-AiqlehaAWcedVkPvqXHjm9kZv/exec?`
 linkPost=$linkApi`echo \
-\id==IMPORTDATA\(\"`$linkGit`echo giay-TEA-id.txt\"\)\
-\&productPath==IMPORTDATA\(\"`$linkGit`echo giay-TEA-productPath.txt\"\)\
-\&sku==IMPORTDATA\(\"`$linkGit`echo giay-TEA-sku.txt\"\)\
-\&isBackorderable==IMPORTDATA\(\"`$linkGit`echo giay-TEA-isBackorderable.txt\"\)\
-\&sizeIdentifier==IMPORTDATA\(\"`$linkGit`echo giay-TEA-sizeIdentifier.txt\"\)\
-\&price==IMPORTDATA\(\"`$linkGit`echo giay-TEA-price.txt\"\)\
-\&stock==IMPORTDATA\(\"`$linkGit`echo giay-TEA-stock.txt\"\)\
-`
-linkApiFly=`echo https://script.google.com/macros/s/AKfycbwwR3gPp-UqPXt8PDWLkC0ZI0TwY4Xb2dmdZ6xbGSdk_fTgyTfsDi5Ak_QHe5WLmt85nw/exec?`
-linkPostFly=$linkApiFly`echo \
 \id==IMPORTDATA\(\"`$linkGit`echo giay-TEA-id.txt\"\)\
 \&productPath==IMPORTDATA\(\"`$linkGit`echo giay-TEA-productPath.txt\"\)\
 \&sku==IMPORTDATA\(\"`$linkGit`echo giay-TEA-sku.txt\"\)\
