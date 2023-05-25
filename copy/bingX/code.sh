@@ -23,7 +23,7 @@ curl=`curl 'https://api-app.qq-os.com/api/statistics/v2/trader/risk-score?trader
   -H 'timestamp: 1675957085200' \
   -H 'timezone: 7' \
   -H 'traceid: d204428c-bec6-4cd8-9668-08dfee816e6f' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/111.0.1661.43' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50' \
   -H 'visitorid: -1' \
   --compressed`
 echo $curl | jq > /tmp/code.txt
