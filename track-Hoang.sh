@@ -11,7 +11,7 @@ git pull
 : > track-Hoang-email-CO.txt
 : > track-Hoang-categoriesType-CO.txt
 
-curl -Ls https://script.google.com/macros/s/AKfycbxMyceIyCfPF4RqNxmUPIwhnPiX95326RpNn8rlA7-sYB7DkeVDfsMbKmazwMWLZfaLWw/exec | jq '.content.names[]' | sed 's/"//g' > track-Hoang.txt
+curl -Ls https://script.google.com/macros/s/AKfycbzm9plR8UbDBF2iO-Te8O1Nc8Dop9g8GaW6CwrXiztpeSwNnG3JEolV_jGz-IgIjN26/exec | jq '.content.names[]' | sed 's/"//g' > track-Hoang.txt
 
 while read line
 do
@@ -120,7 +120,7 @@ git push
 git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/DungSherlock/eBay/`$gitCommit`echo /`
-linkApi=`echo https://script.google.com/macros/s/AKfycbzBl0oluLo8HTU4sN3BxQ6rSozHJw55jppnGDpuUciatJNRvfcAGsezrabjPTwrYCWiWQ/exec?`
+linkApi=`echo https://script.google.com/macros/s/AKfycbxur_h-Ls8-N-AjVg7eIovgpeoJ4pfgcZgFsHoWX46xgkZFmpYqZTQJdzgYpQp3pZ1U/exec?`
 linkPost=$linkApi`echo ItemID==IMPORTDATA\(\"`$linkGit`echo track-Hoang-usItemId-CO.txt\"\)\&Gia==IMPORTDATA\(\"`$linkGit`echo track-Hoang-priceValue-CO.txt\"\)\
 \&Ten==IMPORTDATA\(\"`$linkGit`echo track-Hoang-fullName-CO.txt\"\)\
 \&DiaChi==index\(IMPORTDATA\(\"`$linkGit`echo track-Hoang-address-CO.txt\"\),,1\)\
