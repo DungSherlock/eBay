@@ -1,4 +1,5 @@
 #!/bin/bash
+eval `ssh-agent -s`
 git pull
 : > track-Hoang-usItemId-CO.txt
 : > track-Hoang-priceValue-CO.txt
