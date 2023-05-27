@@ -1,6 +1,2 @@
 Sai info
 "REGULAR"
-"CANCELED"
-"REGULAR"
-"REGULAR"
-"REGULAR"
