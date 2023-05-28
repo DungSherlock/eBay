@@ -3,3 +3,6 @@ Sai info
 "Canceled on May 23"
 "Delivered on May 27"
 "Arrives by Wed, May 31"
+"Arrives today"
+"Arrives by Wed, May 31"
+"Arrives by Tue, Jun 06"
