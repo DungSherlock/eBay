@@ -6,3 +6,5 @@ Sai info
 "Arrives today"
 "Arrives by Wed, May 31"
 "Arrives by Tue, Jun 06"
+"Arrives by Fri, Jun 02"
+"Arrives by Fri, Jun 02"
