@@ -3,5 +3,3 @@ Sai info
 "William LaRovera"
 "qiang li"
 "Mark Frazier"
-"Jacqueline Hunter"
-"John Eller"
