@@ -1,3 +1,9 @@
 Sai info
 "Now arrives Tue, May 30"
 "Canceled on May 23"
+"Delivered on May 27"
+"Arrives by Wed, May 31"
+"Delivered on May 28"
+"Now arrives Tue, May 30"
+"Arrives by Tue, Jun 06"
+"Now arrives Wed, May 31"
