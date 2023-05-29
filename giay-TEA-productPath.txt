@@ -236,3 +236,6 @@
 "https://www.on-running.com/en-us/products/cloudswift-3/womens/ivory-creek"
 "https://www.on-running.com/en-us/products/cloudswift-3/womens/ivory-creek"
 "https://www.on-running.com/en-us/products/cloudswift-3/womens/ivory-creek"
+"https://www.on-running.com/en-us/products/cloud-5/womens/undyed-white-white"
+"https://www.on-running.com/en-us/products/cloud-5/womens/undyed-white-white"
+"https://www.on-running.com/en-us/products/cloud-5/womens/undyed-white-white"
