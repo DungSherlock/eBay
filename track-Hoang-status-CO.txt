@@ -8,3 +8,5 @@ Sai info
 "Cancellation requested today"
 "Now arrives Wed, May 31"
 "Now arrives Wed, May 31"
+"Arrives by Fri, Jun 02"
+"Arrives by Mon, Jun 05"
