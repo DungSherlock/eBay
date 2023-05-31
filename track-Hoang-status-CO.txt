@@ -1,2 +1,7 @@
 Sai info
 "Delivered today at 9:33am"
+"Canceled on May 23"
+"Delivered on May 27"
+"Arrives by Wed, May 31"
+"Delivered on May 28"
+"Canceled"
