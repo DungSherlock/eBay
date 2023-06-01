@@ -8,3 +8,5 @@ Sai info
 "Canceled on May 29"
 "Canceled"
 "Canceled"
+"Arrives by Fri, Jun 02"
+"Arrives by Mon, Jun 05"
