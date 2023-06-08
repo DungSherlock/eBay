@@ -4,6 +4,4 @@
 "Canceled"
 "Canceled"
 "Canceled"
-"Arrives by Fri, Jun 09"
-"Now arrives Fri, Jun 09"
-"Now arrives Fri, Jun 09"
+"Delivered today at 1:58pm"
