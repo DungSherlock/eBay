@@ -5,3 +5,5 @@
 "Canceled"
 "Canceled"
 "Delivered today at 1:58pm"
+"Now arrives Sat, Jun 10"
+"Now arrives Fri, Jun 09"
