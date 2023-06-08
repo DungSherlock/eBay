@@ -1,5 +1,5 @@
 #!/bin/bash
-eval `ssh-agent -s`
+# eval `ssh-agent -s`
 git pull
 : > giay-id.txt
 : > giay-productPath.txt
