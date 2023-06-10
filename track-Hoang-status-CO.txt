@@ -5,3 +5,4 @@
 "Canceled"
 "Canceled"
 "Delivered on Jun 08"
+"Arriving today"
