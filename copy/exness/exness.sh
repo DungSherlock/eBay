@@ -17,7 +17,7 @@ git pull
 
   total=`curl -s 'https://social-trading.exness.com/st/v1/managers/accounts/?drawdown__lt=100' \
 -H 'content-type: application/json' \
--H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50' \
+-H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43' \
 --compressed | jq '.total'`
   result=$(echo "$total / 30" | bc)
   echo $total
