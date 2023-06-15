@@ -101,7 +101,7 @@ do
         break
     fi
   done
-done < wm-TEA-list.txt
+done < input-TEA-list.txt
 
 git add -A .
 git commit -m --allow-empty
