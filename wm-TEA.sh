@@ -125,7 +125,6 @@ linkPostMILK=$apiMILK`echo LinkID==IMPORTDATA\(\"`$linkGit`echo wm-TEA-usItemId.
 echo '[InternetShortcut]\
 URL='$linkPostTEA > wm-TEA.url
 open wm-TEA.url
-open https://app.clickup.com/9008002310/v/b/7-9008002310-2
 
 echo '[InternetShortcut]\
 URL='$linkPostMILK > wm-MILK.url
