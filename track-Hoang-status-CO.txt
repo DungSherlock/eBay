@@ -2,5 +2,3 @@
 "Canceled"
 "Canceled on May 29"
 "Canceled"
-"Canceled"
-"Canceled"
