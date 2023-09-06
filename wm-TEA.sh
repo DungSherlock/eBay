@@ -122,9 +122,9 @@ linkPostMILK=$apiMILK`echo LinkID==IMPORTDATA\(\"`$linkGit`echo wm-TEA-usItemId.
 \&Quantity==IMPORTDATA\(\"`$linkGit`echo wm-TEA-orderLimit.txt\"\)
 `
 
-echo '[InternetShortcut]\
-URL='$linkPostTEA > wm-TEA.url
-open wm-TEA.url
+# echo '[InternetShortcut]\
+# URL='$linkPostTEA > wm-TEA.url
+# open wm-TEA.url
 
 echo '[InternetShortcut]\
 URL='$linkPostMILK > wm-MILK.url
