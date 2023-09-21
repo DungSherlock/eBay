@@ -16,7 +16,7 @@ do
   # array=(${line//|/ })
   while true
   do
-    list=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables={"input":{"id":"acd631c6-20b8-41d8-ac45-8fb7eb94189c","listType":"WL","pagination":{"page":1,"pageSize":100},"sortOrder":"DEFAULT","maxItems":true,"skipGeneric":false,"permission":"VIEW"},"groupsEnable":false}' \
+    list=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables={"input":{"id":"'$line'","listType":"WL","pagination":{"page":1,"pageSize":100},"sortOrder":"DEFAULT","maxItems":true,"skipGeneric":false,"permission":"VIEW"},"groupsEnable":false}' \
   -H 'authority: www.walmart.com' \
   -H 'accept: application/json' \
   -H 'accept-language: en-US' \
@@ -50,7 +50,7 @@ do
   -H 'x-o-segment: oaoh' \
   --compressed`
 
-    list2=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables={"input":{"id":"acd631c6-20b8-41d8-ac45-8fb7eb94189c","listType":"WL","pagination":{"page":2,"pageSize":100},"sortOrder":"DEFAULT","maxItems":true,"skipGeneric":false,"permission":"VIEW"},"groupsEnable":false}' \
+    list2=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables={"input":{"id":"'$line'","listType":"WL","pagination":{"page":2,"pageSize":100},"sortOrder":"DEFAULT","maxItems":true,"skipGeneric":false,"permission":"VIEW"},"groupsEnable":false}' \
   -H 'authority: www.walmart.com' \
   -H 'accept: application/json' \
   -H 'accept-language: en-US' \
@@ -130,7 +130,7 @@ linkPostFLY=$apiFLY`echo LinkID==IMPORTDATA\(\"`$linkGit`echo wm-TD-usItemId.txt
 echo '[InternetShortcut]\
 URL='$linkPostTD > wm-TD.url
 open wm-TD.url
-open https://app.clickup.com/9008002310/v/b/7-9008002310-2
+# open https://app.clickup.com/9008002310/v/b/7-9008002310-2
 
 echo '[InternetShortcut]\
 URL='$linkPostFLY > wm-FLY.url
