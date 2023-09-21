@@ -21,7 +21,7 @@ do
   -H 'accept: application/json' \
   -H 'accept-language: en-US' \
   -H 'content-type: application/json' \
-  -H ''$cookie'' \
+  -H 'cookie: '$cookie'' \
   -H 'device_profile_ref_id: 4vihg2lpwwbzggqeow3rjzv_ag2eguz6cz-t' \
   -H 'dnt: 1' \
   -H 'downlink: 10' \
@@ -55,7 +55,7 @@ do
   -H 'accept: application/json' \
   -H 'accept-language: en-US' \
   -H 'content-type: application/json' \
-  -H ''$cookie'' \
+  -H 'cookie: '$cookie'' \
   -H 'device_profile_ref_id: 4vihg2lpwwbzggqeow3rjzv_ag2eguz6cz-t' \
   -H 'dnt: 1' \
   -H 'downlink: 10' \
