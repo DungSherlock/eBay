@@ -16,7 +16,7 @@ do
   # array=(${line//|/ })
   while true
   do
-    list=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables={"input":{"id":"'$line'","listType":"WL","pagination":{"page":1,"pageSize":100},"sortOrder":"DEFAULT","maxItems":true,"skipGeneric":false,"permission":"VIEW"},"groupsEnable":false}' \
+    list=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables=%7B%22input%22%3A%7B%22id%22%3A%22'$line'%22%2C%22listType%22%3A%22WL%22%2C%22pagination%22%3A%7B%22page%22%3A1%2C%22pageSize%22%3A100%7D%2C%22sortOrder%22%3A%22DEFAULT%22%2C%22maxItems%22%3Afalse%2C%22skipGeneric%22%3Afalse%2C%22permission%22%3A%22VIEW%22%7D%2C%22groupsEnable%22%3Afalse%7D' \
   -H 'authority: www.walmart.com' \
   -H 'accept: application/json' \
   -H 'accept-language: en-US' \
@@ -50,7 +50,7 @@ do
   -H 'x-o-segment: oaoh' \
   --compressed`
 
-    list2=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables={"input":{"id":"'$line'","listType":"WL","pagination":{"page":2,"pageSize":100},"sortOrder":"DEFAULT","maxItems":true,"skipGeneric":false,"permission":"VIEW"},"groupsEnable":false}' \
+    list2=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables=%7B%22input%22%3A%7B%22id%22%3A%22'$line'%22%2C%22listType%22%3A%22WL%22%2C%22pagination%22%3A%7B%22page%22%3A2%2C%22pageSize%22%3A100%7D%2C%22sortOrder%22%3A%22DEFAULT%22%2C%22maxItems%22%3Afalse%2C%22skipGeneric%22%3Afalse%2C%22permission%22%3A%22VIEW%22%7D%2C%22groupsEnable%22%3Afalse%7D' \
   -H 'authority: www.walmart.com' \
   -H 'accept: application/json' \
   -H 'accept-language: en-US' \
