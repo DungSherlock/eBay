@@ -16,66 +16,71 @@ do
   # array=(${line//|/ })
   while true
   do
-    list=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/4fb20c34987f00ecdbbf4f388b7ddc80a70519f2d9f87c615b59f71834124dcd?variables=%7B%22input%22%3A%7B%22id%22%3A%22'$line'%22%2C%22listType%22%3A%22WL%22%2C%22pagination%22%3A%7B%22page%22%3A1%2C%22pageSize%22%3A1%7D%2C%22sortOrder%22%3A%22DEFAULT%22%2C%22maxItems%22%3Atrue%2C%22skipGeneric%22%3Atrue%2C%22permission%22%3A%22VIEW%22%7D%7D' \
+    list=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables=%7B%22input%22%3A%7B%22id%22%3A%22'$line'%22%2C%22listType%22%3A%22WL%22%2C%22pagination%22%3A%7B%22page%22%3A1%2C%22pageSize%22%3A100%7D%2C%22sortOrder%22%3A%22DEFAULT%22%2C%22maxItems%22%3Afalse%2C%22skipGeneric%22%3Afalse%2C%22permission%22%3A%22VIEW%22%7D%2C%22groupsEnable%22%3Afalse%7D' \
   -H 'authority: www.walmart.com' \
-  -H 'cookie: '$cookie'' \
   -H 'accept: application/json' \
-  -H 'accept-language: vi' \
+  -H 'accept-language: en-US' \
   -H 'content-type: application/json' \
+  -H 'cookie: '$cookie'' \
+  -H 'device_profile_ref_id: 4vihg2lpwwbzggqeow3rjzv_ag2eguz6cz-t' \
   -H 'dnt: 1' \
+  -H 'downlink: 10' \
+  -H 'dpr: 2' \
   -H 'lists-device-type: desktop' \
-  -H 'referer: https://www.walmart.com/lists/shared/WL/'$line'' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="117", "Not;A=Brand";v="8", "Chromium";v="117"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-origin' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188' \
+  -H 'traceparent: 00-c61c2a326098db40a1d3eebea54bfeba-a29e9a8c600bafc1-00' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.35' \
   -H 'wm_mp: true' \
-  -H 'wm_page_url: https://www.walmart.com/lists/shared/WL/'$line'' \
+  -H 'wm_qos.correlation_id: YIKkB93kLuv1cIGDbKAo9KuGwIf4l3jAp00o' \
   -H 'x-apollo-operation-name: getListDetails' \
   -H 'x-enable-server-timing: 1' \
   -H 'x-latency-trace: 1' \
   -H 'x-o-bu: WALMART-US' \
   -H 'x-o-ccm: server' \
+  -H 'x-o-correlation-id: YIKkB93kLuv1cIGDbKAo9KuGwIf4l3jAp00o' \
   -H 'x-o-gql-query: query getListDetails' \
   -H 'x-o-mart: B2C' \
   -H 'x-o-platform: rweb' \
-  -H 'x-o-platform-version: main-1.26.0-be17f7' \
+  -H 'x-o-platform-version: us-web-1.100.0-514b355-0919T0537' \
   -H 'x-o-segment: oaoh' \
   --compressed`
 
-    list2=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/4fb20c34987f00ecdbbf4f388b7ddc80a70519f2d9f87c615b59f71834124dcd?variables=%7B%22input%22%3A%7B%22id%22%3A%22'$line'%22%2C%22listType%22%3A%22WL%22%2C%22pagination%22%3A%7B%22page%22%3A2%2C%22pageSize%22%3A1%7D%2C%22sortOrder%22%3A%22DEFAULT%22%2C%22maxItems%22%3Atrue%2C%22skipGeneric%22%3Atrue%2C%22permission%22%3A%22VIEW%22%7D%7D' \
+    list2=`curl -C - -Ls 'https://www.walmart.com/orchestra/home/graphql/getListDetails/9c473c83d05f86b605d982c553d220cd0d7014a0cdd727836da8bf91eaecc121?variables=%7B%22input%22%3A%7B%22id%22%3A%22'$line'%22%2C%22listType%22%3A%22WL%22%2C%22pagination%22%3A%7B%22page%22%3A2%2C%22pageSize%22%3A100%7D%2C%22sortOrder%22%3A%22DEFAULT%22%2C%22maxItems%22%3Afalse%2C%22skipGeneric%22%3Afalse%2C%22permission%22%3A%22VIEW%22%7D%2C%22groupsEnable%22%3Afalse%7D' \
   -H 'authority: www.walmart.com' \
-  -H 'cookie: '$cookie'' \
   -H 'accept: application/json' \
-  -H 'accept-language: vi' \
+  -H 'accept-language: en-US' \
   -H 'content-type: application/json' \
-  -H 'device_profile_ref_id: iFp6Hi50uc-gNvplE2uA4NA0qnOlAN2G04Gj' \
+  -H 'cookie: '$cookie'' \
+  -H 'device_profile_ref_id: 4vihg2lpwwbzggqeow3rjzv_ag2eguz6cz-t' \
   -H 'dnt: 1' \
+  -H 'downlink: 10' \
+  -H 'dpr: 2' \
   -H 'lists-device-type: desktop' \
-  -H 'referer: https://www.walmart.com/lists/shared/WL/'$line'' \
-  -H 'sec-ch-ua: "Chromium";v="106", "Microsoft Edge";v="106", "Not;A=Brand";v="99"' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="117", "Not;A=Brand";v="8", "Chromium";v="117"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "macOS"' \
   -H 'sec-fetch-dest: empty' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-origin' \
-  -H 'traceparent: 00-7397a0a5fef6de55685b3d3eca6a245a-ffc7eb1e30e2892c-00' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188' \
+  -H 'traceparent: 00-c61c2a326098db40a1d3eebea54bfeba-a29e9a8c600bafc1-00' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.35' \
   -H 'wm_mp: true' \
-  -H 'wm_page_url: https://www.walmart.com/lists/shared/WL/'$line'' \
-  -H 'wm_qos.correlation_id: aN3Kozf7JSv9SfIdoMq_jMSUZTmEjc-3K_wf' \
+  -H 'wm_qos.correlation_id: YIKkB93kLuv1cIGDbKAo9KuGwIf4l3jAp00o' \
   -H 'x-apollo-operation-name: getListDetails' \
   -H 'x-enable-server-timing: 1' \
   -H 'x-latency-trace: 1' \
   -H 'x-o-bu: WALMART-US' \
   -H 'x-o-ccm: server' \
-  -H 'x-o-correlation-id: aN3Kozf7JSv9SfIdoMq_jMSUZTmEjc-3K_wf' \
+  -H 'x-o-correlation-id: YIKkB93kLuv1cIGDbKAo9KuGwIf4l3jAp00o' \
   -H 'x-o-gql-query: query getListDetails' \
   -H 'x-o-mart: B2C' \
   -H 'x-o-platform: rweb' \
-  -H 'x-o-platform-version: main-1.26.0-be17f7' \
+  -H 'x-o-platform-version: us-web-1.100.0-514b355-0919T0537' \
   -H 'x-o-segment: oaoh' \
   --compressed`
 
