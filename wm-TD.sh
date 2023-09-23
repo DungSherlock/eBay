@@ -129,9 +129,9 @@ linkPostFLY=$apiFLY`echo LinkID==IMPORTDATA\(\"`$linkGit`echo wm-TD-usItemId.txt
 
 echo '[InternetShortcut]\
 URL='$linkPostTD > wm-TD.url
-open wm-TD.url
+open -a "Microsoft Edge" wm-TD.url
 # open https://app.clickup.com/9008002310/v/b/7-9008002310-2
 
 echo '[InternetShortcut]\
 URL='$linkPostFLY > wm-FLY.url
-open wm-FLY.url
+open -a "Microsoft Edge" wm-FLY.url
