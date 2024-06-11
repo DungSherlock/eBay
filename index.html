@@ -1,12 +1,130 @@
-<html>
-    <head>
-        <meta http-equiv='cache-control' content='no-cache'> 
-        <meta http-equiv='expires' content='0'> 
-        <meta http-equiv='pragma' content='no-cache'>
-		<title>Your Page Title</title>
-		<meta http-equiv="REFRESH" content="0;url=http://www.the-domain-you-want-to-redirect-to.com">
-	</head>
-	<body>
-		Optional page text here.
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player with Interactive Subtitles</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        video {
+            width: 80%;
+            max-width: 800px;
+        }
+        #subtitleList {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 800px;
+            max-height: 300px;
+            overflow-y: auto;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .subtitleItem {
+            cursor: pointer;
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        .subtitleItem:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Player with Interactive Subtitles</h1>
+    <input type="file" id="videoFile" accept="video/*"><br><br>
+    <input type="file" id="subtitleFile" accept=".srt,.vtt"><br><br>
+    <video id="videoPlayer" controls>
+        <track id="subtitleTrack" kind="subtitles" label="English" srclang="en">
+    </video>
+    <div id="subtitleList"></div>
+
+    <script>
+        document.getElementById('videoFile').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const videoURL = URL.createObjectURL(file);
+            const videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = videoURL;
+        });
+
+        document.getElementById('subtitleFile').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function() {
+                const subtitles = reader.result;
+                const subtitleTrack = document.getElementById('subtitleTrack');
+                const subtitleBlob = new Blob([subtitles], { type: file.type });
+                const subtitleURL = URL.createObjectURL(subtitleBlob);
+                subtitleTrack.src = subtitleURL;
+                loadSubtitles(subtitles);
+            };
+
+            reader.readAsText(file);
+        });
+
+        function parseSubtitles(subtitles) {
+            const subtitleList = [];
+            const lines = subtitles.split('\n');
+            let currentSubtitle = null;
+
+            lines.forEach(line => {
+                if (/^\d+$/.test(line.trim())) {
+                    if (currentSubtitle) {
+                        subtitleList.push(currentSubtitle);
+                    }
+                    currentSubtitle = { start: 0, end: 0, text: '' };
+                } else if (line.includes('-->')) {
+                    const times = line.split(' --> ');
+                    currentSubtitle.start = parseTime(times[0]);
+                    currentSubtitle.end = parseTime(times[1]);
+                } else if (currentSubtitle) {
+                    currentSubtitle.text += line.trim() + ' ';
+                }
+            });
+
+            if (currentSubtitle) {
+                subtitleList.push(currentSubtitle);
+            }
+
+            return subtitleList;
+        }
+
+        function parseTime(timeString) {
+            const parts = timeString.split(':');
+            const secondsParts = parts[2].split(',');
+            const hours = parseInt(parts[0], 10);
+            const minutes = parseInt(parts[1], 10);
+            const seconds = parseInt(secondsParts[0], 10);
+            const milliseconds = parseInt(secondsParts[1], 10);
+            return (hours * 3600) + (minutes * 60) + seconds + (milliseconds / 1000);
+        }
+
+        function loadSubtitles(subtitles) {
+            const subtitleList = parseSubtitles(subtitles);
+            const subtitleContainer = document.getElementById('subtitleList');
+            subtitleContainer.innerHTML = '';
+
+            subtitleList.forEach(subtitle => {
+                const div = document.createElement('div');
+                div.className = 'subtitleItem';
+                div.textContent = subtitle.text.trim();
+                div.addEventListener('click', () => {
+                    const videoPlayer = document.getElementById('videoPlayer');
+                    videoPlayer.currentTime = subtitle.start;
+                    videoPlayer.play();
+                });
+                subtitleContainer.appendChild(div);
+            });
+        }
+    </script>
+</body>
 </html>
