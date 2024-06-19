@@ -1,0 +1,407 @@
+{
+  "lesson_id": 83,
+  "lesson_turn_play": 1,
+  "next_lesson_id": null,
+  "lesson_details": [
+    {
+      "type": "CODE_SWITCHING_WORD",
+      "data": {
+        "word": "focus on studying",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3",
+        "image": "https://smedia.stepup.edu.vn/thecoach/learnfeed/code_switching/focus_on_study.jpg",
+        "answers": [
+          {
+            "answer_en": "focus on studying",
+            "answer_vi": "tập trung học hành",
+            "is_true_answer": true
+          },
+          {
+            "answer_en": "business trips",
+            "answer_vi": "đi công tác",
+            "is_true_answer": false
+          },
+          {
+            "answer_en": "hang out",
+            "answer_vi": "đi chơi",
+            "is_true_answer": false
+          },
+          {
+            "answer_en": "a programming course",
+            "answer_vi": "một khóa học lập trình",
+            "is_true_answer": false
+          }
+        ],
+        "sentence": "Chỉ là sắp thi nên tôi focus on studying tí thôi mà",
+        "description": "ĐOÁN NGHĨA CỦA TỪ KHÓA",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "code_switching_word_297",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "LISTEN_ARRANGE_WORD_SPEAK",
+      "data": {
+        "word": "focus on studying",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3",
+        "sentence": "If you want to succeed in your exams, you need to _________________ consistently.",
+        "description": "NÓI TỪ CẦN ĐIỀN",
+        "sentence_vi": "Nếu bạn muốn thành công trong các kỳ thi của mình, bạn cần tập trung học hành một cách nhất quán.",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "listen_arrange_word_speak_145",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "SPEAKING_WORD",
+      "data": {
+        "word": "focus on studying",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3",
+        "suggest": null,
+        "meaning_vi": "Tập trung học hành",
+        "description": "DỊCH TỪ SAU",
+        "pronunciation": "/ˈfəʊkəs ɑːn ˈstʌdɪɪη/",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "speaking_word_186",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "GUESSING_IMAGE",
+      "data": {
+        "word": "focus on studying",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3",
+        "image": "https://smedia.stepup.edu.vn/thecoach/learnfeed/guessing/focus_on_studying.webp",
+        "description": "NHÌN TRANH ĐOÁN TỪ",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "guessing_image_145",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "CODE_SWITCHING_WORD",
+      "data": {
+        "word": "engage in volunteer work",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3",
+        "image": "https://smedia.stepup.edu.vn/thecoach/learnfeed/code_switching/engage_in_volunteer_work.jpg",
+        "answers": [
+          {
+            "answer_en": "engage in volunteer work",
+            "answer_vi": "tham gia vào công việc tình nguyện",
+            "is_true_answer": true
+          },
+          {
+            "answer_en": "instant noodles",
+            "answer_vi": "mì ăn liền",
+            "is_true_answer": false
+          },
+          {
+            "answer_en": "software developer",
+            "answer_vi": "lập trình viên",
+            "is_true_answer": false
+          },
+          {
+            "answer_en": "text message",
+            "answer_vi": "tin nhắn",
+            "is_true_answer": false
+          }
+        ],
+        "sentence": "Dù bạn là ai cũng đều có thể engage in volunteer work",
+        "description": "ĐOÁN NGHĨA CỦA TỪ KHÓA",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "code_switching_word_298",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "LISTEN_ARRANGE_WORD_SPEAK",
+      "data": {
+        "word": "engage in volunteer work",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3",
+        "sentence": "It's important to ________________________ to help those who are less fortunate than us.",
+        "description": "NÓI TỪ CẦN ĐIỀN",
+        "sentence_vi": "Điều quan trọng là tham gia vào công việc tình nguyện để giúp đỡ những người kém may mắn hơn chúng ta.",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "listen_arrange_word_speak_146",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "SPEAKING_WORD",
+      "data": {
+        "word": "engage in volunteer work",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3",
+        "suggest": null,
+        "meaning_vi": "Tham gia vào công việc tình nguyện;",
+        "description": "DỊCH TỪ SAU",
+        "pronunciation": "/ɪnˈgeɪdʒ ɪn ˌvɑːlənˈtɪr wɜːrk/",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "speaking_word_187",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "GUESSING_IMAGE",
+      "data": {
+        "word": "engage in volunteer work",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3",
+        "image": "https://smedia.stepup.edu.vn/thecoach/learnfeed/guessing/engage_in_volunteer_work.webp",
+        "description": "NHÌN TRANH ĐOÁN TỪ",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "guessing_image_146",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "CODE_SWITCHING_WORD",
+      "data": {
+        "word": "take on part-time jobs",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3",
+        "image": "https://smedia.stepup.edu.vn/thecoach/learnfeed/code_switching/take_on_part-time_jobs.jpg",
+        "answers": [
+          {
+            "answer_en": "take on part-time jobs",
+            "answer_vi": "làm các công việc bán thời gian",
+            "is_true_answer": true
+          },
+          {
+            "answer_en": "an environment cleaning team",
+            "answer_vi": "đội vệ sinh môi trường",
+            "is_true_answer": false
+          },
+          {
+            "answer_en": "cooking",
+            "answer_vi": "nấu ăn",
+            "is_true_answer": false
+          },
+          {
+            "answer_en": "encouraging",
+            "answer_vi": "khuyến khích",
+            "is_true_answer": false
+          }
+        ],
+        "sentence": "Take on part-time jobs sẽ giúp các bạn sinh viên tích lũy thêm nhiều kỹ năng trong cuộc sống",
+        "description": "ĐOÁN NGHĨA CỦA TỪ KHÓA",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "code_switching_word_299",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "LISTEN_ARRANGE_WORD_SPEAK",
+      "data": {
+        "word": "take on part-time jobs",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3",
+        "sentence": "Many students ______________________ to earn extra money while studying.",
+        "description": "NÓI TỪ CẦN ĐIỀN",
+        "sentence_vi": "Nhiều sinh viên làm các công việc bán thời gian để kiếm thêm tiền trong khi học.",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "listen_arrange_word_speak_147",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "SPEAKING_WORD",
+      "data": {
+        "word": "take on part-time jobs",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3",
+        "suggest": null,
+        "meaning_vi": "Làm các công việc bán thời gian;",
+        "description": "DỊCH TỪ SAU",
+        "pronunciation": "/teɪk ɑːn ˌpɑːrt ˈtaɪm dʒɑːbz/",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "speaking_word_188",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "GUESSING_IMAGE",
+      "data": {
+        "word": "take on part-time jobs",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3",
+        "image": "https://smedia.stepup.edu.vn/thecoach/learnfeed/guessing/take_on_part-time_jobs.webp",
+        "description": "NHÌN TRANH ĐOÁN TỪ",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "guessing_image_147",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "CODE_SWITCHING_WORD",
+      "data": {
+        "word": "join professional organizations",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3",
+        "image": "https://smedia.stepup.edu.vn/thecoach/learnfeed/code_switching/join_professional_organizations.jpg",
+        "answers": [
+          {
+            "answer_en": "join professional organizations",
+            "answer_vi": "tham gia các tổ chức chuyên nghiệp",
+            "is_true_answer": true
+          },
+          {
+            "answer_en": "increase my self-confidence",
+            "answer_vi": "cải thiện sự tự tin của tôi",
+            "is_true_answer": false
+          },
+          {
+            "answer_en": "classical music",
+            "answer_vi": "nhạc cổ điển",
+            "is_true_answer": false
+          },
+          {
+            "answer_en": "e-wallet",
+            "answer_vi": "ví điện tử",
+            "is_true_answer": false
+          }
+        ],
+        "sentence": "Có lẽ bạn mèo này đã join professional organizations về mở khóa",
+        "description": "ĐOÁN NGHĨA CỦA TỪ KHÓA",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "code_switching_word_300",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "LISTEN_ARRANGE_WORD_SPEAK",
+      "data": {
+        "word": "join professional organizations",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3",
+        "sentence": "Another option is to _______________________________",
+        "description": "NÓI TỪ CẦN ĐIỀN",
+        "sentence_vi": "Một lựa chọn khác là tham gia các tổ chức chuyên nghiệp",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "listen_arrange_word_speak_148",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "SPEAKING_WORD",
+      "data": {
+        "word": "join professional organizations",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3",
+        "suggest": null,
+        "meaning_vi": "Tham gia các tổ chức chuyên nghiệp;",
+        "description": "DỊCH TỪ SAU",
+        "pronunciation": "/dʒɔɪn prəˈfe∫ənl ˌɔːrgənəˈzeɪ∫nz/",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "speaking_word_189",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "GUESSING_IMAGE",
+      "data": {
+        "word": "join professional organizations",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3",
+        "image": "https://smedia.stepup.edu.vn/thecoach/learnfeed/guessing/join_professional_organizations.webp",
+        "description": "NHÌN TRANH ĐOÁN TỪ",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "guessing_image_148",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "LISTEN_VIDEO_WORD_SPEAK",
+      "data": {
+        "word": "focus on her studies",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/giaotiep/lesson_outline/BL-0145_focus-on-her-studies_48k_stereo.mp3",
+        "video": "https://smedia.stepup.edu.vn/thecoach/learnfeed/video/focus_on_her_studies.mp4",
+        "sentence": "She wants to ____________________.",
+        "description": "NGHE VÀ NÓI TỪ CẦN ĐIỀN",
+        "sentence_vi": "Cô ấy muốn tập trung học hành.",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "listen_video_word_speak_145",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "LISTEN_VIDEO_WORD_SPEAK",
+      "data": {
+        "word": "volunteer work",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/giaotiep/lesson_outline/BL-0146_volunteer-work_48k_stereo.mp3",
+        "video": "https://smedia.stepup.edu.vn/thecoach/learnfeed/video/volunteer_work.mp4",
+        "sentence": "This is basically ______________ for me.",
+        "description": "NGHE VÀ NÓI TỪ CẦN ĐIỀN",
+        "sentence_vi": "Về cơ bản thì đây là công việc tình nguyện cho tôi.",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "listen_video_word_speak_146",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "LISTEN_VIDEO_WORD_SPEAK",
+      "data": {
+        "word": "part-time jobs",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/giaotiep/lesson_outline/BL-0147_part-time-jobs_48k_stereo.mp3",
+        "video": "https://smedia.stepup.edu.vn/thecoach/learnfeed/video/part-time_jobs.mp4",
+        "sentence": "I've been saving up from all my ______________.",
+        "description": "NGHE VÀ NÓI TỪ CẦN ĐIỀN",
+        "sentence_vi": "Tôi đã tiết kiệm tiền từ tất cả các công việc bán thời gian của mình.",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "listen_video_word_speak_147",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    },
+    {
+      "type": "LISTEN_VIDEO_WORD_SPEAK",
+      "data": {
+        "word": "professional",
+        "audio": "https://smedia.stepup.edu.vn/thecoach/giaotiep/lesson_outline/BL-0148_professional_48k_stereo.mp3",
+        "video": "https://smedia.stepup.edu.vn/thecoach/learnfeed/video/professional.mp4",
+        "sentence": "I'm joining a ____________ arm wrestling circuit.",
+        "description": "NGHE VÀ NÓI TỪ CẦN ĐIỀN",
+        "sentence_vi": "Tôi đang tham gia vào một giải đấu vật chuyên nghiệp.",
+        "is_back_to_outline": false
+      },
+      "lesson_detail_id": "listen_video_word_speak_148",
+      "is_trial": false,
+      "learn_type": "EXTEND",
+      "is_back_to_chat_bot": false
+    }
+  ],
+  "progress_bar": null,
+  "is_show_drop_survey": false,
+  "lesson_name_en": null,
+  "lesson_name_vi": null,
+  "lesson_thumbnail": null,
+  "leaderboard_activity": "HOC_GIAO_TIEP",
+  "is_onboard_lesson": false,
+  "next_lesson": null
+}
