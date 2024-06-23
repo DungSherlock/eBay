@@ -746,3 +746,4105 @@
   "vi": "một công ty truyền thông",
   "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0454_a-media-company_48k_stereo.mp3"
 }
+{
+  "lesson_id_83": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I think students should _____ .",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Do internships",
+  "ipa": null,
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Have a part-time job",
+  "ipa": null,
+  "vi": "Đi làm thêm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_7.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Focus on studying",
+  "ipa": null,
+  "vi": "Tập trung vào việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_8.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should do internships.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi thực tập.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_3.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should have a part-time job.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi làm thêm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_4.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should focus on studying.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên tập trung vào việc học.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_5.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think students should do internships?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think students should",
+  "ipa": "/aɪ θɪηk ˈstuːdnts ∫ʊd/",
+  "vi": "Tôi nghĩ sinh viên nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do internships",
+  "ipa": "/duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think students should do internships",
+  "ipa": "/duː juː θɪηk ˈstuːdnts ∫ʊd duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "focus on studying",
+  "ipa": "/ˈfəʊkəs ɑːn ˈstʌdɪɪη/",
+  "vi": "Tập trung học hành",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "engage in volunteer work",
+  "ipa": "/ɪnˈgeɪdʒ ɪn ˌvɑːlənˈtɪr wɜːrk/",
+  "vi": "Tham gia vào công việc tình nguyện;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take on part-time jobs",
+  "ipa": "/teɪk ɑːn ˌpɑːrt ˈtaɪm dʒɑːbz/",
+  "vi": "Làm các công việc bán thời gian;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "join professional organizations",
+  "ipa": "/dʒɔɪn prəˈfe∫ənl ˌɔːrgənəˈzeɪ∫nz/",
+  "vi": "Tham gia các tổ chức chuyên nghiệp;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "You should _____ .",
+  "ipa": null,
+  "vi": "Bạn nên _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_7_en_42.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Practice interviewing",
+  "ipa": null,
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Prepare your CV",
+  "ipa": null,
+  "vi": "Chuẩn bị CV",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_17.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Research the company",
+  "ipa": null,
+  "vi": "Tìm hiểu kỹ về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_18.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What should you prepare before applying for an internship?",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "You should",
+  "ipa": "/juː ∫ʊd/",
+  "vi": "Bạn nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_12.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Practice interviewing",
+  "ipa": "/ˈpræktɪs ˈɪntərvjuːɪη/",
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What should you prepare before applying for an internship",
+  "ipa": "/wʌt ∫ʊd juː prɪˈper bɪˈfɔːr əˈplaɪɪη fɔːr æn ˈɪntɜːrn∫ɪp/",
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare your cv",
+  "ipa": "/prɪˈper jʊr ˌsiː ˈviː/",
+  "vi": "Chuẩn bị CV của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0434_prepare-your-cv_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "research the company",
+  "ipa": "/ˈriːsɜːrt∫ ðə /ˈkʌmpəniː/",
+  "vi": "Nghiên cứu về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0435_research-the-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "update your resume",
+  "ipa": "/ˌʌpˈdeɪt jʊr resume/",
+  "vi": "Cập nhật sơ yếu lý lịch của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0436_update-your-resume_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a cover letter",
+  "ipa": "/prɪˈper ə ˈkʌvər ˈletər/",
+  "vi": "Chuẩn bị thư xin việc",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0437_prepare-a-cover-letter_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "practice your interview skills",
+  "ipa": "/ˈpræktɪs jʊr ˈɪntərvjuː skɪlz/",
+  "vi": "Luyện tập các kỹ năng trả lời phỏng vấn của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0438_practice-your-interview-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a portfolio",
+  "ipa": "/prɪˈper ə /pɔːrtˈfəʊliːəʊ/",
+  "vi": "Chuẩn bị một danh mục các ấn phẩm đã làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0439_prepare-a-portfolio_48k_stereo.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "My advice is _____ .",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To be honest",
+  "ipa": null,
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To start with a smile",
+  "ipa": null,
+  "vi": "Hãy bắt đầu với một nụ cười",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_27.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Not to be late",
+  "ipa": null,
+  "vi": "Không đến muộn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_28.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What is your advice for an interview?",
+  "ipa": null,
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "My advice is",
+  "ipa": "/maɪ ədˈvaɪs ɪz/",
+  "vi": "Lời khuyên của tôi là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "To be honest",
+  "ipa": "/tuː biː ˈɑːnɪst/",
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What is your advice for an interview",
+  "ipa": "/wʌt ɪz jʊr ədˈvaɪs fɔːr æn ˈɪntərvjuː/",
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I think doing an internship will _____ .",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Gain us experience",
+  "ipa": null,
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Improve our skills",
+  "ipa": null,
+  "vi": "Cải thiện kỹ năng của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_37.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Affect our studies",
+  "ipa": null,
+  "vi": "Làm ảnh hưởng đến việc học của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_38.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will gain us experience.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cho chúng ta thêm kinh nghiệm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_33.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will improve our skills.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cải thiện kỹ năng của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_34.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will affect our studies.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ làm ảnh hưởng đến việc học của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_35.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think doing an internship will affect our studies?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think doing an internship will",
+  "ipa": "/aɪ θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl/",
+  "vi": "Tôi nghĩ đi thực tập sẽ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Gain us experience",
+  "ipa": "/geɪn ʌs ɪkˈspɪriːəns/",
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think doing an internship will affect our studies",
+  "ipa": "/duː juː θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "improve our skills",
+  "ipa": "/ɪmˈpruːv ɑːr skɪlz/",
+  "vi": "Cải thiện kỹ năng",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0441_improve-our-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "affect our studies",
+  "ipa": "/əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Ảnh hưởng đến việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0442_affect-our-studies_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "beneficial",
+  "ipa": "/ˌbenɪˈfɪ∫l/",
+  "vi": "Có lợi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0344_beneficial_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a great learning experience",
+  "ipa": "/ə greɪt ˈlɜːrnɪη /ɪkˈspɪriːəns/",
+  "vi": "Một trải nghiệm học tập tuyệt vời",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0444_a-great-learning-experience_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I _____ during exam season.",
+  "ipa": null,
+  "vi": "Tôi _____ trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_42.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Work less",
+  "ipa": null,
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Study during my work breaks",
+  "ipa": null,
+  "vi": "Học trong giờ nghỉ giải lao ở chỗ làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_47.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Take days off to study",
+  "ipa": null,
+  "vi": "Xin nghỉ phép để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_48.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "How do you work and study during exam season?",
+  "ipa": null,
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "during exam season",
+  "ipa": "/ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_learningcard_en_16.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Work less",
+  "ipa": "/wɜːrk les/",
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "How do you work and study during exam season",
+  "ipa": "/haʊ duː juː wɜːrk ænd ˈstʌdiː ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "study during my work breaks",
+  "ipa": "/ˈstʌdiː/ ˈdʊrɪη maɪ wɜːrk breɪks/",
+  "vi": "Học trong giờ nghỉ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0445_study-during-my-work-breaks_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take days off to study",
+  "ipa": "/teɪk deɪz ɔːf tuː /ˈstʌdiː/",
+  "vi": "Nghỉ vài ngày để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0446_take-days-off-to-study_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "create a study plan",
+  "ipa": "/kriːˈeɪt/ ə /ˈstʌdiː/ plæn/",
+  "vi": "Tạo một kế hoạch học tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0447_create-a-study-plan_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "manage my time wisely",
+  "ipa": "/ˈmænɪdʒ maɪ taɪm /ˈwaɪzliː/",
+  "vi": "Quản lý thời gian một cách khôn ngoan",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0448_manage-my-time-wisely_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "Maybe _____ .",
+  "ipa": null,
+  "vi": "Có lẽ là _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A start-up company",
+  "ipa": null,
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A big corporation",
+  "ipa": null,
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_57.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A foreign company",
+  "ipa": null,
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_58.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What kind of company would you recommend to me?",
+  "ipa": null,
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Maybe",
+  "ipa": "/ˈmeɪbiː/",
+  "vi": "Có lẽ là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "A start up company",
+  "ipa": "/ə stɑːrt ʌp ˈkʌmpəniː/",
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What kind of company would you recommend to me",
+  "ipa": "/wʌt kaɪnd əv ˈkʌmpəniː wʊd juː ˌrekəˈmend tuː miː/",
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a big corporation",
+  "ipa": "/ə bɪg ˌkɔːrpəˈreɪ∫n/",
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0449_a-big-corporation_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a foreign company",
+  "ipa": "/ə ˈfɔːrən /ˈkʌmpəniː/",
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0450_a-foreign-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a consulting firm",
+  "ipa": "/ə kənˈsʌltɪη fɜːrm/",
+  "vi": "một công ty tư vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0451_a-consulting-firm_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a financial services company",
+  "ipa": "/ə faɪˈnæn∫l ˈsɜːrvɪsɪz /ˈkʌmpəniː/",
+  "vi": "một công ty dịch vụ tài chính",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0452_a-financial-services-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a manufacturing company",
+  "ipa": "/ə ˌmænjʊˈfækt∫ərɪη /ˈkʌmpəniː/",
+  "vi": "một công ty sản xuất",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0453_a-manufacturing-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a media company",
+  "ipa": "/ə ˈmiːdɪə /ˈkʌmpəniː/",
+  "vi": "một công ty truyền thông",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0454_a-media-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I think students should _____ .",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Do internships",
+  "ipa": null,
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Have a part-time job",
+  "ipa": null,
+  "vi": "Đi làm thêm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_7.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Focus on studying",
+  "ipa": null,
+  "vi": "Tập trung vào việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_8.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should do internships.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi thực tập.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_3.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should have a part-time job.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi làm thêm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_4.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should focus on studying.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên tập trung vào việc học.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_5.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think students should do internships?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think students should",
+  "ipa": "/aɪ θɪηk ˈstuːdnts ∫ʊd/",
+  "vi": "Tôi nghĩ sinh viên nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do internships",
+  "ipa": "/duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think students should do internships",
+  "ipa": "/duː juː θɪηk ˈstuːdnts ∫ʊd duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "focus on studying",
+  "ipa": "/ˈfəʊkəs ɑːn ˈstʌdɪɪη/",
+  "vi": "Tập trung học hành",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "engage in volunteer work",
+  "ipa": "/ɪnˈgeɪdʒ ɪn ˌvɑːlənˈtɪr wɜːrk/",
+  "vi": "Tham gia vào công việc tình nguyện;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take on part-time jobs",
+  "ipa": "/teɪk ɑːn ˌpɑːrt ˈtaɪm dʒɑːbz/",
+  "vi": "Làm các công việc bán thời gian;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "join professional organizations",
+  "ipa": "/dʒɔɪn prəˈfe∫ənl ˌɔːrgənəˈzeɪ∫nz/",
+  "vi": "Tham gia các tổ chức chuyên nghiệp;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "You should _____ .",
+  "ipa": null,
+  "vi": "Bạn nên _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_7_en_42.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Practice interviewing",
+  "ipa": null,
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Prepare your CV",
+  "ipa": null,
+  "vi": "Chuẩn bị CV",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_17.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Research the company",
+  "ipa": null,
+  "vi": "Tìm hiểu kỹ về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_18.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What should you prepare before applying for an internship?",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "You should",
+  "ipa": "/juː ∫ʊd/",
+  "vi": "Bạn nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_12.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Practice interviewing",
+  "ipa": "/ˈpræktɪs ˈɪntərvjuːɪη/",
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What should you prepare before applying for an internship",
+  "ipa": "/wʌt ∫ʊd juː prɪˈper bɪˈfɔːr əˈplaɪɪη fɔːr æn ˈɪntɜːrn∫ɪp/",
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare your cv",
+  "ipa": "/prɪˈper jʊr ˌsiː ˈviː/",
+  "vi": "Chuẩn bị CV của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0434_prepare-your-cv_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "research the company",
+  "ipa": "/ˈriːsɜːrt∫ ðə /ˈkʌmpəniː/",
+  "vi": "Nghiên cứu về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0435_research-the-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "update your resume",
+  "ipa": "/ˌʌpˈdeɪt jʊr resume/",
+  "vi": "Cập nhật sơ yếu lý lịch của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0436_update-your-resume_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a cover letter",
+  "ipa": "/prɪˈper ə ˈkʌvər ˈletər/",
+  "vi": "Chuẩn bị thư xin việc",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0437_prepare-a-cover-letter_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "practice your interview skills",
+  "ipa": "/ˈpræktɪs jʊr ˈɪntərvjuː skɪlz/",
+  "vi": "Luyện tập các kỹ năng trả lời phỏng vấn của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0438_practice-your-interview-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a portfolio",
+  "ipa": "/prɪˈper ə /pɔːrtˈfəʊliːəʊ/",
+  "vi": "Chuẩn bị một danh mục các ấn phẩm đã làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0439_prepare-a-portfolio_48k_stereo.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "My advice is _____ .",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To be honest",
+  "ipa": null,
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To start with a smile",
+  "ipa": null,
+  "vi": "Hãy bắt đầu với một nụ cười",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_27.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Not to be late",
+  "ipa": null,
+  "vi": "Không đến muộn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_28.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What is your advice for an interview?",
+  "ipa": null,
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "My advice is",
+  "ipa": "/maɪ ədˈvaɪs ɪz/",
+  "vi": "Lời khuyên của tôi là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "To be honest",
+  "ipa": "/tuː biː ˈɑːnɪst/",
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What is your advice for an interview",
+  "ipa": "/wʌt ɪz jʊr ədˈvaɪs fɔːr æn ˈɪntərvjuː/",
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I think doing an internship will _____ .",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Gain us experience",
+  "ipa": null,
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Improve our skills",
+  "ipa": null,
+  "vi": "Cải thiện kỹ năng của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_37.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Affect our studies",
+  "ipa": null,
+  "vi": "Làm ảnh hưởng đến việc học của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_38.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will gain us experience.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cho chúng ta thêm kinh nghiệm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_33.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will improve our skills.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cải thiện kỹ năng của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_34.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will affect our studies.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ làm ảnh hưởng đến việc học của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_35.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think doing an internship will affect our studies?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think doing an internship will",
+  "ipa": "/aɪ θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl/",
+  "vi": "Tôi nghĩ đi thực tập sẽ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Gain us experience",
+  "ipa": "/geɪn ʌs ɪkˈspɪriːəns/",
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think doing an internship will affect our studies",
+  "ipa": "/duː juː θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "improve our skills",
+  "ipa": "/ɪmˈpruːv ɑːr skɪlz/",
+  "vi": "Cải thiện kỹ năng",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0441_improve-our-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "affect our studies",
+  "ipa": "/əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Ảnh hưởng đến việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0442_affect-our-studies_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "beneficial",
+  "ipa": "/ˌbenɪˈfɪ∫l/",
+  "vi": "Có lợi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0344_beneficial_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a great learning experience",
+  "ipa": "/ə greɪt ˈlɜːrnɪη /ɪkˈspɪriːəns/",
+  "vi": "Một trải nghiệm học tập tuyệt vời",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0444_a-great-learning-experience_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I _____ during exam season.",
+  "ipa": null,
+  "vi": "Tôi _____ trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_42.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Work less",
+  "ipa": null,
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Study during my work breaks",
+  "ipa": null,
+  "vi": "Học trong giờ nghỉ giải lao ở chỗ làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_47.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Take days off to study",
+  "ipa": null,
+  "vi": "Xin nghỉ phép để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_48.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "How do you work and study during exam season?",
+  "ipa": null,
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "during exam season",
+  "ipa": "/ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_learningcard_en_16.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Work less",
+  "ipa": "/wɜːrk les/",
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "How do you work and study during exam season",
+  "ipa": "/haʊ duː juː wɜːrk ænd ˈstʌdiː ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "study during my work breaks",
+  "ipa": "/ˈstʌdiː/ ˈdʊrɪη maɪ wɜːrk breɪks/",
+  "vi": "Học trong giờ nghỉ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0445_study-during-my-work-breaks_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take days off to study",
+  "ipa": "/teɪk deɪz ɔːf tuː /ˈstʌdiː/",
+  "vi": "Nghỉ vài ngày để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0446_take-days-off-to-study_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "create a study plan",
+  "ipa": "/kriːˈeɪt/ ə /ˈstʌdiː/ plæn/",
+  "vi": "Tạo một kế hoạch học tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0447_create-a-study-plan_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "manage my time wisely",
+  "ipa": "/ˈmænɪdʒ maɪ taɪm /ˈwaɪzliː/",
+  "vi": "Quản lý thời gian một cách khôn ngoan",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0448_manage-my-time-wisely_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "Maybe _____ .",
+  "ipa": null,
+  "vi": "Có lẽ là _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A start-up company",
+  "ipa": null,
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A big corporation",
+  "ipa": null,
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_57.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A foreign company",
+  "ipa": null,
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_58.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What kind of company would you recommend to me?",
+  "ipa": null,
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Maybe",
+  "ipa": "/ˈmeɪbiː/",
+  "vi": "Có lẽ là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "A start up company",
+  "ipa": "/ə stɑːrt ʌp ˈkʌmpəniː/",
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What kind of company would you recommend to me",
+  "ipa": "/wʌt kaɪnd əv ˈkʌmpəniː wʊd juː ˌrekəˈmend tuː miː/",
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a big corporation",
+  "ipa": "/ə bɪg ˌkɔːrpəˈreɪ∫n/",
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0449_a-big-corporation_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a foreign company",
+  "ipa": "/ə ˈfɔːrən /ˈkʌmpəniː/",
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0450_a-foreign-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a consulting firm",
+  "ipa": "/ə kənˈsʌltɪη fɜːrm/",
+  "vi": "một công ty tư vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0451_a-consulting-firm_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a financial services company",
+  "ipa": "/ə faɪˈnæn∫l ˈsɜːrvɪsɪz /ˈkʌmpəniː/",
+  "vi": "một công ty dịch vụ tài chính",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0452_a-financial-services-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a manufacturing company",
+  "ipa": "/ə ˌmænjʊˈfækt∫ərɪη /ˈkʌmpəniː/",
+  "vi": "một công ty sản xuất",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0453_a-manufacturing-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a media company",
+  "ipa": "/ə ˈmiːdɪə /ˈkʌmpəniː/",
+  "vi": "một công ty truyền thông",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0454_a-media-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I think students should _____ .",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Do internships",
+  "ipa": null,
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Have a part-time job",
+  "ipa": null,
+  "vi": "Đi làm thêm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_7.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Focus on studying",
+  "ipa": null,
+  "vi": "Tập trung vào việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_8.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should do internships.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi thực tập.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_3.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should have a part-time job.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi làm thêm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_4.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should focus on studying.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên tập trung vào việc học.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_5.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think students should do internships?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think students should",
+  "ipa": "/aɪ θɪηk ˈstuːdnts ∫ʊd/",
+  "vi": "Tôi nghĩ sinh viên nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do internships",
+  "ipa": "/duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think students should do internships",
+  "ipa": "/duː juː θɪηk ˈstuːdnts ∫ʊd duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "focus on studying",
+  "ipa": "/ˈfəʊkəs ɑːn ˈstʌdɪɪη/",
+  "vi": "Tập trung học hành",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "engage in volunteer work",
+  "ipa": "/ɪnˈgeɪdʒ ɪn ˌvɑːlənˈtɪr wɜːrk/",
+  "vi": "Tham gia vào công việc tình nguyện;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take on part-time jobs",
+  "ipa": "/teɪk ɑːn ˌpɑːrt ˈtaɪm dʒɑːbz/",
+  "vi": "Làm các công việc bán thời gian;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "join professional organizations",
+  "ipa": "/dʒɔɪn prəˈfe∫ənl ˌɔːrgənəˈzeɪ∫nz/",
+  "vi": "Tham gia các tổ chức chuyên nghiệp;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "You should _____ .",
+  "ipa": null,
+  "vi": "Bạn nên _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_7_en_42.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Practice interviewing",
+  "ipa": null,
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Prepare your CV",
+  "ipa": null,
+  "vi": "Chuẩn bị CV",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_17.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Research the company",
+  "ipa": null,
+  "vi": "Tìm hiểu kỹ về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_18.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What should you prepare before applying for an internship?",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "You should",
+  "ipa": "/juː ∫ʊd/",
+  "vi": "Bạn nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_12.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Practice interviewing",
+  "ipa": "/ˈpræktɪs ˈɪntərvjuːɪη/",
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What should you prepare before applying for an internship",
+  "ipa": "/wʌt ∫ʊd juː prɪˈper bɪˈfɔːr əˈplaɪɪη fɔːr æn ˈɪntɜːrn∫ɪp/",
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare your cv",
+  "ipa": "/prɪˈper jʊr ˌsiː ˈviː/",
+  "vi": "Chuẩn bị CV của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0434_prepare-your-cv_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "research the company",
+  "ipa": "/ˈriːsɜːrt∫ ðə /ˈkʌmpəniː/",
+  "vi": "Nghiên cứu về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0435_research-the-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "update your resume",
+  "ipa": "/ˌʌpˈdeɪt jʊr resume/",
+  "vi": "Cập nhật sơ yếu lý lịch của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0436_update-your-resume_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a cover letter",
+  "ipa": "/prɪˈper ə ˈkʌvər ˈletər/",
+  "vi": "Chuẩn bị thư xin việc",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0437_prepare-a-cover-letter_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "practice your interview skills",
+  "ipa": "/ˈpræktɪs jʊr ˈɪntərvjuː skɪlz/",
+  "vi": "Luyện tập các kỹ năng trả lời phỏng vấn của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0438_practice-your-interview-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a portfolio",
+  "ipa": "/prɪˈper ə /pɔːrtˈfəʊliːəʊ/",
+  "vi": "Chuẩn bị một danh mục các ấn phẩm đã làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0439_prepare-a-portfolio_48k_stereo.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "My advice is _____ .",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To be honest",
+  "ipa": null,
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To start with a smile",
+  "ipa": null,
+  "vi": "Hãy bắt đầu với một nụ cười",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_27.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Not to be late",
+  "ipa": null,
+  "vi": "Không đến muộn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_28.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What is your advice for an interview?",
+  "ipa": null,
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "My advice is",
+  "ipa": "/maɪ ədˈvaɪs ɪz/",
+  "vi": "Lời khuyên của tôi là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "To be honest",
+  "ipa": "/tuː biː ˈɑːnɪst/",
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What is your advice for an interview",
+  "ipa": "/wʌt ɪz jʊr ədˈvaɪs fɔːr æn ˈɪntərvjuː/",
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I think doing an internship will _____ .",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Gain us experience",
+  "ipa": null,
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Improve our skills",
+  "ipa": null,
+  "vi": "Cải thiện kỹ năng của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_37.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Affect our studies",
+  "ipa": null,
+  "vi": "Làm ảnh hưởng đến việc học của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_38.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will gain us experience.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cho chúng ta thêm kinh nghiệm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_33.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will improve our skills.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cải thiện kỹ năng của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_34.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will affect our studies.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ làm ảnh hưởng đến việc học của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_35.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think doing an internship will affect our studies?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think doing an internship will",
+  "ipa": "/aɪ θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl/",
+  "vi": "Tôi nghĩ đi thực tập sẽ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Gain us experience",
+  "ipa": "/geɪn ʌs ɪkˈspɪriːəns/",
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think doing an internship will affect our studies",
+  "ipa": "/duː juː θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "improve our skills",
+  "ipa": "/ɪmˈpruːv ɑːr skɪlz/",
+  "vi": "Cải thiện kỹ năng",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0441_improve-our-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "affect our studies",
+  "ipa": "/əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Ảnh hưởng đến việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0442_affect-our-studies_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "beneficial",
+  "ipa": "/ˌbenɪˈfɪ∫l/",
+  "vi": "Có lợi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0344_beneficial_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a great learning experience",
+  "ipa": "/ə greɪt ˈlɜːrnɪη /ɪkˈspɪriːəns/",
+  "vi": "Một trải nghiệm học tập tuyệt vời",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0444_a-great-learning-experience_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I _____ during exam season.",
+  "ipa": null,
+  "vi": "Tôi _____ trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_42.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Work less",
+  "ipa": null,
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Study during my work breaks",
+  "ipa": null,
+  "vi": "Học trong giờ nghỉ giải lao ở chỗ làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_47.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Take days off to study",
+  "ipa": null,
+  "vi": "Xin nghỉ phép để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_48.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "How do you work and study during exam season?",
+  "ipa": null,
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "during exam season",
+  "ipa": "/ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_learningcard_en_16.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Work less",
+  "ipa": "/wɜːrk les/",
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "How do you work and study during exam season",
+  "ipa": "/haʊ duː juː wɜːrk ænd ˈstʌdiː ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "study during my work breaks",
+  "ipa": "/ˈstʌdiː/ ˈdʊrɪη maɪ wɜːrk breɪks/",
+  "vi": "Học trong giờ nghỉ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0445_study-during-my-work-breaks_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take days off to study",
+  "ipa": "/teɪk deɪz ɔːf tuː /ˈstʌdiː/",
+  "vi": "Nghỉ vài ngày để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0446_take-days-off-to-study_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "create a study plan",
+  "ipa": "/kriːˈeɪt/ ə /ˈstʌdiː/ plæn/",
+  "vi": "Tạo một kế hoạch học tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0447_create-a-study-plan_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "manage my time wisely",
+  "ipa": "/ˈmænɪdʒ maɪ taɪm /ˈwaɪzliː/",
+  "vi": "Quản lý thời gian một cách khôn ngoan",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0448_manage-my-time-wisely_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "Maybe _____ .",
+  "ipa": null,
+  "vi": "Có lẽ là _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A start-up company",
+  "ipa": null,
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A big corporation",
+  "ipa": null,
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_57.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A foreign company",
+  "ipa": null,
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_58.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What kind of company would you recommend to me?",
+  "ipa": null,
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Maybe",
+  "ipa": "/ˈmeɪbiː/",
+  "vi": "Có lẽ là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "A start up company",
+  "ipa": "/ə stɑːrt ʌp ˈkʌmpəniː/",
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What kind of company would you recommend to me",
+  "ipa": "/wʌt kaɪnd əv ˈkʌmpəniː wʊd juː ˌrekəˈmend tuː miː/",
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a big corporation",
+  "ipa": "/ə bɪg ˌkɔːrpəˈreɪ∫n/",
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0449_a-big-corporation_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a foreign company",
+  "ipa": "/ə ˈfɔːrən /ˈkʌmpəniː/",
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0450_a-foreign-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a consulting firm",
+  "ipa": "/ə kənˈsʌltɪη fɜːrm/",
+  "vi": "một công ty tư vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0451_a-consulting-firm_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a financial services company",
+  "ipa": "/ə faɪˈnæn∫l ˈsɜːrvɪsɪz /ˈkʌmpəniː/",
+  "vi": "một công ty dịch vụ tài chính",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0452_a-financial-services-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a manufacturing company",
+  "ipa": "/ə ˌmænjʊˈfækt∫ərɪη /ˈkʌmpəniː/",
+  "vi": "một công ty sản xuất",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0453_a-manufacturing-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a media company",
+  "ipa": "/ə ˈmiːdɪə /ˈkʌmpəniː/",
+  "vi": "một công ty truyền thông",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0454_a-media-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I think students should _____ .",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Do internships",
+  "ipa": null,
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Have a part-time job",
+  "ipa": null,
+  "vi": "Đi làm thêm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_7.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Focus on studying",
+  "ipa": null,
+  "vi": "Tập trung vào việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_8.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should do internships.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi thực tập.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_3.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should have a part-time job.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi làm thêm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_4.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should focus on studying.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên tập trung vào việc học.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_5.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think students should do internships?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think students should",
+  "ipa": "/aɪ θɪηk ˈstuːdnts ∫ʊd/",
+  "vi": "Tôi nghĩ sinh viên nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do internships",
+  "ipa": "/duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think students should do internships",
+  "ipa": "/duː juː θɪηk ˈstuːdnts ∫ʊd duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "focus on studying",
+  "ipa": "/ˈfəʊkəs ɑːn ˈstʌdɪɪη/",
+  "vi": "Tập trung học hành",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "engage in volunteer work",
+  "ipa": "/ɪnˈgeɪdʒ ɪn ˌvɑːlənˈtɪr wɜːrk/",
+  "vi": "Tham gia vào công việc tình nguyện;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take on part-time jobs",
+  "ipa": "/teɪk ɑːn ˌpɑːrt ˈtaɪm dʒɑːbz/",
+  "vi": "Làm các công việc bán thời gian;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "join professional organizations",
+  "ipa": "/dʒɔɪn prəˈfe∫ənl ˌɔːrgənəˈzeɪ∫nz/",
+  "vi": "Tham gia các tổ chức chuyên nghiệp;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "You should _____ .",
+  "ipa": null,
+  "vi": "Bạn nên _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_7_en_42.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Practice interviewing",
+  "ipa": null,
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Prepare your CV",
+  "ipa": null,
+  "vi": "Chuẩn bị CV",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_17.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Research the company",
+  "ipa": null,
+  "vi": "Tìm hiểu kỹ về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_18.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What should you prepare before applying for an internship?",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "You should",
+  "ipa": "/juː ∫ʊd/",
+  "vi": "Bạn nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_12.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Practice interviewing",
+  "ipa": "/ˈpræktɪs ˈɪntərvjuːɪη/",
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What should you prepare before applying for an internship",
+  "ipa": "/wʌt ∫ʊd juː prɪˈper bɪˈfɔːr əˈplaɪɪη fɔːr æn ˈɪntɜːrn∫ɪp/",
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare your cv",
+  "ipa": "/prɪˈper jʊr ˌsiː ˈviː/",
+  "vi": "Chuẩn bị CV của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0434_prepare-your-cv_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "research the company",
+  "ipa": "/ˈriːsɜːrt∫ ðə /ˈkʌmpəniː/",
+  "vi": "Nghiên cứu về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0435_research-the-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "update your resume",
+  "ipa": "/ˌʌpˈdeɪt jʊr resume/",
+  "vi": "Cập nhật sơ yếu lý lịch của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0436_update-your-resume_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a cover letter",
+  "ipa": "/prɪˈper ə ˈkʌvər ˈletər/",
+  "vi": "Chuẩn bị thư xin việc",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0437_prepare-a-cover-letter_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "practice your interview skills",
+  "ipa": "/ˈpræktɪs jʊr ˈɪntərvjuː skɪlz/",
+  "vi": "Luyện tập các kỹ năng trả lời phỏng vấn của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0438_practice-your-interview-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a portfolio",
+  "ipa": "/prɪˈper ə /pɔːrtˈfəʊliːəʊ/",
+  "vi": "Chuẩn bị một danh mục các ấn phẩm đã làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0439_prepare-a-portfolio_48k_stereo.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "My advice is _____ .",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To be honest",
+  "ipa": null,
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To start with a smile",
+  "ipa": null,
+  "vi": "Hãy bắt đầu với một nụ cười",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_27.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Not to be late",
+  "ipa": null,
+  "vi": "Không đến muộn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_28.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What is your advice for an interview?",
+  "ipa": null,
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "My advice is",
+  "ipa": "/maɪ ədˈvaɪs ɪz/",
+  "vi": "Lời khuyên của tôi là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "To be honest",
+  "ipa": "/tuː biː ˈɑːnɪst/",
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What is your advice for an interview",
+  "ipa": "/wʌt ɪz jʊr ədˈvaɪs fɔːr æn ˈɪntərvjuː/",
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I think doing an internship will _____ .",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Gain us experience",
+  "ipa": null,
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Improve our skills",
+  "ipa": null,
+  "vi": "Cải thiện kỹ năng của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_37.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Affect our studies",
+  "ipa": null,
+  "vi": "Làm ảnh hưởng đến việc học của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_38.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will gain us experience.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cho chúng ta thêm kinh nghiệm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_33.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will improve our skills.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cải thiện kỹ năng của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_34.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will affect our studies.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ làm ảnh hưởng đến việc học của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_35.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think doing an internship will affect our studies?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think doing an internship will",
+  "ipa": "/aɪ θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl/",
+  "vi": "Tôi nghĩ đi thực tập sẽ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Gain us experience",
+  "ipa": "/geɪn ʌs ɪkˈspɪriːəns/",
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think doing an internship will affect our studies",
+  "ipa": "/duː juː θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "improve our skills",
+  "ipa": "/ɪmˈpruːv ɑːr skɪlz/",
+  "vi": "Cải thiện kỹ năng",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0441_improve-our-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "affect our studies",
+  "ipa": "/əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Ảnh hưởng đến việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0442_affect-our-studies_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "beneficial",
+  "ipa": "/ˌbenɪˈfɪ∫l/",
+  "vi": "Có lợi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0344_beneficial_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a great learning experience",
+  "ipa": "/ə greɪt ˈlɜːrnɪη /ɪkˈspɪriːəns/",
+  "vi": "Một trải nghiệm học tập tuyệt vời",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0444_a-great-learning-experience_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I _____ during exam season.",
+  "ipa": null,
+  "vi": "Tôi _____ trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_42.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Work less",
+  "ipa": null,
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Study during my work breaks",
+  "ipa": null,
+  "vi": "Học trong giờ nghỉ giải lao ở chỗ làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_47.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Take days off to study",
+  "ipa": null,
+  "vi": "Xin nghỉ phép để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_48.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "How do you work and study during exam season?",
+  "ipa": null,
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "during exam season",
+  "ipa": "/ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_learningcard_en_16.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Work less",
+  "ipa": "/wɜːrk les/",
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "How do you work and study during exam season",
+  "ipa": "/haʊ duː juː wɜːrk ænd ˈstʌdiː ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "study during my work breaks",
+  "ipa": "/ˈstʌdiː/ ˈdʊrɪη maɪ wɜːrk breɪks/",
+  "vi": "Học trong giờ nghỉ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0445_study-during-my-work-breaks_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take days off to study",
+  "ipa": "/teɪk deɪz ɔːf tuː /ˈstʌdiː/",
+  "vi": "Nghỉ vài ngày để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0446_take-days-off-to-study_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "create a study plan",
+  "ipa": "/kriːˈeɪt/ ə /ˈstʌdiː/ plæn/",
+  "vi": "Tạo một kế hoạch học tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0447_create-a-study-plan_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "manage my time wisely",
+  "ipa": "/ˈmænɪdʒ maɪ taɪm /ˈwaɪzliː/",
+  "vi": "Quản lý thời gian một cách khôn ngoan",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0448_manage-my-time-wisely_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "Maybe _____ .",
+  "ipa": null,
+  "vi": "Có lẽ là _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A start-up company",
+  "ipa": null,
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A big corporation",
+  "ipa": null,
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_57.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A foreign company",
+  "ipa": null,
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_58.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What kind of company would you recommend to me?",
+  "ipa": null,
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Maybe",
+  "ipa": "/ˈmeɪbiː/",
+  "vi": "Có lẽ là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "A start up company",
+  "ipa": "/ə stɑːrt ʌp ˈkʌmpəniː/",
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What kind of company would you recommend to me",
+  "ipa": "/wʌt kaɪnd əv ˈkʌmpəniː wʊd juː ˌrekəˈmend tuː miː/",
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a big corporation",
+  "ipa": "/ə bɪg ˌkɔːrpəˈreɪ∫n/",
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0449_a-big-corporation_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a foreign company",
+  "ipa": "/ə ˈfɔːrən /ˈkʌmpəniː/",
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0450_a-foreign-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a consulting firm",
+  "ipa": "/ə kənˈsʌltɪη fɜːrm/",
+  "vi": "một công ty tư vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0451_a-consulting-firm_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a financial services company",
+  "ipa": "/ə faɪˈnæn∫l ˈsɜːrvɪsɪz /ˈkʌmpəniː/",
+  "vi": "một công ty dịch vụ tài chính",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0452_a-financial-services-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a manufacturing company",
+  "ipa": "/ə ˌmænjʊˈfækt∫ərɪη /ˈkʌmpəniː/",
+  "vi": "một công ty sản xuất",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0453_a-manufacturing-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a media company",
+  "ipa": "/ə ˈmiːdɪə /ˈkʌmpəniː/",
+  "vi": "một công ty truyền thông",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0454_a-media-company_48k_stereo.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Do internships",
+  "ipa": null,
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Have a part-time job",
+  "ipa": null,
+  "vi": "Đi làm thêm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_7.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Focus on studying",
+  "ipa": null,
+  "vi": "Tập trung vào việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_8.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should do internships.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi thực tập.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_3.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should have a part-time job.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên đi làm thêm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_4.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think students should focus on studying.",
+  "ipa": null,
+  "vi": "Tôi nghĩ sinh viên nên tập trung vào việc học.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_5.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think students should do internships?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think students should",
+  "ipa": "/aɪ θɪηk ˈstuːdnts ∫ʊd/",
+  "vi": "Tôi nghĩ sinh viên nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_2.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do internships",
+  "ipa": "/duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Đi thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_6.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think students should do internships",
+  "ipa": "/duː juː θɪηk ˈstuːdnts ∫ʊd duː ˈɪntɜːrn∫ɪps/",
+  "vi": "Bạn có nghĩ rằng sinh viên nên đi thực tập không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_1.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "focus on studying",
+  "ipa": "/ˈfəʊkəs ɑːn ˈstʌdɪɪη/",
+  "vi": "Tập trung học hành",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0430_focus-on-studying_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "engage in volunteer work",
+  "ipa": "/ɪnˈgeɪdʒ ɪn ˌvɑːlənˈtɪr wɜːrk/",
+  "vi": "Tham gia vào công việc tình nguyện;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0431_engage-in-volunteer-work_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take on part-time jobs",
+  "ipa": "/teɪk ɑːn ˌpɑːrt ˈtaɪm dʒɑːbz/",
+  "vi": "Làm các công việc bán thời gian;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0432_take-on-part-time-jobs_48k_stereo.mp3"
+}
+{
+  "lesson_id_83": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "join professional organizations",
+  "ipa": "/dʒɔɪn prəˈfe∫ənl ˌɔːrgənəˈzeɪ∫nz/",
+  "vi": "Tham gia các tổ chức chuyên nghiệp;",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0433_join-professional-organization_48k_stereo.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Practice interviewing",
+  "ipa": null,
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Prepare your CV",
+  "ipa": null,
+  "vi": "Chuẩn bị CV",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_17.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Research the company",
+  "ipa": null,
+  "vi": "Tìm hiểu kỹ về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_18.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should prepare your CV.",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị CV.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_14.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should research the company.",
+  "ipa": null,
+  "vi": "Bạn nên tìm hiểu kỹ về công ty.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_15.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "You should practice interviewing.",
+  "ipa": null,
+  "vi": "Bạn nên luyện tập phỏng vấn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_13.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What should you prepare before applying for an internship?",
+  "ipa": null,
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "You should",
+  "ipa": "/juː ∫ʊd/",
+  "vi": "Bạn nên",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_12.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Practice interviewing",
+  "ipa": "/ˈpræktɪs ˈɪntərvjuːɪη/",
+  "vi": "Luyện tập phỏng vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_16.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What should you prepare before applying for an internship",
+  "ipa": "/wʌt ∫ʊd juː prɪˈper bɪˈfɔːr əˈplaɪɪη fɔːr æn ˈɪntɜːrn∫ɪp/",
+  "vi": "Bạn nên chuẩn bị những gì trước khi ứng tuyển thực tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_11.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare your cv",
+  "ipa": "/prɪˈper jʊr ˌsiː ˈviː/",
+  "vi": "Chuẩn bị CV của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0434_prepare-your-cv_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "research the company",
+  "ipa": "/ˈriːsɜːrt∫ ðə /ˈkʌmpəniː/",
+  "vi": "Nghiên cứu về công ty",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0435_research-the-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "update your resume",
+  "ipa": "/ˌʌpˈdeɪt jʊr resume/",
+  "vi": "Cập nhật sơ yếu lý lịch của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0436_update-your-resume_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a cover letter",
+  "ipa": "/prɪˈper ə ˈkʌvər ˈletər/",
+  "vi": "Chuẩn bị thư xin việc",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0437_prepare-a-cover-letter_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "practice your interview skills",
+  "ipa": "/ˈpræktɪs jʊr ˈɪntərvjuː skɪlz/",
+  "vi": "Luyện tập các kỹ năng trả lời phỏng vấn của bạn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0438_practice-your-interview-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_84": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "prepare a portfolio",
+  "ipa": "/prɪˈper ə /pɔːrtˈfəʊliːəʊ/",
+  "vi": "Chuẩn bị một danh mục các ấn phẩm đã làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0439_prepare-a-portfolio_48k_stereo.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To be honest",
+  "ipa": null,
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "To start with a smile",
+  "ipa": null,
+  "vi": "Hãy bắt đầu với một nụ cười",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_27.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Not to be late",
+  "ipa": null,
+  "vi": "Không đến muộn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_28.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to start with a smile.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy bắt đầu với một nụ cười.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_24.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is not to be late.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là không đến muộn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_25.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "My advice is to be honest.",
+  "ipa": null,
+  "vi": "Lời khuyên của tôi là hãy thành thật.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_23.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What is your advice for an interview?",
+  "ipa": null,
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "My advice is",
+  "ipa": "/maɪ ədˈvaɪs ɪz/",
+  "vi": "Lời khuyên của tôi là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_22.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "To be honest",
+  "ipa": "/tuː biː ˈɑːnɪst/",
+  "vi": "Hãy thành thật",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_26.mp3"
+}
+{
+  "lesson_id_85": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What is your advice for an interview",
+  "ipa": "/wʌt ɪz jʊr ədˈvaɪs fɔːr æn ˈɪntərvjuː/",
+  "vi": "Bạn có lời khuyên nào cho người đi phỏng vấn không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_21.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Gain us experience",
+  "ipa": null,
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Improve our skills",
+  "ipa": null,
+  "vi": "Cải thiện kỹ năng của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_37.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Affect our studies",
+  "ipa": null,
+  "vi": "Làm ảnh hưởng đến việc học của chúng ta",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_38.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will gain us experience.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cho chúng ta thêm kinh nghiệm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_33.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will improve our skills.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ cải thiện kỹ năng của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_34.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I think doing an internship will affect our studies.",
+  "ipa": null,
+  "vi": "Tôi nghĩ đi thực tập sẽ làm ảnh hưởng đến việc học của chúng ta.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_35.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Do you think doing an internship will affect our studies?",
+  "ipa": null,
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I think doing an internship will",
+  "ipa": "/aɪ θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl/",
+  "vi": "Tôi nghĩ đi thực tập sẽ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_32.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Gain us experience",
+  "ipa": "/geɪn ʌs ɪkˈspɪriːəns/",
+  "vi": "Cho chúng ta thêm kinh nghiệm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_36.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Do you think doing an internship will affect our studies",
+  "ipa": "/duː juː θɪηk ˈduːɪη æn ˈɪntɜːrn∫ɪp wɪl əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Bạn có nghĩ rằng việc thực tập sẽ ảnh hưởng đến việc học không",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_31.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "improve our skills",
+  "ipa": "/ɪmˈpruːv ɑːr skɪlz/",
+  "vi": "Cải thiện kỹ năng",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0441_improve-our-skills_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "affect our studies",
+  "ipa": "/əˈfekt ɑːr ˈstʌdɪz/",
+  "vi": "Ảnh hưởng đến việc học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0442_affect-our-studies_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "beneficial",
+  "ipa": "/ˌbenɪˈfɪ∫l/",
+  "vi": "Có lợi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0344_beneficial_48k_stereo.mp3"
+}
+{
+  "lesson_id_87": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a great learning experience",
+  "ipa": "/ə greɪt ˈlɜːrnɪη /ɪkˈspɪriːəns/",
+  "vi": "Một trải nghiệm học tập tuyệt vời",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0444_a-great-learning-experience_48k_stereo.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Work less",
+  "ipa": null,
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Study during my work breaks",
+  "ipa": null,
+  "vi": "Học trong giờ nghỉ giải lao ở chỗ làm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_47.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "Take days off to study",
+  "ipa": null,
+  "vi": "Xin nghỉ phép để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_48.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I study during my work breaks during exam season.",
+  "ipa": null,
+  "vi": "Tôi học trong giờ nghỉ giải lao ở chỗ làm trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_44.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I take days off to study during exam season.",
+  "ipa": null,
+  "vi": "Tôi xin nghỉ phép để học trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_45.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I work less during exam season.",
+  "ipa": null,
+  "vi": "Tôi làm việc ít hơn trong mùa thi.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_43.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "How do you work and study during exam season?",
+  "ipa": null,
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "during exam season",
+  "ipa": "/ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_learningcard_en_16.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Work less",
+  "ipa": "/wɜːrk les/",
+  "vi": "Làm việc ít hơn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_46.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "How do you work and study during exam season",
+  "ipa": "/haʊ duː juː wɜːrk ænd ˈstʌdiː ˈdʊrɪη ɪgˈzæm ˈsiːzn/",
+  "vi": "Bạn làm việc và học như thế nào trong mùa thi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_41.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "study during my work breaks",
+  "ipa": "/ˈstʌdiː/ ˈdʊrɪη maɪ wɜːrk breɪks/",
+  "vi": "Học trong giờ nghỉ",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0445_study-during-my-work-breaks_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "take days off to study",
+  "ipa": "/teɪk deɪz ɔːf tuː /ˈstʌdiː/",
+  "vi": "Nghỉ vài ngày để học",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0446_take-days-off-to-study_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "create a study plan",
+  "ipa": "/kriːˈeɪt/ ə /ˈstʌdiː/ plæn/",
+  "vi": "Tạo một kế hoạch học tập",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0447_create-a-study-plan_48k_stereo.mp3"
+}
+{
+  "lesson_id_88": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "manage my time wisely",
+  "ipa": "/ˈmænɪdʒ maɪ taɪm /ˈwaɪzliː/",
+  "vi": "Quản lý thời gian một cách khôn ngoan",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0448_manage-my-time-wisely_48k_stereo.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A start-up company",
+  "ipa": null,
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A big corporation",
+  "ipa": null,
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_57.mp3"
+}
+{
+  "typeOutline_GHEP_CAU": null,
+  "en": "A foreign company",
+  "ipa": null,
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_8_en_58.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a big corporation.",
+  "ipa": null,
+  "vi": "Có lẽ là một tập đoàn lớn.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_54.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a foreign company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_55.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "Maybe a start-up company.",
+  "ipa": null,
+  "vi": "Có lẽ là một công ty khởi nghiệp.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_53.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "What kind of company would you recommend to me?",
+  "ipa": null,
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Maybe",
+  "ipa": "/ˈmeɪbiː/",
+  "vi": "Có lẽ là",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_52.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "A start up company",
+  "ipa": "/ə stɑːrt ʌp ˈkʌmpəniː/",
+  "vi": "Một công ty khởi nghiệp",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_56.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "What kind of company would you recommend to me",
+  "ipa": "/wʌt kaɪnd əv ˈkʌmpəniː wʊd juː ˌrekəˈmend tuː miː/",
+  "vi": "Bạn sẽ giới thiệu dạng công ty nào cho tôi",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_8_en_51.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a big corporation",
+  "ipa": "/ə bɪg ˌkɔːrpəˈreɪ∫n/",
+  "vi": "Một tập đoàn lớn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0449_a-big-corporation_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a foreign company",
+  "ipa": "/ə ˈfɔːrən /ˈkʌmpəniː/",
+  "vi": "Một công ty nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0450_a-foreign-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a consulting firm",
+  "ipa": "/ə kənˈsʌltɪη fɜːrm/",
+  "vi": "một công ty tư vấn",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0451_a-consulting-firm_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a financial services company",
+  "ipa": "/ə faɪˈnæn∫l ˈsɜːrvɪsɪz /ˈkʌmpəniː/",
+  "vi": "một công ty dịch vụ tài chính",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0452_a-financial-services-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a manufacturing company",
+  "ipa": "/ə ˌmænjʊˈfækt∫ərɪη /ˈkʌmpəniː/",
+  "vi": "một công ty sản xuất",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0453_a-manufacturing-company_48k_stereo.mp3"
+}
+{
+  "lesson_id_89": null,
+  "typeExtend_SPEAKING_WORD": null,
+  "en": "a media company",
+  "ipa": "/ə ˈmiːdɪə /ˈkʌmpəniː/",
+  "vi": "một công ty truyền thông",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/learnfeed/word_audio/BL-0454_a-media-company_48k_stereo.mp3"
+}

@@ -1,0 +1,298 @@
+{
+  "description": "HỌC CỤM CHUNKING",
+  "lesson_id": 2,
+  "name_en": "Why do you want to learn English?",
+  "name_vi": "Tại sao bạn muốn học tiếng Anh?"
+}
+{
+  "description": "HỌC CỤM CHUNKING",
+  "lesson_id": 1,
+  "name_en": "How long have you been learning English?",
+  "name_vi": "Bạn đã học tiếng Anh được bao lâu rồi?"
+}
+{
+  "description": "HỌC CỤM CHUNKING",
+  "lesson_id": 580,
+  "name_en": "How do you feel when you talk to foreigners?",
+  "name_vi": "Bạn cảm thấy thế nào khi nói chuyện với người nước ngoài?"
+}
+{
+  "description": "THỰC HÀNH VỚI TÂY",
+  "lesson_id": 3,
+  "name_en": "Tám với Christine về việc học tiếng Anh",
+  "name_vi": ""
+}
+{
+  "description": "THỰC HÀNH VỚI ONION GPT",
+  "lesson_id": 403,
+  "name_en": "Vì sao bạn lại học tiếng Anh?",
+  "name_vi": ""
+}
+{
+  "description": "PHÁT TRIỂN Ý",
+  "lesson_id": 941,
+  "name_en": "Why do you want to learn English?",
+  "name_vi": ""
+}
+{
+  "description": "PHÁT TRIỂN Ý",
+  "lesson_id": 943,
+  "name_en": "How do you feel when you talk to foreigners?",
+  "name_vi": ""
+}
+{
+  "lesson_id_2": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I want to _____ .",
+  "ipa": null,
+  "vi": "Tôi muốn _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_12.mp3"
+}
+{
+  "lesson_id_2": null,
+  "typeOutline_GHEP_CAU": null,
+  "en": "Have a high-paying job",
+  "ipa": null,
+  "vi": "Có một công việc lương cao",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_16.mp3"
+}
+{
+  "lesson_id_2": null,
+  "typeOutline_GHEP_CAU": null,
+  "en": "Make friends around the world",
+  "ipa": null,
+  "vi": "Kết bạn khắp nơi trên thế giới",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_18.mp3"
+}
+{
+  "lesson_id_2": null,
+  "typeBasic_LEARNING_PHRASE_QNA": null,
+  "en": "Why do you want to learn English?",
+  "ipa": null,
+  "vi": null,
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_11.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I have been learning English for _____ .",
+  "ipa": null,
+  "vi": "Tôi đã học tiếng Anh được _____ .",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_2.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeOutline_GHEP_CAU": null,
+  "en": "Over ten years",
+  "ipa": null,
+  "vi": "Hơn mười năm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_6.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeOutline_GHEP_CAU": null,
+  "en": "Less than a year",
+  "ipa": null,
+  "vi": "Ít hơn một năm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_8.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I have been learning English for over ten years.",
+  "ipa": null,
+  "vi": "Tôi đã học tiếng Anh được hơn mười năm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_3.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I have been learning English for less than a year.",
+  "ipa": null,
+  "vi": "Tôi đã học tiếng Anh được ít hơn một năm.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_5.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeBasic_LEARNING_PHRASE_QNA": null,
+  "en": "How long have you been learning English?",
+  "ipa": null,
+  "vi": null,
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_1.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeBasic_LEARNING_PHRASE_QNA": null,
+  "en": "How long have you been learning English?",
+  "ipa": null,
+  "vi": null,
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_1.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Over ten years",
+  "ipa": "/ˈəʊvər ten jɪrz/",
+  "vi": "Hơn mười năm",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_6.mp3"
+}
+{
+  "lesson_id_1": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I have been learning English for",
+  "ipa": "/aɪ hæv bɪn ˈlɜːrnɪη ˈɪηglɪ∫ fɔːr/",
+  "vi": "Tôi đã học tiếng Anh được",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_2.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeOutline_NAP_CUM": null,
+  "en": "I feel _____ talking to foreigners.",
+  "ipa": null,
+  "vi": "Tôi cảm thấy _____ khi nói chuyện với người nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_22.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeOutline_GHEP_CAU": null,
+  "en": "Shy",
+  "ipa": null,
+  "vi": "Ngại ngùng",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_26.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeOutline_GHEP_CAU": null,
+  "en": "Confident",
+  "ipa": null,
+  "vi": "Tự tin",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_27.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeOutline_GHEP_CAU": null,
+  "en": "Amazing",
+  "ipa": null,
+  "vi": "Rất tuyệt",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/outline/voiceclaire_topic_16_en_28.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I feel shy talking to foreigners.",
+  "ipa": null,
+  "vi": "Tôi cảm thấy ngại ngùng khi nói chuyện với người nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_23.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I feel shy talking to foreigners.",
+  "ipa": null,
+  "vi": "Tôi cảm thấy ngại ngùng khi nói chuyện với người nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_23.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I feel confident talking to foreigners.",
+  "ipa": null,
+  "vi": "Tôi cảm thấy tự tin khi nói chuyện với người nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_24.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I feel amazing talking to foreigners.",
+  "ipa": null,
+  "vi": "Tôi cảm thấy rất tuyệt khi nói chuyện với người nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_25.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I feel confident talking to foreigners.",
+  "ipa": null,
+  "vi": "Tôi cảm thấy tự tin khi nói chuyện với người nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_24.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I feel amazing talking to foreigners.",
+  "ipa": null,
+  "vi": "Tôi cảm thấy rất tuyệt khi nói chuyện với người nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_25.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "I feel shy talking to foreigners.",
+  "ipa": null,
+  "vi": "Tôi cảm thấy ngại ngùng khi nói chuyện với người nước ngoài.",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_23.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_FLEXIBLE_PHRASE": null,
+  "en": "How do you feel when you talk to foreigners?",
+  "ipa": null,
+  "vi": "Bạn cảm thấy thế nào khi nói chuyện với người nước ngoài?",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/flexible_phrase/voiceclaire_topic_16_en_21.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_LEARNING_PHRASE_QNA": null,
+  "en": "How do you feel when you talk to foreigners?",
+  "ipa": null,
+  "vi": null,
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_21.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_LEARNING_PHRASE_QNA": null,
+  "en": "How do you feel when you talk to foreigners?",
+  "ipa": null,
+  "vi": null,
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_21.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_LEARNING_PHRASE_QNA": null,
+  "en": "Do you feel shy talking to foreigners?",
+  "ipa": null,
+  "vi": null,
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_phrase_qna/voiceclaire_topic_16_en_29.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "I feel",
+  "ipa": "/aɪ fiːl/",
+  "vi": "Tôi cảm thấy",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_learningcard_en_23.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "talking to foreigners",
+  "ipa": "/ˈtɔːkɪη tuː ˈfɔːrənərz/",
+  "vi": "khi nói chuyện với người nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_learningcard_en_24.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "Shy",
+  "ipa": "/∫aɪ/",
+  "vi": "Ngại ngùng",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_26.mp3"
+}
+{
+  "lesson_id_580": null,
+  "typeBasic_LEARNING_CARD": null,
+  "en": "How do you feel when you talk to foreigners",
+  "ipa": "/haʊ duː juː fiːl wen juː tɔːk tuː ˈfɔːrənərz/",
+  "vi": "Bạn cảm thấy thế nào khi nói chuyện với người nước ngoài",
+  "audio": "https://smedia.stepup.edu.vn/thecoach/audio_TC2022/learning_card/voiceclaire_topic_16_en_21.mp3"
+}
